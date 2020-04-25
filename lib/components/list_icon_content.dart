@@ -2,14 +2,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:validator/utilities/constants.dart';
 
+import '../utilities/constants.dart';
+
 class ListContentCard extends StatelessWidget {
   ListContentCard({
     this.title,
     this.data,
+    @required this.elected,
   });
 
   final String title;
   final String data;
+  final bool elected;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +37,7 @@ class ListContentCard extends StatelessWidget {
           children: <Widget>[
             Text(
               this.title,
-              style: kListLabelTextStyle,
+              style: this.elected ? kListElectedLabelTextStyle : kListLabelTextStyle,
             ),
           ],
         )

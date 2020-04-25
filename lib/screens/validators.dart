@@ -106,6 +106,8 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
               filteredValidatorData = allValidatorsData;
             }
           }
+          allValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
+          filteredValidatorData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
           dataLoading = false;
         });
         i++;

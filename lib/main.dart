@@ -23,6 +23,7 @@ class OneValidatorDashboardApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
         primaryColor: kMainColor,
+        primaryTextTheme: TextTheme(title: TextStyle(color: Colors.white)),
       ),
       home: MyHomePage(title: 'Validators'),
     );

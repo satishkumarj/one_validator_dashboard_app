@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:validator/components/list_view_item.dart';
 import 'package:validator/components/resuable_card.dart';
 import 'package:validator/models/bls_key.dart';
 import 'package:validator/models/delegation.dart';
@@ -8,6 +9,7 @@ import 'package:validator/models/lifetime.dart';
 import 'package:validator/models/metrics.dart';
 import 'package:validator/models/validator.dart';
 import 'package:validator/models/validator_list_model.dart';
+import 'package:validator/screens/delegators_list_screen.dart';
 import 'package:validator/utilities/constants.dart';
 import 'package:validator/utilities/networking.dart';
 
@@ -183,6 +185,8 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                         ListViewItem(
                           title: 'Total Staked',
                           text: validator.totalDelegation == null ? '0' : '${kUSNumberFormat.format(validator.totalDelegation)}',
+                          moreDetails: true,
+                          openMoreDetails: () {},
                         ),
                         SizedBox(
                           height: 1,
@@ -190,6 +194,17 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                         ListViewItem(
                           title: 'Delegated',
                           text: validator.delegatedStake == null ? '0' : '${kUSNumberFormat.format(validator.delegatedStake)}',
+                          moreDetails: true,
+                          openMoreDetails: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DelegatorDetailsScreen(
+                                  model: validator,
+                                ),
+                              ),
+                            );
+                          },
                         ),
                         SizedBox(
                           height: 1,
@@ -326,38 +341,6 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                 ],
               ),
             ),
-    );
-  }
-}
-
-class ListViewItem extends StatelessWidget {
-  ListViewItem({@required this.title, @required this.text});
-  final String title;
-  final String text;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          Text(
-            '$title:',
-            style: kLabelTextStyle,
-            textAlign: TextAlign.left,
-          ),
-          Text(
-            text,
-            style: kListDataTextStyle,
-            textAlign: TextAlign.left,
-          )
-        ],
-      ),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.0),
-        color: Colors.tealAccent.withAlpha(160),
-      ),
     );
   }
 }

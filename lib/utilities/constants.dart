@@ -9,7 +9,7 @@ const Color kLightGrey = Color(0XFFF2F4F8);
 const Color kListBackgroundGreen = Color(0XFF66BB6A); // 0XFF4CAF50  //0XFF388E3C #4caf50 //#66bb6a
 
 const kLabelTextStyle = TextStyle(
-  fontSize: 15,
+  fontSize: 13,
   color: Color(0XFF02008B),
   fontWeight: FontWeight.bold,
 );
@@ -20,9 +20,15 @@ const kDataTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
 );
 
+const kListElectedLabelTextStyle = TextStyle(
+  fontSize: 12,
+  color: kBlueColor,
+  fontWeight: FontWeight.bold,
+);
+
 const kListLabelTextStyle = TextStyle(
   fontSize: 12,
-  color: kLightGrey,
+  color: Colors.tealAccent,
   fontWeight: FontWeight.bold,
 );
 
