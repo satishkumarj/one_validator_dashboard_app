@@ -10,6 +10,7 @@ import 'package:validator/models/metrics.dart';
 import 'package:validator/models/validator.dart';
 import 'package:validator/models/validator_list_model.dart';
 import 'package:validator/screens/delegators_list_screen.dart';
+import 'package:validator/screens/totalstake_piechart_screen.dart';
 import 'package:validator/utilities/constants.dart';
 import 'package:validator/utilities/networking.dart';
 
@@ -186,7 +187,16 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                           title: 'Total Staked',
                           text: validator.totalDelegation == null ? '0' : '${kUSNumberFormat.format(validator.totalDelegation)}',
                           moreDetails: true,
-                          openMoreDetails: () {},
+                          openMoreDetails: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => TotalStakeScreen(
+                                  model: validator,
+                                ),
+                              ),
+                            );
+                          },
                         ),
                         SizedBox(
                           height: 1,
