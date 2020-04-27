@@ -1,7 +1,7 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:validator/components/validator_listtile.dart';
 import 'package:validator/models/validator_list_model.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class ValidatorListView extends StatelessWidget {
   ValidatorListView({this.validatorsData});

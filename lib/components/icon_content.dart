@@ -1,14 +1,9 @@
+import 'package:validator/utilities/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:validator/utilities/constants.dart';
 
 class ContentCard extends StatelessWidget {
-  ContentCard(
-      {this.title,
-      this.data,
-      this.smallIcon,
-      this.smallIconColor,
-      this.mediumAssetIcon});
+  ContentCard({this.title, this.data, this.smallIcon, this.smallIconColor, this.mediumAssetIcon});
 
   final String title;
   final String data;

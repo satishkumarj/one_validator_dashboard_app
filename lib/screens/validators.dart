@@ -83,31 +83,28 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
           });
           break;
         }
-        setState(() {
-          for (int i = 0; i < allValCount; i++) {
-            String address = blockData['result'][i]['validator']['address'];
-            bool elected = false;
-            if (blockData['result'][i]['epos-status'] == 'currently elected') {
-              elected = true;
-            }
-            ValidatorListModel model = ValidatorListModel(
-                name: blockData['result'][i]['validator']['name'],
-                elected: elected,
-                address: address,
-                earnings: blockData['result'][i]['lifetime']['reward-accumulated'] / kNumberToDivide,
-                totalStaked: blockData['result'][i]['total-delegation'] / kNumberToDivide);
-            allValidatorsData.add(model);
-            if (model.elected) {
-              electedValidatorsData.add(model);
-            }
-            if (validatorType == 'Elected') {
-              filteredValidatorData = electedValidatorsData;
-            } else {
-              filteredValidatorData = allValidatorsData;
-            }
+
+        for (int i = 0; i < allValCount; i++) {
+          String address = blockData['result'][i]['validator']['address'];
+          bool elected = false;
+          if (blockData['result'][i]['epos-status'] == 'currently elected') {
+            elected = true;
           }
-          allValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
-          filteredValidatorData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
+          ValidatorListModel model = ValidatorListModel(
+              name: blockData['result'][i]['validator']['name'],
+              elected: elected,
+              address: address,
+              earnings: blockData['result'][i]['lifetime']['reward-accumulated'] / kNumberToDivide,
+              totalStaked: blockData['result'][i]['total-delegation'] / kNumberToDivide);
+          allValidatorsData.add(model);
+          if (model.elected) {
+            electedValidatorsData.add(model);
+          }
+        }
+        allValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
+        electedValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
+        updateFilteredData();
+        setState(() {
           dataLoading = false;
         });
         i++;

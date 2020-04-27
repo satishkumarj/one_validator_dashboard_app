@@ -1,9 +1,9 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:validator/components/list_view_item.dart';
 import 'package:validator/components/resuable_card.dart';
 import 'package:validator/models/validator.dart';
 import 'package:validator/utilities/constants.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 import '../models/delegation.dart';
 import '../utilities/constants.dart';

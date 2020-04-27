@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android.iml" filepath="$PROJECT_DIR$/android.iml" group="android" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="android/app" />
+      <module fileurl="file://$USER_HOME$/development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.0/android/barcode_scan.iml" filepath="$USER_HOME$/development/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.0/android/barcode_scan.iml" group="android/barcode_scan" />
+      <module fileurl="file://$USER_HOME$/development/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.4.3/android/shared_preferences.iml" filepath="$USER_HOME$/development/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.4.3/android/shared_preferences.iml" group="android/shared_preferences" />
+      <module fileurl="file://$USER_HOME$/development/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter-0.3.20+2/android/webview_flutter.iml" filepath="$USER_HOME$/development/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter-0.3.20+2/android/webview_flutter.iml" group="android/webview_flutter" />
+    </modules>
+  </component>
+</project>

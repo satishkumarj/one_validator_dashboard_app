@@ -1,10 +1,17 @@
+import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:validator/components/icon_content.dart';
 import 'package:validator/components/resuable_card.dart';
+import 'package:validator/models/validator_list_model.dart';
+import 'package:validator/screens/balaces_screen.dart';
+import 'package:validator/screens/infor_screen.dart';
+import 'package:validator/screens/validator_details.dart';
 import 'package:validator/screens/validators.dart';
 import 'package:validator/utilities/constants.dart';
+import 'package:validator/utilities/globals.dart';
 import 'package:validator/utilities/networking.dart';
 
 import '../utilities/constants.dart';
@@ -25,13 +32,43 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+
   var blockData;
   double totalStake = 0;
   double medianStake = 0;
   int epochLastBlock = 0;
   int electedValidatorCount = 0;
   int allValidatorsCount = 0;
+  String _myONEAddress = '';
 
+  static final List<Map> _menuItems = [
+    {
+      "text": "My Node Details",
+      "icon": Icon(
+        FontAwesomeIcons.server,
+        color: Colors.white,
+      ),
+    },
+    {
+      "text": "Documentation",
+      "icon": Icon(
+        FontAwesomeIcons.info,
+        color: Colors.white,
+      ),
+    }
+  ];
+
+  /*
+  ,
+    {
+      "text": "Check Balance",
+      "icon": Icon(
+        FontAwesomeIcons.moneyBill,
+        color: Colors.white,
+      ),
+    },
+   */
   void refreshData() {
     getData(ApiCallType.ApiCallTypeNetworkData);
     getData(ApiCallType.ApiCallTypeAllValidators);
@@ -67,6 +104,48 @@ class _MyHomePageState extends State<MyHomePage> {
     //print(blockData);
   }
 
+  void showAlert(String message) {
+    Alert(context: context, title: "Validators", desc: message).show();
+  }
+
+  void scanQRCode() async {
+    var result = await BarcodeScanner.scan();
+    Global.myONEAddress = result.rawContent;
+    Global.setUserPreferences(Global.oneAddressKey, result.rawContent);
+    setState(() {
+      _myONEAddress = result.rawContent;
+    });
+  }
+
+  void gotoMyValidatorDetails() {
+    if (Global.myONEAddress == '') {
+      showAlert('Please scan your ONE Address');
+    } else {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => ValidatorDetails(
+            model: ValidatorListModel(name: 'Loading ...', address: Global.myONEAddress),
+          ),
+        ),
+      );
+    }
+  }
+
+  void gotoMyBalanceDetails() {
+    if (Global.myONEAddress == '') {
+    } else {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => BalancesScreen(
+            address: Global.myONEAddress,
+          ),
+        ),
+      );
+    }
+  }
+
   void pushToValidator(String validatorType) {
     Navigator.push(
       context,
@@ -78,16 +157,120 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  void getMyOneAddress() async {
+    String add = await Global.getMyONEAddress();
+    Global.myONEAddress = add;
+    setState(() {
+      _myONEAddress = add;
+    });
+  }
+
   @override
   void initState() {
     super.initState();
+    getMyOneAddress();
     refreshData();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       backgroundColor: Colors.white,
+      endDrawer: Drawer(
+        child: Container(
+          color: kMainColor,
+          child: ListView(
+            children: <Widget>[
+              DrawerHeader(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Image.asset(
+                      "assets/validator_header.png",
+                      height: 100.0,
+                    ),
+                    SizedBox(
+                      height: 15.0,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Text(
+                          _myONEAddress == ''
+                              ? 'Please scan your address'
+                              : _myONEAddress.substring(0, 10) + '...' + _myONEAddress.substring((_myONEAddress.length - 11)),
+                          style: TextStyle(color: Colors.white, fontSize: 15.0),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        GestureDetector(
+                          child: Icon(
+                            FontAwesomeIcons.qrcode,
+                            size: 22.0,
+                            color: Colors.black,
+                          ),
+                          onTap: () {
+                            scanQRCode();
+                          },
+                        )
+                      ],
+                    )
+                  ],
+                ),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(5.0)),
+              ),
+              ListView.builder(
+                physics: NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
+                itemCount: _menuItems.length,
+                itemBuilder: (BuildContext context, int index) {
+                  Map item = _menuItems[index];
+                  return Container(
+                    child: ListTile(
+                      leading: item['icon'],
+                      title: Text(
+                        item['text'],
+                        style: TextStyle(
+                          color: kBlueColor,
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.pop(context);
+                        switch (index) {
+                          case 0:
+                            gotoMyValidatorDetails();
+                            break;
+                          case 1:
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => InformationScreen(),
+                              ),
+                            );
+                            break;
+                          case 2:
+                            break;
+                          default:
+                            break;
+                        }
+                      },
+                    ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10.0),
+                      color: Colors.tealAccent.withAlpha(160),
+                    ),
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
       body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
         Container(
           padding: EdgeInsets.only(
@@ -116,7 +299,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   Expanded(
                     flex: 1,
                     child: RawMaterialButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        _scaffoldKey.currentState.openEndDrawer();
+                      },
                       elevation: 3.0,
                       fillColor: kMainColor,
                       child: Icon(
@@ -131,6 +316,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
               Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Text(
                     'Open Staking',
@@ -147,8 +333,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       refreshData();
                     },
                     child: Icon(
-                      FontAwesomeIcons.sync,
-                      size: 18,
+                      Icons.refresh,
+                      size: 20,
                       color: kMainColor,
                     ),
                   ),

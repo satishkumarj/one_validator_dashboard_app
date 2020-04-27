@@ -1,7 +1,7 @@
+import 'package:validator/components/list_view_item.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:validator/components/list_view_item.dart';
 import 'package:validator/components/resuable_card.dart';
 import 'package:validator/models/bls_key.dart';
 import 'package:validator/models/delegation.dart';
@@ -116,6 +116,7 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
       }
 
       setState(() {
+        record.name = blockData['result']['validator']['name'];
         validator = Validator(
           blsPublicKeys: blockData['result']['validator']['bls-public-keys'],
           lastEpochInCommittee: blockData['result']['validator']['last-epoch-in-committee'],
@@ -312,14 +313,14 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                         ),
                         ListViewItem(
                           title: 'Slots',
-                          text: validator.metrics.blsKeys == null ? '' : '${validator.metrics.blsKeys.length}',
+                          text: validator.metrics.blsKeys == null ? '0' : '${validator.metrics.blsKeys.length}',
                         ),
                         SizedBox(
                           height: 1,
                         ),
                         ListViewItem(
                           title: 'Elected Slots',
-                          text: validator.metrics.blsKeys == null ? '' : '${validator.metrics.blsKeys.length}',
+                          text: validator.metrics.blsKeys == null ? '0' : '${validator.metrics.blsKeys.length}',
                         ),
                         SizedBox(
                           height: 1,
@@ -333,7 +334,7 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                         ),
                         ListViewItem(
                           title: 'Shards',
-                          text: validator.metrics.shards == null ? '' : validator.metrics.shards,
+                          text: validator.metrics.shards == null ? '-' : validator.metrics.shards,
                         ),
                         SizedBox(
                           height: 1,

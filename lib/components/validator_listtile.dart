@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:validator/components/list_icon_content.dart';
 import 'package:validator/components/reusable_list_card.dart';
 import 'package:validator/models/validator_list_model.dart';
 import 'package:validator/screens/validator_details.dart';
 import 'package:validator/utilities/constants.dart';
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ValidatorListTile extends StatelessWidget {
   ValidatorListTile({@required this.model, @required this.context});
