@@ -7468,39 +7468,39 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background com.one.validator:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit com.one.validator:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked com.one.validator:backgroundStacked}</code></td><td>Specifies a background drawable for a second stacked row of the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.one.validator:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.one.validator:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
+     * <tr><td><code>{@link #ActionBar_background com.prarysoft.one.validator:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.prarysoft.one.validator:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.prarysoft.one.validator:backgroundStacked}</code></td><td>Specifies a background drawable for a second stacked row of the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.prarysoft.one.validator:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.prarysoft.one.validator:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
      * are present.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.one.validator:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight com.one.validator:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart com.one.validator:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.one.validator:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.prarysoft.one.validator:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.prarysoft.one.validator:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.prarysoft.one.validator:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.prarysoft.one.validator:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
      * is present, such as the Up button.</td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.one.validator:customNavigationLayout}</code></td><td>Specifies a layout for custom navigation.</td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions com.one.validator:displayOptions}</code></td><td>Options affecting how the action bar is displayed.</td></tr>
-     * <tr><td><code>{@link #ActionBar_divider com.one.validator:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
-     * <tr><td><code>{@link #ActionBar_height com.one.validator:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.one.validator:hideOnContentScroll}</code></td><td>Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.one.validator:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout com.one.validator:homeLayout}</code></td><td>Specifies a layout to use for the "home" section of the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.one.validator:icon}</code></td><td>Icon drawable to display at the start of this view.</td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.one.validator:indeterminateProgressStyle}</code></td><td>Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding com.one.validator:itemPadding}</code></td><td>Specifies padding that should be applied to the left and right sides of
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.prarysoft.one.validator:customNavigationLayout}</code></td><td>Specifies a layout for custom navigation.</td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.prarysoft.one.validator:displayOptions}</code></td><td>Options affecting how the action bar is displayed.</td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.prarysoft.one.validator:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.prarysoft.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #ActionBar_height com.prarysoft.one.validator:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.prarysoft.one.validator:hideOnContentScroll}</code></td><td>Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.prarysoft.one.validator:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.prarysoft.one.validator:homeLayout}</code></td><td>Specifies a layout to use for the "home" section of the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.prarysoft.one.validator:icon}</code></td><td>Icon drawable to display at the start of this view.</td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.prarysoft.one.validator:indeterminateProgressStyle}</code></td><td>Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.prarysoft.one.validator:itemPadding}</code></td><td>Specifies padding that should be applied to the left and right sides of
      * system-provided items in the bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_logo com.one.validator:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode com.one.validator:navigationMode}</code></td><td>The type of navigation to use.</td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme com.one.validator:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * <tr><td><code>{@link #ActionBar_logo com.prarysoft.one.validator:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.prarysoft.one.validator:navigationMode}</code></td><td>The type of navigation to use.</td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.prarysoft.one.validator:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding com.one.validator:progressBarPadding}</code></td><td>Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle com.one.validator:progressBarStyle}</code></td><td>Specifies a style resource to use for an embedded progress bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle com.one.validator:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.one.validator:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
-     * <tr><td><code>{@link #ActionBar_title com.one.validator:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle com.one.validator:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.prarysoft.one.validator:progressBarPadding}</code></td><td>Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.prarysoft.one.validator:progressBarStyle}</code></td><td>Specifies a style resource to use for an embedded progress bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.prarysoft.one.validator:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.prarysoft.one.validator:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
+     * <tr><td><code>{@link #ActionBar_title com.prarysoft.one.validator:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.prarysoft.one.validator:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -7552,7 +7552,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:background
+     * @attr name com.prarysoft.one.validator:background
      */
     public static final int ActionBar_background=0;
     /**
@@ -7568,7 +7568,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:backgroundSplit
+     * @attr name com.prarysoft.one.validator:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
@@ -7584,7 +7584,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:backgroundStacked
+     * @attr name com.prarysoft.one.validator:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
@@ -7599,7 +7599,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentInsetEnd
+     * @attr name com.prarysoft.one.validator:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
@@ -7614,7 +7614,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentInsetEndWithActions
+     * @attr name com.prarysoft.one.validator:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
@@ -7629,7 +7629,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentInsetLeft
+     * @attr name com.prarysoft.one.validator:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
@@ -7644,7 +7644,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentInsetRight
+     * @attr name com.prarysoft.one.validator:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
@@ -7659,7 +7659,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentInsetStart
+     * @attr name com.prarysoft.one.validator:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
@@ -7674,7 +7674,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentInsetStartWithNavigation
+     * @attr name com.prarysoft.one.validator:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
@@ -7687,7 +7687,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:customNavigationLayout
+     * @attr name com.prarysoft.one.validator:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
@@ -7710,7 +7710,7 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:displayOptions
+     * @attr name com.prarysoft.one.validator:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
@@ -7723,7 +7723,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:divider
+     * @attr name com.prarysoft.one.validator:divider
      */
     public static final int ActionBar_divider=11;
     /**
@@ -7737,7 +7737,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:elevation
+     * @attr name com.prarysoft.one.validator:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
@@ -7751,7 +7751,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:height
+     * @attr name com.prarysoft.one.validator:height
      */
     public static final int ActionBar_height=13;
     /**
@@ -7762,7 +7762,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:hideOnContentScroll
+     * @attr name com.prarysoft.one.validator:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
@@ -7775,7 +7775,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:homeAsUpIndicator
+     * @attr name com.prarysoft.one.validator:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
@@ -7788,7 +7788,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:homeLayout
+     * @attr name com.prarysoft.one.validator:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
@@ -7801,7 +7801,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:icon
+     * @attr name com.prarysoft.one.validator:icon
      */
     public static final int ActionBar_icon=17;
     /**
@@ -7814,7 +7814,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:indeterminateProgressStyle
+     * @attr name com.prarysoft.one.validator:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
@@ -7829,7 +7829,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:itemPadding
+     * @attr name com.prarysoft.one.validator:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
@@ -7842,7 +7842,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:logo
+     * @attr name com.prarysoft.one.validator:logo
      */
     public static final int ActionBar_logo=20;
     /**
@@ -7861,7 +7861,7 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td>The action bar will use a series of horizontal tabs for navigation.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:navigationMode
+     * @attr name com.prarysoft.one.validator:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
@@ -7875,7 +7875,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:popupTheme
+     * @attr name com.prarysoft.one.validator:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
@@ -7889,7 +7889,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:progressBarPadding
+     * @attr name com.prarysoft.one.validator:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
@@ -7902,7 +7902,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:progressBarStyle
+     * @attr name com.prarysoft.one.validator:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
@@ -7913,7 +7913,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:subtitle
+     * @attr name com.prarysoft.one.validator:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
@@ -7926,7 +7926,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:subtitleTextStyle
+     * @attr name com.prarysoft.one.validator:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
@@ -7937,7 +7937,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:title
+     * @attr name com.prarysoft.one.validator:title
      */
     public static final int ActionBar_title=27;
     /**
@@ -7950,7 +7950,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:titleTextStyle
+     * @attr name com.prarysoft.one.validator:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -8032,12 +8032,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background com.one.validator:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit com.one.validator:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout com.one.validator:closeItemLayout}</code></td><td>Specifies a layout to use for the "close" item at the starting edge.</td></tr>
-     * <tr><td><code>{@link #ActionMode_height com.one.validator:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.one.validator:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle com.one.validator:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.prarysoft.one.validator:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.prarysoft.one.validator:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.prarysoft.one.validator:closeItemLayout}</code></td><td>Specifies a layout to use for the "close" item at the starting edge.</td></tr>
+     * <tr><td><code>{@link #ActionMode_height com.prarysoft.one.validator:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.prarysoft.one.validator:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.prarysoft.one.validator:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -8060,7 +8060,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:background
+     * @attr name com.prarysoft.one.validator:background
      */
     public static final int ActionMode_background=0;
     /**
@@ -8076,7 +8076,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:backgroundSplit
+     * @attr name com.prarysoft.one.validator:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
@@ -8089,7 +8089,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:closeItemLayout
+     * @attr name com.prarysoft.one.validator:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
@@ -8103,7 +8103,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:height
+     * @attr name com.prarysoft.one.validator:height
      */
     public static final int ActionMode_height=3;
     /**
@@ -8116,7 +8116,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:subtitleTextStyle
+     * @attr name com.prarysoft.one.validator:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
@@ -8129,7 +8129,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:titleTextStyle
+     * @attr name com.prarysoft.one.validator:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -8139,8 +8139,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.one.validator:expandActivityOverflowButtonDrawable}</code></td><td>The drawable to show in the button for expanding the activities overflow popup.</td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.one.validator:initialActivityCount}</code></td><td>The maximal number of items initially shown in the activity list.</td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.prarysoft.one.validator:expandActivityOverflowButtonDrawable}</code></td><td>The drawable to show in the button for expanding the activities overflow popup.</td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.prarysoft.one.validator:initialActivityCount}</code></td><td>The maximal number of items initially shown in the activity list.</td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
@@ -8162,7 +8162,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:expandActivityOverflowButtonDrawable
+     * @attr name com.prarysoft.one.validator:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
@@ -8173,7 +8173,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:initialActivityCount
+     * @attr name com.prarysoft.one.validator:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -8184,13 +8184,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.one.validator:buttonIconDimen}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.one.validator:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout com.one.validator:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout com.one.validator:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.one.validator:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle com.one.validator:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.one.validator:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.prarysoft.one.validator:buttonIconDimen}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.prarysoft.one.validator:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout com.prarysoft.one.validator:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout com.prarysoft.one.validator:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.prarysoft.one.validator:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle com.prarysoft.one.validator:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.prarysoft.one.validator:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonIconDimen
@@ -8218,7 +8218,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#buttonIconDimen}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#buttonIconDimen}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8227,11 +8227,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:buttonIconDimen
+     * @attr name com.prarysoft.one.validator:buttonIconDimen
      */
     public static final int AlertDialog_buttonIconDimen=1;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8239,11 +8239,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:buttonPanelSideLayout
+     * @attr name com.prarysoft.one.validator:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8251,11 +8251,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:listItemLayout
+     * @attr name com.prarysoft.one.validator:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8263,11 +8263,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:listLayout
+     * @attr name com.prarysoft.one.validator:listLayout
      */
     public static final int AlertDialog_listLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8275,21 +8275,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:multiChoiceItemLayout
+     * @attr name com.prarysoft.one.validator:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=5;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:showTitle
+     * @attr name com.prarysoft.one.validator:showTitle
      */
     public static final int AlertDialog_showTitle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8297,7 +8297,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:singleChoiceItemLayout
+     * @attr name com.prarysoft.one.validator:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=7;
     /**
@@ -8523,12 +8523,12 @@ public final class R {
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation com.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
-     * <tr><td><code>{@link #AppBarLayout_expanded com.one.validator:expanded}</code></td><td>The initial expanded state for the AppBarLayout.</td></tr>
-     * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.one.validator:liftOnScroll}</code></td><td>Whether the {@link AppBarLayout} should lift on scroll.</td></tr>
-     * <tr><td><code>{@link #AppBarLayout_liftOnScrollTargetViewId com.one.validator:liftOnScrollTargetViewId}</code></td><td>The id of the view that the {@link AppBarLayout} should use to determine whether
+     * <tr><td><code>{@link #AppBarLayout_elevation com.prarysoft.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #AppBarLayout_expanded com.prarysoft.one.validator:expanded}</code></td><td>The initial expanded state for the AppBarLayout.</td></tr>
+     * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.prarysoft.one.validator:liftOnScroll}</code></td><td>Whether the {@link AppBarLayout} should lift on scroll.</td></tr>
+     * <tr><td><code>{@link #AppBarLayout_liftOnScrollTargetViewId com.prarysoft.one.validator:liftOnScrollTargetViewId}</code></td><td>The id of the view that the {@link AppBarLayout} should use to determine whether
      * it should be lifted (i.e., only if {@link R.attr#liftOnScroll} is set to true).</td></tr>
-     * <tr><td><code>{@link #AppBarLayout_statusBarForeground com.one.validator:statusBarForeground}</code></td><td>The drawable to display in front of the layout's content, but behind the status bar.</td></tr>
+     * <tr><td><code>{@link #AppBarLayout_statusBarForeground com.prarysoft.one.validator:statusBarForeground}</code></td><td>The drawable to display in front of the layout's content, but behind the status bar.</td></tr>
      * </table>
      * @see #AppBarLayout_android_background
      * @see #AppBarLayout_android_touchscreenBlocksFocus
@@ -8589,7 +8589,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:elevation
+     * @attr name com.prarysoft.one.validator:elevation
      */
     public static final int AppBarLayout_elevation=3;
     /**
@@ -8601,7 +8601,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:expanded
+     * @attr name com.prarysoft.one.validator:expanded
      */
     public static final int AppBarLayout_expanded=4;
     /**
@@ -8617,7 +8617,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:liftOnScroll
+     * @attr name com.prarysoft.one.validator:liftOnScroll
      */
     public static final int AppBarLayout_liftOnScroll=5;
     /**
@@ -8633,7 +8633,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:liftOnScrollTargetViewId
+     * @attr name com.prarysoft.one.validator:liftOnScrollTargetViewId
      */
     public static final int AppBarLayout_liftOnScrollTargetViewId=6;
     /**
@@ -8646,7 +8646,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:statusBarForeground
+     * @attr name com.prarysoft.one.validator:statusBarForeground
      */
     public static final int AppBarLayout_statusBarForeground=7;
     /**
@@ -8656,11 +8656,11 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.one.validator:state_collapsed}</code></td><td>@deprecated in favor of {@link R.attr#state_lifted}.</td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.one.validator:state_collapsible}</code></td><td>@deprecated in favor of {@link R.attr#state_liftable}.</td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable com.one.validator:state_liftable}</code></td><td>State value for {@link com.google.android.material.appbar.AppBarLayout} set when the view
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.prarysoft.one.validator:state_collapsed}</code></td><td>@deprecated in favor of {@link R.attr#state_lifted}.</td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.prarysoft.one.validator:state_collapsible}</code></td><td>@deprecated in favor of {@link R.attr#state_liftable}.</td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable com.prarysoft.one.validator:state_liftable}</code></td><td>State value for {@link com.google.android.material.appbar.AppBarLayout} set when the view
      * is liftable (e.g., elevates on collapse or scroll).</td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted com.one.validator:state_lifted}</code></td><td>State value for {@link com.google.android.material.appbar.AppBarLayout} set when the view
+     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted com.prarysoft.one.validator:state_lifted}</code></td><td>State value for {@link com.google.android.material.appbar.AppBarLayout} set when the view
      * is lifted (elevated).</td></tr>
      * </table>
      * @see #AppBarLayoutStates_state_collapsed
@@ -8680,7 +8680,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:state_collapsed
+     * @attr name com.prarysoft.one.validator:state_collapsed
      */
     @Deprecated
     public static final int AppBarLayoutStates_state_collapsed=0;
@@ -8692,7 +8692,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:state_collapsible
+     * @attr name com.prarysoft.one.validator:state_collapsible
      */
     @Deprecated
     public static final int AppBarLayoutStates_state_collapsible=1;
@@ -8705,7 +8705,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:state_liftable
+     * @attr name com.prarysoft.one.validator:state_liftable
      */
     public static final int AppBarLayoutStates_state_liftable=2;
     /**
@@ -8717,7 +8717,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:state_lifted
+     * @attr name com.prarysoft.one.validator:state_lifted
      */
     public static final int AppBarLayoutStates_state_lifted=3;
     /**
@@ -8727,8 +8727,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.one.validator:layout_scrollFlags}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.one.validator:layout_scrollInterpolator}</code></td><td>An interpolator to use when scrolling this View.</td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.prarysoft.one.validator:layout_scrollFlags}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.prarysoft.one.validator:layout_scrollInterpolator}</code></td><td>An interpolator to use when scrolling this View.</td></tr>
      * </table>
      * @see #AppBarLayout_Layout_layout_scrollFlags
      * @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -8737,7 +8737,7 @@ public final class R {
       0x7f030171, 0x7f030172
     };
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#layout_scrollFlags}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#layout_scrollFlags}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -8766,7 +8766,7 @@ public final class R {
      * top and bottom margins, as opposed to the edges of the view itself.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:layout_scrollFlags
+     * @attr name com.prarysoft.one.validator:layout_scrollFlags
      */
     public static final int AppBarLayout_Layout_layout_scrollFlags=0;
     /**
@@ -8780,7 +8780,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:layout_scrollInterpolator
+     * @attr name com.prarysoft.one.validator:layout_scrollInterpolator
      */
     public static final int AppBarLayout_Layout_layout_scrollInterpolator=1;
     /**
@@ -8791,9 +8791,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.one.validator:srcCompat}</code></td><td>Sets a drawable as the content of this ImageView.</td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint com.one.validator:tint}</code></td><td>Tint to apply to the image source.</td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode com.one.validator:tintMode}</code></td><td>Blending mode used to apply the image source tint.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.prarysoft.one.validator:srcCompat}</code></td><td>Sets a drawable as the content of this ImageView.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.prarysoft.one.validator:tint}</code></td><td>Tint to apply to the image source.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.prarysoft.one.validator:tintMode}</code></td><td>Blending mode used to apply the image source tint.</td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -8829,7 +8829,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:srcCompat
+     * @attr name com.prarysoft.one.validator:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
@@ -8841,7 +8841,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:tint
+     * @attr name com.prarysoft.one.validator:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
@@ -8868,7 +8868,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:tintMode
+     * @attr name com.prarysoft.one.validator:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -8879,9 +8879,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.one.validator:tickMark}</code></td><td>Drawable displayed at each progress position on a seekbar.</td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.one.validator:tickMarkTint}</code></td><td>Tint to apply to the tick mark drawable.</td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.one.validator:tickMarkTintMode}</code></td><td>Blending mode used to apply the tick mark tint.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.prarysoft.one.validator:tickMark}</code></td><td>Drawable displayed at each progress position on a seekbar.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.prarysoft.one.validator:tickMarkTint}</code></td><td>Tint to apply to the tick mark drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.prarysoft.one.validator:tickMarkTintMode}</code></td><td>Blending mode used to apply the tick mark tint.</td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -8913,7 +8913,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:tickMark
+     * @attr name com.prarysoft.one.validator:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
@@ -8925,7 +8925,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:tickMarkTint
+     * @attr name com.prarysoft.one.validator:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
@@ -8952,7 +8952,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:tickMarkTintMode
+     * @attr name com.prarysoft.one.validator:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -9092,29 +9092,29 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.one.validator:autoSizeMaxTextSize}</code></td><td>The maximum text size constraint to be used when auto-sizing text.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.one.validator:autoSizeMinTextSize}</code></td><td>The minimum text size constraint to be used when auto-sizing text.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.one.validator:autoSizePresetSizes}</code></td><td>Resource array of dimensions to be used in conjunction with
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.prarysoft.one.validator:autoSizeMaxTextSize}</code></td><td>The maximum text size constraint to be used when auto-sizing text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.prarysoft.one.validator:autoSizeMinTextSize}</code></td><td>The minimum text size constraint to be used when auto-sizing text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.prarysoft.one.validator:autoSizePresetSizes}</code></td><td>Resource array of dimensions to be used in conjunction with
      * <code>autoSizeTextType</code> set to <code>uniform</code>.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.one.validator:autoSizeStepGranularity}</code></td><td>Specify the auto-size step size if <code>autoSizeTextType</code> is set to
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.prarysoft.one.validator:autoSizeStepGranularity}</code></td><td>Specify the auto-size step size if <code>autoSizeTextType</code> is set to
      * <code>uniform</code>.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.one.validator:autoSizeTextType}</code></td><td>Specify the type of auto-size.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableBottomCompat com.one.validator:drawableBottomCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableEndCompat com.one.validator:drawableEndCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableLeftCompat com.one.validator:drawableLeftCompat}</code></td><td>Compound drawables allowing the use of vector drawable when running on older versions
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.prarysoft.one.validator:autoSizeTextType}</code></td><td>Specify the type of auto-size.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableBottomCompat com.prarysoft.one.validator:drawableBottomCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableEndCompat com.prarysoft.one.validator:drawableEndCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableLeftCompat com.prarysoft.one.validator:drawableLeftCompat}</code></td><td>Compound drawables allowing the use of vector drawable when running on older versions
      * of the platform.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableRightCompat com.one.validator:drawableRightCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableStartCompat com.one.validator:drawableStartCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableTint com.one.validator:drawableTint}</code></td><td>Tint to apply to the compound (left, top, etc.) drawables.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableTintMode com.one.validator:drawableTintMode}</code></td><td>Blending mode used to apply the compound (left, top, etc.) drawables tint.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableTopCompat com.one.validator:drawableTopCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.one.validator:firstBaselineToTopHeight}</code></td><td>Distance from the top of the TextView to the first text baseline.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.one.validator:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontVariationSettings com.one.validator:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.one.validator:lastBaselineToBottomHeight}</code></td><td>Distance from the bottom of the TextView to the last text baseline.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.one.validator:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.one.validator:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textLocale com.one.validator:textLocale}</code></td><td>Set the textLocale by a comma-separated language tag string,
+     * <tr><td><code>{@link #AppCompatTextView_drawableRightCompat com.prarysoft.one.validator:drawableRightCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableStartCompat com.prarysoft.one.validator:drawableStartCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableTint com.prarysoft.one.validator:drawableTint}</code></td><td>Tint to apply to the compound (left, top, etc.) drawables.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableTintMode com.prarysoft.one.validator:drawableTintMode}</code></td><td>Blending mode used to apply the compound (left, top, etc.) drawables tint.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableTopCompat com.prarysoft.one.validator:drawableTopCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.prarysoft.one.validator:firstBaselineToTopHeight}</code></td><td>Distance from the top of the TextView to the first text baseline.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.prarysoft.one.validator:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontVariationSettings com.prarysoft.one.validator:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.prarysoft.one.validator:lastBaselineToBottomHeight}</code></td><td>Distance from the bottom of the TextView to the last text baseline.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.prarysoft.one.validator:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.prarysoft.one.validator:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textLocale com.prarysoft.one.validator:textLocale}</code></td><td>Set the textLocale by a comma-separated language tag string,
      * for example "ja-JP,zh-CN".</td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
@@ -9170,7 +9170,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:autoSizeMaxTextSize
+     * @attr name com.prarysoft.one.validator:autoSizeMaxTextSize
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
@@ -9184,7 +9184,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:autoSizeMinTextSize
+     * @attr name com.prarysoft.one.validator:autoSizeMinTextSize
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
@@ -9199,7 +9199,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:autoSizePresetSizes
+     * @attr name com.prarysoft.one.validator:autoSizePresetSizes
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
@@ -9215,7 +9215,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:autoSizeStepGranularity
+     * @attr name com.prarysoft.one.validator:autoSizeStepGranularity
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
@@ -9235,11 +9235,11 @@ public final class R {
      * container.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:autoSizeTextType
+     * @attr name com.prarysoft.one.validator:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#drawableBottomCompat}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#drawableBottomCompat}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9247,11 +9247,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:drawableBottomCompat
+     * @attr name com.prarysoft.one.validator:drawableBottomCompat
      */
     public static final int AppCompatTextView_drawableBottomCompat=6;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#drawableEndCompat}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#drawableEndCompat}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9259,7 +9259,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:drawableEndCompat
+     * @attr name com.prarysoft.one.validator:drawableEndCompat
      */
     public static final int AppCompatTextView_drawableEndCompat=7;
     /**
@@ -9273,11 +9273,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:drawableLeftCompat
+     * @attr name com.prarysoft.one.validator:drawableLeftCompat
      */
     public static final int AppCompatTextView_drawableLeftCompat=8;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#drawableRightCompat}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#drawableRightCompat}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9285,11 +9285,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:drawableRightCompat
+     * @attr name com.prarysoft.one.validator:drawableRightCompat
      */
     public static final int AppCompatTextView_drawableRightCompat=9;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#drawableStartCompat}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#drawableStartCompat}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9297,7 +9297,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:drawableStartCompat
+     * @attr name com.prarysoft.one.validator:drawableStartCompat
      */
     public static final int AppCompatTextView_drawableStartCompat=10;
     /**
@@ -9309,7 +9309,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:drawableTint
+     * @attr name com.prarysoft.one.validator:drawableTint
      */
     public static final int AppCompatTextView_drawableTint=11;
     /**
@@ -9336,11 +9336,11 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:drawableTintMode
+     * @attr name com.prarysoft.one.validator:drawableTintMode
      */
     public static final int AppCompatTextView_drawableTintMode=12;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#drawableTopCompat}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#drawableTopCompat}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9348,7 +9348,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:drawableTopCompat
+     * @attr name com.prarysoft.one.validator:drawableTopCompat
      */
     public static final int AppCompatTextView_drawableTopCompat=13;
     /**
@@ -9363,7 +9363,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:firstBaselineToTopHeight
+     * @attr name com.prarysoft.one.validator:firstBaselineToTopHeight
      */
     public static final int AppCompatTextView_firstBaselineToTopHeight=14;
     /**
@@ -9374,7 +9374,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:fontFamily
+     * @attr name com.prarysoft.one.validator:fontFamily
      */
     public static final int AppCompatTextView_fontFamily=15;
     /**
@@ -9385,7 +9385,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:fontVariationSettings
+     * @attr name com.prarysoft.one.validator:fontVariationSettings
      */
     public static final int AppCompatTextView_fontVariationSettings=16;
     /**
@@ -9400,7 +9400,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:lastBaselineToBottomHeight
+     * @attr name com.prarysoft.one.validator:lastBaselineToBottomHeight
      */
     public static final int AppCompatTextView_lastBaselineToBottomHeight=17;
     /**
@@ -9415,7 +9415,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:lineHeight
+     * @attr name com.prarysoft.one.validator:lineHeight
      */
     public static final int AppCompatTextView_lineHeight=18;
     /**
@@ -9430,7 +9430,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:textAllCaps
+     * @attr name com.prarysoft.one.validator:textAllCaps
      */
     public static final int AppCompatTextView_textAllCaps=19;
     /**
@@ -9445,7 +9445,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:textLocale
+     * @attr name com.prarysoft.one.validator:textLocale
      */
     public static final int AppCompatTextView_textLocale=20;
     /**
@@ -9457,146 +9457,146 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.one.validator:actionBarDivider}</code></td><td>Custom divider drawable to use for elements in the action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.one.validator:actionBarItemBackground}</code></td><td>Custom item state list drawable background for action bar items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.one.validator:actionBarPopupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.prarysoft.one.validator:actionBarDivider}</code></td><td>Custom divider drawable to use for elements in the action bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.prarysoft.one.validator:actionBarItemBackground}</code></td><td>Custom item state list drawable background for action bar items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.prarysoft.one.validator:actionBarPopupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.one.validator:actionBarSize}</code></td><td>Size of the Action Bar, including the contextual
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.prarysoft.one.validator:actionBarSize}</code></td><td>Size of the Action Bar, including the contextual
      * bar used to present Action Modes.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.one.validator:actionBarSplitStyle}</code></td><td>Reference to a style for the split Action Bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.one.validator:actionBarStyle}</code></td><td>Reference to a style for the Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.one.validator:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.one.validator:actionBarTabStyle}</code></td><td>Default style for tabs within an action bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.one.validator:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.one.validator:actionBarTheme}</code></td><td>Reference to a theme that should be used to inflate the
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.prarysoft.one.validator:actionBarSplitStyle}</code></td><td>Reference to a style for the split Action Bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.prarysoft.one.validator:actionBarStyle}</code></td><td>Reference to a style for the Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.prarysoft.one.validator:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.prarysoft.one.validator:actionBarTabStyle}</code></td><td>Default style for tabs within an action bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.prarysoft.one.validator:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.prarysoft.one.validator:actionBarTheme}</code></td><td>Reference to a theme that should be used to inflate the
      * action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.one.validator:actionBarWidgetTheme}</code></td><td>Reference to a theme that should be used to inflate widgets
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.prarysoft.one.validator:actionBarWidgetTheme}</code></td><td>Reference to a theme that should be used to inflate widgets
      * and layouts destined for the action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.one.validator:actionButtonStyle}</code></td><td>Default action button style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.one.validator:actionDropDownStyle}</code></td><td>Default ActionBar dropdown style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.one.validator:actionMenuTextAppearance}</code></td><td>TextAppearance style that will be applied to text that
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.prarysoft.one.validator:actionButtonStyle}</code></td><td>Default action button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.prarysoft.one.validator:actionDropDownStyle}</code></td><td>Default ActionBar dropdown style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.prarysoft.one.validator:actionMenuTextAppearance}</code></td><td>TextAppearance style that will be applied to text that
      * appears within action menu items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.one.validator:actionMenuTextColor}</code></td><td>Color for text that appears within action menu items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.one.validator:actionModeBackground}</code></td><td>Background drawable to use for action mode UI</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.one.validator:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.one.validator:actionModeCloseDrawable}</code></td><td>Drawable to use for the close action mode button</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.one.validator:actionModeCopyDrawable}</code></td><td>Drawable to use for the Copy action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.one.validator:actionModeCutDrawable}</code></td><td>Drawable to use for the Cut action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.one.validator:actionModeFindDrawable}</code></td><td>Drawable to use for the Find action button in WebView selection action modes</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.one.validator:actionModePasteDrawable}</code></td><td>Drawable to use for the Paste action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.one.validator:actionModePopupWindowStyle}</code></td><td>PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.one.validator:actionModeSelectAllDrawable}</code></td><td>Drawable to use for the Select all action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.one.validator:actionModeShareDrawable}</code></td><td>Drawable to use for the Share action button in WebView selection action modes</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.one.validator:actionModeSplitBackground}</code></td><td>Background drawable to use for action mode UI in the lower split bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.one.validator:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.one.validator:actionModeWebSearchDrawable}</code></td><td>Drawable to use for the Web Search action button in WebView selection action modes</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.one.validator:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.one.validator:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.one.validator:activityChooserViewStyle}</code></td><td>Default ActivityChooserView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.one.validator:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.one.validator:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.one.validator:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.one.validator:alertDialogTheme}</code></td><td>Theme to use for alert dialogs spawned from this theme.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.one.validator:autoCompleteTextViewStyle}</code></td><td>Default AutoCompleteTextView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.one.validator:borderlessButtonStyle}</code></td><td>Style for buttons without an explicit border, often used in groups.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.one.validator:buttonBarButtonStyle}</code></td><td>Style for buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.one.validator:buttonBarNegativeButtonStyle}</code></td><td>Style for the "negative" buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.one.validator:buttonBarNeutralButtonStyle}</code></td><td>Style for the "neutral" buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.one.validator:buttonBarPositiveButtonStyle}</code></td><td>Style for the "positive" buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.one.validator:buttonBarStyle}</code></td><td>Style for button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.one.validator:buttonStyle}</code></td><td>Normal Button style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.one.validator:buttonStyleSmall}</code></td><td>Small Button style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.one.validator:checkboxStyle}</code></td><td>Default Checkbox style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.one.validator:checkedTextViewStyle}</code></td><td>Default CheckedTextView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.one.validator:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.one.validator:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.one.validator:colorButtonNormal}</code></td><td>The color applied to framework buttons in their normal state.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.one.validator:colorControlActivated}</code></td><td>The color applied to framework controls in their activated (ex.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.one.validator:colorControlHighlight}</code></td><td>The color applied to framework control highlights (ex.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.one.validator:colorControlNormal}</code></td><td>The color applied to framework controls in their normal state.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError com.one.validator:colorError}</code></td><td>Color used for error states and things that need to be drawn to
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.prarysoft.one.validator:actionMenuTextColor}</code></td><td>Color for text that appears within action menu items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.prarysoft.one.validator:actionModeBackground}</code></td><td>Background drawable to use for action mode UI</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.prarysoft.one.validator:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.prarysoft.one.validator:actionModeCloseDrawable}</code></td><td>Drawable to use for the close action mode button</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.prarysoft.one.validator:actionModeCopyDrawable}</code></td><td>Drawable to use for the Copy action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.prarysoft.one.validator:actionModeCutDrawable}</code></td><td>Drawable to use for the Cut action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.prarysoft.one.validator:actionModeFindDrawable}</code></td><td>Drawable to use for the Find action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.prarysoft.one.validator:actionModePasteDrawable}</code></td><td>Drawable to use for the Paste action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.prarysoft.one.validator:actionModePopupWindowStyle}</code></td><td>PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.prarysoft.one.validator:actionModeSelectAllDrawable}</code></td><td>Drawable to use for the Select all action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.prarysoft.one.validator:actionModeShareDrawable}</code></td><td>Drawable to use for the Share action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.prarysoft.one.validator:actionModeSplitBackground}</code></td><td>Background drawable to use for action mode UI in the lower split bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.prarysoft.one.validator:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.prarysoft.one.validator:actionModeWebSearchDrawable}</code></td><td>Drawable to use for the Web Search action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.prarysoft.one.validator:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.prarysoft.one.validator:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.prarysoft.one.validator:activityChooserViewStyle}</code></td><td>Default ActivityChooserView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.prarysoft.one.validator:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.prarysoft.one.validator:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.prarysoft.one.validator:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.prarysoft.one.validator:alertDialogTheme}</code></td><td>Theme to use for alert dialogs spawned from this theme.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.prarysoft.one.validator:autoCompleteTextViewStyle}</code></td><td>Default AutoCompleteTextView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.prarysoft.one.validator:borderlessButtonStyle}</code></td><td>Style for buttons without an explicit border, often used in groups.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.prarysoft.one.validator:buttonBarButtonStyle}</code></td><td>Style for buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.prarysoft.one.validator:buttonBarNegativeButtonStyle}</code></td><td>Style for the "negative" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.prarysoft.one.validator:buttonBarNeutralButtonStyle}</code></td><td>Style for the "neutral" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.prarysoft.one.validator:buttonBarPositiveButtonStyle}</code></td><td>Style for the "positive" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.prarysoft.one.validator:buttonBarStyle}</code></td><td>Style for button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.prarysoft.one.validator:buttonStyle}</code></td><td>Normal Button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.prarysoft.one.validator:buttonStyleSmall}</code></td><td>Small Button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.prarysoft.one.validator:checkboxStyle}</code></td><td>Default Checkbox style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.prarysoft.one.validator:checkedTextViewStyle}</code></td><td>Default CheckedTextView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.prarysoft.one.validator:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.prarysoft.one.validator:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.prarysoft.one.validator:colorButtonNormal}</code></td><td>The color applied to framework buttons in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.prarysoft.one.validator:colorControlActivated}</code></td><td>The color applied to framework controls in their activated (ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.prarysoft.one.validator:colorControlHighlight}</code></td><td>The color applied to framework control highlights (ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.prarysoft.one.validator:colorControlNormal}</code></td><td>The color applied to framework controls in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError com.prarysoft.one.validator:colorError}</code></td><td>Color used for error states and things that need to be drawn to
      * the user's attention.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.one.validator:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.one.validator:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.one.validator:colorSwitchThumbNormal}</code></td><td>The color applied to framework switch thumbs in their normal state.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.one.validator:controlBackground}</code></td><td>The background used by framework controls.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.one.validator:dialogCornerRadius}</code></td><td>Preferred corner radius of dialogs.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.one.validator:dialogPreferredPadding}</code></td><td>Preferred padding for dialog content.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.one.validator:dialogTheme}</code></td><td>Theme to use for dialogs spawned from this theme.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.one.validator:dividerHorizontal}</code></td><td>A drawable that may be used as a horizontal divider between visual elements.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.one.validator:dividerVertical}</code></td><td>A drawable that may be used as a vertical divider between visual elements.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.one.validator:dropDownListViewStyle}</code></td><td>ListPopupWindow compatibility</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.one.validator:dropdownListPreferredItemHeight}</code></td><td>The preferred item height for dropdown lists.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.one.validator:editTextBackground}</code></td><td>EditText background drawable.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.one.validator:editTextColor}</code></td><td>EditText text foreground color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.one.validator:editTextStyle}</code></td><td>Default EditText style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.one.validator:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.one.validator:imageButtonStyle}</code></td><td>ImageButton background drawable.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.one.validator:listChoiceBackgroundIndicator}</code></td><td>Drawable used as a background for selected list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorMultipleAnimated com.one.validator:listChoiceIndicatorMultipleAnimated}</code></td><td>Animated Drawable to use for single choice indicators.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorSingleAnimated com.one.validator:listChoiceIndicatorSingleAnimated}</code></td><td>Animated Drawable to use for multiple choice indicators.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.one.validator:listDividerAlertDialog}</code></td><td>The list divider used in alert dialogs.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.one.validator:listMenuViewStyle}</code></td><td>Default menu-style ListView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.one.validator:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.one.validator:listPreferredItemHeight}</code></td><td>The preferred list item height.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.one.validator:listPreferredItemHeightLarge}</code></td><td>A larger, more robust list item height.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.one.validator:listPreferredItemHeightSmall}</code></td><td>A smaller, sleeker list item height.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingEnd com.one.validator:listPreferredItemPaddingEnd}</code></td><td>The preferred padding along the end edge of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.one.validator:listPreferredItemPaddingLeft}</code></td><td>The preferred padding along the left edge of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.one.validator:listPreferredItemPaddingRight}</code></td><td>The preferred padding along the right edge of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingStart com.one.validator:listPreferredItemPaddingStart}</code></td><td>The preferred padding along the start edge of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.one.validator:panelBackground}</code></td><td>The background of a panel when it is inset from the left and right edges of the screen.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.one.validator:panelMenuListTheme}</code></td><td>Default Panel Menu style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.one.validator:panelMenuListWidth}</code></td><td>Default Panel Menu width.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.one.validator:popupMenuStyle}</code></td><td>Default PopupMenu style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.one.validator:popupWindowStyle}</code></td><td>Default PopupWindow style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.one.validator:radioButtonStyle}</code></td><td>Default RadioButton style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.one.validator:ratingBarStyle}</code></td><td>Default RatingBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.one.validator:ratingBarStyleIndicator}</code></td><td>Indicator RatingBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.one.validator:ratingBarStyleSmall}</code></td><td>Small indicator RatingBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.one.validator:searchViewStyle}</code></td><td>Style for the search query widget.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.one.validator:seekBarStyle}</code></td><td>Default SeekBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.one.validator:selectableItemBackground}</code></td><td>A style that may be applied to buttons or other selectable items
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.prarysoft.one.validator:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.prarysoft.one.validator:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.prarysoft.one.validator:colorSwitchThumbNormal}</code></td><td>The color applied to framework switch thumbs in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.prarysoft.one.validator:controlBackground}</code></td><td>The background used by framework controls.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.prarysoft.one.validator:dialogCornerRadius}</code></td><td>Preferred corner radius of dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.prarysoft.one.validator:dialogPreferredPadding}</code></td><td>Preferred padding for dialog content.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.prarysoft.one.validator:dialogTheme}</code></td><td>Theme to use for dialogs spawned from this theme.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.prarysoft.one.validator:dividerHorizontal}</code></td><td>A drawable that may be used as a horizontal divider between visual elements.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.prarysoft.one.validator:dividerVertical}</code></td><td>A drawable that may be used as a vertical divider between visual elements.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.prarysoft.one.validator:dropDownListViewStyle}</code></td><td>ListPopupWindow compatibility</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.prarysoft.one.validator:dropdownListPreferredItemHeight}</code></td><td>The preferred item height for dropdown lists.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.prarysoft.one.validator:editTextBackground}</code></td><td>EditText background drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.prarysoft.one.validator:editTextColor}</code></td><td>EditText text foreground color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.prarysoft.one.validator:editTextStyle}</code></td><td>Default EditText style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.prarysoft.one.validator:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.prarysoft.one.validator:imageButtonStyle}</code></td><td>ImageButton background drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.prarysoft.one.validator:listChoiceBackgroundIndicator}</code></td><td>Drawable used as a background for selected list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorMultipleAnimated com.prarysoft.one.validator:listChoiceIndicatorMultipleAnimated}</code></td><td>Animated Drawable to use for single choice indicators.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorSingleAnimated com.prarysoft.one.validator:listChoiceIndicatorSingleAnimated}</code></td><td>Animated Drawable to use for multiple choice indicators.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.prarysoft.one.validator:listDividerAlertDialog}</code></td><td>The list divider used in alert dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.prarysoft.one.validator:listMenuViewStyle}</code></td><td>Default menu-style ListView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.prarysoft.one.validator:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.prarysoft.one.validator:listPreferredItemHeight}</code></td><td>The preferred list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.prarysoft.one.validator:listPreferredItemHeightLarge}</code></td><td>A larger, more robust list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.prarysoft.one.validator:listPreferredItemHeightSmall}</code></td><td>A smaller, sleeker list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingEnd com.prarysoft.one.validator:listPreferredItemPaddingEnd}</code></td><td>The preferred padding along the end edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.prarysoft.one.validator:listPreferredItemPaddingLeft}</code></td><td>The preferred padding along the left edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.prarysoft.one.validator:listPreferredItemPaddingRight}</code></td><td>The preferred padding along the right edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingStart com.prarysoft.one.validator:listPreferredItemPaddingStart}</code></td><td>The preferred padding along the start edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.prarysoft.one.validator:panelBackground}</code></td><td>The background of a panel when it is inset from the left and right edges of the screen.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.prarysoft.one.validator:panelMenuListTheme}</code></td><td>Default Panel Menu style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.prarysoft.one.validator:panelMenuListWidth}</code></td><td>Default Panel Menu width.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.prarysoft.one.validator:popupMenuStyle}</code></td><td>Default PopupMenu style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.prarysoft.one.validator:popupWindowStyle}</code></td><td>Default PopupWindow style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.prarysoft.one.validator:radioButtonStyle}</code></td><td>Default RadioButton style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.prarysoft.one.validator:ratingBarStyle}</code></td><td>Default RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.prarysoft.one.validator:ratingBarStyleIndicator}</code></td><td>Indicator RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.prarysoft.one.validator:ratingBarStyleSmall}</code></td><td>Small indicator RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.prarysoft.one.validator:searchViewStyle}</code></td><td>Style for the search query widget.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.prarysoft.one.validator:seekBarStyle}</code></td><td>Default SeekBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.prarysoft.one.validator:selectableItemBackground}</code></td><td>A style that may be applied to buttons or other selectable items
      * that should react to pressed and focus states, but that do not
      * have a clear visual border along the edges.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.one.validator:selectableItemBackgroundBorderless}</code></td><td>Background drawable for borderless standalone items that need focus/pressed states.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.one.validator:spinnerDropDownItemStyle}</code></td><td>Default Spinner style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.one.validator:spinnerStyle}</code></td><td>Default Spinner style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.one.validator:switchStyle}</code></td><td>Default style for the Switch widget.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.one.validator:textAppearanceLargePopupMenu}</code></td><td>Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.one.validator:textAppearanceListItem}</code></td><td>The preferred TextAppearance for the primary text of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.one.validator:textAppearanceListItemSecondary}</code></td><td>The preferred TextAppearance for the secondary text of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.one.validator:textAppearanceListItemSmall}</code></td><td>The preferred TextAppearance for the primary text of small list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.one.validator:textAppearancePopupMenuHeader}</code></td><td>Text color, typeface, size, and style for header text inside of a popup menu.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.one.validator:textAppearanceSearchResultSubtitle}</code></td><td>Text color, typeface, size, and style for system search result subtitle.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.one.validator:textAppearanceSearchResultTitle}</code></td><td>Text color, typeface, size, and style for system search result title.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.one.validator:textAppearanceSmallPopupMenu}</code></td><td>Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.one.validator:textColorAlertDialogListItem}</code></td><td>Color of list item text in alert dialogs.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.one.validator:textColorSearchUrl}</code></td><td>Text color for urls in search suggestions, used by things like global search</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.one.validator:toolbarNavigationButtonStyle}</code></td><td>Default Toolar NavigationButtonStyle</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.one.validator:toolbarStyle}</code></td><td>Default Toolbar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.one.validator:tooltipForegroundColor}</code></td><td>Foreground color to use for tooltips</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.one.validator:tooltipFrameBackground}</code></td><td>Background to use for tooltips</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.one.validator:viewInflaterClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.one.validator:windowActionBar}</code></td><td>Flag indicating whether this window should have an Action Bar
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.prarysoft.one.validator:selectableItemBackgroundBorderless}</code></td><td>Background drawable for borderless standalone items that need focus/pressed states.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.prarysoft.one.validator:spinnerDropDownItemStyle}</code></td><td>Default Spinner style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.prarysoft.one.validator:spinnerStyle}</code></td><td>Default Spinner style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.prarysoft.one.validator:switchStyle}</code></td><td>Default style for the Switch widget.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.prarysoft.one.validator:textAppearanceLargePopupMenu}</code></td><td>Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.prarysoft.one.validator:textAppearanceListItem}</code></td><td>The preferred TextAppearance for the primary text of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.prarysoft.one.validator:textAppearanceListItemSecondary}</code></td><td>The preferred TextAppearance for the secondary text of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.prarysoft.one.validator:textAppearanceListItemSmall}</code></td><td>The preferred TextAppearance for the primary text of small list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.prarysoft.one.validator:textAppearancePopupMenuHeader}</code></td><td>Text color, typeface, size, and style for header text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.prarysoft.one.validator:textAppearanceSearchResultSubtitle}</code></td><td>Text color, typeface, size, and style for system search result subtitle.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.prarysoft.one.validator:textAppearanceSearchResultTitle}</code></td><td>Text color, typeface, size, and style for system search result title.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.prarysoft.one.validator:textAppearanceSmallPopupMenu}</code></td><td>Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.prarysoft.one.validator:textColorAlertDialogListItem}</code></td><td>Color of list item text in alert dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.prarysoft.one.validator:textColorSearchUrl}</code></td><td>Text color for urls in search suggestions, used by things like global search</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.prarysoft.one.validator:toolbarNavigationButtonStyle}</code></td><td>Default Toolar NavigationButtonStyle</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.prarysoft.one.validator:toolbarStyle}</code></td><td>Default Toolbar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.prarysoft.one.validator:tooltipForegroundColor}</code></td><td>Foreground color to use for tooltips</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.prarysoft.one.validator:tooltipFrameBackground}</code></td><td>Background to use for tooltips</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.prarysoft.one.validator:viewInflaterClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.prarysoft.one.validator:windowActionBar}</code></td><td>Flag indicating whether this window should have an Action Bar
      * in place of the usual title bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.one.validator:windowActionBarOverlay}</code></td><td>Flag indicating whether this window's Action Bar should overlay
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.prarysoft.one.validator:windowActionBarOverlay}</code></td><td>Flag indicating whether this window's Action Bar should overlay
      * application content.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.one.validator:windowActionModeOverlay}</code></td><td>Flag indicating whether action modes should overlay window content
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.prarysoft.one.validator:windowActionModeOverlay}</code></td><td>Flag indicating whether action modes should overlay window content
      * when there is not reserved space for their UI (such as an Action Bar).</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.one.validator:windowFixedHeightMajor}</code></td><td>A fixed height for the window along the major axis of the screen,
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.prarysoft.one.validator:windowFixedHeightMajor}</code></td><td>A fixed height for the window along the major axis of the screen,
      * that is, when in portrait.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.one.validator:windowFixedHeightMinor}</code></td><td>A fixed height for the window along the minor axis of the screen,
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.prarysoft.one.validator:windowFixedHeightMinor}</code></td><td>A fixed height for the window along the minor axis of the screen,
      * that is, when in landscape.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.one.validator:windowFixedWidthMajor}</code></td><td>A fixed width for the window along the major axis of the screen,
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.prarysoft.one.validator:windowFixedWidthMajor}</code></td><td>A fixed width for the window along the major axis of the screen,
      * that is, when in landscape.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.one.validator:windowFixedWidthMinor}</code></td><td>A fixed width for the window along the minor axis of the screen,
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.prarysoft.one.validator:windowFixedWidthMinor}</code></td><td>A fixed width for the window along the minor axis of the screen,
      * that is, when in portrait.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.one.validator:windowMinWidthMajor}</code></td><td>The minimum width the window is allowed to be, along the major
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.prarysoft.one.validator:windowMinWidthMajor}</code></td><td>The minimum width the window is allowed to be, along the major
      * axis of the screen.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.one.validator:windowMinWidthMinor}</code></td><td>The minimum width the window is allowed to be, along the minor
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.prarysoft.one.validator:windowMinWidthMinor}</code></td><td>The minimum width the window is allowed to be, along the minor
      * axis of the screen.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.one.validator:windowNoTitle}</code></td><td>Flag indicating whether there should be no title on this window.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.prarysoft.one.validator:windowNoTitle}</code></td><td>Flag indicating whether there should be no title on this window.</td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -9790,7 +9790,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionBarDivider
+     * @attr name com.prarysoft.one.validator:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
@@ -9803,7 +9803,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionBarItemBackground
+     * @attr name com.prarysoft.one.validator:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
@@ -9817,7 +9817,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionBarPopupTheme
+     * @attr name com.prarysoft.one.validator:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
@@ -9840,7 +9840,7 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:actionBarSize
+     * @attr name com.prarysoft.one.validator:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
@@ -9856,7 +9856,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionBarSplitStyle
+     * @attr name com.prarysoft.one.validator:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
@@ -9869,11 +9869,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionBarStyle
+     * @attr name com.prarysoft.one.validator:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9881,7 +9881,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionBarTabBarStyle
+     * @attr name com.prarysoft.one.validator:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
@@ -9894,11 +9894,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionBarTabStyle
+     * @attr name com.prarysoft.one.validator:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9906,7 +9906,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionBarTabTextStyle
+     * @attr name com.prarysoft.one.validator:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
@@ -9921,7 +9921,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionBarTheme
+     * @attr name com.prarysoft.one.validator:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
@@ -9940,7 +9940,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionBarWidgetTheme
+     * @attr name com.prarysoft.one.validator:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
@@ -9953,7 +9953,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionButtonStyle
+     * @attr name com.prarysoft.one.validator:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
@@ -9966,7 +9966,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionDropDownStyle
+     * @attr name com.prarysoft.one.validator:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
@@ -9980,7 +9980,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionMenuTextAppearance
+     * @attr name com.prarysoft.one.validator:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
@@ -9996,7 +9996,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:actionMenuTextColor
+     * @attr name com.prarysoft.one.validator:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
@@ -10009,11 +10009,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionModeBackground
+     * @attr name com.prarysoft.one.validator:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10021,7 +10021,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionModeCloseButtonStyle
+     * @attr name com.prarysoft.one.validator:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
@@ -10034,7 +10034,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionModeCloseDrawable
+     * @attr name com.prarysoft.one.validator:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
@@ -10047,7 +10047,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionModeCopyDrawable
+     * @attr name com.prarysoft.one.validator:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
@@ -10060,7 +10060,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionModeCutDrawable
+     * @attr name com.prarysoft.one.validator:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
@@ -10073,7 +10073,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionModeFindDrawable
+     * @attr name com.prarysoft.one.validator:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
@@ -10086,7 +10086,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionModePasteDrawable
+     * @attr name com.prarysoft.one.validator:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
@@ -10099,7 +10099,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionModePopupWindowStyle
+     * @attr name com.prarysoft.one.validator:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
@@ -10112,7 +10112,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionModeSelectAllDrawable
+     * @attr name com.prarysoft.one.validator:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
@@ -10125,7 +10125,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionModeShareDrawable
+     * @attr name com.prarysoft.one.validator:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
@@ -10138,11 +10138,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionModeSplitBackground
+     * @attr name com.prarysoft.one.validator:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10150,7 +10150,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionModeStyle
+     * @attr name com.prarysoft.one.validator:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
@@ -10163,11 +10163,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionModeWebSearchDrawable
+     * @attr name com.prarysoft.one.validator:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10175,11 +10175,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionOverflowButtonStyle
+     * @attr name com.prarysoft.one.validator:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10187,7 +10187,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionOverflowMenuStyle
+     * @attr name com.prarysoft.one.validator:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
@@ -10200,11 +10200,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:activityChooserViewStyle
+     * @attr name com.prarysoft.one.validator:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10212,21 +10212,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:alertDialogButtonGroupStyle
+     * @attr name com.prarysoft.one.validator:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:alertDialogCenterButtons
+     * @attr name com.prarysoft.one.validator:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10234,7 +10234,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:alertDialogStyle
+     * @attr name com.prarysoft.one.validator:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
@@ -10247,7 +10247,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:alertDialogTheme
+     * @attr name com.prarysoft.one.validator:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
@@ -10260,7 +10260,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:autoCompleteTextViewStyle
+     * @attr name com.prarysoft.one.validator:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
@@ -10273,7 +10273,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:borderlessButtonStyle
+     * @attr name com.prarysoft.one.validator:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
@@ -10286,7 +10286,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:buttonBarButtonStyle
+     * @attr name com.prarysoft.one.validator:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
@@ -10299,7 +10299,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:buttonBarNegativeButtonStyle
+     * @attr name com.prarysoft.one.validator:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
@@ -10312,7 +10312,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:buttonBarNeutralButtonStyle
+     * @attr name com.prarysoft.one.validator:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
@@ -10325,7 +10325,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:buttonBarPositiveButtonStyle
+     * @attr name com.prarysoft.one.validator:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
@@ -10338,7 +10338,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:buttonBarStyle
+     * @attr name com.prarysoft.one.validator:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
@@ -10351,7 +10351,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:buttonStyle
+     * @attr name com.prarysoft.one.validator:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
@@ -10364,7 +10364,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:buttonStyleSmall
+     * @attr name com.prarysoft.one.validator:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
@@ -10377,7 +10377,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:checkboxStyle
+     * @attr name com.prarysoft.one.validator:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
@@ -10390,7 +10390,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:checkedTextViewStyle
+     * @attr name com.prarysoft.one.validator:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
@@ -10403,7 +10403,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:colorAccent
+     * @attr name com.prarysoft.one.validator:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
@@ -10415,7 +10415,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:colorBackgroundFloating
+     * @attr name com.prarysoft.one.validator:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
@@ -10427,7 +10427,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:colorButtonNormal
+     * @attr name com.prarysoft.one.validator:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
@@ -10439,7 +10439,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:colorControlActivated
+     * @attr name com.prarysoft.one.validator:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
@@ -10451,7 +10451,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:colorControlHighlight
+     * @attr name com.prarysoft.one.validator:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
@@ -10463,7 +10463,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:colorControlNormal
+     * @attr name com.prarysoft.one.validator:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
@@ -10480,7 +10480,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:colorError
+     * @attr name com.prarysoft.one.validator:colorError
      */
     public static final int AppCompatTheme_colorError=54;
     /**
@@ -10493,7 +10493,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:colorPrimary
+     * @attr name com.prarysoft.one.validator:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
@@ -10506,7 +10506,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:colorPrimaryDark
+     * @attr name com.prarysoft.one.validator:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
@@ -10518,7 +10518,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:colorSwitchThumbNormal
+     * @attr name com.prarysoft.one.validator:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
@@ -10531,7 +10531,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:controlBackground
+     * @attr name com.prarysoft.one.validator:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
@@ -10545,7 +10545,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:dialogCornerRadius
+     * @attr name com.prarysoft.one.validator:dialogCornerRadius
      */
     public static final int AppCompatTheme_dialogCornerRadius=59;
     /**
@@ -10559,7 +10559,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:dialogPreferredPadding
+     * @attr name com.prarysoft.one.validator:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=60;
     /**
@@ -10572,7 +10572,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:dialogTheme
+     * @attr name com.prarysoft.one.validator:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=61;
     /**
@@ -10585,7 +10585,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:dividerHorizontal
+     * @attr name com.prarysoft.one.validator:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=62;
     /**
@@ -10598,7 +10598,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:dividerVertical
+     * @attr name com.prarysoft.one.validator:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=63;
     /**
@@ -10611,7 +10611,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:dropDownListViewStyle
+     * @attr name com.prarysoft.one.validator:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=64;
     /**
@@ -10625,7 +10625,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:dropdownListPreferredItemHeight
+     * @attr name com.prarysoft.one.validator:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=65;
     /**
@@ -10638,7 +10638,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:editTextBackground
+     * @attr name com.prarysoft.one.validator:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=66;
     /**
@@ -10654,7 +10654,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:editTextColor
+     * @attr name com.prarysoft.one.validator:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=67;
     /**
@@ -10667,7 +10667,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:editTextStyle
+     * @attr name com.prarysoft.one.validator:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=68;
     /**
@@ -10680,7 +10680,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:homeAsUpIndicator
+     * @attr name com.prarysoft.one.validator:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=69;
     /**
@@ -10693,7 +10693,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:imageButtonStyle
+     * @attr name com.prarysoft.one.validator:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=70;
     /**
@@ -10706,7 +10706,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:listChoiceBackgroundIndicator
+     * @attr name com.prarysoft.one.validator:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=71;
     /**
@@ -10719,7 +10719,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:listChoiceIndicatorMultipleAnimated
+     * @attr name com.prarysoft.one.validator:listChoiceIndicatorMultipleAnimated
      */
     public static final int AppCompatTheme_listChoiceIndicatorMultipleAnimated=72;
     /**
@@ -10732,7 +10732,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:listChoiceIndicatorSingleAnimated
+     * @attr name com.prarysoft.one.validator:listChoiceIndicatorSingleAnimated
      */
     public static final int AppCompatTheme_listChoiceIndicatorSingleAnimated=73;
     /**
@@ -10745,7 +10745,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:listDividerAlertDialog
+     * @attr name com.prarysoft.one.validator:listDividerAlertDialog
      */
     public static final int AppCompatTheme_listDividerAlertDialog=74;
     /**
@@ -10758,11 +10758,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:listMenuViewStyle
+     * @attr name com.prarysoft.one.validator:listMenuViewStyle
      */
     public static final int AppCompatTheme_listMenuViewStyle=75;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10770,7 +10770,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:listPopupWindowStyle
+     * @attr name com.prarysoft.one.validator:listPopupWindowStyle
      */
     public static final int AppCompatTheme_listPopupWindowStyle=76;
     /**
@@ -10784,7 +10784,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:listPreferredItemHeight
+     * @attr name com.prarysoft.one.validator:listPreferredItemHeight
      */
     public static final int AppCompatTheme_listPreferredItemHeight=77;
     /**
@@ -10798,7 +10798,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:listPreferredItemHeightLarge
+     * @attr name com.prarysoft.one.validator:listPreferredItemHeightLarge
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=78;
     /**
@@ -10812,7 +10812,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:listPreferredItemHeightSmall
+     * @attr name com.prarysoft.one.validator:listPreferredItemHeightSmall
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=79;
     /**
@@ -10826,7 +10826,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:listPreferredItemPaddingEnd
+     * @attr name com.prarysoft.one.validator:listPreferredItemPaddingEnd
      */
     public static final int AppCompatTheme_listPreferredItemPaddingEnd=80;
     /**
@@ -10840,7 +10840,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:listPreferredItemPaddingLeft
+     * @attr name com.prarysoft.one.validator:listPreferredItemPaddingLeft
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=81;
     /**
@@ -10854,7 +10854,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:listPreferredItemPaddingRight
+     * @attr name com.prarysoft.one.validator:listPreferredItemPaddingRight
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=82;
     /**
@@ -10868,7 +10868,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:listPreferredItemPaddingStart
+     * @attr name com.prarysoft.one.validator:listPreferredItemPaddingStart
      */
     public static final int AppCompatTheme_listPreferredItemPaddingStart=83;
     /**
@@ -10881,7 +10881,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:panelBackground
+     * @attr name com.prarysoft.one.validator:panelBackground
      */
     public static final int AppCompatTheme_panelBackground=84;
     /**
@@ -10894,7 +10894,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:panelMenuListTheme
+     * @attr name com.prarysoft.one.validator:panelMenuListTheme
      */
     public static final int AppCompatTheme_panelMenuListTheme=85;
     /**
@@ -10908,7 +10908,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:panelMenuListWidth
+     * @attr name com.prarysoft.one.validator:panelMenuListWidth
      */
     public static final int AppCompatTheme_panelMenuListWidth=86;
     /**
@@ -10921,7 +10921,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:popupMenuStyle
+     * @attr name com.prarysoft.one.validator:popupMenuStyle
      */
     public static final int AppCompatTheme_popupMenuStyle=87;
     /**
@@ -10934,7 +10934,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:popupWindowStyle
+     * @attr name com.prarysoft.one.validator:popupWindowStyle
      */
     public static final int AppCompatTheme_popupWindowStyle=88;
     /**
@@ -10947,7 +10947,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:radioButtonStyle
+     * @attr name com.prarysoft.one.validator:radioButtonStyle
      */
     public static final int AppCompatTheme_radioButtonStyle=89;
     /**
@@ -10960,7 +10960,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:ratingBarStyle
+     * @attr name com.prarysoft.one.validator:ratingBarStyle
      */
     public static final int AppCompatTheme_ratingBarStyle=90;
     /**
@@ -10973,7 +10973,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:ratingBarStyleIndicator
+     * @attr name com.prarysoft.one.validator:ratingBarStyleIndicator
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=91;
     /**
@@ -10986,7 +10986,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:ratingBarStyleSmall
+     * @attr name com.prarysoft.one.validator:ratingBarStyleSmall
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=92;
     /**
@@ -10999,7 +10999,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:searchViewStyle
+     * @attr name com.prarysoft.one.validator:searchViewStyle
      */
     public static final int AppCompatTheme_searchViewStyle=93;
     /**
@@ -11012,7 +11012,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:seekBarStyle
+     * @attr name com.prarysoft.one.validator:seekBarStyle
      */
     public static final int AppCompatTheme_seekBarStyle=94;
     /**
@@ -11027,7 +11027,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:selectableItemBackground
+     * @attr name com.prarysoft.one.validator:selectableItemBackground
      */
     public static final int AppCompatTheme_selectableItemBackground=95;
     /**
@@ -11040,7 +11040,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:selectableItemBackgroundBorderless
+     * @attr name com.prarysoft.one.validator:selectableItemBackgroundBorderless
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=96;
     /**
@@ -11053,7 +11053,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:spinnerDropDownItemStyle
+     * @attr name com.prarysoft.one.validator:spinnerDropDownItemStyle
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=97;
     /**
@@ -11066,7 +11066,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:spinnerStyle
+     * @attr name com.prarysoft.one.validator:spinnerStyle
      */
     public static final int AppCompatTheme_spinnerStyle=98;
     /**
@@ -11079,7 +11079,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:switchStyle
+     * @attr name com.prarysoft.one.validator:switchStyle
      */
     public static final int AppCompatTheme_switchStyle=99;
     /**
@@ -11092,7 +11092,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:textAppearanceLargePopupMenu
+     * @attr name com.prarysoft.one.validator:textAppearanceLargePopupMenu
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=100;
     /**
@@ -11105,7 +11105,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:textAppearanceListItem
+     * @attr name com.prarysoft.one.validator:textAppearanceListItem
      */
     public static final int AppCompatTheme_textAppearanceListItem=101;
     /**
@@ -11118,7 +11118,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:textAppearanceListItemSecondary
+     * @attr name com.prarysoft.one.validator:textAppearanceListItemSecondary
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=102;
     /**
@@ -11131,7 +11131,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:textAppearanceListItemSmall
+     * @attr name com.prarysoft.one.validator:textAppearanceListItemSmall
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=103;
     /**
@@ -11144,7 +11144,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:textAppearancePopupMenuHeader
+     * @attr name com.prarysoft.one.validator:textAppearancePopupMenuHeader
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=104;
     /**
@@ -11157,7 +11157,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:textAppearanceSearchResultSubtitle
+     * @attr name com.prarysoft.one.validator:textAppearanceSearchResultSubtitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=105;
     /**
@@ -11170,7 +11170,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:textAppearanceSearchResultTitle
+     * @attr name com.prarysoft.one.validator:textAppearanceSearchResultTitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=106;
     /**
@@ -11183,7 +11183,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:textAppearanceSmallPopupMenu
+     * @attr name com.prarysoft.one.validator:textAppearanceSmallPopupMenu
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=107;
     /**
@@ -11199,7 +11199,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:textColorAlertDialogListItem
+     * @attr name com.prarysoft.one.validator:textColorAlertDialogListItem
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=108;
     /**
@@ -11215,7 +11215,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:textColorSearchUrl
+     * @attr name com.prarysoft.one.validator:textColorSearchUrl
      */
     public static final int AppCompatTheme_textColorSearchUrl=109;
     /**
@@ -11228,7 +11228,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:toolbarNavigationButtonStyle
+     * @attr name com.prarysoft.one.validator:toolbarNavigationButtonStyle
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=110;
     /**
@@ -11241,7 +11241,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:toolbarStyle
+     * @attr name com.prarysoft.one.validator:toolbarStyle
      */
     public static final int AppCompatTheme_toolbarStyle=111;
     /**
@@ -11257,7 +11257,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:tooltipForegroundColor
+     * @attr name com.prarysoft.one.validator:tooltipForegroundColor
      */
     public static final int AppCompatTheme_tooltipForegroundColor=112;
     /**
@@ -11270,17 +11270,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:tooltipFrameBackground
+     * @attr name com.prarysoft.one.validator:tooltipFrameBackground
      */
     public static final int AppCompatTheme_tooltipFrameBackground=113;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#viewInflaterClass}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#viewInflaterClass}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:viewInflaterClass
+     * @attr name com.prarysoft.one.validator:viewInflaterClass
      */
     public static final int AppCompatTheme_viewInflaterClass=114;
     /**
@@ -11292,7 +11292,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:windowActionBar
+     * @attr name com.prarysoft.one.validator:windowActionBar
      */
     public static final int AppCompatTheme_windowActionBar=115;
     /**
@@ -11305,7 +11305,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:windowActionBarOverlay
+     * @attr name com.prarysoft.one.validator:windowActionBarOverlay
      */
     public static final int AppCompatTheme_windowActionBarOverlay=116;
     /**
@@ -11317,7 +11317,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:windowActionModeOverlay
+     * @attr name com.prarysoft.one.validator:windowActionModeOverlay
      */
     public static final int AppCompatTheme_windowActionModeOverlay=117;
     /**
@@ -11337,7 +11337,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.one.validator:windowFixedHeightMajor
+     * @attr name com.prarysoft.one.validator:windowFixedHeightMajor
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=118;
     /**
@@ -11357,7 +11357,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.one.validator:windowFixedHeightMinor
+     * @attr name com.prarysoft.one.validator:windowFixedHeightMinor
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=119;
     /**
@@ -11377,7 +11377,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.one.validator:windowFixedWidthMajor
+     * @attr name com.prarysoft.one.validator:windowFixedWidthMajor
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=120;
     /**
@@ -11397,7 +11397,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.one.validator:windowFixedWidthMinor
+     * @attr name com.prarysoft.one.validator:windowFixedWidthMinor
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=121;
     /**
@@ -11418,7 +11418,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.one.validator:windowMinWidthMajor
+     * @attr name com.prarysoft.one.validator:windowMinWidthMajor
      */
     public static final int AppCompatTheme_windowMinWidthMajor=122;
     /**
@@ -11439,7 +11439,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.one.validator:windowMinWidthMinor
+     * @attr name com.prarysoft.one.validator:windowMinWidthMinor
      */
     public static final int AppCompatTheme_windowMinWidthMinor=123;
     /**
@@ -11450,7 +11450,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:windowNoTitle
+     * @attr name com.prarysoft.one.validator:windowNoTitle
      */
     public static final int AppCompatTheme_windowNoTitle=124;
     /**
@@ -11460,11 +11460,11 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #Badge_backgroundColor com.one.validator:backgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Badge_badgeGravity com.one.validator:badgeGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Badge_badgeTextColor com.one.validator:badgeTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Badge_maxCharacterCount com.one.validator:maxCharacterCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Badge_number com.one.validator:number}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Badge_backgroundColor com.prarysoft.one.validator:backgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Badge_badgeGravity com.prarysoft.one.validator:badgeGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Badge_badgeTextColor com.prarysoft.one.validator:badgeTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Badge_maxCharacterCount com.prarysoft.one.validator:maxCharacterCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Badge_number com.prarysoft.one.validator:number}</code></td><td></td></tr>
      * </table>
      * @see #Badge_backgroundColor
      * @see #Badge_badgeGravity
@@ -11477,18 +11477,18 @@ public final class R {
       0x7f0301a9
     };
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#backgroundColor}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#backgroundColor}
      * attribute's value can be found in the {@link #Badge} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:backgroundColor
+     * @attr name com.prarysoft.one.validator:backgroundColor
      */
     public static final int Badge_backgroundColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#badgeGravity}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#badgeGravity}
      * attribute's value can be found in the {@link #Badge} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11503,36 +11503,36 @@ public final class R {
      * <tr><td>TOP_START</td><td>800033</td><td>Gravity.TOP | Gravity.START</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:badgeGravity
+     * @attr name com.prarysoft.one.validator:badgeGravity
      */
     public static final int Badge_badgeGravity=1;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#badgeTextColor}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#badgeTextColor}
      * attribute's value can be found in the {@link #Badge} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:badgeTextColor
+     * @attr name com.prarysoft.one.validator:badgeTextColor
      */
     public static final int Badge_badgeTextColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#maxCharacterCount}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#maxCharacterCount}
      * attribute's value can be found in the {@link #Badge} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.one.validator:maxCharacterCount
+     * @attr name com.prarysoft.one.validator:maxCharacterCount
      */
     public static final int Badge_maxCharacterCount=3;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#number}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#number}
      * attribute's value can be found in the {@link #Badge} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.one.validator:number
+     * @attr name com.prarysoft.one.validator:number
      */
     public static final int Badge_number=4;
     /**
@@ -11542,18 +11542,18 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BarcodeScannerView_borderAlpha com.one.validator:borderAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BarcodeScannerView_borderColor com.one.validator:borderColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BarcodeScannerView_borderLength com.one.validator:borderLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BarcodeScannerView_borderWidth com.one.validator:borderWidth}</code></td><td>The width of the border around the FAB.</td></tr>
-     * <tr><td><code>{@link #BarcodeScannerView_cornerRadius com.one.validator:cornerRadius}</code></td><td>Specifies the radius for the corners of the button.</td></tr>
-     * <tr><td><code>{@link #BarcodeScannerView_finderOffset com.one.validator:finderOffset}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BarcodeScannerView_laserColor com.one.validator:laserColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BarcodeScannerView_laserEnabled com.one.validator:laserEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BarcodeScannerView_maskColor com.one.validator:maskColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BarcodeScannerView_roundedCorner com.one.validator:roundedCorner}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BarcodeScannerView_shouldScaleToFill com.one.validator:shouldScaleToFill}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BarcodeScannerView_squaredFinder com.one.validator:squaredFinder}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BarcodeScannerView_borderAlpha com.prarysoft.one.validator:borderAlpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BarcodeScannerView_borderColor com.prarysoft.one.validator:borderColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BarcodeScannerView_borderLength com.prarysoft.one.validator:borderLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BarcodeScannerView_borderWidth com.prarysoft.one.validator:borderWidth}</code></td><td>The width of the border around the FAB.</td></tr>
+     * <tr><td><code>{@link #BarcodeScannerView_cornerRadius com.prarysoft.one.validator:cornerRadius}</code></td><td>Specifies the radius for the corners of the button.</td></tr>
+     * <tr><td><code>{@link #BarcodeScannerView_finderOffset com.prarysoft.one.validator:finderOffset}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BarcodeScannerView_laserColor com.prarysoft.one.validator:laserColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BarcodeScannerView_laserEnabled com.prarysoft.one.validator:laserEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BarcodeScannerView_maskColor com.prarysoft.one.validator:maskColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BarcodeScannerView_roundedCorner com.prarysoft.one.validator:roundedCorner}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BarcodeScannerView_shouldScaleToFill com.prarysoft.one.validator:shouldScaleToFill}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BarcodeScannerView_squaredFinder com.prarysoft.one.validator:squaredFinder}</code></td><td></td></tr>
      * </table>
      * @see #BarcodeScannerView_borderAlpha
      * @see #BarcodeScannerView_borderColor
@@ -11574,27 +11574,27 @@ public final class R {
       0x7f030188, 0x7f0301ca, 0x7f0301d9, 0x7f0301ea
     };
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#borderAlpha}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#borderAlpha}
      * attribute's value can be found in the {@link #BarcodeScannerView} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.one.validator:borderAlpha
+     * @attr name com.prarysoft.one.validator:borderAlpha
      */
     public static final int BarcodeScannerView_borderAlpha=0;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#borderColor}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#borderColor}
      * attribute's value can be found in the {@link #BarcodeScannerView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:borderColor
+     * @attr name com.prarysoft.one.validator:borderColor
      */
     public static final int BarcodeScannerView_borderColor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#borderLength}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#borderLength}
      * attribute's value can be found in the {@link #BarcodeScannerView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11603,7 +11603,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:borderLength
+     * @attr name com.prarysoft.one.validator:borderLength
      */
     public static final int BarcodeScannerView_borderLength=2;
     /**
@@ -11617,7 +11617,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:borderWidth
+     * @attr name com.prarysoft.one.validator:borderWidth
      */
     public static final int BarcodeScannerView_borderWidth=3;
     /**
@@ -11631,11 +11631,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:cornerRadius
+     * @attr name com.prarysoft.one.validator:cornerRadius
      */
     public static final int BarcodeScannerView_cornerRadius=4;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#finderOffset}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#finderOffset}
      * attribute's value can be found in the {@link #BarcodeScannerView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11644,69 +11644,69 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:finderOffset
+     * @attr name com.prarysoft.one.validator:finderOffset
      */
     public static final int BarcodeScannerView_finderOffset=5;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#laserColor}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#laserColor}
      * attribute's value can be found in the {@link #BarcodeScannerView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:laserColor
+     * @attr name com.prarysoft.one.validator:laserColor
      */
     public static final int BarcodeScannerView_laserColor=6;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#laserEnabled}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#laserEnabled}
      * attribute's value can be found in the {@link #BarcodeScannerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:laserEnabled
+     * @attr name com.prarysoft.one.validator:laserEnabled
      */
     public static final int BarcodeScannerView_laserEnabled=7;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#maskColor}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#maskColor}
      * attribute's value can be found in the {@link #BarcodeScannerView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:maskColor
+     * @attr name com.prarysoft.one.validator:maskColor
      */
     public static final int BarcodeScannerView_maskColor=8;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#roundedCorner}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#roundedCorner}
      * attribute's value can be found in the {@link #BarcodeScannerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:roundedCorner
+     * @attr name com.prarysoft.one.validator:roundedCorner
      */
     public static final int BarcodeScannerView_roundedCorner=9;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#shouldScaleToFill}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#shouldScaleToFill}
      * attribute's value can be found in the {@link #BarcodeScannerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:shouldScaleToFill
+     * @attr name com.prarysoft.one.validator:shouldScaleToFill
      */
     public static final int BarcodeScannerView_shouldScaleToFill=10;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#squaredFinder}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#squaredFinder}
      * attribute's value can be found in the {@link #BarcodeScannerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:squaredFinder
+     * @attr name com.prarysoft.one.validator:squaredFinder
      */
     public static final int BarcodeScannerView_squaredFinder=11;
     /**
@@ -11716,14 +11716,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.one.validator:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #BottomAppBar_elevation com.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.one.validator:fabAlignmentMode}</code></td><td>The alignment of the fab relative to the BottomAppBar.</td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabAnimationMode com.one.validator:fabAnimationMode}</code></td><td>The animation mode that should be used when the fab animates between alignment modes.</td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.one.validator:fabCradleMargin}</code></td><td>The margin between the semi-circular cradle for the fab and the fab.</td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.one.validator:fabCradleRoundedCornerRadius}</code></td><td>The radius of the rounded corners on each side of the cradle.</td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset com.one.validator:fabCradleVerticalOffset}</code></td><td>The vertical offset between the fab from the cradle.</td></tr>
-     * <tr><td><code>{@link #BottomAppBar_hideOnScroll com.one.validator:hideOnScroll}</code></td><td>Whether the BottomAppBar should hide when a NestedScrollView is scrolled.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.prarysoft.one.validator:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_elevation com.prarysoft.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.prarysoft.one.validator:fabAlignmentMode}</code></td><td>The alignment of the fab relative to the BottomAppBar.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabAnimationMode com.prarysoft.one.validator:fabAnimationMode}</code></td><td>The animation mode that should be used when the fab animates between alignment modes.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.prarysoft.one.validator:fabCradleMargin}</code></td><td>The margin between the semi-circular cradle for the fab and the fab.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.prarysoft.one.validator:fabCradleRoundedCornerRadius}</code></td><td>The radius of the rounded corners on each side of the cradle.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset com.prarysoft.one.validator:fabCradleVerticalOffset}</code></td><td>The vertical offset between the fab from the cradle.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_hideOnScroll com.prarysoft.one.validator:hideOnScroll}</code></td><td>Whether the BottomAppBar should hide when a NestedScrollView is scrolled.</td></tr>
      * </table>
      * @see #BottomAppBar_backgroundTint
      * @see #BottomAppBar_elevation
@@ -11747,7 +11747,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:backgroundTint
+     * @attr name com.prarysoft.one.validator:backgroundTint
      */
     public static final int BottomAppBar_backgroundTint=0;
     /**
@@ -11761,7 +11761,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:elevation
+     * @attr name com.prarysoft.one.validator:elevation
      */
     public static final int BottomAppBar_elevation=1;
     /**
@@ -11779,7 +11779,7 @@ public final class R {
      * <tr><td>end</td><td>1</td><td>Mode that aligns the fab to the end.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:fabAlignmentMode
+     * @attr name com.prarysoft.one.validator:fabAlignmentMode
      */
     public static final int BottomAppBar_fabAlignmentMode=2;
     /**
@@ -11797,7 +11797,7 @@ public final class R {
      * <tr><td>slide</td><td>1</td><td>Mode that slides the fab from one alignment mode to the next.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:fabAnimationMode
+     * @attr name com.prarysoft.one.validator:fabAnimationMode
      */
     public static final int BottomAppBar_fabAnimationMode=3;
     /**
@@ -11811,7 +11811,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:fabCradleMargin
+     * @attr name com.prarysoft.one.validator:fabCradleMargin
      */
     public static final int BottomAppBar_fabCradleMargin=4;
     /**
@@ -11825,7 +11825,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:fabCradleRoundedCornerRadius
+     * @attr name com.prarysoft.one.validator:fabCradleRoundedCornerRadius
      */
     public static final int BottomAppBar_fabCradleRoundedCornerRadius=5;
     /**
@@ -11839,7 +11839,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:fabCradleVerticalOffset
+     * @attr name com.prarysoft.one.validator:fabCradleVerticalOffset
      */
     public static final int BottomAppBar_fabCradleVerticalOffset=6;
     /**
@@ -11850,7 +11850,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:hideOnScroll
+     * @attr name com.prarysoft.one.validator:hideOnScroll
      */
     public static final int BottomAppBar_hideOnScroll=7;
     /**
@@ -11860,19 +11860,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_backgroundTint com.one.validator:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation com.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.one.validator:itemBackground}</code></td><td>A background drawable to use for navigation items.</td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.one.validator:itemHorizontalTranslationEnabled}</code></td><td>Whether the items translate horizontally when in "selected" label visibility mode.</td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.one.validator:itemIconSize}</code></td><td>The size of the icon navigation items that display an icon</td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.one.validator:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemRippleColor com.one.validator:itemRippleColor}</code></td><td>The ColorStateList to use for a ripple background.</td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive com.one.validator:itemTextAppearanceActive}</code></td><td>The text appearance to apply to the active navigation item label.</td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive com.one.validator:itemTextAppearanceInactive}</code></td><td>The text appearance to apply to the inactive navigation item labels.</td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.one.validator:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode com.one.validator:labelVisibilityMode}</code></td><td>Whether navigation items display with a label, without a label, or with a label during
+     * <tr><td><code>{@link #BottomNavigationView_backgroundTint com.prarysoft.one.validator:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation com.prarysoft.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.prarysoft.one.validator:itemBackground}</code></td><td>A background drawable to use for navigation items.</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.prarysoft.one.validator:itemHorizontalTranslationEnabled}</code></td><td>Whether the items translate horizontally when in "selected" label visibility mode.</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.prarysoft.one.validator:itemIconSize}</code></td><td>The size of the icon navigation items that display an icon</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.prarysoft.one.validator:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemRippleColor com.prarysoft.one.validator:itemRippleColor}</code></td><td>The ColorStateList to use for a ripple background.</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive com.prarysoft.one.validator:itemTextAppearanceActive}</code></td><td>The text appearance to apply to the active navigation item label.</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive com.prarysoft.one.validator:itemTextAppearanceInactive}</code></td><td>The text appearance to apply to the inactive navigation item labels.</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.prarysoft.one.validator:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode com.prarysoft.one.validator:labelVisibilityMode}</code></td><td>Whether navigation items display with a label, without a label, or with a label during
      * selected state.</td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_menu com.one.validator:menu}</code></td><td>Menu resource to inflate to be shown in the toolbar</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_menu com.prarysoft.one.validator:menu}</code></td><td>Menu resource to inflate to be shown in the toolbar</td></tr>
      * </table>
      * @see #BottomNavigationView_backgroundTint
      * @see #BottomNavigationView_elevation
@@ -11901,7 +11901,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:backgroundTint
+     * @attr name com.prarysoft.one.validator:backgroundTint
      */
     public static final int BottomNavigationView_backgroundTint=0;
     /**
@@ -11915,7 +11915,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:elevation
+     * @attr name com.prarysoft.one.validator:elevation
      */
     public static final int BottomNavigationView_elevation=1;
     /**
@@ -11929,7 +11929,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:itemBackground
+     * @attr name com.prarysoft.one.validator:itemBackground
      */
     public static final int BottomNavigationView_itemBackground=2;
     /**
@@ -11940,7 +11940,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:itemHorizontalTranslationEnabled
+     * @attr name com.prarysoft.one.validator:itemHorizontalTranslationEnabled
      */
     public static final int BottomNavigationView_itemHorizontalTranslationEnabled=3;
     /**
@@ -11954,7 +11954,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:itemIconSize
+     * @attr name com.prarysoft.one.validator:itemIconSize
      */
     public static final int BottomNavigationView_itemIconSize=4;
     /**
@@ -11967,7 +11967,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:itemIconTint
+     * @attr name com.prarysoft.one.validator:itemIconTint
      */
     public static final int BottomNavigationView_itemIconTint=5;
     /**
@@ -11981,7 +11981,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:itemRippleColor
+     * @attr name com.prarysoft.one.validator:itemRippleColor
      */
     public static final int BottomNavigationView_itemRippleColor=6;
     /**
@@ -11996,7 +11996,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:itemTextAppearanceActive
+     * @attr name com.prarysoft.one.validator:itemTextAppearanceActive
      */
     public static final int BottomNavigationView_itemTextAppearanceActive=7;
     /**
@@ -12012,7 +12012,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:itemTextAppearanceInactive
+     * @attr name com.prarysoft.one.validator:itemTextAppearanceInactive
      */
     public static final int BottomNavigationView_itemTextAppearanceInactive=8;
     /**
@@ -12026,7 +12026,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:itemTextColor
+     * @attr name com.prarysoft.one.validator:itemTextColor
      */
     public static final int BottomNavigationView_itemTextColor=9;
     /**
@@ -12049,7 +12049,7 @@ public final class R {
      * <tr><td>unlabeled</td><td>2</td><td>Label is not shown on any navigation items.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:labelVisibilityMode
+     * @attr name com.prarysoft.one.validator:labelVisibilityMode
      */
     public static final int BottomNavigationView_labelVisibilityMode=10;
     /**
@@ -12063,7 +12063,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:menu
+     * @attr name com.prarysoft.one.validator:menu
      */
     public static final int BottomNavigationView_menu=11;
     /**
@@ -12074,17 +12074,17 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #BottomSheetBehavior_Layout_android_elevation android:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_backgroundTint com.one.validator:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_expandedOffset com.one.validator:behavior_expandedOffset}</code></td><td>The top offset of the BottomSheet in the expanded-state when fitsToContent is false.</td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents com.one.validator:behavior_fitToContents}</code></td><td>Whether height of expanded sheet wraps content or not</td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_halfExpandedRatio com.one.validator:behavior_halfExpandedRatio}</code></td><td>The ratio to be used to set the height of half-expanded state in proportion to parent, when
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_backgroundTint com.prarysoft.one.validator:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_expandedOffset com.prarysoft.one.validator:behavior_expandedOffset}</code></td><td>The top offset of the BottomSheet in the expanded-state when fitsToContent is false.</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents com.prarysoft.one.validator:behavior_fitToContents}</code></td><td>Whether height of expanded sheet wraps content or not</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_halfExpandedRatio com.prarysoft.one.validator:behavior_halfExpandedRatio}</code></td><td>The ratio to be used to set the height of half-expanded state in proportion to parent, when
      * fitToContents is false.</td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.one.validator:behavior_hideable}</code></td><td>Whether this bottom sheet can be hidden by dragging it further downwards</td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.one.validator:behavior_peekHeight}</code></td><td>The height of the bottom sheet when it is collapsed.</td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_saveFlags com.one.validator:behavior_saveFlags}</code></td><td>Behavior properties will be saved and restored by evaluating each flag.</td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.one.validator:behavior_skipCollapsed}</code></td><td>Skip the collapsed state once expanded; no effect unless it is hideable</td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_shapeAppearance com.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_shapeAppearanceOverlay com.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.prarysoft.one.validator:behavior_hideable}</code></td><td>Whether this bottom sheet can be hidden by dragging it further downwards</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.prarysoft.one.validator:behavior_peekHeight}</code></td><td>The height of the bottom sheet when it is collapsed.</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_saveFlags com.prarysoft.one.validator:behavior_saveFlags}</code></td><td>Behavior properties will be saved and restored by evaluating each flag.</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.prarysoft.one.validator:behavior_skipCollapsed}</code></td><td>Skip the collapsed state once expanded; no effect unless it is hideable</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_shapeAppearance com.prarysoft.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_shapeAppearanceOverlay com.prarysoft.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
      * </table>
      * @see #BottomSheetBehavior_Layout_android_elevation
      * @see #BottomSheetBehavior_Layout_backgroundTint
@@ -12127,7 +12127,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:backgroundTint
+     * @attr name com.prarysoft.one.validator:backgroundTint
      */
     public static final int BottomSheetBehavior_Layout_backgroundTint=1;
     /**
@@ -12142,7 +12142,7 @@ public final class R {
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.one.validator:behavior_expandedOffset
+     * @attr name com.prarysoft.one.validator:behavior_expandedOffset
      */
     public static final int BottomSheetBehavior_Layout_behavior_expandedOffset=2;
     /**
@@ -12153,7 +12153,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:behavior_fitToContents
+     * @attr name com.prarysoft.one.validator:behavior_fitToContents
      */
     public static final int BottomSheetBehavior_Layout_behavior_fitToContents=3;
     /**
@@ -12170,7 +12170,7 @@ public final class R {
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.one.validator:behavior_halfExpandedRatio
+     * @attr name com.prarysoft.one.validator:behavior_halfExpandedRatio
      */
     public static final int BottomSheetBehavior_Layout_behavior_halfExpandedRatio=4;
     /**
@@ -12181,7 +12181,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:behavior_hideable
+     * @attr name com.prarysoft.one.validator:behavior_hideable
      */
     public static final int BottomSheetBehavior_Layout_behavior_hideable=5;
     /**
@@ -12203,7 +12203,7 @@ public final class R {
      * <tr><td>auto</td><td>ffffffff</td><td>Peek at the 16:9 ratio keyline of its parent</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:behavior_peekHeight
+     * @attr name com.prarysoft.one.validator:behavior_peekHeight
      */
     public static final int BottomSheetBehavior_Layout_behavior_peekHeight=6;
     /**
@@ -12228,7 +12228,7 @@ public final class R {
      * <tr><td>skipCollapsed</td><td>8</td><td>This flag will preserve the skipCollapsed boolean value on configuration change.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:behavior_saveFlags
+     * @attr name com.prarysoft.one.validator:behavior_saveFlags
      */
     public static final int BottomSheetBehavior_Layout_behavior_saveFlags=7;
     /**
@@ -12239,7 +12239,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:behavior_skipCollapsed
+     * @attr name com.prarysoft.one.validator:behavior_skipCollapsed
      */
     public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed=8;
     /**
@@ -12253,7 +12253,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearance
+     * @attr name com.prarysoft.one.validator:shapeAppearance
      */
     public static final int BottomSheetBehavior_Layout_shapeAppearance=9;
     /**
@@ -12267,7 +12267,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearanceOverlay
+     * @attr name com.prarysoft.one.validator:shapeAppearanceOverlay
      */
     public static final int BottomSheetBehavior_Layout_shapeAppearanceOverlay=10;
     /**
@@ -12277,7 +12277,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.one.validator:allowStacking}</code></td><td>Whether to automatically stack the buttons when there is not
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.prarysoft.one.validator:allowStacking}</code></td><td>Whether to automatically stack the buttons when there is not
      * enough space to lay them out side-by-side.</td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
@@ -12294,7 +12294,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:allowStacking
+     * @attr name com.prarysoft.one.validator:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
     /**
@@ -12306,17 +12306,17 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardBackgroundColor com.one.validator:cardBackgroundColor}</code></td><td>Background color for CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_cardCornerRadius com.one.validator:cardCornerRadius}</code></td><td>Corner radius for CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_cardElevation com.one.validator:cardElevation}</code></td><td>Elevation for CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_cardMaxElevation com.one.validator:cardMaxElevation}</code></td><td>Maximum Elevation for CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.one.validator:cardPreventCornerOverlap}</code></td><td>Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.</td></tr>
-     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.one.validator:cardUseCompatPadding}</code></td><td>Add padding in API v21+ as well to have the same measurements with previous versions.</td></tr>
-     * <tr><td><code>{@link #CardView_contentPadding com.one.validator:contentPadding}</code></td><td>Inner padding between the edges of the Card and children of the CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingBottom com.one.validator:contentPaddingBottom}</code></td><td>Inner padding between the bottom edge of the Card and children of the CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingLeft com.one.validator:contentPaddingLeft}</code></td><td>Inner padding between the left edge of the Card and children of the CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingRight com.one.validator:contentPaddingRight}</code></td><td>Inner padding between the right edge of the Card and children of the CardView.</td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingTop com.one.validator:contentPaddingTop}</code></td><td>Inner padding between the top edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor com.prarysoft.one.validator:cardBackgroundColor}</code></td><td>Background color for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius com.prarysoft.one.validator:cardCornerRadius}</code></td><td>Corner radius for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation com.prarysoft.one.validator:cardElevation}</code></td><td>Elevation for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation com.prarysoft.one.validator:cardMaxElevation}</code></td><td>Maximum Elevation for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.prarysoft.one.validator:cardPreventCornerOverlap}</code></td><td>Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.</td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.prarysoft.one.validator:cardUseCompatPadding}</code></td><td>Add padding in API v21+ as well to have the same measurements with previous versions.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding com.prarysoft.one.validator:contentPadding}</code></td><td>Inner padding between the edges of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom com.prarysoft.one.validator:contentPaddingBottom}</code></td><td>Inner padding between the bottom edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft com.prarysoft.one.validator:contentPaddingLeft}</code></td><td>Inner padding between the left edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight com.prarysoft.one.validator:contentPaddingRight}</code></td><td>Inner padding between the right edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop com.prarysoft.one.validator:contentPaddingTop}</code></td><td>Inner padding between the top edge of the Card and children of the CardView.</td></tr>
      * </table>
      * @see #CardView_android_minWidth
      * @see #CardView_android_minHeight
@@ -12375,7 +12375,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:cardBackgroundColor
+     * @attr name com.prarysoft.one.validator:cardBackgroundColor
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
@@ -12389,7 +12389,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:cardCornerRadius
+     * @attr name com.prarysoft.one.validator:cardCornerRadius
      */
     public static final int CardView_cardCornerRadius=3;
     /**
@@ -12403,7 +12403,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:cardElevation
+     * @attr name com.prarysoft.one.validator:cardElevation
      */
     public static final int CardView_cardElevation=4;
     /**
@@ -12417,7 +12417,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:cardMaxElevation
+     * @attr name com.prarysoft.one.validator:cardMaxElevation
      */
     public static final int CardView_cardMaxElevation=5;
     /**
@@ -12428,7 +12428,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:cardPreventCornerOverlap
+     * @attr name com.prarysoft.one.validator:cardPreventCornerOverlap
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
@@ -12439,7 +12439,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:cardUseCompatPadding
+     * @attr name com.prarysoft.one.validator:cardUseCompatPadding
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
@@ -12453,7 +12453,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentPadding
+     * @attr name com.prarysoft.one.validator:contentPadding
      */
     public static final int CardView_contentPadding=8;
     /**
@@ -12467,7 +12467,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentPaddingBottom
+     * @attr name com.prarysoft.one.validator:contentPaddingBottom
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
@@ -12481,7 +12481,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentPaddingLeft
+     * @attr name com.prarysoft.one.validator:contentPaddingLeft
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
@@ -12495,7 +12495,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentPaddingRight
+     * @attr name com.prarysoft.one.validator:contentPaddingRight
      */
     public static final int CardView_contentPaddingRight=11;
     /**
@@ -12509,7 +12509,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentPaddingTop
+     * @attr name com.prarysoft.one.validator:contentPaddingTop
      */
     public static final int CardView_contentPaddingTop=12;
     /**
@@ -12525,40 +12525,40 @@ public final class R {
      * <tr><td><code>{@link #Chip_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_android_text android:text}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_android_checkable android:checkable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIcon com.one.validator:checkedIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconEnabled com.one.validator:checkedIconEnabled}</code></td><td>Deprecated.</td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconVisible com.one.validator:checkedIconVisible}</code></td><td>Whether to show the checked icon.</td></tr>
-     * <tr><td><code>{@link #Chip_chipBackgroundColor com.one.validator:chipBackgroundColor}</code></td><td>Background color to apply to the chip.</td></tr>
-     * <tr><td><code>{@link #Chip_chipCornerRadius com.one.validator:chipCornerRadius}</code></td><td>Corner radius to apply to the chip's shape.</td></tr>
-     * <tr><td><code>{@link #Chip_chipEndPadding com.one.validator:chipEndPadding}</code></td><td>Padding at the end of the chip, after the close icon.</td></tr>
-     * <tr><td><code>{@link #Chip_chipIcon com.one.validator:chipIcon}</code></td><td>Icon drawable to display at the start of the chip.</td></tr>
-     * <tr><td><code>{@link #Chip_chipIconEnabled com.one.validator:chipIconEnabled}</code></td><td>Deprecated.</td></tr>
-     * <tr><td><code>{@link #Chip_chipIconSize com.one.validator:chipIconSize}</code></td><td>Size of the chip's icon and checked icon.</td></tr>
-     * <tr><td><code>{@link #Chip_chipIconTint com.one.validator:chipIconTint}</code></td><td>Tint to apply to the chip icon.</td></tr>
-     * <tr><td><code>{@link #Chip_chipIconVisible com.one.validator:chipIconVisible}</code></td><td>Whether to show the chip icon.</td></tr>
-     * <tr><td><code>{@link #Chip_chipMinHeight com.one.validator:chipMinHeight}</code></td><td>Min height to apply to the chip.</td></tr>
-     * <tr><td><code>{@link #Chip_chipMinTouchTargetSize com.one.validator:chipMinTouchTargetSize}</code></td><td>Minimum size of chip's touch target, by default, Android recommended 48dp.</td></tr>
-     * <tr><td><code>{@link #Chip_chipStartPadding com.one.validator:chipStartPadding}</code></td><td>Padding at the start of the chip, before the icon.</td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeColor com.one.validator:chipStrokeColor}</code></td><td>Stroke color to apply to the chip's outline.</td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeWidth com.one.validator:chipStrokeWidth}</code></td><td>Stroke width to apply to the chip's outline.</td></tr>
-     * <tr><td><code>{@link #Chip_chipSurfaceColor com.one.validator:chipSurfaceColor}</code></td><td>Surface layer color to apply to the chip.</td></tr>
-     * <tr><td><code>{@link #Chip_closeIcon com.one.validator:closeIcon}</code></td><td>Close button icon</td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEnabled com.one.validator:closeIconEnabled}</code></td><td>Deprecated.</td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEndPadding com.one.validator:closeIconEndPadding}</code></td><td>Padding at the end of the close icon, before the end of the chip.</td></tr>
-     * <tr><td><code>{@link #Chip_closeIconSize com.one.validator:closeIconSize}</code></td><td>Size of the chip's close icon.</td></tr>
-     * <tr><td><code>{@link #Chip_closeIconStartPadding com.one.validator:closeIconStartPadding}</code></td><td>Padding at the start of the close icon, after the text.</td></tr>
-     * <tr><td><code>{@link #Chip_closeIconTint com.one.validator:closeIconTint}</code></td><td>Tint to apply to the chip's close icon.</td></tr>
-     * <tr><td><code>{@link #Chip_closeIconVisible com.one.validator:closeIconVisible}</code></td><td>Whether to show the close icon.</td></tr>
-     * <tr><td><code>{@link #Chip_ensureMinTouchTargetSize com.one.validator:ensureMinTouchTargetSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_hideMotionSpec com.one.validator:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_iconEndPadding com.one.validator:iconEndPadding}</code></td><td>Padding at the end of the icon, before the text.</td></tr>
-     * <tr><td><code>{@link #Chip_iconStartPadding com.one.validator:iconStartPadding}</code></td><td>Padding at the start of the icon, after the start of the chip.</td></tr>
-     * <tr><td><code>{@link #Chip_rippleColor com.one.validator:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_shapeAppearance com.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
-     * <tr><td><code>{@link #Chip_shapeAppearanceOverlay com.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
-     * <tr><td><code>{@link #Chip_showMotionSpec com.one.validator:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_textEndPadding com.one.validator:textEndPadding}</code></td><td>Padding at the end of the text, before the close icon.</td></tr>
-     * <tr><td><code>{@link #Chip_textStartPadding com.one.validator:textStartPadding}</code></td><td>Padding at the start of the text, after the icon.</td></tr>
+     * <tr><td><code>{@link #Chip_checkedIcon com.prarysoft.one.validator:checkedIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconEnabled com.prarysoft.one.validator:checkedIconEnabled}</code></td><td>Deprecated.</td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconVisible com.prarysoft.one.validator:checkedIconVisible}</code></td><td>Whether to show the checked icon.</td></tr>
+     * <tr><td><code>{@link #Chip_chipBackgroundColor com.prarysoft.one.validator:chipBackgroundColor}</code></td><td>Background color to apply to the chip.</td></tr>
+     * <tr><td><code>{@link #Chip_chipCornerRadius com.prarysoft.one.validator:chipCornerRadius}</code></td><td>Corner radius to apply to the chip's shape.</td></tr>
+     * <tr><td><code>{@link #Chip_chipEndPadding com.prarysoft.one.validator:chipEndPadding}</code></td><td>Padding at the end of the chip, after the close icon.</td></tr>
+     * <tr><td><code>{@link #Chip_chipIcon com.prarysoft.one.validator:chipIcon}</code></td><td>Icon drawable to display at the start of the chip.</td></tr>
+     * <tr><td><code>{@link #Chip_chipIconEnabled com.prarysoft.one.validator:chipIconEnabled}</code></td><td>Deprecated.</td></tr>
+     * <tr><td><code>{@link #Chip_chipIconSize com.prarysoft.one.validator:chipIconSize}</code></td><td>Size of the chip's icon and checked icon.</td></tr>
+     * <tr><td><code>{@link #Chip_chipIconTint com.prarysoft.one.validator:chipIconTint}</code></td><td>Tint to apply to the chip icon.</td></tr>
+     * <tr><td><code>{@link #Chip_chipIconVisible com.prarysoft.one.validator:chipIconVisible}</code></td><td>Whether to show the chip icon.</td></tr>
+     * <tr><td><code>{@link #Chip_chipMinHeight com.prarysoft.one.validator:chipMinHeight}</code></td><td>Min height to apply to the chip.</td></tr>
+     * <tr><td><code>{@link #Chip_chipMinTouchTargetSize com.prarysoft.one.validator:chipMinTouchTargetSize}</code></td><td>Minimum size of chip's touch target, by default, Android recommended 48dp.</td></tr>
+     * <tr><td><code>{@link #Chip_chipStartPadding com.prarysoft.one.validator:chipStartPadding}</code></td><td>Padding at the start of the chip, before the icon.</td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeColor com.prarysoft.one.validator:chipStrokeColor}</code></td><td>Stroke color to apply to the chip's outline.</td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeWidth com.prarysoft.one.validator:chipStrokeWidth}</code></td><td>Stroke width to apply to the chip's outline.</td></tr>
+     * <tr><td><code>{@link #Chip_chipSurfaceColor com.prarysoft.one.validator:chipSurfaceColor}</code></td><td>Surface layer color to apply to the chip.</td></tr>
+     * <tr><td><code>{@link #Chip_closeIcon com.prarysoft.one.validator:closeIcon}</code></td><td>Close button icon</td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEnabled com.prarysoft.one.validator:closeIconEnabled}</code></td><td>Deprecated.</td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEndPadding com.prarysoft.one.validator:closeIconEndPadding}</code></td><td>Padding at the end of the close icon, before the end of the chip.</td></tr>
+     * <tr><td><code>{@link #Chip_closeIconSize com.prarysoft.one.validator:closeIconSize}</code></td><td>Size of the chip's close icon.</td></tr>
+     * <tr><td><code>{@link #Chip_closeIconStartPadding com.prarysoft.one.validator:closeIconStartPadding}</code></td><td>Padding at the start of the close icon, after the text.</td></tr>
+     * <tr><td><code>{@link #Chip_closeIconTint com.prarysoft.one.validator:closeIconTint}</code></td><td>Tint to apply to the chip's close icon.</td></tr>
+     * <tr><td><code>{@link #Chip_closeIconVisible com.prarysoft.one.validator:closeIconVisible}</code></td><td>Whether to show the close icon.</td></tr>
+     * <tr><td><code>{@link #Chip_ensureMinTouchTargetSize com.prarysoft.one.validator:ensureMinTouchTargetSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_hideMotionSpec com.prarysoft.one.validator:hideMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_iconEndPadding com.prarysoft.one.validator:iconEndPadding}</code></td><td>Padding at the end of the icon, before the text.</td></tr>
+     * <tr><td><code>{@link #Chip_iconStartPadding com.prarysoft.one.validator:iconStartPadding}</code></td><td>Padding at the start of the icon, after the start of the chip.</td></tr>
+     * <tr><td><code>{@link #Chip_rippleColor com.prarysoft.one.validator:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_shapeAppearance com.prarysoft.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #Chip_shapeAppearanceOverlay com.prarysoft.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
+     * <tr><td><code>{@link #Chip_showMotionSpec com.prarysoft.one.validator:showMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_textEndPadding com.prarysoft.one.validator:textEndPadding}</code></td><td>Padding at the end of the text, before the close icon.</td></tr>
+     * <tr><td><code>{@link #Chip_textStartPadding com.prarysoft.one.validator:textStartPadding}</code></td><td>Padding at the start of the text, after the icon.</td></tr>
      * </table>
      * @see #Chip_android_textAppearance
      * @see #Chip_android_textColor
@@ -12710,7 +12710,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:checkedIcon
+     * @attr name com.prarysoft.one.validator:checkedIcon
      */
     public static final int Chip_checkedIcon=6;
     /**
@@ -12721,7 +12721,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:checkedIconEnabled
+     * @attr name com.prarysoft.one.validator:checkedIconEnabled
      */
     public static final int Chip_checkedIconEnabled=7;
     /**
@@ -12732,7 +12732,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:checkedIconVisible
+     * @attr name com.prarysoft.one.validator:checkedIconVisible
      */
     public static final int Chip_checkedIconVisible=8;
     /**
@@ -12744,7 +12744,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:chipBackgroundColor
+     * @attr name com.prarysoft.one.validator:chipBackgroundColor
      */
     public static final int Chip_chipBackgroundColor=9;
     /**
@@ -12758,7 +12758,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:chipCornerRadius
+     * @attr name com.prarysoft.one.validator:chipCornerRadius
      */
     public static final int Chip_chipCornerRadius=10;
     /**
@@ -12772,7 +12772,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:chipEndPadding
+     * @attr name com.prarysoft.one.validator:chipEndPadding
      */
     public static final int Chip_chipEndPadding=11;
     /**
@@ -12785,7 +12785,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:chipIcon
+     * @attr name com.prarysoft.one.validator:chipIcon
      */
     public static final int Chip_chipIcon=12;
     /**
@@ -12796,7 +12796,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:chipIconEnabled
+     * @attr name com.prarysoft.one.validator:chipIconEnabled
      */
     public static final int Chip_chipIconEnabled=13;
     /**
@@ -12810,7 +12810,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:chipIconSize
+     * @attr name com.prarysoft.one.validator:chipIconSize
      */
     public static final int Chip_chipIconSize=14;
     /**
@@ -12822,7 +12822,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:chipIconTint
+     * @attr name com.prarysoft.one.validator:chipIconTint
      */
     public static final int Chip_chipIconTint=15;
     /**
@@ -12833,7 +12833,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:chipIconVisible
+     * @attr name com.prarysoft.one.validator:chipIconVisible
      */
     public static final int Chip_chipIconVisible=16;
     /**
@@ -12847,7 +12847,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:chipMinHeight
+     * @attr name com.prarysoft.one.validator:chipMinHeight
      */
     public static final int Chip_chipMinHeight=17;
     /**
@@ -12861,7 +12861,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:chipMinTouchTargetSize
+     * @attr name com.prarysoft.one.validator:chipMinTouchTargetSize
      */
     public static final int Chip_chipMinTouchTargetSize=18;
     /**
@@ -12875,7 +12875,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:chipStartPadding
+     * @attr name com.prarysoft.one.validator:chipStartPadding
      */
     public static final int Chip_chipStartPadding=19;
     /**
@@ -12887,7 +12887,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:chipStrokeColor
+     * @attr name com.prarysoft.one.validator:chipStrokeColor
      */
     public static final int Chip_chipStrokeColor=20;
     /**
@@ -12901,7 +12901,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:chipStrokeWidth
+     * @attr name com.prarysoft.one.validator:chipStrokeWidth
      */
     public static final int Chip_chipStrokeWidth=21;
     /**
@@ -12913,7 +12913,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:chipSurfaceColor
+     * @attr name com.prarysoft.one.validator:chipSurfaceColor
      */
     public static final int Chip_chipSurfaceColor=22;
     /**
@@ -12926,7 +12926,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:closeIcon
+     * @attr name com.prarysoft.one.validator:closeIcon
      */
     public static final int Chip_closeIcon=23;
     /**
@@ -12937,7 +12937,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:closeIconEnabled
+     * @attr name com.prarysoft.one.validator:closeIconEnabled
      */
     public static final int Chip_closeIconEnabled=24;
     /**
@@ -12951,7 +12951,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:closeIconEndPadding
+     * @attr name com.prarysoft.one.validator:closeIconEndPadding
      */
     public static final int Chip_closeIconEndPadding=25;
     /**
@@ -12965,7 +12965,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:closeIconSize
+     * @attr name com.prarysoft.one.validator:closeIconSize
      */
     public static final int Chip_closeIconSize=26;
     /**
@@ -12979,7 +12979,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:closeIconStartPadding
+     * @attr name com.prarysoft.one.validator:closeIconStartPadding
      */
     public static final int Chip_closeIconStartPadding=27;
     /**
@@ -12991,7 +12991,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:closeIconTint
+     * @attr name com.prarysoft.one.validator:closeIconTint
      */
     public static final int Chip_closeIconTint=28;
     /**
@@ -13002,7 +13002,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:closeIconVisible
+     * @attr name com.prarysoft.one.validator:closeIconVisible
      */
     public static final int Chip_closeIconVisible=29;
     /**
@@ -13013,7 +13013,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:ensureMinTouchTargetSize
+     * @attr name com.prarysoft.one.validator:ensureMinTouchTargetSize
      */
     public static final int Chip_ensureMinTouchTargetSize=30;
     /**
@@ -13026,7 +13026,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:hideMotionSpec
+     * @attr name com.prarysoft.one.validator:hideMotionSpec
      */
     public static final int Chip_hideMotionSpec=31;
     /**
@@ -13040,7 +13040,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:iconEndPadding
+     * @attr name com.prarysoft.one.validator:iconEndPadding
      */
     public static final int Chip_iconEndPadding=32;
     /**
@@ -13054,7 +13054,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:iconStartPadding
+     * @attr name com.prarysoft.one.validator:iconStartPadding
      */
     public static final int Chip_iconStartPadding=33;
     /**
@@ -13066,7 +13066,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:rippleColor
+     * @attr name com.prarysoft.one.validator:rippleColor
      */
     public static final int Chip_rippleColor=34;
     /**
@@ -13080,7 +13080,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearance
+     * @attr name com.prarysoft.one.validator:shapeAppearance
      */
     public static final int Chip_shapeAppearance=35;
     /**
@@ -13094,7 +13094,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearanceOverlay
+     * @attr name com.prarysoft.one.validator:shapeAppearanceOverlay
      */
     public static final int Chip_shapeAppearanceOverlay=36;
     /**
@@ -13107,7 +13107,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:showMotionSpec
+     * @attr name com.prarysoft.one.validator:showMotionSpec
      */
     public static final int Chip_showMotionSpec=37;
     /**
@@ -13121,7 +13121,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:textEndPadding
+     * @attr name com.prarysoft.one.validator:textEndPadding
      */
     public static final int Chip_textEndPadding=38;
     /**
@@ -13135,7 +13135,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:textStartPadding
+     * @attr name com.prarysoft.one.validator:textStartPadding
      */
     public static final int Chip_textStartPadding=39;
     /**
@@ -13145,12 +13145,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ChipGroup_checkedChip com.one.validator:checkedChip}</code></td><td>The id of the child chip that should be checked by default within this chip group.</td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacing com.one.validator:chipSpacing}</code></td><td>Horizontal and vertical spacing between chips in this group.</td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal com.one.validator:chipSpacingHorizontal}</code></td><td>Horizontal spacing between chips in this group.</td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical com.one.validator:chipSpacingVertical}</code></td><td>Vertical spacing between chips in this group.</td></tr>
-     * <tr><td><code>{@link #ChipGroup_singleLine com.one.validator:singleLine}</code></td><td>Constrains the chips in this group to a single horizontal line.</td></tr>
-     * <tr><td><code>{@link #ChipGroup_singleSelection com.one.validator:singleSelection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_checkedChip com.prarysoft.one.validator:checkedChip}</code></td><td>The id of the child chip that should be checked by default within this chip group.</td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacing com.prarysoft.one.validator:chipSpacing}</code></td><td>Horizontal and vertical spacing between chips in this group.</td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal com.prarysoft.one.validator:chipSpacingHorizontal}</code></td><td>Horizontal spacing between chips in this group.</td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical com.prarysoft.one.validator:chipSpacingVertical}</code></td><td>Vertical spacing between chips in this group.</td></tr>
+     * <tr><td><code>{@link #ChipGroup_singleLine com.prarysoft.one.validator:singleLine}</code></td><td>Constrains the chips in this group to a single horizontal line.</td></tr>
+     * <tr><td><code>{@link #ChipGroup_singleSelection com.prarysoft.one.validator:singleSelection}</code></td><td></td></tr>
      * </table>
      * @see #ChipGroup_checkedChip
      * @see #ChipGroup_chipSpacing
@@ -13173,7 +13173,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:checkedChip
+     * @attr name com.prarysoft.one.validator:checkedChip
      */
     public static final int ChipGroup_checkedChip=0;
     /**
@@ -13187,7 +13187,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:chipSpacing
+     * @attr name com.prarysoft.one.validator:chipSpacing
      */
     public static final int ChipGroup_chipSpacing=1;
     /**
@@ -13201,7 +13201,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:chipSpacingHorizontal
+     * @attr name com.prarysoft.one.validator:chipSpacingHorizontal
      */
     public static final int ChipGroup_chipSpacingHorizontal=2;
     /**
@@ -13215,7 +13215,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:chipSpacingVertical
+     * @attr name com.prarysoft.one.validator:chipSpacingVertical
      */
     public static final int ChipGroup_chipSpacingVertical=3;
     /**
@@ -13229,7 +13229,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:singleLine
+     * @attr name com.prarysoft.one.validator:singleLine
      */
     public static final int ChipGroup_singleLine=4;
     /**
@@ -13241,7 +13241,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:singleSelection
+     * @attr name com.prarysoft.one.validator:singleSelection
      */
     public static final int ChipGroup_singleSelection=5;
     /**
@@ -13251,28 +13251,28 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.one.validator:collapsedTitleGravity}</code></td><td>Specifies how the title should be positioned when collapsed.</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.one.validator:collapsedTitleTextAppearance}</code></td><td>The text appearance of the CollapsingToolbarLayouts title when it is fully
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.prarysoft.one.validator:collapsedTitleGravity}</code></td><td>Specifies how the title should be positioned when collapsed.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.prarysoft.one.validator:collapsedTitleTextAppearance}</code></td><td>The text appearance of the CollapsingToolbarLayouts title when it is fully
      * 'collapsed'</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.one.validator:contentScrim}</code></td><td>The drawable to use as a scrim on top of the CollapsingToolbarLayouts content when
+     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.prarysoft.one.validator:contentScrim}</code></td><td>The drawable to use as a scrim on top of the CollapsingToolbarLayouts content when
      * it has been scrolled sufficiently off screen.</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.one.validator:expandedTitleGravity}</code></td><td>Specifies how the title should be positioned when expanded.</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.one.validator:expandedTitleMargin}</code></td><td>Specifies extra space on the start, top, end and bottom
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.prarysoft.one.validator:expandedTitleGravity}</code></td><td>Specifies how the title should be positioned when expanded.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.prarysoft.one.validator:expandedTitleMargin}</code></td><td>Specifies extra space on the start, top, end and bottom
      * sides of the the expanded title text.</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.one.validator:expandedTitleMarginBottom}</code></td><td>Specifies extra space on the bottom side of the the expanded title text.</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.one.validator:expandedTitleMarginEnd}</code></td><td>Specifies extra space on the end side of the the expanded title text.</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.one.validator:expandedTitleMarginStart}</code></td><td>Specifies extra space on the start side of the the expanded title text.</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.one.validator:expandedTitleMarginTop}</code></td><td>Specifies extra space on the top side of the the expanded title text.</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.one.validator:expandedTitleTextAppearance}</code></td><td>The text appearance of the CollapsingToolbarLayout's title when it is fully
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.prarysoft.one.validator:expandedTitleMarginBottom}</code></td><td>Specifies extra space on the bottom side of the the expanded title text.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.prarysoft.one.validator:expandedTitleMarginEnd}</code></td><td>Specifies extra space on the end side of the the expanded title text.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.prarysoft.one.validator:expandedTitleMarginStart}</code></td><td>Specifies extra space on the start side of the the expanded title text.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.prarysoft.one.validator:expandedTitleMarginTop}</code></td><td>Specifies extra space on the top side of the the expanded title text.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.prarysoft.one.validator:expandedTitleTextAppearance}</code></td><td>The text appearance of the CollapsingToolbarLayout's title when it is fully
      * 'expanded'</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.one.validator:scrimAnimationDuration}</code></td><td>Specifies the duration used for scrim visibility animations.</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.one.validator:scrimVisibleHeightTrigger}</code></td><td>Specifies the amount of visible height in pixels used to define when to trigger a
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.prarysoft.one.validator:scrimAnimationDuration}</code></td><td>Specifies the duration used for scrim visibility animations.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.prarysoft.one.validator:scrimVisibleHeightTrigger}</code></td><td>Specifies the amount of visible height in pixels used to define when to trigger a
      * scrim visibility change.</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.one.validator:statusBarScrim}</code></td><td>The drawable to use as a scrim for the status bar content when the
+     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.prarysoft.one.validator:statusBarScrim}</code></td><td>The drawable to use as a scrim for the status bar content when the
      * CollapsingToolbarLayout has been scrolled sufficiently off screen.</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_title com.one.validator:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.one.validator:titleEnabled}</code></td><td>Whether the CollapsingToolbarLayout should draw its own shrinking/growing title.</td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.one.validator:toolbarId}</code></td><td>The id of the primary Toolbar child that you wish to use for the purpose of collapsing.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_title com.prarysoft.one.validator:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.prarysoft.one.validator:titleEnabled}</code></td><td>Whether the CollapsingToolbarLayout should draw its own shrinking/growing title.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.prarysoft.one.validator:toolbarId}</code></td><td>The id of the primary Toolbar child that you wish to use for the purpose of collapsing.</td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_collapsedTitleGravity
      * @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -13320,7 +13320,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push title to the top of its container, not changing its size.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:collapsedTitleGravity
+     * @attr name com.prarysoft.one.validator:collapsedTitleGravity
      */
     public static final int CollapsingToolbarLayout_collapsedTitleGravity=0;
     /**
@@ -13334,7 +13334,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:collapsedTitleTextAppearance
+     * @attr name com.prarysoft.one.validator:collapsedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance=1;
     /**
@@ -13347,7 +13347,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:contentScrim
+     * @attr name com.prarysoft.one.validator:contentScrim
      */
     public static final int CollapsingToolbarLayout_contentScrim=2;
     /**
@@ -13373,7 +13373,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push title to the top of its container, not changing its size.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:expandedTitleGravity
+     * @attr name com.prarysoft.one.validator:expandedTitleGravity
      */
     public static final int CollapsingToolbarLayout_expandedTitleGravity=3;
     /**
@@ -13388,7 +13388,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:expandedTitleMargin
+     * @attr name com.prarysoft.one.validator:expandedTitleMargin
      */
     public static final int CollapsingToolbarLayout_expandedTitleMargin=4;
     /**
@@ -13403,7 +13403,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:expandedTitleMarginBottom
+     * @attr name com.prarysoft.one.validator:expandedTitleMarginBottom
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginBottom=5;
     /**
@@ -13418,7 +13418,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:expandedTitleMarginEnd
+     * @attr name com.prarysoft.one.validator:expandedTitleMarginEnd
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginEnd=6;
     /**
@@ -13433,7 +13433,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:expandedTitleMarginStart
+     * @attr name com.prarysoft.one.validator:expandedTitleMarginStart
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginStart=7;
     /**
@@ -13448,7 +13448,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:expandedTitleMarginTop
+     * @attr name com.prarysoft.one.validator:expandedTitleMarginTop
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginTop=8;
     /**
@@ -13462,7 +13462,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:expandedTitleTextAppearance
+     * @attr name com.prarysoft.one.validator:expandedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_expandedTitleTextAppearance=9;
     /**
@@ -13472,7 +13472,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.one.validator:scrimAnimationDuration
+     * @attr name com.prarysoft.one.validator:scrimAnimationDuration
      */
     public static final int CollapsingToolbarLayout_scrimAnimationDuration=10;
     /**
@@ -13487,7 +13487,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:scrimVisibleHeightTrigger
+     * @attr name com.prarysoft.one.validator:scrimVisibleHeightTrigger
      */
     public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger=11;
     /**
@@ -13501,7 +13501,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:statusBarScrim
+     * @attr name com.prarysoft.one.validator:statusBarScrim
      */
     public static final int CollapsingToolbarLayout_statusBarScrim=12;
     /**
@@ -13512,7 +13512,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:title
+     * @attr name com.prarysoft.one.validator:title
      */
     public static final int CollapsingToolbarLayout_title=13;
     /**
@@ -13523,7 +13523,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:titleEnabled
+     * @attr name com.prarysoft.one.validator:titleEnabled
      */
     public static final int CollapsingToolbarLayout_titleEnabled=14;
     /**
@@ -13538,7 +13538,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:toolbarId
+     * @attr name com.prarysoft.one.validator:toolbarId
      */
     public static final int CollapsingToolbarLayout_toolbarId=15;
     /**
@@ -13548,8 +13548,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.one.validator:layout_collapseMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.one.validator:layout_collapseParallaxMultiplier}</code></td><td>The multiplier used when layout_collapseMode is set to 'parallax'.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.prarysoft.one.validator:layout_collapseMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.prarysoft.one.validator:layout_collapseParallaxMultiplier}</code></td><td>The multiplier used when layout_collapseMode is set to 'parallax'.</td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_Layout_layout_collapseMode
      * @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -13558,7 +13558,7 @@ public final class R {
       0x7f03016c, 0x7f03016d
     };
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#layout_collapseMode}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#layout_collapseMode}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13573,7 +13573,7 @@ public final class R {
      * <tr><td>pin</td><td>1</td><td>The view will pin in place.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:layout_collapseMode
+     * @attr name com.prarysoft.one.validator:layout_collapseMode
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseMode=0;
     /**
@@ -13584,7 +13584,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.one.validator:layout_collapseParallaxMultiplier
+     * @attr name com.prarysoft.one.validator:layout_collapseParallaxMultiplier
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier=1;
     /**
@@ -13596,7 +13596,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha com.one.validator:alpha}</code></td><td>Alpha multiplier applied to the base color.</td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.prarysoft.one.validator:alpha}</code></td><td>Alpha multiplier applied to the base color.</td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -13633,7 +13633,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.one.validator:alpha
+     * @attr name com.prarysoft.one.validator:alpha
      */
     public static final int ColorStateListItem_alpha=2;
     /**
@@ -13644,9 +13644,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonCompat com.one.validator:buttonCompat}</code></td><td>Compat attr to load backported drawable types</td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint com.one.validator:buttonTint}</code></td><td>Tint to apply to the button drawable.</td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.one.validator:buttonTintMode}</code></td><td>Blending mode used to apply the button tint.</td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonCompat com.prarysoft.one.validator:buttonCompat}</code></td><td>Compat attr to load backported drawable types</td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.prarysoft.one.validator:buttonTint}</code></td><td>Tint to apply to the button drawable.</td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.prarysoft.one.validator:buttonTintMode}</code></td><td>Blending mode used to apply the button tint.</td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonCompat
@@ -13678,7 +13678,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:buttonCompat
+     * @attr name com.prarysoft.one.validator:buttonCompat
      */
     public static final int CompoundButton_buttonCompat=1;
     /**
@@ -13690,7 +13690,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:buttonTint
+     * @attr name com.prarysoft.one.validator:buttonTint
      */
     public static final int CompoundButton_buttonTint=2;
     /**
@@ -13717,7 +13717,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:buttonTintMode
+     * @attr name com.prarysoft.one.validator:buttonTintMode
      */
     public static final int CompoundButton_buttonTintMode=3;
     /**
@@ -13727,9 +13727,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines com.one.validator:keylines}</code></td><td>A reference to an array of integers representing the
+     * <tr><td><code>{@link #CoordinatorLayout_keylines com.prarysoft.one.validator:keylines}</code></td><td>A reference to an array of integers representing the
      * locations of horizontal keylines in dp from the starting edge.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.one.validator:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.prarysoft.one.validator:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
@@ -13751,7 +13751,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:keylines
+     * @attr name com.prarysoft.one.validator:keylines
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
@@ -13767,7 +13767,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:statusBarBackground
+     * @attr name com.prarysoft.one.validator:statusBarBackground
      */
     public static final int CoordinatorLayout_statusBarBackground=1;
     /**
@@ -13778,15 +13778,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.one.validator:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.one.validator:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.prarysoft.one.validator:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.prarysoft.one.validator:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
      * within its parent's bounds.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.one.validator:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.prarysoft.one.validator:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
      * for this child view.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.one.validator:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.one.validator:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.prarysoft.one.validator:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.prarysoft.one.validator:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
      * dodge it.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.one.validator:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.prarysoft.one.validator:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -13839,7 +13839,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:layout_anchor
+     * @attr name com.prarysoft.one.validator:layout_anchor
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
@@ -13876,7 +13876,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:layout_anchorGravity
+     * @attr name com.prarysoft.one.validator:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
@@ -13888,7 +13888,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:layout_behavior
+     * @attr name com.prarysoft.one.validator:layout_behavior
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
@@ -13912,7 +13912,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:layout_dodgeInsetEdges
+     * @attr name com.prarysoft.one.validator:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
@@ -13936,7 +13936,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:layout_insetEdge
+     * @attr name com.prarysoft.one.validator:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
@@ -13948,7 +13948,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.one.validator:layout_keyline
+     * @attr name com.prarysoft.one.validator:layout_keyline
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
@@ -13958,14 +13958,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.one.validator:arrowHeadLength}</code></td><td>The length of the arrow head when formed to make an arrow</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.one.validator:arrowShaftLength}</code></td><td>The length of the shaft when formed to make an arrow</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.one.validator:barLength}</code></td><td>The length of the bars when they are parallel to each other</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color com.one.validator:color}</code></td><td>The drawing color for the bars</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.one.validator:drawableSize}</code></td><td>The total size of the drawable</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.one.validator:gapBetweenBars}</code></td><td>The max gap between the bars when they are parallel to each other</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.one.validator:spinBars}</code></td><td>Whether bars should rotate or not during transition</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.one.validator:thickness}</code></td><td>The thickness (stroke size) for the bar paint</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.prarysoft.one.validator:arrowHeadLength}</code></td><td>The length of the arrow head when formed to make an arrow</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.prarysoft.one.validator:arrowShaftLength}</code></td><td>The length of the shaft when formed to make an arrow</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.prarysoft.one.validator:barLength}</code></td><td>The length of the bars when they are parallel to each other</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.prarysoft.one.validator:color}</code></td><td>The drawing color for the bars</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.prarysoft.one.validator:drawableSize}</code></td><td>The total size of the drawable</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.prarysoft.one.validator:gapBetweenBars}</code></td><td>The max gap between the bars when they are parallel to each other</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.prarysoft.one.validator:spinBars}</code></td><td>Whether bars should rotate or not during transition</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.prarysoft.one.validator:thickness}</code></td><td>The thickness (stroke size) for the bar paint</td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -13991,7 +13991,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:arrowHeadLength
+     * @attr name com.prarysoft.one.validator:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
@@ -14005,7 +14005,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:arrowShaftLength
+     * @attr name com.prarysoft.one.validator:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
@@ -14019,7 +14019,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:barLength
+     * @attr name com.prarysoft.one.validator:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
@@ -14031,7 +14031,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:color
+     * @attr name com.prarysoft.one.validator:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
@@ -14045,7 +14045,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:drawableSize
+     * @attr name com.prarysoft.one.validator:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
@@ -14059,7 +14059,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:gapBetweenBars
+     * @attr name com.prarysoft.one.validator:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
@@ -14070,7 +14070,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:spinBars
+     * @attr name com.prarysoft.one.validator:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
@@ -14084,7 +14084,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:thickness
+     * @attr name com.prarysoft.one.validator:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -14094,11 +14094,11 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ExtendedFloatingActionButton_elevation com.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
-     * <tr><td><code>{@link #ExtendedFloatingActionButton_extendMotionSpec com.one.validator:extendMotionSpec}</code></td><td>Motion spec for extend animation.</td></tr>
-     * <tr><td><code>{@link #ExtendedFloatingActionButton_hideMotionSpec com.one.validator:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ExtendedFloatingActionButton_showMotionSpec com.one.validator:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ExtendedFloatingActionButton_shrinkMotionSpec com.one.validator:shrinkMotionSpec}</code></td><td>Motion spec for shrink animation.</td></tr>
+     * <tr><td><code>{@link #ExtendedFloatingActionButton_elevation com.prarysoft.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #ExtendedFloatingActionButton_extendMotionSpec com.prarysoft.one.validator:extendMotionSpec}</code></td><td>Motion spec for extend animation.</td></tr>
+     * <tr><td><code>{@link #ExtendedFloatingActionButton_hideMotionSpec com.prarysoft.one.validator:hideMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ExtendedFloatingActionButton_showMotionSpec com.prarysoft.one.validator:showMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ExtendedFloatingActionButton_shrinkMotionSpec com.prarysoft.one.validator:shrinkMotionSpec}</code></td><td>Motion spec for shrink animation.</td></tr>
      * </table>
      * @see #ExtendedFloatingActionButton_elevation
      * @see #ExtendedFloatingActionButton_extendMotionSpec
@@ -14121,7 +14121,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:elevation
+     * @attr name com.prarysoft.one.validator:elevation
      */
     public static final int ExtendedFloatingActionButton_elevation=0;
     /**
@@ -14134,7 +14134,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:extendMotionSpec
+     * @attr name com.prarysoft.one.validator:extendMotionSpec
      */
     public static final int ExtendedFloatingActionButton_extendMotionSpec=1;
     /**
@@ -14147,7 +14147,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:hideMotionSpec
+     * @attr name com.prarysoft.one.validator:hideMotionSpec
      */
     public static final int ExtendedFloatingActionButton_hideMotionSpec=2;
     /**
@@ -14160,7 +14160,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:showMotionSpec
+     * @attr name com.prarysoft.one.validator:showMotionSpec
      */
     public static final int ExtendedFloatingActionButton_showMotionSpec=3;
     /**
@@ -14173,7 +14173,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shrinkMotionSpec
+     * @attr name com.prarysoft.one.validator:shrinkMotionSpec
      */
     public static final int ExtendedFloatingActionButton_shrinkMotionSpec=4;
     /**
@@ -14183,8 +14183,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide com.one.validator:behavior_autoHide}</code></td><td>Whether the FAB should automatically hide when there is no space for it.</td></tr>
-     * <tr><td><code>{@link #ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink com.one.validator:behavior_autoShrink}</code></td><td>Whether the extended FAB should automatically shrink when there is no space for it.</td></tr>
+     * <tr><td><code>{@link #ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide com.prarysoft.one.validator:behavior_autoHide}</code></td><td>Whether the FAB should automatically hide when there is no space for it.</td></tr>
+     * <tr><td><code>{@link #ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink com.prarysoft.one.validator:behavior_autoShrink}</code></td><td>Whether the extended FAB should automatically shrink when there is no space for it.</td></tr>
      * </table>
      * @see #ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide
      * @see #ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink
@@ -14200,7 +14200,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:behavior_autoHide
+     * @attr name com.prarysoft.one.validator:behavior_autoHide
      */
     public static final int ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide=0;
     /**
@@ -14211,7 +14211,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:behavior_autoShrink
+     * @attr name com.prarysoft.one.validator:behavior_autoShrink
      */
     public static final int ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink=1;
     /**
@@ -14221,22 +14221,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.one.validator:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.one.validator:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.one.validator:borderWidth}</code></td><td>The width of the border around the FAB.</td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation com.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_ensureMinTouchTargetSize com.one.validator:ensureMinTouchTargetSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.one.validator:fabCustomSize}</code></td><td>Custom size for the FAB.</td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabSize com.one.validator:fabSize}</code></td><td>Size for the FAB.</td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.one.validator:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ com.one.validator:hoveredFocusedTranslationZ}</code></td><td>TranslationZ value for the FAB when hovered, focused, or hovered and focused.</td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_maxImageSize com.one.validator:maxImageSize}</code></td><td>Maximum icon image size.</td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.one.validator:pressedTranslationZ}</code></td><td>TranslationZ value for the FAB when pressed</td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_rippleColor com.one.validator:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_shapeAppearance com.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_shapeAppearanceOverlay com.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_showMotionSpec com.one.validator:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.one.validator:useCompatPadding}</code></td><td>Enable compat padding.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.prarysoft.one.validator:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.prarysoft.one.validator:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.prarysoft.one.validator:borderWidth}</code></td><td>The width of the border around the FAB.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation com.prarysoft.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_ensureMinTouchTargetSize com.prarysoft.one.validator:ensureMinTouchTargetSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.prarysoft.one.validator:fabCustomSize}</code></td><td>Custom size for the FAB.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabSize com.prarysoft.one.validator:fabSize}</code></td><td>Size for the FAB.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.prarysoft.one.validator:hideMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ com.prarysoft.one.validator:hoveredFocusedTranslationZ}</code></td><td>TranslationZ value for the FAB when hovered, focused, or hovered and focused.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_maxImageSize com.prarysoft.one.validator:maxImageSize}</code></td><td>Maximum icon image size.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.prarysoft.one.validator:pressedTranslationZ}</code></td><td>TranslationZ value for the FAB when pressed</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_rippleColor com.prarysoft.one.validator:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_shapeAppearance com.prarysoft.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_shapeAppearanceOverlay com.prarysoft.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_showMotionSpec com.prarysoft.one.validator:showMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.prarysoft.one.validator:useCompatPadding}</code></td><td>Enable compat padding.</td></tr>
      * </table>
      * @see #FloatingActionButton_backgroundTint
      * @see #FloatingActionButton_backgroundTintMode
@@ -14270,7 +14270,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:backgroundTint
+     * @attr name com.prarysoft.one.validator:backgroundTint
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
@@ -14297,7 +14297,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:backgroundTintMode
+     * @attr name com.prarysoft.one.validator:backgroundTintMode
      */
     public static final int FloatingActionButton_backgroundTintMode=1;
     /**
@@ -14311,7 +14311,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:borderWidth
+     * @attr name com.prarysoft.one.validator:borderWidth
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
@@ -14325,7 +14325,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:elevation
+     * @attr name com.prarysoft.one.validator:elevation
      */
     public static final int FloatingActionButton_elevation=3;
     /**
@@ -14337,7 +14337,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:ensureMinTouchTargetSize
+     * @attr name com.prarysoft.one.validator:ensureMinTouchTargetSize
      */
     public static final int FloatingActionButton_ensureMinTouchTargetSize=4;
     /**
@@ -14351,7 +14351,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:fabCustomSize
+     * @attr name com.prarysoft.one.validator:fabCustomSize
      */
     public static final int FloatingActionButton_fabCustomSize=5;
     /**
@@ -14370,7 +14370,7 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td>The normal sized button.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:fabSize
+     * @attr name com.prarysoft.one.validator:fabSize
      */
     public static final int FloatingActionButton_fabSize=6;
     /**
@@ -14383,7 +14383,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:hideMotionSpec
+     * @attr name com.prarysoft.one.validator:hideMotionSpec
      */
     public static final int FloatingActionButton_hideMotionSpec=7;
     /**
@@ -14397,7 +14397,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:hoveredFocusedTranslationZ
+     * @attr name com.prarysoft.one.validator:hoveredFocusedTranslationZ
      */
     public static final int FloatingActionButton_hoveredFocusedTranslationZ=8;
     /**
@@ -14411,7 +14411,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:maxImageSize
+     * @attr name com.prarysoft.one.validator:maxImageSize
      */
     public static final int FloatingActionButton_maxImageSize=9;
     /**
@@ -14425,7 +14425,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:pressedTranslationZ
+     * @attr name com.prarysoft.one.validator:pressedTranslationZ
      */
     public static final int FloatingActionButton_pressedTranslationZ=10;
     /**
@@ -14437,7 +14437,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:rippleColor
+     * @attr name com.prarysoft.one.validator:rippleColor
      */
     public static final int FloatingActionButton_rippleColor=11;
     /**
@@ -14451,7 +14451,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearance
+     * @attr name com.prarysoft.one.validator:shapeAppearance
      */
     public static final int FloatingActionButton_shapeAppearance=12;
     /**
@@ -14464,7 +14464,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearanceOverlay
+     * @attr name com.prarysoft.one.validator:shapeAppearanceOverlay
      */
     public static final int FloatingActionButton_shapeAppearanceOverlay=13;
     /**
@@ -14477,7 +14477,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:showMotionSpec
+     * @attr name com.prarysoft.one.validator:showMotionSpec
      */
     public static final int FloatingActionButton_showMotionSpec=14;
     /**
@@ -14488,7 +14488,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:useCompatPadding
+     * @attr name com.prarysoft.one.validator:useCompatPadding
      */
     public static final int FloatingActionButton_useCompatPadding=15;
     /**
@@ -14498,7 +14498,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.one.validator:behavior_autoHide}</code></td><td>Whether the FAB should automatically hide when there is no space for it.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.prarysoft.one.validator:behavior_autoHide}</code></td><td>Whether the FAB should automatically hide when there is no space for it.</td></tr>
      * </table>
      * @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
      */
@@ -14513,7 +14513,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:behavior_autoHide
+     * @attr name com.prarysoft.one.validator:behavior_autoHide
      */
     public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide=0;
     /**
@@ -14523,8 +14523,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FlowLayout_itemSpacing com.one.validator:itemSpacing}</code></td><td>Horizontal spacing between two items being laid out.</td></tr>
-     * <tr><td><code>{@link #FlowLayout_lineSpacing com.one.validator:lineSpacing}</code></td><td>Vertical Spacing between two lines of items being laid out.</td></tr>
+     * <tr><td><code>{@link #FlowLayout_itemSpacing com.prarysoft.one.validator:itemSpacing}</code></td><td>Horizontal spacing between two items being laid out.</td></tr>
+     * <tr><td><code>{@link #FlowLayout_lineSpacing com.prarysoft.one.validator:lineSpacing}</code></td><td>Vertical Spacing between two lines of items being laid out.</td></tr>
      * </table>
      * @see #FlowLayout_itemSpacing
      * @see #FlowLayout_lineSpacing
@@ -14543,7 +14543,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:itemSpacing
+     * @attr name com.prarysoft.one.validator:itemSpacing
      */
     public static final int FlowLayout_itemSpacing=0;
     /**
@@ -14557,7 +14557,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:lineSpacing
+     * @attr name com.prarysoft.one.validator:lineSpacing
      */
     public static final int FlowLayout_lineSpacing=1;
     /**
@@ -14567,12 +14567,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.one.validator:fontProviderAuthority}</code></td><td>The authority of the Font Provider to be used for the request.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.one.validator:fontProviderCerts}</code></td><td>The sets of hashes for the certificates the provider should be signed with.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.one.validator:fontProviderFetchStrategy}</code></td><td>The strategy to be used when fetching font data from a font provider in XML layouts.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.one.validator:fontProviderFetchTimeout}</code></td><td>The length of the timeout during fetching.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.one.validator:fontProviderPackage}</code></td><td>The package for the Font Provider to be used for the request.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.one.validator:fontProviderQuery}</code></td><td>The query to be sent over to the provider.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.prarysoft.one.validator:fontProviderAuthority}</code></td><td>The authority of the Font Provider to be used for the request.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.prarysoft.one.validator:fontProviderCerts}</code></td><td>The sets of hashes for the certificates the provider should be signed with.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.prarysoft.one.validator:fontProviderFetchStrategy}</code></td><td>The strategy to be used when fetching font data from a font provider in XML layouts.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.prarysoft.one.validator:fontProviderFetchTimeout}</code></td><td>The length of the timeout during fetching.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.prarysoft.one.validator:fontProviderPackage}</code></td><td>The package for the Font Provider to be used for the request.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.prarysoft.one.validator:fontProviderQuery}</code></td><td>The query to be sent over to the provider.</td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -14593,7 +14593,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:fontProviderAuthority
+     * @attr name com.prarysoft.one.validator:fontProviderAuthority
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
@@ -14610,7 +14610,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:fontProviderCerts
+     * @attr name com.prarysoft.one.validator:fontProviderCerts
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
@@ -14642,7 +14642,7 @@ public final class R {
      * default typeface will be used instead.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:fontProviderFetchStrategy
+     * @attr name com.prarysoft.one.validator:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
@@ -14661,7 +14661,7 @@ public final class R {
      * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:fontProviderFetchTimeout
+     * @attr name com.prarysoft.one.validator:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
@@ -14673,7 +14673,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:fontProviderPackage
+     * @attr name com.prarysoft.one.validator:fontProviderPackage
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
@@ -14685,7 +14685,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:fontProviderQuery
+     * @attr name com.prarysoft.one.validator:fontProviderQuery
      */
     public static final int FontFamily_fontProviderQuery=5;
     /**
@@ -14700,11 +14700,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font com.one.validator:font}</code></td><td>The reference to the font file to be used.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.one.validator:fontStyle}</code></td><td>The style of the given font file.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.one.validator:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.one.validator:fontWeight}</code></td><td>The weight of the given font file.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.one.validator:ttcIndex}</code></td><td>The index of the font in the tcc font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.prarysoft.one.validator:font}</code></td><td>The reference to the font file to be used.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.prarysoft.one.validator:fontStyle}</code></td><td>The style of the given font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.prarysoft.one.validator:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.prarysoft.one.validator:fontWeight}</code></td><td>The weight of the given font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.prarysoft.one.validator:ttcIndex}</code></td><td>The index of the font in the tcc font file.</td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -14791,7 +14791,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:font
+     * @attr name com.prarysoft.one.validator:font
      */
     public static final int FontFamilyFont_font=5;
     /**
@@ -14811,7 +14811,7 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:fontStyle
+     * @attr name com.prarysoft.one.validator:fontStyle
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
@@ -14825,7 +14825,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:fontVariationSettings
+     * @attr name com.prarysoft.one.validator:fontVariationSettings
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
@@ -14839,7 +14839,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.one.validator:fontWeight
+     * @attr name com.prarysoft.one.validator:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
@@ -14850,7 +14850,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.one.validator:ttcIndex
+     * @attr name com.prarysoft.one.validator:ttcIndex
      */
     public static final int FontFamilyFont_ttcIndex=9;
     /**
@@ -14862,7 +14862,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.one.validator:foregroundInsidePadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.prarysoft.one.validator:foregroundInsidePadding}</code></td><td></td></tr>
      * </table>
      * @see #ForegroundLinearLayout_android_foreground
      * @see #ForegroundLinearLayout_android_foregroundGravity
@@ -14914,13 +14914,13 @@ public final class R {
      */
     public static final int ForegroundLinearLayout_android_foregroundGravity=1;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#foregroundInsidePadding}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#foregroundInsidePadding}
      * attribute's value can be found in the {@link #ForegroundLinearLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:foregroundInsidePadding
+     * @attr name com.prarysoft.one.validator:foregroundInsidePadding
      */
     public static final int ForegroundLinearLayout_foregroundInsidePadding=2;
     /**
@@ -15178,11 +15178,11 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider com.one.validator:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.one.validator:dividerPadding}</code></td><td>Size of padding on either end of a divider.</td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.one.validator:measureWithLargestChild}</code></td><td>When set to true, all children with a weight will be considered having
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.prarysoft.one.validator:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.prarysoft.one.validator:dividerPadding}</code></td><td>Size of padding on either end of a divider.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.prarysoft.one.validator:measureWithLargestChild}</code></td><td>When set to true, all children with a weight will be considered having
      * the minimum size of the largest child.</td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.one.validator:showDividers}</code></td><td>Setting for which dividers to show.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.prarysoft.one.validator:showDividers}</code></td><td>Setting for which dividers to show.</td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -15297,7 +15297,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:divider
+     * @attr name com.prarysoft.one.validator:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
@@ -15311,7 +15311,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:dividerPadding
+     * @attr name com.prarysoft.one.validator:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
@@ -15324,7 +15324,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:measureWithLargestChild
+     * @attr name com.prarysoft.one.validator:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
@@ -15344,7 +15344,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:showDividers
+     * @attr name com.prarysoft.one.validator:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -15502,10 +15502,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialAlertDialog_backgroundInsetBottom com.one.validator:backgroundInsetBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialAlertDialog_backgroundInsetEnd com.one.validator:backgroundInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialAlertDialog_backgroundInsetStart com.one.validator:backgroundInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialAlertDialog_backgroundInsetTop com.one.validator:backgroundInsetTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialAlertDialog_backgroundInsetBottom com.prarysoft.one.validator:backgroundInsetBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialAlertDialog_backgroundInsetEnd com.prarysoft.one.validator:backgroundInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialAlertDialog_backgroundInsetStart com.prarysoft.one.validator:backgroundInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialAlertDialog_backgroundInsetTop com.prarysoft.one.validator:backgroundInsetTop}</code></td><td></td></tr>
      * </table>
      * @see #MaterialAlertDialog_backgroundInsetBottom
      * @see #MaterialAlertDialog_backgroundInsetEnd
@@ -15516,7 +15516,7 @@ public final class R {
       0x7f030036, 0x7f030037, 0x7f030038, 0x7f030039
     };
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#backgroundInsetBottom}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#backgroundInsetBottom}
      * attribute's value can be found in the {@link #MaterialAlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15525,11 +15525,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:backgroundInsetBottom
+     * @attr name com.prarysoft.one.validator:backgroundInsetBottom
      */
     public static final int MaterialAlertDialog_backgroundInsetBottom=0;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#backgroundInsetEnd}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#backgroundInsetEnd}
      * attribute's value can be found in the {@link #MaterialAlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15538,11 +15538,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:backgroundInsetEnd
+     * @attr name com.prarysoft.one.validator:backgroundInsetEnd
      */
     public static final int MaterialAlertDialog_backgroundInsetEnd=1;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#backgroundInsetStart}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#backgroundInsetStart}
      * attribute's value can be found in the {@link #MaterialAlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15551,11 +15551,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:backgroundInsetStart
+     * @attr name com.prarysoft.one.validator:backgroundInsetStart
      */
     public static final int MaterialAlertDialog_backgroundInsetStart=2;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#backgroundInsetTop}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#backgroundInsetTop}
      * attribute's value can be found in the {@link #MaterialAlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15564,7 +15564,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:backgroundInsetTop
+     * @attr name com.prarysoft.one.validator:backgroundInsetTop
      */
     public static final int MaterialAlertDialog_backgroundInsetTop=3;
     /**
@@ -15574,11 +15574,11 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialAlertDialogTheme_materialAlertDialogBodyTextStyle com.one.validator:materialAlertDialogBodyTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialAlertDialogTheme_materialAlertDialogTheme com.one.validator:materialAlertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialAlertDialogTheme_materialAlertDialogTitleIconStyle com.one.validator:materialAlertDialogTitleIconStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialAlertDialogTheme_materialAlertDialogTitlePanelStyle com.one.validator:materialAlertDialogTitlePanelStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialAlertDialogTheme_materialAlertDialogTitleTextStyle com.one.validator:materialAlertDialogTitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialAlertDialogTheme_materialAlertDialogBodyTextStyle com.prarysoft.one.validator:materialAlertDialogBodyTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialAlertDialogTheme_materialAlertDialogTheme com.prarysoft.one.validator:materialAlertDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialAlertDialogTheme_materialAlertDialogTitleIconStyle com.prarysoft.one.validator:materialAlertDialogTitleIconStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialAlertDialogTheme_materialAlertDialogTitlePanelStyle com.prarysoft.one.validator:materialAlertDialogTitlePanelStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialAlertDialogTheme_materialAlertDialogTitleTextStyle com.prarysoft.one.validator:materialAlertDialogTitleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #MaterialAlertDialogTheme_materialAlertDialogBodyTextStyle
      * @see #MaterialAlertDialogTheme_materialAlertDialogTheme
@@ -15591,7 +15591,7 @@ public final class R {
       0x7f03018d
     };
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#materialAlertDialogBodyTextStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#materialAlertDialogBodyTextStyle}
      * attribute's value can be found in the {@link #MaterialAlertDialogTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15599,11 +15599,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:materialAlertDialogBodyTextStyle
+     * @attr name com.prarysoft.one.validator:materialAlertDialogBodyTextStyle
      */
     public static final int MaterialAlertDialogTheme_materialAlertDialogBodyTextStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#materialAlertDialogTheme}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#materialAlertDialogTheme}
      * attribute's value can be found in the {@link #MaterialAlertDialogTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15611,11 +15611,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:materialAlertDialogTheme
+     * @attr name com.prarysoft.one.validator:materialAlertDialogTheme
      */
     public static final int MaterialAlertDialogTheme_materialAlertDialogTheme=1;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#materialAlertDialogTitleIconStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#materialAlertDialogTitleIconStyle}
      * attribute's value can be found in the {@link #MaterialAlertDialogTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15623,11 +15623,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:materialAlertDialogTitleIconStyle
+     * @attr name com.prarysoft.one.validator:materialAlertDialogTitleIconStyle
      */
     public static final int MaterialAlertDialogTheme_materialAlertDialogTitleIconStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#materialAlertDialogTitlePanelStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#materialAlertDialogTitlePanelStyle}
      * attribute's value can be found in the {@link #MaterialAlertDialogTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15635,11 +15635,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:materialAlertDialogTitlePanelStyle
+     * @attr name com.prarysoft.one.validator:materialAlertDialogTitlePanelStyle
      */
     public static final int MaterialAlertDialogTheme_materialAlertDialogTitlePanelStyle=3;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#materialAlertDialogTitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#materialAlertDialogTitleTextStyle}
      * attribute's value can be found in the {@link #MaterialAlertDialogTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15647,7 +15647,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:materialAlertDialogTitleTextStyle
+     * @attr name com.prarysoft.one.validator:materialAlertDialogTitleTextStyle
      */
     public static final int MaterialAlertDialogTheme_materialAlertDialogTitleTextStyle=4;
     /**
@@ -15662,21 +15662,21 @@ public final class R {
      * <tr><td><code>{@link #MaterialButton_android_insetTop android:insetTop}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetBottom android:insetBottom}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_checkable android:checkable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTint com.one.validator:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.one.validator:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_cornerRadius com.one.validator:cornerRadius}</code></td><td>Specifies the radius for the corners of the button.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_elevation com.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
-     * <tr><td><code>{@link #MaterialButton_icon com.one.validator:icon}</code></td><td>Icon drawable to display at the start of this view.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconGravity com.one.validator:iconGravity}</code></td><td>Specifies how the icon should be positioned on the X axis.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconPadding com.one.validator:iconPadding}</code></td><td>Padding between icon and button text.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconSize com.one.validator:iconSize}</code></td><td>Specifies the width and height to use for the icon drawable.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTint com.one.validator:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTintMode com.one.validator:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_rippleColor com.one.validator:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_shapeAppearance com.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_shapeAppearanceOverlay com.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
-     * <tr><td><code>{@link #MaterialButton_strokeColor com.one.validator:strokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_strokeWidth com.one.validator:strokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTint com.prarysoft.one.validator:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.prarysoft.one.validator:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_cornerRadius com.prarysoft.one.validator:cornerRadius}</code></td><td>Specifies the radius for the corners of the button.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_elevation com.prarysoft.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #MaterialButton_icon com.prarysoft.one.validator:icon}</code></td><td>Icon drawable to display at the start of this view.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconGravity com.prarysoft.one.validator:iconGravity}</code></td><td>Specifies how the icon should be positioned on the X axis.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconPadding com.prarysoft.one.validator:iconPadding}</code></td><td>Padding between icon and button text.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconSize com.prarysoft.one.validator:iconSize}</code></td><td>Specifies the width and height to use for the icon drawable.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTint com.prarysoft.one.validator:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTintMode com.prarysoft.one.validator:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_rippleColor com.prarysoft.one.validator:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_shapeAppearance com.prarysoft.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_shapeAppearanceOverlay com.prarysoft.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_strokeColor com.prarysoft.one.validator:strokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_strokeWidth com.prarysoft.one.validator:strokeWidth}</code></td><td></td></tr>
      * </table>
      * @see #MaterialButton_android_insetLeft
      * @see #MaterialButton_android_insetRight
@@ -15794,7 +15794,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:backgroundTint
+     * @attr name com.prarysoft.one.validator:backgroundTint
      */
     public static final int MaterialButton_backgroundTint=5;
     /**
@@ -15821,7 +15821,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:backgroundTintMode
+     * @attr name com.prarysoft.one.validator:backgroundTintMode
      */
     public static final int MaterialButton_backgroundTintMode=6;
     /**
@@ -15835,7 +15835,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:cornerRadius
+     * @attr name com.prarysoft.one.validator:cornerRadius
      */
     public static final int MaterialButton_cornerRadius=7;
     /**
@@ -15849,7 +15849,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:elevation
+     * @attr name com.prarysoft.one.validator:elevation
      */
     public static final int MaterialButton_elevation=8;
     /**
@@ -15862,7 +15862,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:icon
+     * @attr name com.prarysoft.one.validator:icon
      */
     public static final int MaterialButton_icon=9;
     /**
@@ -15884,7 +15884,7 @@ public final class R {
      * {@link R.attr#iconPadding} from the text.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:iconGravity
+     * @attr name com.prarysoft.one.validator:iconGravity
      */
     public static final int MaterialButton_iconGravity=10;
     /**
@@ -15898,7 +15898,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:iconPadding
+     * @attr name com.prarysoft.one.validator:iconPadding
      */
     public static final int MaterialButton_iconPadding=11;
     /**
@@ -15912,7 +15912,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:iconSize
+     * @attr name com.prarysoft.one.validator:iconSize
      */
     public static final int MaterialButton_iconSize=12;
     /**
@@ -15924,7 +15924,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:iconTint
+     * @attr name com.prarysoft.one.validator:iconTint
      */
     public static final int MaterialButton_iconTint=13;
     /**
@@ -15951,7 +15951,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:iconTintMode
+     * @attr name com.prarysoft.one.validator:iconTintMode
      */
     public static final int MaterialButton_iconTintMode=14;
     /**
@@ -15964,7 +15964,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:rippleColor
+     * @attr name com.prarysoft.one.validator:rippleColor
      */
     public static final int MaterialButton_rippleColor=15;
     /**
@@ -15978,7 +15978,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearance
+     * @attr name com.prarysoft.one.validator:shapeAppearance
      */
     public static final int MaterialButton_shapeAppearance=16;
     /**
@@ -15992,7 +15992,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearanceOverlay
+     * @attr name com.prarysoft.one.validator:shapeAppearanceOverlay
      */
     public static final int MaterialButton_shapeAppearanceOverlay=17;
     /**
@@ -16005,7 +16005,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:strokeColor
+     * @attr name com.prarysoft.one.validator:strokeColor
      */
     public static final int MaterialButton_strokeColor=18;
     /**
@@ -16020,7 +16020,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:strokeWidth
+     * @attr name com.prarysoft.one.validator:strokeWidth
      */
     public static final int MaterialButton_strokeWidth=19;
     /**
@@ -16030,8 +16030,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialButtonToggleGroup_checkedButton com.one.validator:checkedButton}</code></td><td>The id of the child button that should be checked by default within this button group.</td></tr>
-     * <tr><td><code>{@link #MaterialButtonToggleGroup_singleSelection com.one.validator:singleSelection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButtonToggleGroup_checkedButton com.prarysoft.one.validator:checkedButton}</code></td><td>The id of the child button that should be checked by default within this button group.</td></tr>
+     * <tr><td><code>{@link #MaterialButtonToggleGroup_singleSelection com.prarysoft.one.validator:singleSelection}</code></td><td></td></tr>
      * </table>
      * @see #MaterialButtonToggleGroup_checkedButton
      * @see #MaterialButtonToggleGroup_singleSelection
@@ -16049,7 +16049,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:checkedButton
+     * @attr name com.prarysoft.one.validator:checkedButton
      */
     public static final int MaterialButtonToggleGroup_checkedButton=0;
     /**
@@ -16062,7 +16062,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:singleSelection
+     * @attr name com.prarysoft.one.validator:singleSelection
      */
     public static final int MaterialButtonToggleGroup_singleSelection=1;
     /**
@@ -16073,14 +16073,14 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #MaterialCalendar_android_windowFullscreen android:windowFullscreen}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendar_dayInvalidStyle com.one.validator:dayInvalidStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendar_daySelectedStyle com.one.validator:daySelectedStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendar_dayStyle com.one.validator:dayStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendar_dayTodayStyle com.one.validator:dayTodayStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendar_rangeFillColor com.one.validator:rangeFillColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendar_yearSelectedStyle com.one.validator:yearSelectedStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendar_yearStyle com.one.validator:yearStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendar_yearTodayStyle com.one.validator:yearTodayStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendar_dayInvalidStyle com.prarysoft.one.validator:dayInvalidStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendar_daySelectedStyle com.prarysoft.one.validator:daySelectedStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendar_dayStyle com.prarysoft.one.validator:dayStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendar_dayTodayStyle com.prarysoft.one.validator:dayTodayStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendar_rangeFillColor com.prarysoft.one.validator:rangeFillColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendar_yearSelectedStyle com.prarysoft.one.validator:yearSelectedStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendar_yearStyle com.prarysoft.one.validator:yearStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendar_yearTodayStyle com.prarysoft.one.validator:yearTodayStyle}</code></td><td></td></tr>
      * </table>
      * @see #MaterialCalendar_android_windowFullscreen
      * @see #MaterialCalendar_dayInvalidStyle
@@ -16108,7 +16108,7 @@ public final class R {
      */
     public static final int MaterialCalendar_android_windowFullscreen=0;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#dayInvalidStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#dayInvalidStyle}
      * attribute's value can be found in the {@link #MaterialCalendar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16116,11 +16116,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:dayInvalidStyle
+     * @attr name com.prarysoft.one.validator:dayInvalidStyle
      */
     public static final int MaterialCalendar_dayInvalidStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#daySelectedStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#daySelectedStyle}
      * attribute's value can be found in the {@link #MaterialCalendar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16128,11 +16128,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:daySelectedStyle
+     * @attr name com.prarysoft.one.validator:daySelectedStyle
      */
     public static final int MaterialCalendar_daySelectedStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#dayStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#dayStyle}
      * attribute's value can be found in the {@link #MaterialCalendar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16140,11 +16140,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:dayStyle
+     * @attr name com.prarysoft.one.validator:dayStyle
      */
     public static final int MaterialCalendar_dayStyle=3;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#dayTodayStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#dayTodayStyle}
      * attribute's value can be found in the {@link #MaterialCalendar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16152,22 +16152,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:dayTodayStyle
+     * @attr name com.prarysoft.one.validator:dayTodayStyle
      */
     public static final int MaterialCalendar_dayTodayStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#rangeFillColor}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#rangeFillColor}
      * attribute's value can be found in the {@link #MaterialCalendar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:rangeFillColor
+     * @attr name com.prarysoft.one.validator:rangeFillColor
      */
     public static final int MaterialCalendar_rangeFillColor=5;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#yearSelectedStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#yearSelectedStyle}
      * attribute's value can be found in the {@link #MaterialCalendar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16175,11 +16175,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:yearSelectedStyle
+     * @attr name com.prarysoft.one.validator:yearSelectedStyle
      */
     public static final int MaterialCalendar_yearSelectedStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#yearStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#yearStyle}
      * attribute's value can be found in the {@link #MaterialCalendar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16187,11 +16187,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:yearStyle
+     * @attr name com.prarysoft.one.validator:yearStyle
      */
     public static final int MaterialCalendar_yearStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#yearTodayStyle}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#yearTodayStyle}
      * attribute's value can be found in the {@link #MaterialCalendar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16199,7 +16199,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:yearTodayStyle
+     * @attr name com.prarysoft.one.validator:yearTodayStyle
      */
     public static final int MaterialCalendar_yearTodayStyle=8;
     /**
@@ -16213,12 +16213,12 @@ public final class R {
      * <tr><td><code>{@link #MaterialCalendarItem_android_insetRight android:insetRight}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialCalendarItem_android_insetTop android:insetTop}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialCalendarItem_android_insetBottom android:insetBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendarItem_itemFillColor com.one.validator:itemFillColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendarItem_itemShapeAppearance com.one.validator:itemShapeAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendarItem_itemShapeAppearanceOverlay com.one.validator:itemShapeAppearanceOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendarItem_itemStrokeColor com.one.validator:itemStrokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendarItem_itemStrokeWidth com.one.validator:itemStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCalendarItem_itemTextColor com.one.validator:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendarItem_itemFillColor com.prarysoft.one.validator:itemFillColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendarItem_itemShapeAppearance com.prarysoft.one.validator:itemShapeAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendarItem_itemShapeAppearanceOverlay com.prarysoft.one.validator:itemShapeAppearanceOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendarItem_itemStrokeColor com.prarysoft.one.validator:itemStrokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendarItem_itemStrokeWidth com.prarysoft.one.validator:itemStrokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCalendarItem_itemTextColor com.prarysoft.one.validator:itemTextColor}</code></td><td></td></tr>
      * </table>
      * @see #MaterialCalendarItem_android_insetLeft
      * @see #MaterialCalendarItem_android_insetRight
@@ -16305,18 +16305,18 @@ public final class R {
      */
     public static final int MaterialCalendarItem_android_insetBottom=3;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#itemFillColor}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#itemFillColor}
      * attribute's value can be found in the {@link #MaterialCalendarItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:itemFillColor
+     * @attr name com.prarysoft.one.validator:itemFillColor
      */
     public static final int MaterialCalendarItem_itemFillColor=4;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#itemShapeAppearance}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#itemShapeAppearance}
      * attribute's value can be found in the {@link #MaterialCalendarItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16324,11 +16324,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:itemShapeAppearance
+     * @attr name com.prarysoft.one.validator:itemShapeAppearance
      */
     public static final int MaterialCalendarItem_itemShapeAppearance=5;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#itemShapeAppearanceOverlay}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#itemShapeAppearanceOverlay}
      * attribute's value can be found in the {@link #MaterialCalendarItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16336,22 +16336,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:itemShapeAppearanceOverlay
+     * @attr name com.prarysoft.one.validator:itemShapeAppearanceOverlay
      */
     public static final int MaterialCalendarItem_itemShapeAppearanceOverlay=6;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#itemStrokeColor}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#itemStrokeColor}
      * attribute's value can be found in the {@link #MaterialCalendarItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:itemStrokeColor
+     * @attr name com.prarysoft.one.validator:itemStrokeColor
      */
     public static final int MaterialCalendarItem_itemStrokeColor=7;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#itemStrokeWidth}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#itemStrokeWidth}
      * attribute's value can be found in the {@link #MaterialCalendarItem} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16360,18 +16360,18 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:itemStrokeWidth
+     * @attr name com.prarysoft.one.validator:itemStrokeWidth
      */
     public static final int MaterialCalendarItem_itemStrokeWidth=8;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #MaterialCalendarItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:itemTextColor
+     * @attr name com.prarysoft.one.validator:itemTextColor
      */
     public static final int MaterialCalendarItem_itemTextColor=9;
     /**
@@ -16382,15 +16382,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #MaterialCardView_android_checkable android:checkable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_cardForegroundColor com.one.validator:cardForegroundColor}</code></td><td>Foreground color for CardView.</td></tr>
-     * <tr><td><code>{@link #MaterialCardView_checkedIcon com.one.validator:checkedIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_checkedIconTint com.one.validator:checkedIconTint}</code></td><td>Tint color for the checked icon.</td></tr>
-     * <tr><td><code>{@link #MaterialCardView_rippleColor com.one.validator:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_shapeAppearance com.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
-     * <tr><td><code>{@link #MaterialCardView_shapeAppearanceOverlay com.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
-     * <tr><td><code>{@link #MaterialCardView_state_dragged com.one.validator:state_dragged}</code></td><td>State when a Card is being dragged.</td></tr>
-     * <tr><td><code>{@link #MaterialCardView_strokeColor com.one.validator:strokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_strokeWidth com.one.validator:strokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_cardForegroundColor com.prarysoft.one.validator:cardForegroundColor}</code></td><td>Foreground color for CardView.</td></tr>
+     * <tr><td><code>{@link #MaterialCardView_checkedIcon com.prarysoft.one.validator:checkedIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_checkedIconTint com.prarysoft.one.validator:checkedIconTint}</code></td><td>Tint color for the checked icon.</td></tr>
+     * <tr><td><code>{@link #MaterialCardView_rippleColor com.prarysoft.one.validator:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_shapeAppearance com.prarysoft.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #MaterialCardView_shapeAppearanceOverlay com.prarysoft.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
+     * <tr><td><code>{@link #MaterialCardView_state_dragged com.prarysoft.one.validator:state_dragged}</code></td><td>State when a Card is being dragged.</td></tr>
+     * <tr><td><code>{@link #MaterialCardView_strokeColor com.prarysoft.one.validator:strokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_strokeWidth com.prarysoft.one.validator:strokeWidth}</code></td><td></td></tr>
      * </table>
      * @see #MaterialCardView_android_checkable
      * @see #MaterialCardView_cardForegroundColor
@@ -16428,7 +16428,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:cardForegroundColor
+     * @attr name com.prarysoft.one.validator:cardForegroundColor
      */
     public static final int MaterialCardView_cardForegroundColor=1;
     /**
@@ -16441,7 +16441,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:checkedIcon
+     * @attr name com.prarysoft.one.validator:checkedIcon
      */
     public static final int MaterialCardView_checkedIcon=2;
     /**
@@ -16453,7 +16453,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:checkedIconTint
+     * @attr name com.prarysoft.one.validator:checkedIconTint
      */
     public static final int MaterialCardView_checkedIconTint=3;
     /**
@@ -16465,7 +16465,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:rippleColor
+     * @attr name com.prarysoft.one.validator:rippleColor
      */
     public static final int MaterialCardView_rippleColor=4;
     /**
@@ -16479,7 +16479,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearance
+     * @attr name com.prarysoft.one.validator:shapeAppearance
      */
     public static final int MaterialCardView_shapeAppearance=5;
     /**
@@ -16493,7 +16493,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearanceOverlay
+     * @attr name com.prarysoft.one.validator:shapeAppearanceOverlay
      */
     public static final int MaterialCardView_shapeAppearanceOverlay=6;
     /**
@@ -16504,7 +16504,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:state_dragged
+     * @attr name com.prarysoft.one.validator:state_dragged
      */
     public static final int MaterialCardView_state_dragged=7;
     /**
@@ -16517,7 +16517,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:strokeColor
+     * @attr name com.prarysoft.one.validator:strokeColor
      */
     public static final int MaterialCardView_strokeColor=8;
     /**
@@ -16532,7 +16532,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:strokeWidth
+     * @attr name com.prarysoft.one.validator:strokeWidth
      */
     public static final int MaterialCardView_strokeWidth=9;
     /**
@@ -16542,8 +16542,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialCheckBox_buttonTint com.one.validator:buttonTint}</code></td><td>Tint to apply to the button drawable.</td></tr>
-     * <tr><td><code>{@link #MaterialCheckBox_useMaterialThemeColors com.one.validator:useMaterialThemeColors}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCheckBox_buttonTint com.prarysoft.one.validator:buttonTint}</code></td><td>Tint to apply to the button drawable.</td></tr>
+     * <tr><td><code>{@link #MaterialCheckBox_useMaterialThemeColors com.prarysoft.one.validator:useMaterialThemeColors}</code></td><td></td></tr>
      * </table>
      * @see #MaterialCheckBox_buttonTint
      * @see #MaterialCheckBox_useMaterialThemeColors
@@ -16560,7 +16560,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:buttonTint
+     * @attr name com.prarysoft.one.validator:buttonTint
      */
     public static final int MaterialCheckBox_buttonTint=0;
     /**
@@ -16574,7 +16574,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:useMaterialThemeColors
+     * @attr name com.prarysoft.one.validator:useMaterialThemeColors
      */
     public static final int MaterialCheckBox_useMaterialThemeColors=1;
     /**
@@ -16584,7 +16584,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialRadioButton_useMaterialThemeColors com.one.validator:useMaterialThemeColors}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialRadioButton_useMaterialThemeColors com.prarysoft.one.validator:useMaterialThemeColors}</code></td><td></td></tr>
      * </table>
      * @see #MaterialRadioButton_useMaterialThemeColors
      */
@@ -16602,7 +16602,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:useMaterialThemeColors
+     * @attr name com.prarysoft.one.validator:useMaterialThemeColors
      */
     public static final int MaterialRadioButton_useMaterialThemeColors=0;
     /**
@@ -16612,8 +16612,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialShape_shapeAppearance com.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
-     * <tr><td><code>{@link #MaterialShape_shapeAppearanceOverlay com.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
+     * <tr><td><code>{@link #MaterialShape_shapeAppearance com.prarysoft.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #MaterialShape_shapeAppearanceOverlay com.prarysoft.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
      * </table>
      * @see #MaterialShape_shapeAppearance
      * @see #MaterialShape_shapeAppearanceOverlay
@@ -16631,7 +16631,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearance
+     * @attr name com.prarysoft.one.validator:shapeAppearance
      */
     public static final int MaterialShape_shapeAppearance=0;
     /**
@@ -16644,7 +16644,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearanceOverlay
+     * @attr name com.prarysoft.one.validator:shapeAppearanceOverlay
      */
     public static final int MaterialShape_shapeAppearanceOverlay=1;
     /**
@@ -16655,7 +16655,7 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #MaterialTextAppearance_android_lineHeight android:lineHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialTextAppearance_lineHeight com.one.validator:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
+     * <tr><td><code>{@link #MaterialTextAppearance_lineHeight com.prarysoft.one.validator:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
      * </table>
      * @see #MaterialTextAppearance_android_lineHeight
      * @see #MaterialTextAppearance_lineHeight
@@ -16690,7 +16690,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:lineHeight
+     * @attr name com.prarysoft.one.validator:lineHeight
      */
     public static final int MaterialTextAppearance_lineHeight=1;
     /**
@@ -16702,7 +16702,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #MaterialTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialTextView_android_lineHeight android:lineHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialTextView_lineHeight com.one.validator:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
+     * <tr><td><code>{@link #MaterialTextView_lineHeight com.prarysoft.one.validator:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
      * </table>
      * @see #MaterialTextView_android_textAppearance
      * @see #MaterialTextView_android_lineHeight
@@ -16748,7 +16748,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:lineHeight
+     * @attr name com.prarysoft.one.validator:lineHeight
      */
     public static final int MaterialTextView_lineHeight=2;
     /**
@@ -16882,18 +16882,18 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout com.one.validator:actionLayout}</code></td><td>An optional layout to be used as an action view.</td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass com.one.validator:actionProviderClass}</code></td><td>The name of an optional ActionProvider class to instantiate an action view
+     * <tr><td><code>{@link #MenuItem_actionLayout com.prarysoft.one.validator:actionLayout}</code></td><td>An optional layout to be used as an action view.</td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.prarysoft.one.validator:actionProviderClass}</code></td><td>The name of an optional ActionProvider class to instantiate an action view
      * and perform operations such as default action for that menu item.</td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass com.one.validator:actionViewClass}</code></td><td>The name of an optional View class to instantiate and use as an
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.prarysoft.one.validator:actionViewClass}</code></td><td>The name of an optional View class to instantiate and use as an
      * action view.</td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.one.validator:alphabeticModifiers}</code></td><td>The alphabetic modifier key.</td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription com.one.validator:contentDescription}</code></td><td>The content description associated with the item.</td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.one.validator:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode com.one.validator:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers com.one.validator:numericModifiers}</code></td><td>The numeric modifier key.</td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction com.one.validator:showAsAction}</code></td><td>How this item should display in the Action Bar, if present.</td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText com.one.validator:tooltipText}</code></td><td>The tooltip text associated with the item.</td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.prarysoft.one.validator:alphabeticModifiers}</code></td><td>The alphabetic modifier key.</td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription com.prarysoft.one.validator:contentDescription}</code></td><td>The content description associated with the item.</td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.prarysoft.one.validator:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.prarysoft.one.validator:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers com.prarysoft.one.validator:numericModifiers}</code></td><td>The numeric modifier key.</td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.prarysoft.one.validator:showAsAction}</code></td><td>How this item should display in the Action Bar, if present.</td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText com.prarysoft.one.validator:tooltipText}</code></td><td>The tooltip text associated with the item.</td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -17102,7 +17102,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:actionLayout
+     * @attr name com.prarysoft.one.validator:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
@@ -17116,7 +17116,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:actionProviderClass
+     * @attr name com.prarysoft.one.validator:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
@@ -17129,7 +17129,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:actionViewClass
+     * @attr name com.prarysoft.one.validator:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
@@ -17152,7 +17152,7 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:alphabeticModifiers
+     * @attr name com.prarysoft.one.validator:alphabeticModifiers
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
@@ -17163,7 +17163,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:contentDescription
+     * @attr name com.prarysoft.one.validator:contentDescription
      */
     public static final int MenuItem_contentDescription=17;
     /**
@@ -17175,7 +17175,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:iconTint
+     * @attr name com.prarysoft.one.validator:iconTint
      */
     public static final int MenuItem_iconTint=18;
     /**
@@ -17202,7 +17202,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:iconTintMode
+     * @attr name com.prarysoft.one.validator:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
@@ -17225,7 +17225,7 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:numericModifiers
+     * @attr name com.prarysoft.one.validator:numericModifiers
      */
     public static final int MenuItem_numericModifiers=20;
     /**
@@ -17255,7 +17255,7 @@ public final class R {
      * label with it even if it has an icon representation.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:showAsAction
+     * @attr name com.prarysoft.one.validator:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
@@ -17266,7 +17266,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:tooltipText
+     * @attr name com.prarysoft.one.validator:tooltipText
      */
     public static final int MenuItem_tooltipText=22;
     /**
@@ -17283,8 +17283,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.one.validator:preserveIconSpacing}</code></td><td>Whether space should be reserved in layout when an icon is missing.</td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow com.one.validator:subMenuArrow}</code></td><td>Drawable for the arrow icon indicating a particular item is a submenu.</td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.prarysoft.one.validator:preserveIconSpacing}</code></td><td>Whether space should be reserved in layout when an icon is missing.</td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.prarysoft.one.validator:subMenuArrow}</code></td><td>Drawable for the arrow icon indicating a particular item is a submenu.</td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -17403,7 +17403,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:preserveIconSpacing
+     * @attr name com.prarysoft.one.validator:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
@@ -17416,7 +17416,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:subMenuArrow
+     * @attr name com.prarysoft.one.validator:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -17429,24 +17429,24 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation com.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
-     * <tr><td><code>{@link #NavigationView_headerLayout com.one.validator:headerLayout}</code></td><td>Layout resource to inflate as the header</td></tr>
-     * <tr><td><code>{@link #NavigationView_itemBackground com.one.validator:itemBackground}</code></td><td>A background drawable to use for navigation items.</td></tr>
-     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.one.validator:itemHorizontalPadding}</code></td><td>Horizontal padding (left and right) of navigation items, around the icon & text</td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconPadding com.one.validator:itemIconPadding}</code></td><td>Padding between the icon and the text for navigation items that display an icon</td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconSize com.one.validator:itemIconSize}</code></td><td>The size of the icon navigation items that display an icon</td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconTint com.one.validator:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemMaxLines com.one.validator:itemMaxLines}</code></td><td>Makes the TextView of the item text be at most this many lines tall.</td></tr>
-     * <tr><td><code>{@link #NavigationView_itemShapeAppearance com.one.validator:itemShapeAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemShapeAppearanceOverlay com.one.validator:itemShapeAppearanceOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemShapeFillColor com.one.validator:itemShapeFillColor}</code></td><td>Fill color for the item background shape.</td></tr>
-     * <tr><td><code>{@link #NavigationView_itemShapeInsetBottom com.one.validator:itemShapeInsetBottom}</code></td><td>Inset bottom margin for the item background shape.</td></tr>
-     * <tr><td><code>{@link #NavigationView_itemShapeInsetEnd com.one.validator:itemShapeInsetEnd}</code></td><td>Inset end margin for the item background shape.</td></tr>
-     * <tr><td><code>{@link #NavigationView_itemShapeInsetStart com.one.validator:itemShapeInsetStart}</code></td><td>Inset start margin for the item background shape.</td></tr>
-     * <tr><td><code>{@link #NavigationView_itemShapeInsetTop com.one.validator:itemShapeInsetTop}</code></td><td>Inset top margin for the item background shape.</td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextAppearance com.one.validator:itemTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextColor com.one.validator:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_menu com.one.validator:menu}</code></td><td>Menu resource to inflate to be shown in the toolbar</td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation com.prarysoft.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #NavigationView_headerLayout com.prarysoft.one.validator:headerLayout}</code></td><td>Layout resource to inflate as the header</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemBackground com.prarysoft.one.validator:itemBackground}</code></td><td>A background drawable to use for navigation items.</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.prarysoft.one.validator:itemHorizontalPadding}</code></td><td>Horizontal padding (left and right) of navigation items, around the icon & text</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconPadding com.prarysoft.one.validator:itemIconPadding}</code></td><td>Padding between the icon and the text for navigation items that display an icon</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconSize com.prarysoft.one.validator:itemIconSize}</code></td><td>The size of the icon navigation items that display an icon</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconTint com.prarysoft.one.validator:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemMaxLines com.prarysoft.one.validator:itemMaxLines}</code></td><td>Makes the TextView of the item text be at most this many lines tall.</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemShapeAppearance com.prarysoft.one.validator:itemShapeAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemShapeAppearanceOverlay com.prarysoft.one.validator:itemShapeAppearanceOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemShapeFillColor com.prarysoft.one.validator:itemShapeFillColor}</code></td><td>Fill color for the item background shape.</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemShapeInsetBottom com.prarysoft.one.validator:itemShapeInsetBottom}</code></td><td>Inset bottom margin for the item background shape.</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemShapeInsetEnd com.prarysoft.one.validator:itemShapeInsetEnd}</code></td><td>Inset end margin for the item background shape.</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemShapeInsetStart com.prarysoft.one.validator:itemShapeInsetStart}</code></td><td>Inset start margin for the item background shape.</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemShapeInsetTop com.prarysoft.one.validator:itemShapeInsetTop}</code></td><td>Inset top margin for the item background shape.</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextAppearance com.prarysoft.one.validator:itemTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextColor com.prarysoft.one.validator:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_menu com.prarysoft.one.validator:menu}</code></td><td>Menu resource to inflate to be shown in the toolbar</td></tr>
      * </table>
      * @see #NavigationView_android_background
      * @see #NavigationView_android_fitsSystemWindows
@@ -17527,7 +17527,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:elevation
+     * @attr name com.prarysoft.one.validator:elevation
      */
     public static final int NavigationView_elevation=3;
     /**
@@ -17540,7 +17540,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:headerLayout
+     * @attr name com.prarysoft.one.validator:headerLayout
      */
     public static final int NavigationView_headerLayout=4;
     /**
@@ -17554,7 +17554,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:itemBackground
+     * @attr name com.prarysoft.one.validator:itemBackground
      */
     public static final int NavigationView_itemBackground=5;
     /**
@@ -17568,7 +17568,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:itemHorizontalPadding
+     * @attr name com.prarysoft.one.validator:itemHorizontalPadding
      */
     public static final int NavigationView_itemHorizontalPadding=6;
     /**
@@ -17582,7 +17582,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:itemIconPadding
+     * @attr name com.prarysoft.one.validator:itemIconPadding
      */
     public static final int NavigationView_itemIconPadding=7;
     /**
@@ -17596,18 +17596,18 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:itemIconSize
+     * @attr name com.prarysoft.one.validator:itemIconSize
      */
     public static final int NavigationView_itemIconSize=8;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:itemIconTint
+     * @attr name com.prarysoft.one.validator:itemIconTint
      */
     public static final int NavigationView_itemIconTint=9;
     /**
@@ -17617,7 +17617,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.one.validator:itemMaxLines
+     * @attr name com.prarysoft.one.validator:itemMaxLines
      */
     public static final int NavigationView_itemMaxLines=10;
     /**
@@ -17632,7 +17632,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:itemShapeAppearance
+     * @attr name com.prarysoft.one.validator:itemShapeAppearance
      */
     public static final int NavigationView_itemShapeAppearance=11;
     /**
@@ -17648,7 +17648,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:itemShapeAppearanceOverlay
+     * @attr name com.prarysoft.one.validator:itemShapeAppearanceOverlay
      */
     public static final int NavigationView_itemShapeAppearanceOverlay=12;
     /**
@@ -17661,7 +17661,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:itemShapeFillColor
+     * @attr name com.prarysoft.one.validator:itemShapeFillColor
      */
     public static final int NavigationView_itemShapeFillColor=13;
     /**
@@ -17676,7 +17676,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:itemShapeInsetBottom
+     * @attr name com.prarysoft.one.validator:itemShapeInsetBottom
      */
     public static final int NavigationView_itemShapeInsetBottom=14;
     /**
@@ -17691,7 +17691,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:itemShapeInsetEnd
+     * @attr name com.prarysoft.one.validator:itemShapeInsetEnd
      */
     public static final int NavigationView_itemShapeInsetEnd=15;
     /**
@@ -17706,7 +17706,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:itemShapeInsetStart
+     * @attr name com.prarysoft.one.validator:itemShapeInsetStart
      */
     public static final int NavigationView_itemShapeInsetStart=16;
     /**
@@ -17721,11 +17721,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:itemShapeInsetTop
+     * @attr name com.prarysoft.one.validator:itemShapeInsetTop
      */
     public static final int NavigationView_itemShapeInsetTop=17;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#itemTextAppearance}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#itemTextAppearance}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17733,18 +17733,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:itemTextAppearance
+     * @attr name com.prarysoft.one.validator:itemTextAppearance
      */
     public static final int NavigationView_itemTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:itemTextColor
+     * @attr name com.prarysoft.one.validator:itemTextColor
      */
     public static final int NavigationView_itemTextColor=19;
     /**
@@ -17757,7 +17757,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:menu
+     * @attr name com.prarysoft.one.validator:menu
      */
     public static final int NavigationView_menu=20;
     /**
@@ -17769,7 +17769,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.one.validator:overlapAnchor}</code></td><td>Whether the popup window should overlap its anchor view.</td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.prarysoft.one.validator:overlapAnchor}</code></td><td>Whether the popup window should overlap its anchor view.</td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
@@ -17813,7 +17813,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:overlapAnchor
+     * @attr name com.prarysoft.one.validator:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -17823,7 +17823,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.one.validator:state_above_anchor}</code></td><td>State identifier indicating the popup will be above the anchor.</td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.prarysoft.one.validator:state_above_anchor}</code></td><td>State identifier indicating the popup will be above the anchor.</td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
@@ -17838,7 +17838,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:state_above_anchor
+     * @attr name com.prarysoft.one.validator:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -17848,8 +17848,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.one.validator:paddingBottomNoButtons}</code></td><td>Bottom padding to use when no buttons are present.</td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.one.validator:paddingTopNoTitle}</code></td><td>Top padding to use when no title is present.</td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.prarysoft.one.validator:paddingBottomNoButtons}</code></td><td>Bottom padding to use when no buttons are present.</td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.prarysoft.one.validator:paddingTopNoTitle}</code></td><td>Top padding to use when no title is present.</td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
@@ -17868,7 +17868,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:paddingBottomNoButtons
+     * @attr name com.prarysoft.one.validator:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
@@ -17882,7 +17882,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:paddingTopNoTitle
+     * @attr name com.prarysoft.one.validator:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -17895,15 +17895,15 @@ public final class R {
      * <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_android_clipToPadding android:clipToPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled com.one.validator:fastScrollEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable com.one.validator:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.one.validator:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.one.validator:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.one.validator:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager com.one.validator:layoutManager}</code></td><td>Class name of the Layout Manager to be used.</td></tr>
-     * <tr><td><code>{@link #RecyclerView_reverseLayout com.one.validator:reverseLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_spanCount com.one.validator:spanCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_stackFromEnd com.one.validator:stackFromEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled com.prarysoft.one.validator:fastScrollEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable com.prarysoft.one.validator:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.prarysoft.one.validator:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.prarysoft.one.validator:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.prarysoft.one.validator:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager com.prarysoft.one.validator:layoutManager}</code></td><td>Class name of the Layout Manager to be used.</td></tr>
+     * <tr><td><code>{@link #RecyclerView_reverseLayout com.prarysoft.one.validator:reverseLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_spanCount com.prarysoft.one.validator:spanCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_stackFromEnd com.prarysoft.one.validator:stackFromEnd}</code></td><td></td></tr>
      * </table>
      * @see #RecyclerView_android_orientation
      * @see #RecyclerView_android_clipToPadding
@@ -17969,17 +17969,17 @@ public final class R {
      */
     public static final int RecyclerView_android_descendantFocusability=2;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#fastScrollEnabled}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#fastScrollEnabled}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:fastScrollEnabled
+     * @attr name com.prarysoft.one.validator:fastScrollEnabled
      */
     public static final int RecyclerView_fastScrollEnabled=3;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#fastScrollHorizontalThumbDrawable}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#fastScrollHorizontalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17987,11 +17987,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:fastScrollHorizontalThumbDrawable
+     * @attr name com.prarysoft.one.validator:fastScrollHorizontalThumbDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalThumbDrawable=4;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#fastScrollHorizontalTrackDrawable}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#fastScrollHorizontalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17999,11 +17999,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:fastScrollHorizontalTrackDrawable
+     * @attr name com.prarysoft.one.validator:fastScrollHorizontalTrackDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalTrackDrawable=5;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#fastScrollVerticalThumbDrawable}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#fastScrollVerticalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18011,11 +18011,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:fastScrollVerticalThumbDrawable
+     * @attr name com.prarysoft.one.validator:fastScrollVerticalThumbDrawable
      */
     public static final int RecyclerView_fastScrollVerticalThumbDrawable=6;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#fastScrollVerticalTrackDrawable}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#fastScrollVerticalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18023,7 +18023,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:fastScrollVerticalTrackDrawable
+     * @attr name com.prarysoft.one.validator:fastScrollVerticalTrackDrawable
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=7;
     /**
@@ -18042,36 +18042,36 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:layoutManager
+     * @attr name com.prarysoft.one.validator:layoutManager
      */
     public static final int RecyclerView_layoutManager=8;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#reverseLayout}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#reverseLayout}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:reverseLayout
+     * @attr name com.prarysoft.one.validator:reverseLayout
      */
     public static final int RecyclerView_reverseLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#spanCount}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#spanCount}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.one.validator:spanCount
+     * @attr name com.prarysoft.one.validator:spanCount
      */
     public static final int RecyclerView_spanCount=10;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#stackFromEnd}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#stackFromEnd}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:stackFromEnd
+     * @attr name com.prarysoft.one.validator:stackFromEnd
      */
     public static final int RecyclerView_stackFromEnd=11;
     /**
@@ -18081,7 +18081,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.one.validator:insetForeground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.prarysoft.one.validator:insetForeground}</code></td><td></td></tr>
      * </table>
      * @see #ScrimInsetsFrameLayout_insetForeground
      */
@@ -18089,7 +18089,7 @@ public final class R {
       0x7f030147
     };
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#insetForeground}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#insetForeground}
      * attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18100,7 +18100,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:insetForeground
+     * @attr name com.prarysoft.one.validator:insetForeground
      */
     public static final int ScrimInsetsFrameLayout_insetForeground=0;
     /**
@@ -18110,7 +18110,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.one.validator:behavior_overlapTop}</code></td><td>The amount that the scrolling view should overlap the bottom of any AppBarLayout</td></tr>
+     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.prarysoft.one.validator:behavior_overlapTop}</code></td><td>The amount that the scrolling view should overlap the bottom of any AppBarLayout</td></tr>
      * </table>
      * @see #ScrollingViewBehavior_Layout_behavior_overlapTop
      */
@@ -18128,7 +18128,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:behavior_overlapTop
+     * @attr name com.prarysoft.one.validator:behavior_overlapTop
      */
     public static final int ScrollingViewBehavior_Layout_behavior_overlapTop=0;
     /**
@@ -18142,20 +18142,20 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.one.validator:closeIcon}</code></td><td>Close button icon</td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon com.one.validator:commitIcon}</code></td><td>Commit icon shown in the query suggestion row</td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint com.one.validator:defaultQueryHint}</code></td><td>Default query hint used when {@code queryHint} is undefined and
+     * <tr><td><code>{@link #SearchView_closeIcon com.prarysoft.one.validator:closeIcon}</code></td><td>Close button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.prarysoft.one.validator:commitIcon}</code></td><td>Commit icon shown in the query suggestion row</td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.prarysoft.one.validator:defaultQueryHint}</code></td><td>Default query hint used when {@code queryHint} is undefined and
      * the search view's {@code SearchableInfo} does not provide a hint.</td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon com.one.validator:goIcon}</code></td><td>Go button icon</td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.one.validator:iconifiedByDefault}</code></td><td>The default state of the SearchView.</td></tr>
-     * <tr><td><code>{@link #SearchView_layout com.one.validator:layout}</code></td><td>The layout to use for the search view.</td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground com.one.validator:queryBackground}</code></td><td>Background for the section containing the search query</td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint com.one.validator:queryHint}</code></td><td>An optional user-defined query hint string to be displayed in the empty query field.</td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon com.one.validator:searchHintIcon}</code></td><td>Search icon displayed as a text field hint</td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon com.one.validator:searchIcon}</code></td><td>Search icon</td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground com.one.validator:submitBackground}</code></td><td>Background for the section containing the action (e.g.</td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.one.validator:suggestionRowLayout}</code></td><td>Layout for query suggestion rows</td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon com.one.validator:voiceIcon}</code></td><td>Voice button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.prarysoft.one.validator:goIcon}</code></td><td>Go button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.prarysoft.one.validator:iconifiedByDefault}</code></td><td>The default state of the SearchView.</td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.prarysoft.one.validator:layout}</code></td><td>The layout to use for the search view.</td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.prarysoft.one.validator:queryBackground}</code></td><td>Background for the section containing the search query</td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.prarysoft.one.validator:queryHint}</code></td><td>An optional user-defined query hint string to be displayed in the empty query field.</td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.prarysoft.one.validator:searchHintIcon}</code></td><td>Search icon displayed as a text field hint</td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.prarysoft.one.validator:searchIcon}</code></td><td>Search icon</td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.prarysoft.one.validator:submitBackground}</code></td><td>Background for the section containing the action (e.g.</td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.prarysoft.one.validator:suggestionRowLayout}</code></td><td>Layout for query suggestion rows</td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.prarysoft.one.validator:voiceIcon}</code></td><td>Voice button icon</td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -18305,7 +18305,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:closeIcon
+     * @attr name com.prarysoft.one.validator:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
@@ -18318,7 +18318,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:commitIcon
+     * @attr name com.prarysoft.one.validator:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
@@ -18330,7 +18330,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:defaultQueryHint
+     * @attr name com.prarysoft.one.validator:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
@@ -18343,7 +18343,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:goIcon
+     * @attr name com.prarysoft.one.validator:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
@@ -18355,7 +18355,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:iconifiedByDefault
+     * @attr name com.prarysoft.one.validator:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
@@ -18368,7 +18368,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:layout
+     * @attr name com.prarysoft.one.validator:layout
      */
     public static final int SearchView_layout=9;
     /**
@@ -18381,7 +18381,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:queryBackground
+     * @attr name com.prarysoft.one.validator:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
@@ -18392,7 +18392,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:queryHint
+     * @attr name com.prarysoft.one.validator:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
@@ -18405,7 +18405,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:searchHintIcon
+     * @attr name com.prarysoft.one.validator:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
@@ -18418,7 +18418,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:searchIcon
+     * @attr name com.prarysoft.one.validator:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
@@ -18431,7 +18431,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:submitBackground
+     * @attr name com.prarysoft.one.validator:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
@@ -18444,7 +18444,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:suggestionRowLayout
+     * @attr name com.prarysoft.one.validator:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
@@ -18457,7 +18457,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:voiceIcon
+     * @attr name com.prarysoft.one.validator:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
     /**
@@ -18467,16 +18467,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerFamily com.one.validator:cornerFamily}</code></td><td>Corner family to be used in the ShapeAppearance.</td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyBottomLeft com.one.validator:cornerFamilyBottomLeft}</code></td><td>Bottom left corner family to be used in the ShapeAppearance.</td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyBottomRight com.one.validator:cornerFamilyBottomRight}</code></td><td>Bottom right corner family to be used in the ShapeAppearance.</td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyTopLeft com.one.validator:cornerFamilyTopLeft}</code></td><td>Top left corner family to be used in the ShapeAppearance.</td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyTopRight com.one.validator:cornerFamilyTopRight}</code></td><td>Top right corner family to be used in the ShapeAppearance.</td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerSize com.one.validator:cornerSize}</code></td><td>Corner size to be used in the ShapeAppearance.</td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerSizeBottomLeft com.one.validator:cornerSizeBottomLeft}</code></td><td>Bottom left corner size to be used in the ShapeAppearance.</td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerSizeBottomRight com.one.validator:cornerSizeBottomRight}</code></td><td>Bottom right corner size to be used in the ShapeAppearance.</td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerSizeTopLeft com.one.validator:cornerSizeTopLeft}</code></td><td>Top left corner size to be used in the ShapeAppearance.</td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerSizeTopRight com.one.validator:cornerSizeTopRight}</code></td><td>Top right corner size to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerFamily com.prarysoft.one.validator:cornerFamily}</code></td><td>Corner family to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyBottomLeft com.prarysoft.one.validator:cornerFamilyBottomLeft}</code></td><td>Bottom left corner family to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyBottomRight com.prarysoft.one.validator:cornerFamilyBottomRight}</code></td><td>Bottom right corner family to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyTopLeft com.prarysoft.one.validator:cornerFamilyTopLeft}</code></td><td>Top left corner family to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyTopRight com.prarysoft.one.validator:cornerFamilyTopRight}</code></td><td>Top right corner family to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerSize com.prarysoft.one.validator:cornerSize}</code></td><td>Corner size to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerSizeBottomLeft com.prarysoft.one.validator:cornerSizeBottomLeft}</code></td><td>Bottom left corner size to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerSizeBottomRight com.prarysoft.one.validator:cornerSizeBottomRight}</code></td><td>Bottom right corner size to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerSizeTopLeft com.prarysoft.one.validator:cornerSizeTopLeft}</code></td><td>Top left corner size to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerSizeTopRight com.prarysoft.one.validator:cornerSizeTopRight}</code></td><td>Top right corner size to be used in the ShapeAppearance.</td></tr>
      * </table>
      * @see #ShapeAppearance_cornerFamily
      * @see #ShapeAppearance_cornerFamilyBottomLeft
@@ -18509,7 +18509,7 @@ public final class R {
      * <tr><td>rounded</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:cornerFamily
+     * @attr name com.prarysoft.one.validator:cornerFamily
      */
     public static final int ShapeAppearance_cornerFamily=0;
     /**
@@ -18527,7 +18527,7 @@ public final class R {
      * <tr><td>rounded</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:cornerFamilyBottomLeft
+     * @attr name com.prarysoft.one.validator:cornerFamilyBottomLeft
      */
     public static final int ShapeAppearance_cornerFamilyBottomLeft=1;
     /**
@@ -18545,7 +18545,7 @@ public final class R {
      * <tr><td>rounded</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:cornerFamilyBottomRight
+     * @attr name com.prarysoft.one.validator:cornerFamilyBottomRight
      */
     public static final int ShapeAppearance_cornerFamilyBottomRight=2;
     /**
@@ -18563,7 +18563,7 @@ public final class R {
      * <tr><td>rounded</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:cornerFamilyTopLeft
+     * @attr name com.prarysoft.one.validator:cornerFamilyTopLeft
      */
     public static final int ShapeAppearance_cornerFamilyTopLeft=3;
     /**
@@ -18581,7 +18581,7 @@ public final class R {
      * <tr><td>rounded</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:cornerFamilyTopRight
+     * @attr name com.prarysoft.one.validator:cornerFamilyTopRight
      */
     public static final int ShapeAppearance_cornerFamilyTopRight=4;
     /**
@@ -18599,7 +18599,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.one.validator:cornerSize
+     * @attr name com.prarysoft.one.validator:cornerSize
      */
     public static final int ShapeAppearance_cornerSize=5;
     /**
@@ -18617,7 +18617,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.one.validator:cornerSizeBottomLeft
+     * @attr name com.prarysoft.one.validator:cornerSizeBottomLeft
      */
     public static final int ShapeAppearance_cornerSizeBottomLeft=6;
     /**
@@ -18635,7 +18635,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.one.validator:cornerSizeBottomRight
+     * @attr name com.prarysoft.one.validator:cornerSizeBottomRight
      */
     public static final int ShapeAppearance_cornerSizeBottomRight=7;
     /**
@@ -18653,7 +18653,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.one.validator:cornerSizeTopLeft
+     * @attr name com.prarysoft.one.validator:cornerSizeTopLeft
      */
     public static final int ShapeAppearance_cornerSizeTopLeft=8;
     /**
@@ -18671,7 +18671,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.one.validator:cornerSizeTopRight
+     * @attr name com.prarysoft.one.validator:cornerSizeTopRight
      */
     public static final int ShapeAppearance_cornerSizeTopRight=9;
     /**
@@ -18681,8 +18681,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle com.one.validator:snackbarButtonStyle}</code></td><td>Style to use for action button within a Snackbar in this theme.</td></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarStyle com.one.validator:snackbarStyle}</code></td><td>Style to use for Snackbars in this theme.</td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle com.prarysoft.one.validator:snackbarButtonStyle}</code></td><td>Style to use for action button within a Snackbar in this theme.</td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarStyle com.prarysoft.one.validator:snackbarStyle}</code></td><td>Style to use for Snackbars in this theme.</td></tr>
      * </table>
      * @see #Snackbar_snackbarButtonStyle
      * @see #Snackbar_snackbarStyle
@@ -18700,7 +18700,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:snackbarButtonStyle
+     * @attr name com.prarysoft.one.validator:snackbarButtonStyle
      */
     public static final int Snackbar_snackbarButtonStyle=0;
     /**
@@ -18713,7 +18713,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:snackbarStyle
+     * @attr name com.prarysoft.one.validator:snackbarStyle
      */
     public static final int Snackbar_snackbarStyle=1;
     /**
@@ -18724,12 +18724,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_actionTextColorAlpha com.one.validator:actionTextColorAlpha}</code></td><td>Alpha level for the action button text, to allow for adjusting the lightness or darkness of
+     * <tr><td><code>{@link #SnackbarLayout_actionTextColorAlpha com.prarysoft.one.validator:actionTextColorAlpha}</code></td><td>Alpha level for the action button text, to allow for adjusting the lightness or darkness of
      * the theme color used for Snackbar text buttons (e.g., colorPrimary).</td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_animationMode com.one.validator:animationMode}</code></td><td>Sets the enter and exit animations for a Snackbar.</td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_backgroundOverlayColorAlpha com.one.validator:backgroundOverlayColorAlpha}</code></td><td>Alpha level for the color that is overlaid on top of the background color.</td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation com.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.one.validator:maxActionInlineWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_animationMode com.prarysoft.one.validator:animationMode}</code></td><td>Sets the enter and exit animations for a Snackbar.</td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_backgroundOverlayColorAlpha com.prarysoft.one.validator:backgroundOverlayColorAlpha}</code></td><td>Alpha level for the color that is overlaid on top of the background color.</td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation com.prarysoft.one.validator:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.prarysoft.one.validator:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
      * @see #SnackbarLayout_actionTextColorAlpha
@@ -18763,7 +18763,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.one.validator:actionTextColorAlpha
+     * @attr name com.prarysoft.one.validator:actionTextColorAlpha
      */
     public static final int SnackbarLayout_actionTextColorAlpha=1;
     /**
@@ -18781,7 +18781,7 @@ public final class R {
      * <tr><td>slide</td><td>0</td><td>Mode that corresponds to the slide in and out animations.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:animationMode
+     * @attr name com.prarysoft.one.validator:animationMode
      */
     public static final int SnackbarLayout_animationMode=2;
     /**
@@ -18791,7 +18791,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.one.validator:backgroundOverlayColorAlpha
+     * @attr name com.prarysoft.one.validator:backgroundOverlayColorAlpha
      */
     public static final int SnackbarLayout_backgroundOverlayColorAlpha=3;
     /**
@@ -18805,11 +18805,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:elevation
+     * @attr name com.prarysoft.one.validator:elevation
      */
     public static final int SnackbarLayout_elevation=4;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#maxActionInlineWidth}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#maxActionInlineWidth}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18818,7 +18818,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:maxActionInlineWidth
+     * @attr name com.prarysoft.one.validator:maxActionInlineWidth
      */
     public static final int SnackbarLayout_maxActionInlineWidth=5;
     /**
@@ -18832,7 +18832,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme com.one.validator:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * <tr><td><code>{@link #Spinner_popupTheme com.prarysoft.one.validator:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.</td></tr>
      * </table>
      * @see #Spinner_android_entries
@@ -18921,7 +18921,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:popupTheme
+     * @attr name com.prarysoft.one.validator:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -19061,17 +19061,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText com.one.validator:showText}</code></td><td>Whether to draw on/off text.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack com.one.validator:splitTrack}</code></td><td>Whether to split the track and leave a gap for the thumb drawable.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.one.validator:switchMinWidth}</code></td><td>Minimum width for the switch component</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding com.one.validator:switchPadding}</code></td><td>Minimum space between the switch and caption text</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.one.validator:switchTextAppearance}</code></td><td>TextAppearance style for text displayed on the switch thumb.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.one.validator:thumbTextPadding}</code></td><td>Amount of padding on either side of text within the switch thumb.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint com.one.validator:thumbTint}</code></td><td>Tint to apply to the thumb drawable.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.one.validator:thumbTintMode}</code></td><td>Blending mode used to apply the thumb tint.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track com.one.validator:track}</code></td><td>Drawable to use as the "track" that the switch thumb slides within.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint com.one.validator:trackTint}</code></td><td>Tint to apply to the track.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.one.validator:trackTintMode}</code></td><td>Blending mode used to apply the track tint.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.prarysoft.one.validator:showText}</code></td><td>Whether to draw on/off text.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.prarysoft.one.validator:splitTrack}</code></td><td>Whether to split the track and leave a gap for the thumb drawable.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.prarysoft.one.validator:switchMinWidth}</code></td><td>Minimum width for the switch component</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.prarysoft.one.validator:switchPadding}</code></td><td>Minimum space between the switch and caption text</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.prarysoft.one.validator:switchTextAppearance}</code></td><td>TextAppearance style for text displayed on the switch thumb.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.prarysoft.one.validator:thumbTextPadding}</code></td><td>Amount of padding on either side of text within the switch thumb.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.prarysoft.one.validator:thumbTint}</code></td><td>Tint to apply to the thumb drawable.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.prarysoft.one.validator:thumbTintMode}</code></td><td>Blending mode used to apply the thumb tint.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.prarysoft.one.validator:track}</code></td><td>Drawable to use as the "track" that the switch thumb slides within.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.prarysoft.one.validator:trackTint}</code></td><td>Tint to apply to the track.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.prarysoft.one.validator:trackTintMode}</code></td><td>Blending mode used to apply the track tint.</td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -19137,7 +19137,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:showText
+     * @attr name com.prarysoft.one.validator:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
@@ -19148,7 +19148,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:splitTrack
+     * @attr name com.prarysoft.one.validator:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
@@ -19162,7 +19162,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:switchMinWidth
+     * @attr name com.prarysoft.one.validator:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
@@ -19176,7 +19176,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:switchPadding
+     * @attr name com.prarysoft.one.validator:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
@@ -19189,7 +19189,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:switchTextAppearance
+     * @attr name com.prarysoft.one.validator:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
@@ -19203,7 +19203,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:thumbTextPadding
+     * @attr name com.prarysoft.one.validator:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
@@ -19215,7 +19215,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:thumbTint
+     * @attr name com.prarysoft.one.validator:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
@@ -19242,7 +19242,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:thumbTintMode
+     * @attr name com.prarysoft.one.validator:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
@@ -19255,7 +19255,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:track
+     * @attr name com.prarysoft.one.validator:track
      */
     public static final int SwitchCompat_track=11;
     /**
@@ -19267,7 +19267,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:trackTint
+     * @attr name com.prarysoft.one.validator:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
@@ -19294,7 +19294,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:trackTintMode
+     * @attr name com.prarysoft.one.validator:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -19304,7 +19304,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SwitchMaterial_useMaterialThemeColors com.one.validator:useMaterialThemeColors}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchMaterial_useMaterialThemeColors com.prarysoft.one.validator:useMaterialThemeColors}</code></td><td></td></tr>
      * </table>
      * @see #SwitchMaterial_useMaterialThemeColors
      */
@@ -19322,7 +19322,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:useMaterialThemeColors
+     * @attr name com.prarysoft.one.validator:useMaterialThemeColors
      */
     public static final int SwitchMaterial_useMaterialThemeColors=0;
     /**
@@ -19387,35 +19387,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #TabLayout_tabBackground com.one.validator:tabBackground}</code></td><td>Reference to a background to be applied to tabs.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabContentStart com.one.validator:tabContentStart}</code></td><td>Position in the Y axis from the starting edge that tabs should be positioned from.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabGravity com.one.validator:tabGravity}</code></td><td>Gravity constant for tabs.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTint com.one.validator:tabIconTint}</code></td><td>Tint to apply to tab icons, if present.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTintMode com.one.validator:tabIconTintMode}</code></td><td>Blending mode to apply to tab icons.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicator com.one.validator:tabIndicator}</code></td><td>Reference to a drawable to use as selection indicator for tabs.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration com.one.validator:tabIndicatorAnimationDuration}</code></td><td>Duration in milliseconds for the animation of the selection indicator from one tab item
+     * <tr><td><code>{@link #TabLayout_tabBackground com.prarysoft.one.validator:tabBackground}</code></td><td>Reference to a background to be applied to tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabContentStart com.prarysoft.one.validator:tabContentStart}</code></td><td>Position in the Y axis from the starting edge that tabs should be positioned from.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabGravity com.prarysoft.one.validator:tabGravity}</code></td><td>Gravity constant for tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTint com.prarysoft.one.validator:tabIconTint}</code></td><td>Tint to apply to tab icons, if present.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTintMode com.prarysoft.one.validator:tabIconTintMode}</code></td><td>Blending mode to apply to tab icons.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicator com.prarysoft.one.validator:tabIndicator}</code></td><td>Reference to a drawable to use as selection indicator for tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration com.prarysoft.one.validator:tabIndicatorAnimationDuration}</code></td><td>Duration in milliseconds for the animation of the selection indicator from one tab item
      * to another.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.one.validator:tabIndicatorColor}</code></td><td>Color of the indicator used to show the currently selected tab.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth com.one.validator:tabIndicatorFullWidth}</code></td><td>Whether the selection indicator width should fill the full width of the tab item,
+     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.prarysoft.one.validator:tabIndicatorColor}</code></td><td>Color of the indicator used to show the currently selected tab.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth com.prarysoft.one.validator:tabIndicatorFullWidth}</code></td><td>Whether the selection indicator width should fill the full width of the tab item,
      * or if it should be fitted to the content of the tab text label.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity com.one.validator:tabIndicatorGravity}</code></td><td>Gravity constant for tab selection indicator.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.one.validator:tabIndicatorHeight}</code></td><td>{@deprecated Instead, set the intrinsic size of the custom drawable provided to the
+     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity com.prarysoft.one.validator:tabIndicatorGravity}</code></td><td>Gravity constant for tab selection indicator.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.prarysoft.one.validator:tabIndicatorHeight}</code></td><td>{@deprecated Instead, set the intrinsic size of the custom drawable provided to the
      * tabIndicator attribute in order to change the indicator height.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabInlineLabel com.one.validator:tabInlineLabel}</code></td><td>Whether to display tab labels horizontally inline with icons, or underneath icons.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.one.validator:tabMaxWidth}</code></td><td>The maximum width for tabs.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMinWidth com.one.validator:tabMinWidth}</code></td><td>The minimum width for tabs.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMode com.one.validator:tabMode}</code></td><td>The behavior mode for the Tabs in this layout</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPadding com.one.validator:tabPadding}</code></td><td>The preferred padding along all edges of tabs.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.one.validator:tabPaddingBottom}</code></td><td>The preferred padding along the bottom edge of tabs.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.one.validator:tabPaddingEnd}</code></td><td>The preferred padding along the end edge of tabs.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.one.validator:tabPaddingStart}</code></td><td>The preferred padding along the start edge of tabs.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.one.validator:tabPaddingTop}</code></td><td>The preferred padding along the top edge of tabs.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabRippleColor com.one.validator:tabRippleColor}</code></td><td>Ripple color for the tabs.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.one.validator:tabSelectedTextColor}</code></td><td>{@deprecated Instead, provide a ColorStateList to the tabTextColor attribute with a
+     * <tr><td><code>{@link #TabLayout_tabInlineLabel com.prarysoft.one.validator:tabInlineLabel}</code></td><td>Whether to display tab labels horizontally inline with icons, or underneath icons.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.prarysoft.one.validator:tabMaxWidth}</code></td><td>The maximum width for tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMinWidth com.prarysoft.one.validator:tabMinWidth}</code></td><td>The minimum width for tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMode com.prarysoft.one.validator:tabMode}</code></td><td>The behavior mode for the Tabs in this layout</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPadding com.prarysoft.one.validator:tabPadding}</code></td><td>The preferred padding along all edges of tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.prarysoft.one.validator:tabPaddingBottom}</code></td><td>The preferred padding along the bottom edge of tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.prarysoft.one.validator:tabPaddingEnd}</code></td><td>The preferred padding along the end edge of tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.prarysoft.one.validator:tabPaddingStart}</code></td><td>The preferred padding along the start edge of tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.prarysoft.one.validator:tabPaddingTop}</code></td><td>The preferred padding along the top edge of tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabRippleColor com.prarysoft.one.validator:tabRippleColor}</code></td><td>Ripple color for the tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.prarysoft.one.validator:tabSelectedTextColor}</code></td><td>{@deprecated Instead, provide a ColorStateList to the tabTextColor attribute with a
      * selected color set.}</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.one.validator:tabTextAppearance}</code></td><td>A reference to a TextAppearance style to be applied to tabs.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextColor com.one.validator:tabTextColor}</code></td><td>The default text color to be applied to tabs.</td></tr>
-     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple com.one.validator:tabUnboundedRipple}</code></td><td>Whether to use unbounded ripple effect for tabs, or if ripple should instead be bound to
+     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.prarysoft.one.validator:tabTextAppearance}</code></td><td>A reference to a TextAppearance style to be applied to tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextColor com.prarysoft.one.validator:tabTextColor}</code></td><td>The default text color to be applied to tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple com.prarysoft.one.validator:tabUnboundedRipple}</code></td><td>Whether to use unbounded ripple effect for tabs, or if ripple should instead be bound to
      * tab item bounds.</td></tr>
      * </table>
      * @see #TabLayout_tabBackground
@@ -19464,7 +19464,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:tabBackground
+     * @attr name com.prarysoft.one.validator:tabBackground
      */
     public static final int TabLayout_tabBackground=0;
     /**
@@ -19478,7 +19478,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:tabContentStart
+     * @attr name com.prarysoft.one.validator:tabContentStart
      */
     public static final int TabLayout_tabContentStart=1;
     /**
@@ -19496,7 +19496,7 @@ public final class R {
      * <tr><td>fill</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:tabGravity
+     * @attr name com.prarysoft.one.validator:tabGravity
      */
     public static final int TabLayout_tabGravity=2;
     /**
@@ -19508,7 +19508,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:tabIconTint
+     * @attr name com.prarysoft.one.validator:tabIconTint
      */
     public static final int TabLayout_tabIconTint=3;
     /**
@@ -19530,7 +19530,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:tabIconTintMode
+     * @attr name com.prarysoft.one.validator:tabIconTintMode
      */
     public static final int TabLayout_tabIconTintMode=4;
     /**
@@ -19544,7 +19544,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:tabIndicator
+     * @attr name com.prarysoft.one.validator:tabIndicator
      */
     public static final int TabLayout_tabIndicator=5;
     /**
@@ -19555,7 +19555,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.one.validator:tabIndicatorAnimationDuration
+     * @attr name com.prarysoft.one.validator:tabIndicatorAnimationDuration
      */
     public static final int TabLayout_tabIndicatorAnimationDuration=6;
     /**
@@ -19567,7 +19567,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:tabIndicatorColor
+     * @attr name com.prarysoft.one.validator:tabIndicatorColor
      */
     public static final int TabLayout_tabIndicatorColor=7;
     /**
@@ -19580,7 +19580,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:tabIndicatorFullWidth
+     * @attr name com.prarysoft.one.validator:tabIndicatorFullWidth
      */
     public static final int TabLayout_tabIndicatorFullWidth=8;
     /**
@@ -19600,7 +19600,7 @@ public final class R {
      * <tr><td>top</td><td>2</td><td>Align indicator to the top of this tab layout.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:tabIndicatorGravity
+     * @attr name com.prarysoft.one.validator:tabIndicatorGravity
      */
     public static final int TabLayout_tabIndicatorGravity=9;
     /**
@@ -19616,7 +19616,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:tabIndicatorHeight
+     * @attr name com.prarysoft.one.validator:tabIndicatorHeight
      */
     @Deprecated
     public static final int TabLayout_tabIndicatorHeight=10;
@@ -19628,7 +19628,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:tabInlineLabel
+     * @attr name com.prarysoft.one.validator:tabInlineLabel
      */
     public static final int TabLayout_tabInlineLabel=11;
     /**
@@ -19642,7 +19642,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:tabMaxWidth
+     * @attr name com.prarysoft.one.validator:tabMaxWidth
      */
     public static final int TabLayout_tabMaxWidth=12;
     /**
@@ -19656,7 +19656,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:tabMinWidth
+     * @attr name com.prarysoft.one.validator:tabMinWidth
      */
     public static final int TabLayout_tabMinWidth=13;
     /**
@@ -19675,7 +19675,7 @@ public final class R {
      * <tr><td>scrollable</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.one.validator:tabMode
+     * @attr name com.prarysoft.one.validator:tabMode
      */
     public static final int TabLayout_tabMode=14;
     /**
@@ -19689,7 +19689,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:tabPadding
+     * @attr name com.prarysoft.one.validator:tabPadding
      */
     public static final int TabLayout_tabPadding=15;
     /**
@@ -19703,7 +19703,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:tabPaddingBottom
+     * @attr name com.prarysoft.one.validator:tabPaddingBottom
      */
     public static final int TabLayout_tabPaddingBottom=16;
     /**
@@ -19717,7 +19717,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:tabPaddingEnd
+     * @attr name com.prarysoft.one.validator:tabPaddingEnd
      */
     public static final int TabLayout_tabPaddingEnd=17;
     /**
@@ -19731,7 +19731,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:tabPaddingStart
+     * @attr name com.prarysoft.one.validator:tabPaddingStart
      */
     public static final int TabLayout_tabPaddingStart=18;
     /**
@@ -19745,7 +19745,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:tabPaddingTop
+     * @attr name com.prarysoft.one.validator:tabPaddingTop
      */
     public static final int TabLayout_tabPaddingTop=19;
     /**
@@ -19758,7 +19758,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:tabRippleColor
+     * @attr name com.prarysoft.one.validator:tabRippleColor
      */
     public static final int TabLayout_tabRippleColor=20;
     /**
@@ -19771,7 +19771,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:tabSelectedTextColor
+     * @attr name com.prarysoft.one.validator:tabSelectedTextColor
      */
     @Deprecated
     public static final int TabLayout_tabSelectedTextColor=21;
@@ -19785,7 +19785,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:tabTextAppearance
+     * @attr name com.prarysoft.one.validator:tabTextAppearance
      */
     public static final int TabLayout_tabTextAppearance=22;
     /**
@@ -19797,7 +19797,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:tabTextColor
+     * @attr name com.prarysoft.one.validator:tabTextColor
      */
     public static final int TabLayout_tabTextColor=23;
     /**
@@ -19809,7 +19809,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:tabUnboundedRipple
+     * @attr name com.prarysoft.one.validator:tabUnboundedRipple
      */
     public static final int TabLayout_tabUnboundedRipple=24;
     /**
@@ -19831,10 +19831,10 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_textFontWeight android:textFontWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily com.one.validator:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontVariationSettings com.one.validator:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps com.one.validator:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
-     * <tr><td><code>{@link #TextAppearance_textLocale com.one.validator:textLocale}</code></td><td>Set the textLocale by a comma-separated language tag string,
+     * <tr><td><code>{@link #TextAppearance_fontFamily com.prarysoft.one.validator:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontVariationSettings com.prarysoft.one.validator:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.prarysoft.one.validator:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_textLocale com.prarysoft.one.validator:textLocale}</code></td><td>Set the textLocale by a comma-separated language tag string,
      * for example "ja-JP,zh-CN".</td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
@@ -20041,7 +20041,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:fontFamily
+     * @attr name com.prarysoft.one.validator:fontFamily
      */
     public static final int TextAppearance_fontFamily=12;
     /**
@@ -20052,7 +20052,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:fontVariationSettings
+     * @attr name com.prarysoft.one.validator:fontVariationSettings
      */
     public static final int TextAppearance_fontVariationSettings=13;
     /**
@@ -20067,7 +20067,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:textAllCaps
+     * @attr name com.prarysoft.one.validator:textAllCaps
      */
     public static final int TextAppearance_textAllCaps=14;
     /**
@@ -20082,7 +20082,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:textLocale
+     * @attr name com.prarysoft.one.validator:textLocale
      */
     public static final int TextAppearance_textLocale=15;
     /**
@@ -20094,57 +20094,57 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor com.one.validator:boxBackgroundColor}</code></td><td>The color to use for the box's background color when in filled box mode.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode com.one.validator:boxBackgroundMode}</code></td><td>Whether the text input area should be drawn as a filled box, an outline box, or not as a box.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop com.one.validator:boxCollapsedPaddingTop}</code></td><td>Value to use for the EditText's collapsed top padding in box mode.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd com.one.validator:boxCornerRadiusBottomEnd}</code></td><td>The value to use for the box's bottom end corner radius when in box mode.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart com.one.validator:boxCornerRadiusBottomStart}</code></td><td>The value to use for the box's bottom start corner radius when in box mode.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd com.one.validator:boxCornerRadiusTopEnd}</code></td><td>The value to use for the box's top end corner radius when in box mode.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart com.one.validator:boxCornerRadiusTopStart}</code></td><td>The value to use for the box's top start corner radius when in box mode.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor com.one.validator:boxStrokeColor}</code></td><td>The color to use for the box's stroke when in outline box mode.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth com.one.validator:boxStrokeWidth}</code></td><td>The value to use for the box's stroke when in outline box mode, or for the underline stroke
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor com.prarysoft.one.validator:boxBackgroundColor}</code></td><td>The color to use for the box's background color when in filled box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode com.prarysoft.one.validator:boxBackgroundMode}</code></td><td>Whether the text input area should be drawn as a filled box, an outline box, or not as a box.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop com.prarysoft.one.validator:boxCollapsedPaddingTop}</code></td><td>Value to use for the EditText's collapsed top padding in box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd com.prarysoft.one.validator:boxCornerRadiusBottomEnd}</code></td><td>The value to use for the box's bottom end corner radius when in box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart com.prarysoft.one.validator:boxCornerRadiusBottomStart}</code></td><td>The value to use for the box's bottom start corner radius when in box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd com.prarysoft.one.validator:boxCornerRadiusTopEnd}</code></td><td>The value to use for the box's top end corner radius when in box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart com.prarysoft.one.validator:boxCornerRadiusTopStart}</code></td><td>The value to use for the box's top start corner radius when in box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor com.prarysoft.one.validator:boxStrokeColor}</code></td><td>The color to use for the box's stroke when in outline box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth com.prarysoft.one.validator:boxStrokeWidth}</code></td><td>The value to use for the box's stroke when in outline box mode, or for the underline stroke
      * in filled mode.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidthFocused com.one.validator:boxStrokeWidthFocused}</code></td><td>The value to use for the focused box's stroke when in outline box mode, or for the focused
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidthFocused com.prarysoft.one.validator:boxStrokeWidthFocused}</code></td><td>The value to use for the focused box's stroke when in outline box mode, or for the focused
      * underline stroke in filled mode..</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.one.validator:counterEnabled}</code></td><td>Whether the layout is laid out as if the character counter will be displayed.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.one.validator:counterMaxLength}</code></td><td>The max length to display in the character counter.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.one.validator:counterOverflowTextAppearance}</code></td><td>TextAppearance of the character counter when the text is longer than the max.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextColor com.one.validator:counterOverflowTextColor}</code></td><td>Text color of the character counter when the text is longer than the max.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.one.validator:counterTextAppearance}</code></td><td>TextAppearance of the character counter.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterTextColor com.one.validator:counterTextColor}</code></td><td>Text color of the character counter.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_endIconCheckable com.one.validator:endIconCheckable}</code></td><td>Whether the end icon is checkable.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_endIconContentDescription com.one.validator:endIconContentDescription}</code></td><td>Text to set as the content description for the end icon.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_endIconDrawable com.one.validator:endIconDrawable}</code></td><td>Drawable to use for the end icon.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_endIconMode com.one.validator:endIconMode}</code></td><td>The end icon mode of the TextInputLayout.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_endIconTint com.one.validator:endIconTint}</code></td><td>Tint color to use for the end icon.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_endIconTintMode com.one.validator:endIconTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.one.validator:errorEnabled}</code></td><td>Whether the layout is laid out as if an error will be displayed.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorIconDrawable com.one.validator:errorIconDrawable}</code></td><td>End icon to be shown when an error is displayed.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorIconTint com.one.validator:errorIconTint}</code></td><td>Tint color to use for the error icon.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorIconTintMode com.one.validator:errorIconTintMode}</code></td><td>Blending mode used to apply the error icon tint.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.one.validator:errorTextAppearance}</code></td><td>TextAppearance of any error message displayed.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorTextColor com.one.validator:errorTextColor}</code></td><td>Text color for any error message displayed.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperText com.one.validator:helperText}</code></td><td>The text to display as helper text underneath the text input area.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled com.one.validator:helperTextEnabled}</code></td><td>Whether the layout's helper text functionality is enabled.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance com.one.validator:helperTextTextAppearance}</code></td><td>TextAppearance of the helper text displayed underneath the text input area.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextTextColor com.one.validator:helperTextTextColor}</code></td><td>Text color of the helper text displayed underneath the text input area.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.one.validator:hintAnimationEnabled}</code></td><td>Whether to animate hint state changes.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.one.validator:hintEnabled}</code></td><td>Whether the layout's floating label functionality is enabled.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.one.validator:hintTextAppearance}</code></td><td>TextAppearance of the hint in the collapsed floating label.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintTextColor com.one.validator:hintTextColor}</code></td><td>Text color of the hint in the collapsed floating label.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.one.validator:passwordToggleContentDescription}</code></td><td>Text to set as the content description for the password input visibility toggle.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.one.validator:passwordToggleDrawable}</code></td><td>Drawable to use as the password input visibility toggle icon.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.one.validator:passwordToggleEnabled}</code></td><td>Whether the view will display a toggle when the EditText has a password.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.one.validator:passwordToggleTint}</code></td><td>Icon to use for the password input visibility toggle
+     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.prarysoft.one.validator:counterEnabled}</code></td><td>Whether the layout is laid out as if the character counter will be displayed.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.prarysoft.one.validator:counterMaxLength}</code></td><td>The max length to display in the character counter.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.prarysoft.one.validator:counterOverflowTextAppearance}</code></td><td>TextAppearance of the character counter when the text is longer than the max.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextColor com.prarysoft.one.validator:counterOverflowTextColor}</code></td><td>Text color of the character counter when the text is longer than the max.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.prarysoft.one.validator:counterTextAppearance}</code></td><td>TextAppearance of the character counter.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterTextColor com.prarysoft.one.validator:counterTextColor}</code></td><td>Text color of the character counter.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_endIconCheckable com.prarysoft.one.validator:endIconCheckable}</code></td><td>Whether the end icon is checkable.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_endIconContentDescription com.prarysoft.one.validator:endIconContentDescription}</code></td><td>Text to set as the content description for the end icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_endIconDrawable com.prarysoft.one.validator:endIconDrawable}</code></td><td>Drawable to use for the end icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_endIconMode com.prarysoft.one.validator:endIconMode}</code></td><td>The end icon mode of the TextInputLayout.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_endIconTint com.prarysoft.one.validator:endIconTint}</code></td><td>Tint color to use for the end icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_endIconTintMode com.prarysoft.one.validator:endIconTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.prarysoft.one.validator:errorEnabled}</code></td><td>Whether the layout is laid out as if an error will be displayed.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorIconDrawable com.prarysoft.one.validator:errorIconDrawable}</code></td><td>End icon to be shown when an error is displayed.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorIconTint com.prarysoft.one.validator:errorIconTint}</code></td><td>Tint color to use for the error icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorIconTintMode com.prarysoft.one.validator:errorIconTintMode}</code></td><td>Blending mode used to apply the error icon tint.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.prarysoft.one.validator:errorTextAppearance}</code></td><td>TextAppearance of any error message displayed.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorTextColor com.prarysoft.one.validator:errorTextColor}</code></td><td>Text color for any error message displayed.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperText com.prarysoft.one.validator:helperText}</code></td><td>The text to display as helper text underneath the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled com.prarysoft.one.validator:helperTextEnabled}</code></td><td>Whether the layout's helper text functionality is enabled.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance com.prarysoft.one.validator:helperTextTextAppearance}</code></td><td>TextAppearance of the helper text displayed underneath the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextTextColor com.prarysoft.one.validator:helperTextTextColor}</code></td><td>Text color of the helper text displayed underneath the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.prarysoft.one.validator:hintAnimationEnabled}</code></td><td>Whether to animate hint state changes.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.prarysoft.one.validator:hintEnabled}</code></td><td>Whether the layout's floating label functionality is enabled.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.prarysoft.one.validator:hintTextAppearance}</code></td><td>TextAppearance of the hint in the collapsed floating label.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintTextColor com.prarysoft.one.validator:hintTextColor}</code></td><td>Text color of the hint in the collapsed floating label.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.prarysoft.one.validator:passwordToggleContentDescription}</code></td><td>Text to set as the content description for the password input visibility toggle.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.prarysoft.one.validator:passwordToggleDrawable}</code></td><td>Drawable to use as the password input visibility toggle icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.prarysoft.one.validator:passwordToggleEnabled}</code></td><td>Whether the view will display a toggle when the EditText has a password.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.prarysoft.one.validator:passwordToggleTint}</code></td><td>Icon to use for the password input visibility toggle
      * Deprecated.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.one.validator:passwordToggleTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_shapeAppearance com.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_shapeAppearanceOverlay com.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_startIconCheckable com.one.validator:startIconCheckable}</code></td><td>Whether the start icon is checkable.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_startIconContentDescription com.one.validator:startIconContentDescription}</code></td><td>Text to set as the content description for the start icon.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_startIconDrawable com.one.validator:startIconDrawable}</code></td><td>Drawable to use for the start icon.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_startIconTint com.one.validator:startIconTint}</code></td><td>Tint color to use for the start icon.</td></tr>
-     * <tr><td><code>{@link #TextInputLayout_startIconTintMode com.one.validator:startIconTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.prarysoft.one.validator:passwordToggleTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_shapeAppearance com.prarysoft.one.validator:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_shapeAppearanceOverlay com.prarysoft.one.validator:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_startIconCheckable com.prarysoft.one.validator:startIconCheckable}</code></td><td>Whether the start icon is checkable.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_startIconContentDescription com.prarysoft.one.validator:startIconContentDescription}</code></td><td>Text to set as the content description for the start icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_startIconDrawable com.prarysoft.one.validator:startIconDrawable}</code></td><td>Drawable to use for the start icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_startIconTint com.prarysoft.one.validator:startIconTint}</code></td><td>Tint color to use for the start icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_startIconTintMode com.prarysoft.one.validator:startIconTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
      * </table>
      * @see #TextInputLayout_android_textColorHint
      * @see #TextInputLayout_android_hint
@@ -20248,7 +20248,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:boxBackgroundColor
+     * @attr name com.prarysoft.one.validator:boxBackgroundColor
      */
     public static final int TextInputLayout_boxBackgroundColor=2;
     /**
@@ -20267,7 +20267,7 @@ public final class R {
      * <tr><td>outline</td><td>2</td><td>Outline box mode for the text input box.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:boxBackgroundMode
+     * @attr name com.prarysoft.one.validator:boxBackgroundMode
      */
     public static final int TextInputLayout_boxBackgroundMode=3;
     /**
@@ -20281,7 +20281,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:boxCollapsedPaddingTop
+     * @attr name com.prarysoft.one.validator:boxCollapsedPaddingTop
      */
     public static final int TextInputLayout_boxCollapsedPaddingTop=4;
     /**
@@ -20295,7 +20295,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:boxCornerRadiusBottomEnd
+     * @attr name com.prarysoft.one.validator:boxCornerRadiusBottomEnd
      */
     public static final int TextInputLayout_boxCornerRadiusBottomEnd=5;
     /**
@@ -20309,7 +20309,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:boxCornerRadiusBottomStart
+     * @attr name com.prarysoft.one.validator:boxCornerRadiusBottomStart
      */
     public static final int TextInputLayout_boxCornerRadiusBottomStart=6;
     /**
@@ -20323,7 +20323,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:boxCornerRadiusTopEnd
+     * @attr name com.prarysoft.one.validator:boxCornerRadiusTopEnd
      */
     public static final int TextInputLayout_boxCornerRadiusTopEnd=7;
     /**
@@ -20337,7 +20337,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:boxCornerRadiusTopStart
+     * @attr name com.prarysoft.one.validator:boxCornerRadiusTopStart
      */
     public static final int TextInputLayout_boxCornerRadiusTopStart=8;
     /**
@@ -20349,7 +20349,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:boxStrokeColor
+     * @attr name com.prarysoft.one.validator:boxStrokeColor
      */
     public static final int TextInputLayout_boxStrokeColor=9;
     /**
@@ -20364,7 +20364,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:boxStrokeWidth
+     * @attr name com.prarysoft.one.validator:boxStrokeWidth
      */
     public static final int TextInputLayout_boxStrokeWidth=10;
     /**
@@ -20379,7 +20379,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:boxStrokeWidthFocused
+     * @attr name com.prarysoft.one.validator:boxStrokeWidthFocused
      */
     public static final int TextInputLayout_boxStrokeWidthFocused=11;
     /**
@@ -20390,7 +20390,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:counterEnabled
+     * @attr name com.prarysoft.one.validator:counterEnabled
      */
     public static final int TextInputLayout_counterEnabled=12;
     /**
@@ -20400,7 +20400,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.one.validator:counterMaxLength
+     * @attr name com.prarysoft.one.validator:counterMaxLength
      */
     public static final int TextInputLayout_counterMaxLength=13;
     /**
@@ -20413,7 +20413,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:counterOverflowTextAppearance
+     * @attr name com.prarysoft.one.validator:counterOverflowTextAppearance
      */
     public static final int TextInputLayout_counterOverflowTextAppearance=14;
     /**
@@ -20427,7 +20427,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:counterOverflowTextColor
+     * @attr name com.prarysoft.one.validator:counterOverflowTextColor
      */
     public static final int TextInputLayout_counterOverflowTextColor=15;
     /**
@@ -20440,7 +20440,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:counterTextAppearance
+     * @attr name com.prarysoft.one.validator:counterTextAppearance
      */
     public static final int TextInputLayout_counterTextAppearance=16;
     /**
@@ -20454,7 +20454,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:counterTextColor
+     * @attr name com.prarysoft.one.validator:counterTextColor
      */
     public static final int TextInputLayout_counterTextColor=17;
     /**
@@ -20465,7 +20465,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:endIconCheckable
+     * @attr name com.prarysoft.one.validator:endIconCheckable
      */
     public static final int TextInputLayout_endIconCheckable=18;
     /**
@@ -20476,7 +20476,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:endIconContentDescription
+     * @attr name com.prarysoft.one.validator:endIconContentDescription
      */
     public static final int TextInputLayout_endIconContentDescription=19;
     /**
@@ -20489,7 +20489,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:endIconDrawable
+     * @attr name com.prarysoft.one.validator:endIconDrawable
      */
     public static final int TextInputLayout_endIconDrawable=20;
     /**
@@ -20511,7 +20511,7 @@ public final class R {
      * <tr><td>password_toggle</td><td>1</td><td>The view will display a toggle when the EditText has a password.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:endIconMode
+     * @attr name com.prarysoft.one.validator:endIconMode
      */
     public static final int TextInputLayout_endIconMode=21;
     /**
@@ -20523,7 +20523,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:endIconTint
+     * @attr name com.prarysoft.one.validator:endIconTint
      */
     public static final int TextInputLayout_endIconTint=22;
     /**
@@ -20548,7 +20548,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:endIconTintMode
+     * @attr name com.prarysoft.one.validator:endIconTintMode
      */
     public static final int TextInputLayout_endIconTintMode=23;
     /**
@@ -20559,7 +20559,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:errorEnabled
+     * @attr name com.prarysoft.one.validator:errorEnabled
      */
     public static final int TextInputLayout_errorEnabled=24;
     /**
@@ -20572,7 +20572,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:errorIconDrawable
+     * @attr name com.prarysoft.one.validator:errorIconDrawable
      */
     public static final int TextInputLayout_errorIconDrawable=25;
     /**
@@ -20585,7 +20585,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:errorIconTint
+     * @attr name com.prarysoft.one.validator:errorIconTint
      */
     public static final int TextInputLayout_errorIconTint=26;
     /**
@@ -20610,7 +20610,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:errorIconTintMode
+     * @attr name com.prarysoft.one.validator:errorIconTintMode
      */
     public static final int TextInputLayout_errorIconTintMode=27;
     /**
@@ -20623,7 +20623,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:errorTextAppearance
+     * @attr name com.prarysoft.one.validator:errorTextAppearance
      */
     public static final int TextInputLayout_errorTextAppearance=28;
     /**
@@ -20636,7 +20636,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:errorTextColor
+     * @attr name com.prarysoft.one.validator:errorTextColor
      */
     public static final int TextInputLayout_errorTextColor=29;
     /**
@@ -20647,7 +20647,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:helperText
+     * @attr name com.prarysoft.one.validator:helperText
      */
     public static final int TextInputLayout_helperText=30;
     /**
@@ -20658,7 +20658,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:helperTextEnabled
+     * @attr name com.prarysoft.one.validator:helperTextEnabled
      */
     public static final int TextInputLayout_helperTextEnabled=31;
     /**
@@ -20671,7 +20671,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:helperTextTextAppearance
+     * @attr name com.prarysoft.one.validator:helperTextTextAppearance
      */
     public static final int TextInputLayout_helperTextTextAppearance=32;
     /**
@@ -20684,7 +20684,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:helperTextTextColor
+     * @attr name com.prarysoft.one.validator:helperTextTextColor
      */
     public static final int TextInputLayout_helperTextTextColor=33;
     /**
@@ -20695,7 +20695,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:hintAnimationEnabled
+     * @attr name com.prarysoft.one.validator:hintAnimationEnabled
      */
     public static final int TextInputLayout_hintAnimationEnabled=34;
     /**
@@ -20706,7 +20706,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:hintEnabled
+     * @attr name com.prarysoft.one.validator:hintEnabled
      */
     public static final int TextInputLayout_hintEnabled=35;
     /**
@@ -20719,7 +20719,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:hintTextAppearance
+     * @attr name com.prarysoft.one.validator:hintTextAppearance
      */
     public static final int TextInputLayout_hintTextAppearance=36;
     /**
@@ -20732,7 +20732,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:hintTextColor
+     * @attr name com.prarysoft.one.validator:hintTextColor
      */
     public static final int TextInputLayout_hintTextColor=37;
     /**
@@ -20744,7 +20744,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:passwordToggleContentDescription
+     * @attr name com.prarysoft.one.validator:passwordToggleContentDescription
      */
     public static final int TextInputLayout_passwordToggleContentDescription=38;
     /**
@@ -20758,7 +20758,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:passwordToggleDrawable
+     * @attr name com.prarysoft.one.validator:passwordToggleDrawable
      */
     public static final int TextInputLayout_passwordToggleDrawable=39;
     /**
@@ -20770,7 +20770,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:passwordToggleEnabled
+     * @attr name com.prarysoft.one.validator:passwordToggleEnabled
      */
     public static final int TextInputLayout_passwordToggleEnabled=40;
     /**
@@ -20783,7 +20783,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:passwordToggleTint
+     * @attr name com.prarysoft.one.validator:passwordToggleTint
      */
     public static final int TextInputLayout_passwordToggleTint=41;
     /**
@@ -20809,7 +20809,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:passwordToggleTintMode
+     * @attr name com.prarysoft.one.validator:passwordToggleTintMode
      */
     public static final int TextInputLayout_passwordToggleTintMode=42;
     /**
@@ -20823,7 +20823,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearance
+     * @attr name com.prarysoft.one.validator:shapeAppearance
      */
     public static final int TextInputLayout_shapeAppearance=43;
     /**
@@ -20838,7 +20838,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:shapeAppearanceOverlay
+     * @attr name com.prarysoft.one.validator:shapeAppearanceOverlay
      */
     public static final int TextInputLayout_shapeAppearanceOverlay=44;
     /**
@@ -20849,7 +20849,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:startIconCheckable
+     * @attr name com.prarysoft.one.validator:startIconCheckable
      */
     public static final int TextInputLayout_startIconCheckable=45;
     /**
@@ -20860,7 +20860,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:startIconContentDescription
+     * @attr name com.prarysoft.one.validator:startIconContentDescription
      */
     public static final int TextInputLayout_startIconContentDescription=46;
     /**
@@ -20873,7 +20873,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:startIconDrawable
+     * @attr name com.prarysoft.one.validator:startIconDrawable
      */
     public static final int TextInputLayout_startIconDrawable=47;
     /**
@@ -20885,7 +20885,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:startIconTint
+     * @attr name com.prarysoft.one.validator:startIconTint
      */
     public static final int TextInputLayout_startIconTint=48;
     /**
@@ -20910,7 +20910,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:startIconTintMode
+     * @attr name com.prarysoft.one.validator:startIconTintMode
      */
     public static final int TextInputLayout_startIconTintMode=49;
     /**
@@ -20921,10 +20921,10 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ThemeEnforcement_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme com.one.validator:enforceMaterialTheme}</code></td><td>Internal flag used to denote that a style uses new attributes defined by
+     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme com.prarysoft.one.validator:enforceMaterialTheme}</code></td><td>Internal flag used to denote that a style uses new attributes defined by
      * Theme.MaterialComponents, and that the component should check via ThemeEnforcement that the
      * client's app theme inherits from Theme.MaterialComponents.</td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance com.one.validator:enforceTextAppearance}</code></td><td>Internal flag used to denote that a style requires that the textAppearance attribute is
+     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance com.prarysoft.one.validator:enforceTextAppearance}</code></td><td>Internal flag used to denote that a style requires that the textAppearance attribute is
      * specified and evaluates to a valid text appearance.</td></tr>
      * </table>
      * @see #ThemeEnforcement_android_textAppearance
@@ -20961,7 +20961,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:enforceMaterialTheme
+     * @attr name com.prarysoft.one.validator:enforceMaterialTheme
      */
     public static final int ThemeEnforcement_enforceMaterialTheme=1;
     /**
@@ -20973,7 +20973,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.one.validator:enforceTextAppearance
+     * @attr name com.prarysoft.one.validator:enforceTextAppearance
      */
     public static final int ThemeEnforcement_enforceTextAppearance=2;
     /**
@@ -20985,41 +20985,41 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity com.one.validator:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.one.validator:collapseContentDescription}</code></td><td>Text to set as the content description for the collapse button.</td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon com.one.validator:collapseIcon}</code></td><td>Icon drawable to use for the collapse button.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.one.validator:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.one.validator:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
+     * <tr><td><code>{@link #Toolbar_buttonGravity com.prarysoft.one.validator:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.prarysoft.one.validator:collapseContentDescription}</code></td><td>Text to set as the content description for the collapse button.</td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.prarysoft.one.validator:collapseIcon}</code></td><td>Icon drawable to use for the collapse button.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.prarysoft.one.validator:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.prarysoft.one.validator:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
      * are present.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.one.validator:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight com.one.validator:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart com.one.validator:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.one.validator:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.prarysoft.one.validator:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.prarysoft.one.validator:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.prarysoft.one.validator:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.prarysoft.one.validator:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
      * is present, such as the Up button.</td></tr>
-     * <tr><td><code>{@link #Toolbar_logo com.one.validator:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription com.one.validator:logoDescription}</code></td><td>A content description string to describe the appearance of the
+     * <tr><td><code>{@link #Toolbar_logo com.prarysoft.one.validator:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.prarysoft.one.validator:logoDescription}</code></td><td>A content description string to describe the appearance of the
      * associated logo image.</td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.one.validator:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_menu com.one.validator:menu}</code></td><td>Menu resource to inflate to be shown in the toolbar</td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.one.validator:navigationContentDescription}</code></td><td>Text to set as the content description for the navigation button
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.prarysoft.one.validator:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_menu com.prarysoft.one.validator:menu}</code></td><td>Menu resource to inflate to be shown in the toolbar</td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.prarysoft.one.validator:navigationContentDescription}</code></td><td>Text to set as the content description for the navigation button
      * located at the start of the toolbar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon com.one.validator:navigationIcon}</code></td><td>Icon drawable to use for the navigation button located at
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.prarysoft.one.validator:navigationIcon}</code></td><td>Icon drawable to use for the navigation button located at
      * the start of the toolbar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme com.one.validator:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * <tr><td><code>{@link #Toolbar_popupTheme com.prarysoft.one.validator:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle com.one.validator:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.one.validator:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.one.validator:subtitleTextColor}</code></td><td>A color to apply to the subtitle string.</td></tr>
-     * <tr><td><code>{@link #Toolbar_title com.one.validator:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin com.one.validator:titleMargin}</code></td><td>Specifies extra space on the left, start, right and end sides
+     * <tr><td><code>{@link #Toolbar_subtitle com.prarysoft.one.validator:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.prarysoft.one.validator:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.prarysoft.one.validator:subtitleTextColor}</code></td><td>A color to apply to the subtitle string.</td></tr>
+     * <tr><td><code>{@link #Toolbar_title com.prarysoft.one.validator:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.prarysoft.one.validator:titleMargin}</code></td><td>Specifies extra space on the left, start, right and end sides
      * of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.one.validator:titleMarginBottom}</code></td><td>Specifies extra space on the bottom side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.one.validator:titleMarginEnd}</code></td><td>Specifies extra space on the end side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart com.one.validator:titleMarginStart}</code></td><td>Specifies extra space on the start side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop com.one.validator:titleMarginTop}</code></td><td>Specifies extra space on the top side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins com.one.validator:titleMargins}</code></td><td>{@deprecated Use titleMargin}</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.one.validator:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor com.one.validator:titleTextColor}</code></td><td>A color to apply to the title string.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.prarysoft.one.validator:titleMarginBottom}</code></td><td>Specifies extra space on the bottom side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.prarysoft.one.validator:titleMarginEnd}</code></td><td>Specifies extra space on the end side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.prarysoft.one.validator:titleMarginStart}</code></td><td>Specifies extra space on the start side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.prarysoft.one.validator:titleMarginTop}</code></td><td>Specifies extra space on the top side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.prarysoft.one.validator:titleMargins}</code></td><td>{@deprecated Use titleMargin}</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.prarysoft.one.validator:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.prarysoft.one.validator:titleTextColor}</code></td><td>A color to apply to the title string.</td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -21106,7 +21106,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -21120,7 +21120,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:buttonGravity
+     * @attr name com.prarysoft.one.validator:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
@@ -21131,7 +21131,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:collapseContentDescription
+     * @attr name com.prarysoft.one.validator:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
@@ -21144,7 +21144,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:collapseIcon
+     * @attr name com.prarysoft.one.validator:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
@@ -21159,7 +21159,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentInsetEnd
+     * @attr name com.prarysoft.one.validator:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
@@ -21174,7 +21174,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentInsetEndWithActions
+     * @attr name com.prarysoft.one.validator:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
@@ -21189,7 +21189,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentInsetLeft
+     * @attr name com.prarysoft.one.validator:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
@@ -21204,7 +21204,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentInsetRight
+     * @attr name com.prarysoft.one.validator:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
@@ -21219,7 +21219,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentInsetStart
+     * @attr name com.prarysoft.one.validator:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
@@ -21234,7 +21234,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:contentInsetStartWithNavigation
+     * @attr name com.prarysoft.one.validator:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
@@ -21248,7 +21248,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:logo
+     * @attr name com.prarysoft.one.validator:logo
      */
     public static final int Toolbar_logo=11;
     /**
@@ -21260,11 +21260,11 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:logoDescription
+     * @attr name com.prarysoft.one.validator:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21273,7 +21273,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:maxButtonHeight
+     * @attr name com.prarysoft.one.validator:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
@@ -21286,7 +21286,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:menu
+     * @attr name com.prarysoft.one.validator:menu
      */
     public static final int Toolbar_menu=14;
     /**
@@ -21298,7 +21298,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:navigationContentDescription
+     * @attr name com.prarysoft.one.validator:navigationContentDescription
      */
     public static final int Toolbar_navigationContentDescription=15;
     /**
@@ -21312,7 +21312,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:navigationIcon
+     * @attr name com.prarysoft.one.validator:navigationIcon
      */
     public static final int Toolbar_navigationIcon=16;
     /**
@@ -21326,7 +21326,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:popupTheme
+     * @attr name com.prarysoft.one.validator:popupTheme
      */
     public static final int Toolbar_popupTheme=17;
     /**
@@ -21337,11 +21337,11 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:subtitle
+     * @attr name com.prarysoft.one.validator:subtitle
      */
     public static final int Toolbar_subtitle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21349,7 +21349,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:subtitleTextAppearance
+     * @attr name com.prarysoft.one.validator:subtitleTextAppearance
      */
     public static final int Toolbar_subtitleTextAppearance=19;
     /**
@@ -21361,17 +21361,17 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:subtitleTextColor
+     * @attr name com.prarysoft.one.validator:subtitleTextColor
      */
     public static final int Toolbar_subtitleTextColor=20;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.one.validator:title
+     * @attr name com.prarysoft.one.validator:title
      */
     public static final int Toolbar_title=21;
     /**
@@ -21386,7 +21386,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:titleMargin
+     * @attr name com.prarysoft.one.validator:titleMargin
      */
     public static final int Toolbar_titleMargin=22;
     /**
@@ -21402,7 +21402,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:titleMarginBottom
+     * @attr name com.prarysoft.one.validator:titleMarginBottom
      */
     public static final int Toolbar_titleMarginBottom=23;
     /**
@@ -21418,7 +21418,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:titleMarginEnd
+     * @attr name com.prarysoft.one.validator:titleMarginEnd
      */
     public static final int Toolbar_titleMarginEnd=24;
     /**
@@ -21434,7 +21434,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:titleMarginStart
+     * @attr name com.prarysoft.one.validator:titleMarginStart
      */
     public static final int Toolbar_titleMarginStart=25;
     /**
@@ -21450,7 +21450,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:titleMarginTop
+     * @attr name com.prarysoft.one.validator:titleMarginTop
      */
     public static final int Toolbar_titleMarginTop=26;
     /**
@@ -21464,12 +21464,12 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:titleMargins
+     * @attr name com.prarysoft.one.validator:titleMargins
      */
     @Deprecated
     public static final int Toolbar_titleMargins=27;
     /**
-     * <p>This symbol is the offset where the {@link com.one.validator.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.prarysoft.one.validator.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21477,7 +21477,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:titleTextAppearance
+     * @attr name com.prarysoft.one.validator:titleTextAppearance
      */
     public static final int Toolbar_titleTextAppearance=28;
     /**
@@ -21489,7 +21489,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:titleTextColor
+     * @attr name com.prarysoft.one.validator:titleTextColor
      */
     public static final int Toolbar_titleTextColor=29;
     /**
@@ -21501,9 +21501,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd com.one.validator:paddingEnd}</code></td><td>Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
-     * <tr><td><code>{@link #View_paddingStart com.one.validator:paddingStart}</code></td><td>Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
-     * <tr><td><code>{@link #View_theme com.one.validator:theme}</code></td><td>Deprecated.</td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.prarysoft.one.validator:paddingEnd}</code></td><td>Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.prarysoft.one.validator:paddingStart}</code></td><td>Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
+     * <tr><td><code>{@link #View_theme com.prarysoft.one.validator:theme}</code></td><td>Deprecated.</td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -21565,7 +21565,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:paddingEnd
+     * @attr name com.prarysoft.one.validator:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
@@ -21579,7 +21579,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.one.validator:paddingStart
+     * @attr name com.prarysoft.one.validator:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
@@ -21592,7 +21592,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.one.validator:theme
+     * @attr name com.prarysoft.one.validator:theme
      */
     public static final int View_theme=4;
     /**
@@ -21603,8 +21603,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.one.validator:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.one.validator:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.prarysoft.one.validator:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.prarysoft.one.validator:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -21637,7 +21637,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.one.validator:backgroundTint
+     * @attr name com.prarysoft.one.validator:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
@@ -21664,7 +21664,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.one.validator:backgroundTintMode
+     * @attr name com.prarysoft.one.validator:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**

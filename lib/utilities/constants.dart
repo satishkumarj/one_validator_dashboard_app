@@ -78,6 +78,7 @@ const kTextFieldInputDecoration = InputDecoration(
 
 const double kNumberToDivide = 1000000000000000000.0;
 const double kNumberOfSecondsForEpoch = 7.5;
+const int kDataRefreshInSeconds = 60;
 
 const kOpenStakeApiUrl = 'https://api.s0.os.hmny.io/';
 const kApiMethodGetStakingNetworkInfo = 'hmyv2_getStakingNetworkInfo';

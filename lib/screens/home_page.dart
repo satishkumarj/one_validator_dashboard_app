@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -40,6 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
   String _myONEAddress = '';
   int blockNumber = 0;
   int minutesToNextEpoch = 0;
+  Timer timer;
 
   static final List<Map> _menuItems = [
     {
@@ -65,16 +68,6 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   ];
 
-  /*
-  ,
-    {
-      "text": "Check Balance",
-      "icon": Icon(
-        FontAwesomeIcons.moneyBill,
-        color: Colors.white,
-      ),
-    },
-   */
   void refreshData() {
     getData(ApiCallType.ApiCallTypeNetworkData);
     getData(ApiCallType.ApiCallTypeAllValidators);
@@ -203,6 +196,13 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     getMyOneAddress();
     refreshData();
+    timer = Timer.periodic(Duration(seconds: kDataRefreshInSeconds), (Timer t) => refreshData());
+  }
+
+  @override
+  void dispose() {
+    timer?.cancel();
+    super.dispose();
   }
 
   @override
@@ -378,7 +378,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
         Expanded(
-          flex: 8,
+          flex: 9,
           child: ListView(
             padding: const EdgeInsets.all(5),
             shrinkWrap: true,
@@ -467,7 +467,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Expanded(
                   child: ListView(
-                    padding: EdgeInsets.symmetric(vertical: 20.0),
+                    padding: EdgeInsets.symmetric(vertical: 15.0),
                     children: <Widget>[
                       Row(
                         children: <Widget>[
