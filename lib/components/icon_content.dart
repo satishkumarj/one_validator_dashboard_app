@@ -1,12 +1,13 @@
-import 'package:validator/utilities/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:validator/utilities/constants.dart';
 
 class ContentCard extends StatelessWidget {
-  ContentCard({this.title, this.data, this.smallIcon, this.smallIconColor, this.mediumAssetIcon});
+  ContentCard({this.title, this.data, this.smallIcon, this.smallIconColor, this.mediumAssetIcon, this.subData});
 
   final String title;
   final String data;
+  final String subData;
   final IconData smallIcon;
   final Color smallIconColor;
   final CircleAvatar mediumAssetIcon;
@@ -18,6 +19,8 @@ class ContentCard extends StatelessWidget {
       children: <Widget>[
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.baseline,
+          textBaseline: TextBaseline.alphabetic,
           children: <Widget>[
             mediumAssetIcon != null
                 ? Padding(
@@ -29,6 +32,15 @@ class ContentCard extends StatelessWidget {
               this.data,
               style: kDataTextStyle,
             ),
+            subData != null
+                ? Padding(
+                    padding: const EdgeInsets.only(left: 3),
+                    child: Text(
+                      subData,
+                      style: kSubLabelTextStyle,
+                    ),
+                  )
+                : SizedBox(),
           ],
         ),
         SizedBox(

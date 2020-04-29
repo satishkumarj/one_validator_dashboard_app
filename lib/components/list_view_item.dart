@@ -34,7 +34,7 @@ class ListViewItem extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
-        color: Colors.tealAccent.withAlpha(160),
+        color: kListViewItemColor,
       ),
     );
   }

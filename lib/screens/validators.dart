@@ -28,6 +28,7 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
   bool dataLoading = false;
   String filter = '';
   String searchText = '';
+  bool noDataReturned = false;
 
   @override
   void initState() {
@@ -56,6 +57,7 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
     setState(() {
       print('data started loading');
       dataLoading = true;
+      noDataReturned = true;
     });
     getAllValidatorData();
     if (validatorType == 'Elected') {}
@@ -82,6 +84,10 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
             print('Data loading finished');
           });
           break;
+        } else {
+          setState(() {
+            noDataReturned = false;
+          });
         }
 
         for (int i = 0; i < allValCount; i++) {
@@ -110,6 +116,10 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
         i++;
         print(allValidatorsData.length);
       } else {
+        setState(() {
+          dataLoading = false;
+          noDataReturned = false;
+        });
         break;
       }
     }
@@ -155,74 +165,85 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
                 color: Colors.grey,
                 size: 50.0,
               )
-            : Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: <Widget>[
-                  SizedBox(
-                    height: 10.0,
-                  ),
-                  MaterialSegmentedControl(
-                    children: _children,
-                    selectionIndex: _currentSelection,
-                    borderColor: Colors.grey,
-                    selectedColor: _currentSelection == 0 ? kListBackgroundGreen : kMainColor,
-                    unselectedColor: Colors.white,
-                    borderRadius: 32.0,
-                    onSegmentChosen: (index) {
-                      setState(() {
-                        _currentSelection = index;
-                        if (_currentSelection == 0) {
-                          validatorType = 'Elected';
-                        } else {
-                          validatorType = 'All';
-                        }
-                        updateFilteredData();
-                      });
-                    },
-                  ),
-                  SizedBox(
-                    height: 10.0,
-                  ),
-                  SizedBox(
-                    height: 10.0,
-                  ),
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 15.0),
-                    child: TextField(
-                      onChanged: (value) {
-                        searchText = value;
-                        updateFilteredData();
-                      },
-                      controller: editingController,
-                      decoration: InputDecoration(
-                        labelText: "Search",
-                        hintText: "Search",
-                        prefixIcon: Icon(Icons.search),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(25.0),
+            : noDataReturned
+                ? Container(
+                    padding: EdgeInsets.only(top: 30.0, right: 10.0, left: 10.0),
+                    child: Center(
+                      child: Text(
+                        'No Validators found!',
+                        textAlign: TextAlign.center,
+                        style: kTextStyleError,
+                      ),
+                    ),
+                  )
+                : Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: <Widget>[
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      MaterialSegmentedControl(
+                        children: _children,
+                        selectionIndex: _currentSelection,
+                        borderColor: Colors.grey,
+                        selectedColor: _currentSelection == 0 ? kMainColor : kListViewItemColor,
+                        unselectedColor: Colors.white,
+                        borderRadius: 32.0,
+                        onSegmentChosen: (index) {
+                          setState(() {
+                            _currentSelection = index;
+                            if (_currentSelection == 0) {
+                              validatorType = 'Elected';
+                            } else {
+                              validatorType = 'All';
+                            }
+                            updateFilteredData();
+                          });
+                        },
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Container(
+                        padding: EdgeInsets.symmetric(horizontal: 15.0),
+                        child: TextField(
+                          onChanged: (value) {
+                            searchText = value;
+                            updateFilteredData();
+                          },
+                          controller: editingController,
+                          decoration: InputDecoration(
+                            labelText: "Search",
+                            hintText: "Search",
+                            prefixIcon: Icon(Icons.search),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(25.0),
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.symmetric(horizontal: 10.0),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(20.0),
+                                topRight: Radius.circular(20.0),
+                              )),
+                          child: ValidatorListView(validatorsData: filteredValidatorData),
+                        ),
+                      )
+                    ],
                   ),
-                  SizedBox(
-                    height: 10.0,
-                  ),
-                  Expanded(
-                    child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 10.0),
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(20.0),
-                            topRight: Radius.circular(20.0),
-                          )),
-                      child: ValidatorListView(validatorsData: filteredValidatorData),
-                    ),
-                  )
-                ],
-              ),
       ),
     );
   }

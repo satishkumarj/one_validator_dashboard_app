@@ -37,7 +37,7 @@ class ListContentCard extends StatelessWidget {
           children: <Widget>[
             Text(
               this.title,
-              style: this.elected ? kListElectedLabelTextStyle : kListLabelTextStyle,
+              style: this.elected ? kListElectedLabelTextStyle : kListElectedLabelTextStyle,
             ),
           ],
         )

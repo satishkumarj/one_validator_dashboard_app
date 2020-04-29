@@ -1,10 +1,10 @@
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:validator/components/list_icon_content.dart';
 import 'package:validator/components/reusable_list_card.dart';
 import 'package:validator/models/validator_list_model.dart';
 import 'package:validator/screens/validator_details.dart';
 import 'package:validator/utilities/constants.dart';
-import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ValidatorListTile extends StatelessWidget {
   ValidatorListTile({@required this.model, @required this.context});
@@ -71,14 +71,27 @@ class ValidatorListTile extends StatelessWidget {
             SizedBox(
               height: 2,
             ),
-            Text(
-              model.address == null ? '' : model.address,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 15.0,
-              ),
-              textAlign: TextAlign.left,
-              overflow: TextOverflow.ellipsis,
+            Row(
+              children: <Widget>[
+                Expanded(
+                  flex: 1,
+                  child: SizedBox(
+                    width: 40.0,
+                  ),
+                ),
+                Expanded(
+                  flex: 8,
+                  child: Text(
+                    model.address == null ? '' : model.address,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 13.0,
+                    ),
+                    textAlign: TextAlign.left,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
             ),
             Row(
               children: <Widget>[
@@ -122,7 +135,7 @@ class ValidatorListTile extends StatelessWidget {
               3.0, // vertical, move down 10
             ),
           )
-        ], borderRadius: BorderRadius.circular(25.0), color: model.elected ? kGreenCardColor : kBlueGreyCardColor),
+        ], borderRadius: BorderRadius.circular(25.0), color: model.elected ? kMainColor : kListViewItemColor),
       ),
     );
   }

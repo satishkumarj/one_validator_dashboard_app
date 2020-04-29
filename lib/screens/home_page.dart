@@ -7,6 +7,7 @@ import 'package:validator/components/icon_content.dart';
 import 'package:validator/components/resuable_card.dart';
 import 'package:validator/models/validator_list_model.dart';
 import 'package:validator/screens/balaces_screen.dart';
+import 'package:validator/screens/favorite_validators.dart';
 import 'package:validator/screens/infor_screen.dart';
 import 'package:validator/screens/validator_details.dart';
 import 'package:validator/screens/validators.dart';
@@ -16,11 +17,7 @@ import 'package:validator/utilities/networking.dart';
 
 import '../utilities/constants.dart';
 
-enum ApiCallType {
-  ApiCallTypeNetworkData,
-  ApiCallTypeElectedValidators,
-  ApiCallTypeAllValidators,
-}
+enum ApiCallType { ApiCallTypeNetworkData, ApiCallTypeElectedValidators, ApiCallTypeAllValidators, ApiCallTypeGetBlockNumber }
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -41,12 +38,21 @@ class _MyHomePageState extends State<MyHomePage> {
   int electedValidatorCount = 0;
   int allValidatorsCount = 0;
   String _myONEAddress = '';
+  int blockNumber = 0;
+  int minutesToNextEpoch = 0;
 
   static final List<Map> _menuItems = [
     {
       "text": "My Node Details",
       "icon": Icon(
         FontAwesomeIcons.server,
+        color: Colors.white,
+      ),
+    },
+    {
+      "text": "Favorite Validators",
+      "icon": Icon(
+        FontAwesomeIcons.heart,
         color: Colors.white,
       ),
     },
@@ -73,6 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
     getData(ApiCallType.ApiCallTypeNetworkData);
     getData(ApiCallType.ApiCallTypeAllValidators);
     getData(ApiCallType.ApiCallTypeElectedValidators);
+    getData(ApiCallType.ApiCallTypeGetBlockNumber);
   }
 
   void getData(ApiCallType apiCallType) async {
@@ -84,6 +91,8 @@ class _MyHomePageState extends State<MyHomePage> {
       apiMethod = kApiMethodGetAllValidatorAddresses;
     } else if (apiCallType == ApiCallType.ApiCallTypeElectedValidators) {
       apiMethod = kApiMethodGetElectedValidatorAddresses;
+    } else if (apiCallType == ApiCallType.ApiCallTypeGetBlockNumber) {
+      apiMethod = kApiMethodBlockNumber;
     }
     var blockData = await networkHelper.getData(apiMethod, null);
     //print(blockData);
@@ -94,14 +103,27 @@ class _MyHomePageState extends State<MyHomePage> {
           totalStake = (blockData['result']['total-staking']) / kNumberToDivide;
           double mStake = double.parse(blockData['result']['median-raw-stake']);
           medianStake = (mStake / kNumberToDivide);
+          calculateNextEpochTime();
         } else if (apiCallType == ApiCallType.ApiCallTypeAllValidators) {
           allValidatorsCount = (blockData['result']).length;
         } else if (apiCallType == ApiCallType.ApiCallTypeElectedValidators) {
           electedValidatorCount = (blockData['result']).length;
+        } else if (apiCallType == ApiCallType.ApiCallTypeGetBlockNumber) {
+          blockNumber = blockData['result'];
+          calculateNextEpochTime();
         }
       }
     });
     //print(blockData);
+  }
+
+  void calculateNextEpochTime() {
+    setState(() {
+      minutesToNextEpoch = ((epochLastBlock - blockNumber) * kNumberOfSecondsForEpoch).toInt();
+      if (minutesToNextEpoch > 60) {
+        minutesToNextEpoch = (minutesToNextEpoch ~/ 60).toInt();
+      }
+    });
   }
 
   void showAlert(String message) {
@@ -110,11 +132,22 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void scanQRCode() async {
     var result = await BarcodeScanner.scan();
-    Global.myONEAddress = result.rawContent;
-    Global.setUserPreferences(Global.oneAddressKey, result.rawContent);
-    setState(() {
-      _myONEAddress = result.rawContent;
-    });
+    if (result.rawContent != '') {
+      Global.myONEAddress = result.rawContent;
+      Global.setUserPreferences(Global.oneAddressKey, result.rawContent);
+      setState(() {
+        _myONEAddress = result.rawContent;
+      });
+    }
+  }
+
+  void gotoFavoriteValidator() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => FavoriteValidators(),
+      ),
+    );
   }
 
   void gotoMyValidatorDetails() {
@@ -235,9 +268,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       leading: item['icon'],
                       title: Text(
                         item['text'],
-                        style: TextStyle(
-                          color: kBlueColor,
-                        ),
+                        style: kLabelTextStyle,
                       ),
                       onTap: () {
                         Navigator.pop(context);
@@ -246,6 +277,9 @@ class _MyHomePageState extends State<MyHomePage> {
                             gotoMyValidatorDetails();
                             break;
                           case 1:
+                            gotoFavoriteValidator();
+                            break;
+                          case 2:
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -262,7 +296,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
-                      color: Colors.tealAccent.withAlpha(160),
+                      color: kListViewItemColor,
                     ),
                   );
                 },
@@ -345,57 +379,80 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         Expanded(
           flex: 8,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+          child: ListView(
+            padding: const EdgeInsets.all(5),
+            shrinkWrap: true,
             children: <Widget>[
-              Expanded(
-                child: ReusableCard(
-                  onPress: () {},
-                  colour: kMainColor,
-                  cardChild: ContentCard(
-                    data: "${kUSNumberFormat.format(medianStake)}",
-                    title: "Median Raw Stake",
-                    mediumAssetIcon: CircleAvatar(
-                      backgroundColor: Colors.white,
-                      radius: 15.0,
-                      backgroundImage: AssetImage('assets/onelogo.png'),
+              Container(
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  children: <Widget>[
+                    ConstrainedBox(
+                      constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
+                      child: ReusableCard(
+                        onPress: () {},
+                        colour: kMainColor,
+                        cardChild: ContentCard(
+                          data: "${kUSNumberFormat.format(medianStake)}",
+                          title: "Median Stake",
+                          mediumAssetIcon: CircleAvatar(
+                            backgroundColor: Colors.white,
+                            radius: 15.0,
+                            backgroundImage: AssetImage('assets/onelogo.png'),
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-              ),
-              Expanded(
-                child: ReusableCard(
-                  onPress: () {},
-                  colour: kMainColor,
-                  cardChild: ContentCard(
-                    title: "Total Stake",
-                    data: "${kUSNumberFormat.format(totalStake)}",
-                    mediumAssetIcon: CircleAvatar(
-                      backgroundColor: Colors.white,
-                      radius: 15.0,
-                      backgroundImage: AssetImage('assets/onelogo.png'),
+                    ConstrainedBox(
+                      constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
+                      child: ReusableCard(
+                        onPress: () {},
+                        colour: kMainColor,
+                        cardChild: ContentCard(
+                          title: "Total Stake",
+                          data: "${kUSNumberFormat.format(totalStake)}",
+                          mediumAssetIcon: CircleAvatar(
+                            backgroundColor: Colors.white,
+                            radius: 15.0,
+                            backgroundImage: AssetImage('assets/onelogo.png'),
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
+                    ConstrainedBox(
+                      constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
+                      child: ReusableCard(
+                        onPress: () {},
+                        colour: kMainColor,
+                        cardChild: ContentCard(title: "Current Block Height", data: "#$blockNumber"),
+                      ),
+                    ),
+                    ConstrainedBox(
+                      constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
+                      child: ReusableCard(
+                        onPress: () {},
+                        colour: kMainColor,
+                        cardChild: ContentCard(
+                          title: "Next Epoch",
+                          data: "$minutesToNextEpoch",
+                          subData: 'mins',
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-              ),
-              Expanded(
-                child: ReusableCard(
-                  onPress: () {},
-                  colour: kMainColor,
-                  cardChild: ContentCard(title: "Current Block Height", data: "#$epochLastBlock"),
-                ),
-              ),
+              )
             ],
           ),
         ),
         Expanded(
-          flex: 5,
+          flex: 6,
           child: Container(
             padding: EdgeInsets.only(
               top: 20.0,
               left: 15.0,
               right: 15.0,
-              bottom: 30.0,
+              bottom: 5.0,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -409,33 +466,44 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 Expanded(
-                  child: Row(
+                  child: ListView(
+                    padding: EdgeInsets.symmetric(vertical: 20.0),
                     children: <Widget>[
-                      Expanded(
-                        child: ReusableCard(
-                          colour: kListBackgroundGreen,
-                          cardChild: ContentCard(
-                            title: "Elected",
-                            data: "$electedValidatorCount",
-                            smallIcon: FontAwesomeIcons.userCheck,
+                      Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: ConstrainedBox(
+                              constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 180.0),
+                              child: ReusableCard(
+                                colour: kMainColor,
+                                cardChild: ContentCard(
+                                  title: "Elected",
+                                  data: "$electedValidatorCount",
+                                  smallIcon: FontAwesomeIcons.userCheck,
+                                ),
+                                onPress: () {
+                                  pushToValidator('Elected');
+                                },
+                              ),
+                            ),
                           ),
-                          onPress: () {
-                            pushToValidator('Elected');
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: ReusableCard(
-                          colour: kBlueGreyCardColor,
-                          cardChild: ContentCard(
-                            title: "All",
-                            data: "$allValidatorsCount",
-                            smallIcon: FontAwesomeIcons.users,
+                          Expanded(
+                            child: ConstrainedBox(
+                              constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 180.0),
+                              child: ReusableCard(
+                                colour: kListViewItemColor,
+                                cardChild: ContentCard(
+                                  title: "All",
+                                  data: "$allValidatorsCount",
+                                  smallIcon: FontAwesomeIcons.users,
+                                ),
+                                onPress: () {
+                                  pushToValidator('All');
+                                },
+                              ),
+                            ),
                           ),
-                          onPress: () {
-                            pushToValidator('All');
-                          },
-                        ),
+                        ],
                       ),
                     ],
                   ),

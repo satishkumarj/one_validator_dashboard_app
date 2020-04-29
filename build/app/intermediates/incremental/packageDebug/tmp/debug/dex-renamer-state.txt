@@ -1,4 +1,4 @@
-#Sun Apr 26 22:13:36 EDT 2020
+#Wed Apr 29 00:09:31 EDT 2020
 base.0=/Users/skjakkula/MyWork/Jakkula/Flutter/GitHub/one_validator_dashboard_app/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.1=classes2.dex
 renamed.1=classes2.dex

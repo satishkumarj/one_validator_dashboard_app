@@ -2,6 +2,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class Global {
   static String oneAddressKey = 'MYONEADDRESS';
+  static String favoriteListKey = 'FAVORITELIST';
 
   static String myONEAddress = 'one1gm8xwupd9e77ja46eaxv8tk4ea7re5zknaauvq';
 
@@ -21,6 +22,18 @@ class Global {
     final prefs = await SharedPreferences.getInstance();
     if (key != null && value != null) {
       prefs.setString(key, value);
+    }
+  }
+
+  static Future<List<String>> getUserFavList(String key) async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getStringList(key) ?? new List<String>();
+  }
+
+  static void setUserFavList(String key, List<String> value) async {
+    final prefs = await SharedPreferences.getInstance();
+    if (key != null && value != null) {
+      prefs.setStringList(key, value);
     }
   }
 }
