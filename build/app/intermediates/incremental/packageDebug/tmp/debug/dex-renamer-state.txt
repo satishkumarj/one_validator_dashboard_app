@@ -1,7 +1,0 @@
-#Wed Apr 29 12:42:16 EDT 2020
-base.0=/Users/skjakkula/MyWork/Jakkula/Flutter/GitHub/one_validator_dashboard_app/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
-path.1=classes2.dex
-renamed.1=classes2.dex
-path.0=classes.dex
-renamed.0=classes.dex
-base.1=/Users/skjakkula/MyWork/Jakkula/Flutter/GitHub/one_validator_dashboard_app/build/app/intermediates/dex/debug/mergeDexDebug/out/classes2.dex
