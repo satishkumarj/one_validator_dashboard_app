@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -9,6 +8,7 @@ import 'package:validator/components/icon_content.dart';
 import 'package:validator/components/resuable_card.dart';
 import 'package:validator/models/validator_list_model.dart';
 import 'package:validator/screens/balaces_screen.dart';
+import 'package:validator/screens/enter_new_address.dart';
 import 'package:validator/screens/favorite_validators.dart';
 import 'package:validator/screens/infor_screen.dart';
 import 'package:validator/screens/validator_details.dart';
@@ -16,6 +16,7 @@ import 'package:validator/screens/validators.dart';
 import 'package:validator/utilities/constants.dart';
 import 'package:validator/utilities/globals.dart';
 import 'package:validator/utilities/networking.dart';
+import 'package:validator/utilities/notification_handler.dart';
 
 import '../utilities/constants.dart';
 
@@ -93,9 +94,9 @@ class _MyHomePageState extends State<MyHomePage> {
       if (blockData != null) {
         if (apiCallType == ApiCallType.ApiCallTypeNetworkData) {
           epochLastBlock = blockData['result']['epoch-last-block'];
-          totalStake = (blockData['result']['total-staking']) / kNumberToDivide;
+          totalStake = (blockData['result']['total-staking']) / Global.numberToDivide;
           double mStake = double.parse(blockData['result']['median-raw-stake']);
-          medianStake = (mStake / kNumberToDivide);
+          medianStake = (mStake / Global.numberToDivide);
           calculateNextEpochTime();
         } else if (apiCallType == ApiCallType.ApiCallTypeAllValidators) {
           allValidatorsCount = (blockData['result']).length;
@@ -112,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void calculateNextEpochTime() {
     setState(() {
-      minutesToNextEpoch = ((epochLastBlock - blockNumber) * kNumberOfSecondsForEpoch).toInt();
+      minutesToNextEpoch = ((epochLastBlock - blockNumber) * Global.numberOfSecondsForEpoch).toInt();
       if (minutesToNextEpoch > 60) {
         minutesToNextEpoch = (minutesToNextEpoch ~/ 60).toInt();
       }
@@ -121,17 +122,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void showAlert(String message) {
     Alert(context: context, title: "Validators", desc: message).show();
-  }
-
-  void scanQRCode() async {
-    var result = await BarcodeScanner.scan();
-    if (result.rawContent != '') {
-      Global.myONEAddress = result.rawContent;
-      Global.setUserPreferences(Global.oneAddressKey, result.rawContent);
-      setState(() {
-        _myONEAddress = result.rawContent;
-      });
-    }
   }
 
   void gotoFavoriteValidator() {
@@ -172,6 +162,25 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
+  void gotoEnterNewAddressScreen(String type) async {
+    final result = await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => EnterNewAddressScreen(),
+      ),
+    );
+    if (result != null) {
+      if (result != '') {
+        Global.myONEAddress = result;
+        Global.setUserPreferences(Global.oneAddressKey, result);
+        setState(() {
+          _myONEAddress = result;
+          NotificationHandler.registerDevice(_myONEAddress);
+        });
+      }
+    }
+  }
+
   void pushToValidator(String validatorType) {
     Navigator.push(
       context,
@@ -194,9 +203,12 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
+    Global.getInitializer();
+    NotificationHandler.configureFirebaseListeners();
     getMyOneAddress();
+    NotificationHandler.registerDevice(Global.myONEAddress);
     refreshData();
-    timer = Timer.periodic(Duration(seconds: kDataRefreshInSeconds), (Timer t) => refreshData());
+    timer = Timer.periodic(Duration(seconds: Global.dataRefreshInSeconds), (Timer t) => refreshData());
   }
 
   @override
@@ -222,7 +234,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: <Widget>[
                     Image.asset(
                       "assets/validator_header.png",
-                      height: 100.0,
+                      height: 80.0,
                     ),
                     SizedBox(
                       height: 15.0,
@@ -234,8 +246,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         Text(
                           _myONEAddress == ''
                               ? 'Please scan your address'
-                              : _myONEAddress.substring(0, 10) + '...' + _myONEAddress.substring((_myONEAddress.length - 11)),
-                          style: TextStyle(color: Colors.white, fontSize: 15.0),
+                              : _myONEAddress.substring(0, 15) + '...' + _myONEAddress.substring((_myONEAddress.length - 16)),
+                          style: TextStyle(color: Colors.white, fontSize: 12.0),
                           overflow: TextOverflow.ellipsis,
                         ),
                         SizedBox(
@@ -244,11 +256,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         GestureDetector(
                           child: Icon(
                             FontAwesomeIcons.qrcode,
-                            size: 22.0,
+                            size: 32.0,
                             color: Colors.black,
                           ),
                           onTap: () {
-                            scanQRCode();
+                            gotoEnterNewAddressScreen('OWN');
                           },
                         )
                       ],
@@ -439,77 +451,73 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     ),
+                    ConstrainedBox(
+                      constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
+                      child: Container(
+                        padding: EdgeInsets.only(
+                          top: 10.0,
+                          left: 5.0,
+                          right: 5.0,
+                          bottom: 5.0,
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: <Widget>[
+                            ConstrainedBox(
+                              constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 60.0),
+                              child: Text(
+                                'Validators',
+                                style: TextStyle(
+                                  color: kMainColor,
+                                  fontSize: 35.0,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: <Widget>[
+                                ConstrainedBox(
+                                  constraints:
+                                      BoxConstraints(maxHeight: double.infinity, minHeight: 180.0, maxWidth: double.infinity, minWidth: 170.0),
+                                  child: ReusableCard(
+                                    colour: kMainColor,
+                                    cardChild: ContentCard(
+                                      title: "Elected",
+                                      data: "$electedValidatorCount",
+                                      smallIcon: FontAwesomeIcons.userCheck,
+                                    ),
+                                    onPress: () {
+                                      pushToValidator('Elected');
+                                    },
+                                  ),
+                                ),
+                                ConstrainedBox(
+                                  constraints:
+                                      BoxConstraints(maxHeight: double.infinity, minHeight: 180.0, maxWidth: double.infinity, minWidth: 170.0),
+                                  child: ReusableCard(
+                                    colour: kListViewItemColor,
+                                    cardChild: ContentCard(
+                                      title: "All",
+                                      data: "$allValidatorsCount",
+                                      smallIcon: FontAwesomeIcons.users,
+                                    ),
+                                    onPress: () {
+                                      pushToValidator('All');
+                                    },
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    )
                   ],
                 ),
-              )
+              ),
             ],
-          ),
-        ),
-        Expanded(
-          flex: 6,
-          child: Container(
-            padding: EdgeInsets.only(
-              top: 20.0,
-              left: 15.0,
-              right: 15.0,
-              bottom: 5.0,
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  'Validators',
-                  style: TextStyle(
-                    color: kMainColor,
-                    fontSize: 35.0,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-                Expanded(
-                  child: ListView(
-                    padding: EdgeInsets.symmetric(vertical: 15.0),
-                    children: <Widget>[
-                      Row(
-                        children: <Widget>[
-                          Expanded(
-                            child: ConstrainedBox(
-                              constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 180.0),
-                              child: ReusableCard(
-                                colour: kMainColor,
-                                cardChild: ContentCard(
-                                  title: "Elected",
-                                  data: "$electedValidatorCount",
-                                  smallIcon: FontAwesomeIcons.userCheck,
-                                ),
-                                onPress: () {
-                                  pushToValidator('Elected');
-                                },
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            child: ConstrainedBox(
-                              constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 180.0),
-                              child: ReusableCard(
-                                colour: kListViewItemColor,
-                                cardChild: ContentCard(
-                                  title: "All",
-                                  data: "$allValidatorsCount",
-                                  smallIcon: FontAwesomeIcons.users,
-                                ),
-                                onPress: () {
-                                  pushToValidator('All');
-                                },
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
           ),
         ),
       ]),

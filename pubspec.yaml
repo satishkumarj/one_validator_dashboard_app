@@ -21,6 +21,11 @@ dependencies:
   webview_flutter: ^0.3.20+2
   rflutter_alert: ^1.0.3
   barcode_scan: any
+  firebase_core: ^0.4.4+3
+  firebase_messaging: ^6.0.13
+  firebase_analytics: ^5.0.11
+  cloud_firestore: ^0.13.5
+  firebase_auth: ^0.16.0
 
 dev_dependencies:
   flutter_test:

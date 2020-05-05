@@ -1,7 +1,8 @@
-import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:validator/models/validator_list_model.dart';
+import 'package:validator/screens/enter_new_address.dart';
 import 'package:validator/screens/validator_details.dart';
 import 'package:validator/utilities/constants.dart';
 import 'package:validator/utilities/globals.dart';
@@ -18,23 +19,38 @@ class _FavoriteValidatorsState extends State<FavoriteValidators> {
   Map<String, String> favAdds = new Map<String, String>();
 
   void scanQRCode() async {
-    var result = await BarcodeScanner.scan();
-    if (result.rawContent != '') {
-      String favAddress = result.rawContent;
-      print(favAddress);
-      NetworkHelper networkHelper = NetworkHelper();
-      var blockData = await networkHelper.getData(kApiMethodGetValidatorInformation, favAddress);
-      if (blockData != null) {
-        if (blockData["error"] != null) {
-        } else {
-          String validatorName = blockData['result']['validator']['name'];
-          Global.setUserPreferences(favAddress, validatorName);
-          setState(() {
-            favAdds[favAddress] = validatorName;
-            favAddsKeys.add(favAddress);
-            favCount = favAddsKeys.length;
-          });
-          Global.setUserFavList(Global.favoriteListKey, favAddsKeys);
+    final result = await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => EnterNewAddressScreen(),
+      ),
+    );
+    if (result != null) {
+      if (result != '') {
+        String favAddress = result;
+        print(favAddress);
+        NetworkHelper networkHelper = NetworkHelper();
+        var blockData = await networkHelper.getData(kApiMethodGetValidatorInformation, favAddress);
+        print(blockData);
+        if (blockData != null) {
+          if (blockData["error"] != null) {
+            String error = blockData['error']['message'];
+            if (error.contains('not found address in current state')) {
+              error = 'No validator found with $result address in current state';
+            }
+            Alert(context: context, title: "Validators", desc: error).show();
+          } else {
+            String validatorName = blockData['result']['validator']['name'];
+            Global.setUserPreferences(favAddress, validatorName);
+            setState(() {
+              if (favAdds[favAddress] == null) {
+                favAdds[favAddress] = validatorName;
+                favAddsKeys.add(favAddress);
+                favCount = favAddsKeys.length;
+              }
+            });
+            Global.setUserFavList(Global.favoriteListKey, favAddsKeys);
+          }
         }
       }
     }
@@ -95,7 +111,7 @@ class _FavoriteValidatorsState extends State<FavoriteValidators> {
               padding: EdgeInsets.only(top: 30.0, right: 10.0, left: 10.0),
               child: Center(
                 child: Text(
-                  'No Favorite, please add using +',
+                  'No favorites, please add using +',
                   textAlign: TextAlign.center,
                   style: kTextStyleError,
                 ),

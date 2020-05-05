@@ -12,6 +12,7 @@ import 'package:validator/models/validator_list_model.dart';
 import 'package:validator/screens/delegators_list_screen.dart';
 import 'package:validator/screens/totalstake_piechart_screen.dart';
 import 'package:validator/utilities/constants.dart';
+import 'package:validator/utilities/globals.dart';
 import 'package:validator/utilities/networking.dart';
 
 class ValidatorDetails extends StatefulWidget {
@@ -54,7 +55,7 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
         double maxChangeRate = double.parse(blockData['result']['validator']['max-change-rate']) * 100.0;
 
         // Performance
-        double lifeRewards = blockData['result']['lifetime']['reward-accumulated'] / kNumberToDivide;
+        double lifeRewards = blockData['result']['lifetime']['reward-accumulated'] / Global.numberToDivide;
         int blocksToSign = blockData['result']['lifetime']['blocks']['to-sign'];
         int blocksSigned = blockData['result']['lifetime']['blocks']['signed'];
         double apr = double.parse(blockData['result']['lifetime']['apr']) * 100.0;
@@ -104,8 +105,8 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
           for (int i = 0; i < (blockData['result']['validator']['delegations'].length); i++) {
             var del = blockData['result']['validator']['delegations'][i];
             String add = (del['delegator-address']).toString();
-            double amount = del['amount'] / kNumberToDivide;
-            double reward = del['reward'] / kNumberToDivide;
+            double amount = del['amount'] / Global.numberToDivide;
+            double reward = del['reward'] / Global.numberToDivide;
             if (add == validatorAddress) {
               selfStake = amount;
             } else {
@@ -127,7 +128,7 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
             blsPublicKeys: blockData['result']['validator']['bls-public-keys'],
             lastEpochInCommittee: blockData['result']['validator']['last-epoch-in-committee'],
             minSelfDelegation: blockData['result']['validator']['min-self-delegation'],
-            maxTotalDelegation: blockData['result']['validator']['max-total-delegation'] / kNumberToDivide,
+            maxTotalDelegation: blockData['result']['validator']['max-total-delegation'] / Global.numberToDivide,
             rate: kUSPercentageNumberFormat.format(rate),
             maxRate: kUSPercentageNumberFormat.format(maxRate),
             maxChangeRate: kUSPercentageNumberFormat.format(maxChangeRate),
@@ -139,7 +140,7 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
             details: blockData['result']['validator']['details'],
             creationHeight: blockData['result']['validator']['creation-height'],
             address: validatorAddress,
-            totalDelegation: blockData['result']['total-delegation'] / kNumberToDivide,
+            totalDelegation: blockData['result']['total-delegation'] / Global.numberToDivide,
             currentlyInCommittee: blockData['result']['currently-in-committee'],
             eposStatus: blockData['result']['epos-status'],
             eposWinningStake: blockData['result']['validator']['epos-winning-stake'],

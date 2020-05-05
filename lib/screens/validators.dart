@@ -5,6 +5,7 @@ import 'package:material_segmented_control/material_segmented_control.dart';
 import 'package:validator/components/validator_listview.dart';
 import 'package:validator/models/validator_list_model.dart';
 import 'package:validator/utilities/constants.dart';
+import 'package:validator/utilities/globals.dart';
 import 'package:validator/utilities/networking.dart';
 
 class ValidatorsScreen extends StatefulWidget {
@@ -100,8 +101,8 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
               name: blockData['result'][i]['validator']['name'],
               elected: elected,
               address: address,
-              earnings: blockData['result'][i]['lifetime']['reward-accumulated'] / kNumberToDivide,
-              totalStaked: blockData['result'][i]['total-delegation'] / kNumberToDivide);
+              earnings: blockData['result'][i]['lifetime']['reward-accumulated'] / Global.numberToDivide,
+              totalStaked: blockData['result'][i]['total-delegation'] / Global.numberToDivide);
           allValidatorsData.add(model);
           if (model.elected) {
             electedValidatorsData.add(model);

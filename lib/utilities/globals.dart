@@ -1,10 +1,15 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Global {
+  static double numberToDivide = 1000000000000000000.0;
+  static double numberOfSecondsForEpoch = 7.5;
+  static int dataRefreshInSeconds = 60;
+
   static String oneAddressKey = 'MYONEADDRESS';
   static String favoriteListKey = 'FAVORITELIST';
 
-  static String myONEAddress = 'one1gm8xwupd9e77ja46eaxv8tk4ea7re5zknaauvq';
+  static String myONEAddress = '';
 
   static Future<String> getMyONEAddress() async {
     if (Global.myONEAddress == '') {
@@ -35,5 +40,13 @@ class Global {
     if (key != null && value != null) {
       prefs.setStringList(key, value);
     }
+  }
+
+  static void getInitializer() async {
+    Firestore.instance.document('initializers/IFmVhDydREL0IjMUnUMa').get().then((doc) {
+      numberToDivide = doc['num_to_divide'];
+      numberOfSecondsForEpoch = doc['num_seconds_in_epoch'];
+      dataRefreshInSeconds = doc['data_refresh_in_secs'];
+    });
   }
 }

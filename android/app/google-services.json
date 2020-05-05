@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "178075338905",
+    "firebase_url": "https://one-validator-dashboard-c603f.firebaseio.com",
+    "project_id": "one-validator-dashboard-c603f",
+    "storage_bucket": "one-validator-dashboard-c603f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178075338905:android:f117c3bf9cabe32b661008",
+        "android_client_info": {
+          "package_name": "com.prarysoft.one.validator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178075338905-ehc75lc26hs4brv19t8hfhj6tn94bkqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvkTG0lYzzjlRhRUkE0cRSOgm7z7dfl6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178075338905-ehc75lc26hs4brv19t8hfhj6tn94bkqq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
