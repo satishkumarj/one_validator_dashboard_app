@@ -7,6 +7,5 @@ android/app/key.properties
 .DS_Store
 .flutter-plugins
 .flutter-plugins-dependencies
-lib/
 pubspec.lock
 
