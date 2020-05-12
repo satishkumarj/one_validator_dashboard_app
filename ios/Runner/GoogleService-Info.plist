@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>615064005697-o6diccinftp0mudncit5ue28j5tcdh72.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.615064005697-o6diccinftp0mudncit5ue28j5tcdh72</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDU1xwLLNhzFePKpRu7GEO-9TQFsrbckQM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>615064005697</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.prarysoft.one.validator</string>
+	<key>PROJECT_ID</key>
+	<string>one-validator-dashboard-d7eea</string>
+	<key>STORAGE_BUCKET</key>
+	<string>one-validator-dashboard-d7eea.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:615064005697:ios:a95138c30a276438bfaac0</string>
+	<key>DATABASE_URL</key>
+	<string>https://one-validator-dashboard-d7eea.firebaseio.com</string>
+</dict>
+</plist>

@@ -4,3 +4,9 @@ build/
 /resources
 android/app/key.properties
 /android/app/google-services.json
+.DS_Store
+.flutter-plugins
+.flutter-plugins-dependencies
+lib/
+pubspec.lock
+
