@@ -1,9 +1,9 @@
-import 'package:validator/components/icon_content.dart';
-import 'package:validator/components/resuable_card.dart';
-import 'package:validator/utilities/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:validator/components/icon_content.dart';
+import 'package:validator/components/resuable_card.dart';
+import 'package:validator/utilities/constants.dart';
 
 class BalancesScreen extends StatefulWidget {
   BalancesScreen({this.address});
@@ -30,6 +30,9 @@ class _BalancesScreenState extends State<BalancesScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Balaces'),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
       ),
       body: dataLoading
           ? SpinKitDoubleBounce(
@@ -51,7 +54,7 @@ class _BalancesScreenState extends State<BalancesScreen> {
                     Text(
                       'Validators',
                       style: TextStyle(
-                        color: kMainColor,
+                        color: kHmyMainColor,
                         fontSize: 35.0,
                         fontWeight: FontWeight.w700,
                       ),
@@ -72,7 +75,7 @@ class _BalancesScreenState extends State<BalancesScreen> {
                           ),
                           Expanded(
                             child: ReusableCard(
-                              colour: kBlueGreyCardColor,
+                              colour: kHmyGreyCardColor,
                               cardChild: ContentCard(
                                 title: "All",
                                 data: "0",

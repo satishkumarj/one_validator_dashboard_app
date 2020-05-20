@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:validator/screens/home_page.dart';
 import 'package:validator/utilities/constants.dart';
 
@@ -23,8 +24,29 @@ class OneValidatorDashboardApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.blue,
-        primaryColor: kMainColor,
-        primaryTextTheme: TextTheme(title: TextStyle(color: Colors.white)),
+        primaryColor: kHmyMainColor,
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
+        primaryTextTheme: TextTheme(
+          headline6: GoogleFonts.nunitoSans(
+            fontStyle: FontStyle.normal,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+          subtitle1: GoogleFonts.nunito(
+            fontStyle: FontStyle.normal,
+            color: Colors.white,
+          ),
+          bodyText1: GoogleFonts.nunito(
+            fontStyle: FontStyle.normal,
+            color: Colors.white,
+          ),
+          bodyText2: GoogleFonts.nunito(
+            fontStyle: FontStyle.normal,
+            color: Colors.white,
+          ),
+        ),
       ),
       home: MyHomePage(title: 'Validators'),
     );

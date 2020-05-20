@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:validator/utilities/constants.dart';
 
 class ContentCard extends StatelessWidget {
@@ -30,14 +31,24 @@ class ContentCard extends StatelessWidget {
                 : SizedBox(),
             Text(
               this.data,
-              style: kDataTextStyle,
+              style: GoogleFonts.nunito(
+                fontStyle: FontStyle.normal,
+                fontWeight: FontWeight.bold,
+                fontSize: 25,
+                color: kHmyTitleTextColor,
+              ),
             ),
             subData != null
                 ? Padding(
                     padding: const EdgeInsets.only(left: 3),
                     child: Text(
                       subData,
-                      style: kSubLabelTextStyle,
+                      style: GoogleFonts.nunito(
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 10,
+                        color: kHmyNormalTextColor,
+                      ),
                     ),
                   )
                 : SizedBox(),
@@ -52,14 +63,19 @@ class ContentCard extends StatelessWidget {
             Icon(
               smallIcon,
               size: 14,
-              color: smallIconColor != null ? smallIconColor : Colors.orange,
+              color: smallIconColor != null ? smallIconColor : kHmyMainColor,
             ),
             SizedBox(
               width: 10.0,
             ),
             Text(
               this.title,
-              style: kLabelTextStyle,
+              style: GoogleFonts.nunito(
+                fontStyle: FontStyle.normal,
+                fontWeight: FontWeight.bold,
+                fontSize: 15,
+                color: kHmyNormalTextColor,
+              ),
             ),
           ],
         )

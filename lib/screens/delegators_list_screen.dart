@@ -1,9 +1,11 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:validator/components/list_view_item.dart';
 import 'package:validator/components/resuable_card.dart';
 import 'package:validator/models/validator.dart';
+import 'package:validator/screens/delegator_screen.dart';
 import 'package:validator/utilities/constants.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
 import '../models/delegation.dart';
 import '../utilities/constants.dart';
@@ -40,6 +42,17 @@ class _DelegatorDetailsScreenState extends State<DelegatorDetailsScreen> {
       ListViewItem item = ListViewItem(
         title: address,
         text: kUSNumberFormat.format(d.amount),
+        moreDetails: true,
+        openMoreDetails: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => DelegationDetailsScreen(
+                oneAddress: address,
+              ),
+            ),
+          );
+        },
       );
       delegatorItems.add(item);
       SizedBox sb = SizedBox(height: 1);
@@ -48,6 +61,9 @@ class _DelegatorDetailsScreenState extends State<DelegatorDetailsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('${validator.name} \'s Delegators'),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
       ),
       body: Container(
         color: Colors.white,
@@ -56,14 +72,19 @@ class _DelegatorDetailsScreenState extends State<DelegatorDetailsScreen> {
           children: <Widget>[
             Text(
               'Delegators',
-              style: kSectionTitleTextStyle,
+              style: GoogleFonts.nunito(
+                fontStyle: FontStyle.normal,
+                fontWeight: FontWeight.bold,
+                fontSize: 25,
+                color: kHmyTitleTextColor,
+              ),
             ),
             ReusableCard(
               cardChild: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: delegatorItems,
               ),
-              colour: kMainColor.withAlpha(20),
+              colour: kHmyMainColor.withAlpha(20),
             ),
           ],
         ),

@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:validator/utilities/constants.dart';
-
-import '../utilities/constants.dart';
 
 class ListContentCard extends StatelessWidget {
   ListContentCard({
@@ -25,7 +24,12 @@ class ListContentCard extends StatelessWidget {
           children: <Widget>[
             Text(
               this.data,
-              style: kListDataTextStyle,
+              style: GoogleFonts.nunito(
+                fontStyle: FontStyle.normal,
+                fontWeight: FontWeight.bold,
+                fontSize: 15,
+                color: kHmyTitleTextColor,
+              ),
             ),
           ],
         ),
@@ -37,7 +41,12 @@ class ListContentCard extends StatelessWidget {
           children: <Widget>[
             Text(
               this.title,
-              style: this.elected ? kListElectedLabelTextStyle : kListElectedLabelTextStyle,
+              style: GoogleFonts.nunito(
+                fontStyle: FontStyle.normal,
+                fontWeight: FontWeight.bold,
+                fontSize: 12,
+                color: kHmyNormalTextColor,
+              ),
             ),
           ],
         )

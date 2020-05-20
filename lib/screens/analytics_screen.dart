@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:validator/components/resuable_card.dart';
 import 'package:validator/screens/effective_median_chart.dart';
 import 'package:validator/screens/seat_allocation_chart.dart';
 import 'package:validator/screens/seats_elected_chart.dart';
@@ -105,6 +107,9 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Analytics'),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
       ),
       body: Container(
         child: ListView(
@@ -118,47 +123,47 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                 String item = analytics[index];
                 return Container(
                   margin: EdgeInsets.symmetric(horizontal: 15.0, vertical: 5.0),
-                  child: ListTile(
-                    trailing: Icon(
-                      FontAwesomeIcons.chevronRight,
-                      color: Colors.white,
-                      size: 20.0,
-                    ),
-                    leading: Icon(
-                      FontAwesomeIcons.solidChartBar,
-                      color: Colors.orange,
-                      size: 20.0,
-                    ),
-                    title: Text(
-                      item,
-                      style: TextStyle(
-                        fontSize: 15.0,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
+                  child: ReusableCard(
+                    cardChild: ListTile(
+                      trailing: Icon(
+                        FontAwesomeIcons.chevronRight,
+                        color: kHmyGreyCardColor,
+                        size: 20.0,
                       ),
+                      leading: Icon(
+                        FontAwesomeIcons.solidChartBar,
+                        color: kHmyMainColor,
+                        size: 20.0,
+                      ),
+                      title: Text(
+                        item,
+                        style: GoogleFonts.nunito(
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          color: kHmyTitleTextColor,
+                        ),
+                      ),
+                      onTap: () {
+                        switch (index) {
+                          case 0:
+                            gotoSeatsElectedScreen();
+                            break;
+                          case 1:
+                            gotoSeatsAllocationScreen();
+                            break;
+                          case 2:
+                            gotoTotalStakeChartScreen();
+                            break;
+                          case 3:
+                            gotoEffectiveMedianChartScreen();
+                            break;
+                          default:
+                            break;
+                        }
+                      },
                     ),
-                    onTap: () {
-                      switch (index) {
-                        case 0:
-                          gotoSeatsElectedScreen();
-                          break;
-                        case 1:
-                          gotoSeatsAllocationScreen();
-                          break;
-                        case 2:
-                          gotoTotalStakeChartScreen();
-                          break;
-                        case 3:
-                          gotoEffectiveMedianChartScreen();
-                          break;
-                        default:
-                          break;
-                      }
-                    },
-                  ),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10.0),
-                    color: kMainColor,
+                    colour: Colors.white,
                   ),
                 );
               },

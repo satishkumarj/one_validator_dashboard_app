@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:validator/components/list_view_item.dart';
 import 'package:validator/components/resuable_card.dart';
 import 'package:validator/models/bls_key.dart';
@@ -30,15 +32,10 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
   bool dataLoading = false;
   bool noDataReturned = false;
   String errorMessage = 'No Validator details found!';
-
-  @override
-  void initState() {
-    super.initState();
-    record = widget.model;
-    dataLoading = true;
-    noDataReturned = true;
-    getValidatorDetails();
-  }
+  int favCount = 0;
+  List<String> favAddsKeys = new List<String>();
+  Map<String, String> favAdds = new Map<String, String>();
+  bool isFavorite;
 
   void getValidatorDetails() async {
     print('Data loading started');
@@ -203,11 +200,92 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
     });
   }
 
+  void addToFavoriteValidators(String favAddress, String validatorName) {
+    Global.setUserPreferences(favAddress, validatorName);
+    setState(() {
+      if (favAdds[favAddress] == null) {
+        favAdds[favAddress] = validatorName;
+        favAddsKeys.add(favAddress);
+        favCount = favAddsKeys.length;
+      }
+    });
+    Global.setUserFavList(Global.favoriteValListKey, favAddsKeys);
+  }
+
+  void removeFromFavoriteValidator() {
+    int index = -1;
+    for (int i = 0; i < favAddsKeys.length; i++) {
+      String add = favAddsKeys[i];
+      if (add == record.address) {
+        index = i;
+        break;
+      }
+    }
+    if (index >= 0) {
+      favAddsKeys.removeAt(index);
+      Global.setUserFavList(Global.favoriteValListKey, favAddsKeys);
+    }
+  }
+
+  void getFavAddressList() async {
+    favAddsKeys = await Global.getUserFavList(Global.favoriteValListKey);
+    Map<String, String> favAddKeysAndNames = new Map<String, String>();
+    for (int i = 0; i < favAddsKeys.length; i++) {
+      String add = favAddsKeys[i];
+      if (add == record.address) {
+        isFavorite = true;
+      }
+      favAddKeysAndNames[add] = await Global.getUserPreferences(add);
+    }
+    setState(() {
+      favAdds = favAddKeysAndNames;
+      favCount = favAddsKeys.length;
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    record = widget.model;
+    dataLoading = true;
+    noDataReturned = true;
+    isFavorite = false;
+    getValidatorDetails();
+    getFavAddressList();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(record.name),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
+        actions: <Widget>[
+          // action button
+          IconButton(
+            icon: isFavorite
+                ? Icon(
+                    FontAwesomeIcons.solidHeart,
+                    color: Colors.red,
+                  )
+                : Icon(
+                    FontAwesomeIcons.heart,
+                  ),
+            onPressed: () {
+              setState(() {
+                if (isFavorite) {
+                  isFavorite = false;
+                  removeFromFavoriteValidator();
+                } else {
+                  isFavorite = true;
+                  addToFavoriteValidators(record.address, record.name);
+                }
+              });
+            },
+          ),
+        ],
       ),
       body: dataLoading
           ? SpinKitDoubleBounce(
@@ -221,7 +299,12 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                     child: Text(
                       errorMessage,
                       textAlign: TextAlign.center,
-                      style: kTextStyleError,
+                      style: GoogleFonts.nunito(
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: kHmyTitleTextColor,
+                      ),
                     ),
                   ),
                 )
@@ -232,7 +315,12 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                     children: <Widget>[
                       Text(
                         'Profile',
-                        style: kSectionTitleTextStyle,
+                        style: GoogleFonts.nunito(
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25,
+                          color: kHmyTitleTextColor,
+                        ),
                       ),
                       ReusableCard(
                         cardChild: Column(
@@ -241,6 +329,7 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                             ListViewItem(
                               title: 'Name',
                               text: validator == null ? '' : validator.name,
+                              height: 80.0,
                             ),
                             SizedBox(
                               height: 1,
@@ -301,11 +390,16 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                             ),
                           ],
                         ),
-                        colour: kMainColor.withAlpha(20),
+                        colour: kHmyMainColor.withAlpha(20),
                       ),
                       Text(
                         'Performance',
-                        style: kSectionTitleTextStyle,
+                        style: GoogleFonts.nunito(
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25,
+                          color: kHmyTitleTextColor,
+                        ),
                       ),
                       ReusableCard(
                         cardChild: Column(
@@ -320,7 +414,7 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                             ),
                             ListViewItem(
                               title: 'Slots',
-                              text: validator.metrics.blsKeys == null ? '0' : '${validator.metrics.blsKeys.length}',
+                              text: validator.blsPublicKeys == null ? '0' : '${validator.blsPublicKeys.length}',
                             ),
                             SizedBox(
                               height: 1,
@@ -343,6 +437,7 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                             ListViewItem(
                               title: 'Shards',
                               text: validator.metrics.shards == null ? '-' : validator.metrics.shards,
+                              height: 120.0,
                             ),
                             SizedBox(
                               height: 1,
@@ -355,11 +450,16 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                             ),
                           ],
                         ),
-                        colour: kMainColor.withAlpha(20),
+                        colour: kHmyMainColor.withAlpha(20),
                       ),
                       Text(
                         'General Info',
-                        style: kSectionTitleTextStyle,
+                        style: GoogleFonts.nunito(
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25,
+                          color: kHmyTitleTextColor,
+                        ),
                       ),
                       ReusableCard(
                         cardChild: Column(
@@ -368,6 +468,7 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                             ListViewItem(
                               title: 'Description',
                               text: validator.details == null ? '' : validator.details,
+                              height: 140.0,
                             ),
                             SizedBox(
                               height: 1,
@@ -382,6 +483,7 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                             ListViewItem(
                               title: 'Validator Address',
                               text: validator.address == null ? '' : validator.address,
+                              selectable: true,
                             ),
                             SizedBox(
                               height: 1,
@@ -409,7 +511,7 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                             ),
                           ],
                         ),
-                        colour: kMainColor.withAlpha(20),
+                        colour: kHmyMainColor.withAlpha(20),
                       ),
                     ],
                   ),

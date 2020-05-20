@@ -43,7 +43,7 @@ class OVDNotificationHandler {
       id: DateTime.now().millisecondsSinceEpoch,
       title: title,
       message: body,
-      oneAddress: Global.myONEAddress,
+      oneAddress: Global.myValONEAddress,
       timeStamp: DateTime.now().millisecondsSinceEpoch,
     );
     final db = await _getDatabase();
@@ -70,7 +70,7 @@ class OVDNotificationHandler {
 
     // Query the table for all The Dogs.
     final List<Map<String, dynamic>> maps =
-        await db.rawQuery("select * from notifications where oneAddress = '${Global.myONEAddress}'  order by id desc");
+        await db.rawQuery("select * from notifications where oneAddress = '${Global.myValONEAddress}'  order by id desc");
 
     // Convert the List<Map<String, dynamic> into a List<Dog>.
     return List.generate(maps.length, (i) {
@@ -84,25 +84,27 @@ class OVDNotificationHandler {
     });
   }
 
-  static void registerDevice(String oneAddress) {
+  static void registerDevice(String oneAddress, String addressType) {
     if (Platform.isIOS) {
       _iosSubscription = _fcm.onIosSettingsRegistered.listen((data) {
-        _saveDeviceToken(oneAddress);
+        _saveDeviceToken(oneAddress, addressType);
       });
       _fcm.requestNotificationPermissions(IosNotificationSettings());
     } else {
-      _saveDeviceToken(oneAddress);
+      _saveDeviceToken(oneAddress, addressType);
     }
   }
 
-  static void _saveDeviceToken(String oneAddress) async {
+  static void _saveDeviceToken(String oneAddress, String addressType) async {
     String fcmToken = await _fcm.getToken();
     if (fcmToken != null) {
-      Firestore.instance.collection('device_tokens').document(fcmToken).setData({
+      Firestore.instance.collection('device_tokens_debug').document('$fcmToken:-:$addressType').setData({
         'createdAt': FieldValue.serverTimestamp(),
+        'updatedAt': FieldValue.serverTimestamp(),
         'platform': Platform.operatingSystem,
         'oneAddress': oneAddress,
         'token': fcmToken,
+        'addressType': addressType,
       });
     }
   }

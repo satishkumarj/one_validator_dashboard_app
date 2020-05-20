@@ -1,10 +1,15 @@
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:material_segmented_control/material_segmented_control.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:validator/utilities/constants.dart';
 
 class EnterNewAddressScreen extends StatefulWidget {
+  EnterNewAddressScreen({this.oneAddressType});
+  final String oneAddressType;
+
   @override
   _EnterNewAddressScreenState createState() => _EnterNewAddressScreenState();
 }
@@ -18,6 +23,9 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
   bool enterAddressManually = false;
   bool oneAddressFieldEnabled = true;
   bool confirmOneAddressFieldEnabled = false;
+  int _currentSelection = 0;
+  String oneAddressType = '';
+  Map<int, Widget> _children;
 
   TextEditingController addressController = TextEditingController();
   TextEditingController confirmAddressController = TextEditingController();
@@ -29,7 +37,6 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
         if (result.rawContent != '') {
           setState(() {
             oneAddress = result.rawContent;
-            print(oneAddress);
           });
         }
       } else if (result.type == ResultType.Error) {
@@ -79,12 +86,30 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
         return;
       }
     }
-    Navigator.pop(context, oneAddress);
+    Navigator.pop(context, {'address': oneAddress, 'addressType': oneAddressType});
+  }
+
+  void refreshSegItems() {
+    setState(() {
+      _children = {
+        0: Text('Validator Address'),
+        1: Text('Delegator Address'),
+      };
+    });
   }
 
   @override
   void initState() {
     super.initState();
+    oneAddressType = widget.oneAddressType;
+    if (oneAddressType == null || oneAddressType == '') {
+      oneAddressType = 'Validator';
+    }
+    refreshSegItems();
+    _currentSelection = 0;
+    if (oneAddressType == 'Delegator') {
+      _currentSelection = 1;
+    }
     enterAddressManually = false;
     oneAddressFieldEnabled = true;
     confirmOneAddressFieldEnabled = false;
@@ -97,6 +122,9 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Enter ONE Address'),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
       ),
       body: ListView(
         children: <Widget>[
@@ -106,6 +134,27 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
+                Container(
+                  padding: EdgeInsets.only(bottom: 10.0),
+                  child: MaterialSegmentedControl(
+                    children: _children,
+                    selectionIndex: _currentSelection,
+                    borderColor: Colors.grey,
+                    selectedColor: kHmyMainColor,
+                    unselectedColor: Colors.white,
+                    borderRadius: 32.0,
+                    onSegmentChosen: (index) {
+                      setState(() {
+                        _currentSelection = index;
+                        if (_currentSelection == 0) {
+                          oneAddressType = 'Validator';
+                        } else {
+                          oneAddressType = 'Delegator';
+                        }
+                      });
+                    },
+                  ),
+                ),
                 Container(
                   child: Row(
                     children: <Widget>[
@@ -121,7 +170,12 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
                       Text(
                         'Enter ONE address manually',
                         textAlign: TextAlign.center,
-                        style: kLabelTextStyle,
+                        style: GoogleFonts.nunito(
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          color: kHmyTitleTextColor,
+                        ),
                       ),
                     ],
                   ),
@@ -135,7 +189,12 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
                           ? Flexible(
                               child: Text(
                                 oneAddress == '' ? 'Please press QR code button to scan' : oneAddress,
-                                style: kLabelTextStyle,
+                                style: GoogleFonts.nunito(
+                                  fontStyle: FontStyle.normal,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 14,
+                                  color: kHmyTitleTextColor,
+                                ),
                               ),
                             )
                           : Flexible(
@@ -166,7 +225,7 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
                                 scanQRCode();
                               },
                               elevation: 3.0,
-                              fillColor: kMainColor,
+                              fillColor: kHmyMainColor,
                               child: Icon(
                                 FontAwesomeIcons.qrcode,
                                 size: 25.0,
@@ -214,7 +273,7 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
                       onPressed: () {
                         saveButtonPress();
                       },
-                      fillColor: kMainColor,
+                      fillColor: kHmyMainColor,
                       constraints: BoxConstraints(minHeight: 50),
                       elevation: 0,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),

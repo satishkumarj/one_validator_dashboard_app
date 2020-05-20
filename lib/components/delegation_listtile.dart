@@ -4,39 +4,19 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:validator/components/list_icon_content.dart';
 import 'package:validator/components/resuable_card.dart';
 import 'package:validator/components/reusable_list_card.dart';
-import 'package:validator/models/validator_list_model.dart';
-import 'package:validator/screens/validator_details.dart';
+import 'package:validator/models/delegation.dart';
 import 'package:validator/utilities/constants.dart';
 
-class ValidatorListTile extends StatelessWidget {
-  ValidatorListTile({@required this.model, @required this.context});
-  final ValidatorListModel model;
+class DelegationListTile extends StatelessWidget {
+  DelegationListTile({@required this.model, @required this.context});
+  final Delegation model;
 
   final BuildContext context;
 
-  void openValidatorDetailsScreen() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => ValidatorDetails(
-          model: this.model,
-        ),
-      ),
-    );
-  }
+  void openValidatorDetailsScreen() {}
 
   @override
   Widget build(BuildContext context) {
-    List<Color> _colors = [
-      Color(0XFF00BCD4),
-      Color(0XFF00BCD4),
-      Color(0XFF80DEEA),
-      Color(0XFF00BCD4),
-      Color(0XFF00BCD4),
-      Color(0XFF80DEEA),
-    ];
-    List<double> _stops = [0.1, 0.2, 0.4, 0.6, 0.8, 1.0];
-
     //String addressWrapped = model.address.substring(0, 10) + '...' + model.address.substring(model.address.length - 10, model.address.length);
     return GestureDetector(
       onTap: () {
@@ -48,41 +28,34 @@ class ValidatorListTile extends StatelessWidget {
           colour: Colors.white,
           cardChild: Column(
             children: <Widget>[
-              SizedBox(
-                height: 10.0,
-              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
                   Expanded(
                     flex: 1,
                     child: Icon(
-                      model.elected ? FontAwesomeIcons.userCheck : FontAwesomeIcons.userAlt,
+                      FontAwesomeIcons.tasks,
                       size: 15.0,
-                      color: model.elected ? kHmyGreenCardColor : kHmyGreyCardColor,
+                      color: Colors.black,
                     ),
                   ),
                   Expanded(
                     flex: 8,
                     child: Text(
-                      model.name,
+                      'Validator Address:',
                       style: GoogleFonts.nunito(
                         fontStyle: FontStyle.normal,
                         fontWeight: FontWeight.bold,
-                        fontSize: 12,
+                        fontSize: 15,
                         color: kHmyTitleTextColor,
                       ),
-                      maxLines: 3,
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
-                  SizedBox(
-                    width: 5.0,
-                  )
                 ],
               ),
               SizedBox(
-                height: 10,
+                height: 2,
               ),
               Row(
                 children: <Widget>[
@@ -95,7 +68,7 @@ class ValidatorListTile extends StatelessWidget {
                   Expanded(
                     flex: 8,
                     child: SelectableText(
-                      model.address == null ? '' : model.address,
+                      model.validatorAddress == null ? '' : model.validatorAddress,
                       style: GoogleFonts.nunito(
                         fontStyle: FontStyle.normal,
                         fontWeight: FontWeight.bold,
@@ -115,25 +88,27 @@ class ValidatorListTile extends StatelessWidget {
                   Expanded(
                     child: ReusableListCard(
                       cardChild: ListContentCard(
-                        title: "Total Staked",
-                        data: model.totalStaked == null ? '0' : kUSNumberFormat.format(model.totalStaked),
-                        elected: model.elected,
+                        title: "Delegated",
+                        data: model.amount == null ? '0' : kUSNumberFormat.format(model.amount),
+                        elected: true,
                       ),
                       onPress: () {
                         openValidatorDetailsScreen();
                       },
+                      blurRadius: 20,
                     ),
                   ),
                   Expanded(
                     child: ReusableListCard(
                       cardChild: ListContentCard(
-                        title: "Lifetime Earned",
-                        data: model.earnings == null ? '0' : kUSNumberFormat.format(model.earnings),
-                        elected: model.elected,
+                        title: "Reward",
+                        data: model.reward == null ? '0' : kUSNumberFormat.format(model.reward),
+                        elected: true,
                       ),
                       onPress: () {
                         openValidatorDetailsScreen();
                       },
+                      blurRadius: 20,
                     ),
                   ),
                 ],

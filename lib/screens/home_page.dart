@@ -5,12 +5,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:validator/components/icon_content.dart';
 import 'package:validator/components/resuable_card.dart';
 import 'package:validator/models/validator_list_model.dart';
 import 'package:validator/screens/analytics_screen.dart';
 import 'package:validator/screens/balaces_screen.dart';
+import 'package:validator/screens/delegator_screen.dart';
 import 'package:validator/screens/enter_new_address.dart';
 import 'package:validator/screens/favorite_validators.dart';
 import 'package:validator/screens/infor_screen.dart';
@@ -47,25 +49,34 @@ class _MyHomePageState extends State<MyHomePage> {
   int epochLastBlock = 0;
   int electedValidatorCount = 0;
   int allValidatorsCount = 0;
-  String _myONEAddress = '';
+  String _myValONEAddress = '';
+  String _myDelONEAddress = '';
   int blockNumber = 0;
   int minutesToNextEpoch = 0;
   Timer timer;
 
   static final List<Map> _menuItems = [
     {
-      "text": "My Node Details",
+      "text": "My Validator Details",
       "icon": Icon(
         FontAwesomeIcons.server,
-        color: Colors.white,
+        color: kHmyMainColor,
         size: 20,
       ),
     },
     {
-      "text": "Favorite Validators",
+      "text": "My Delegations",
+      "icon": Icon(
+        FontAwesomeIcons.tasks,
+        color: kHmyMainColor,
+        size: 20,
+      ),
+    },
+    {
+      "text": "Favorites",
       "icon": Icon(
         FontAwesomeIcons.heart,
-        color: Colors.white,
+        color: kHmyMainColor,
         size: 20,
       ),
     },
@@ -73,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
       "text": "Analytics",
       "icon": Icon(
         FontAwesomeIcons.chartLine,
-        color: Colors.white,
+        color: kHmyMainColor,
         size: 20,
       ),
     },
@@ -81,7 +92,15 @@ class _MyHomePageState extends State<MyHomePage> {
       "text": "Networks",
       "icon": Icon(
         FontAwesomeIcons.networkWired,
-        color: Colors.white,
+        color: kHmyMainColor,
+        size: 20,
+      ),
+    },
+    {
+      "text": "Discuss",
+      "icon": Icon(
+        FontAwesomeIcons.comment,
+        color: kHmyMainColor,
         size: 20,
       ),
     },
@@ -89,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
       "text": "Documentation",
       "icon": Icon(
         FontAwesomeIcons.info,
-        color: Colors.white,
+        color: kHmyMainColor,
         size: 20,
       ),
     }
@@ -137,10 +156,10 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void calculateNextEpochTime() {
-    int minToNextEp = ((epochLastBlock - blockNumber) * Global.numberOfSecondsForEpoch).toInt();
-    if (minToNextEp > 60) {
-      minToNextEp = (minToNextEp ~/ 60).toInt();
-    }
+    int minToNextEp = ((epochLastBlock - blockNumber) ~/ Global.numberOfSecondsForEpoch).round();
+//    if (minToNextEp > 60) {
+//      minToNextEp = (minToNextEp ~/ 60).toInt();
+//    }
     setState(() {
       minutesToNextEpoch = minToNextEp;
     });
@@ -168,15 +187,31 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  void gotoMyDelegationDetails() {
+    if (Global.myDelONEAddress == '') {
+      showAlert('Please scan/enter your Delegator \'s ONE Address');
+    } else {
+      print(Global.myDelONEAddress);
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => DelegationDetailsScreen(
+            oneAddress: Global.myDelONEAddress,
+          ),
+        ),
+      );
+    }
+  }
+
   void gotoMyValidatorDetails() {
-    if (Global.myONEAddress == '') {
-      showAlert('Please scan your ONE Address');
+    if (Global.myValONEAddress == '') {
+      showAlert('Please scan/enter your Validator \'s ONE Address');
     } else {
       Navigator.push(
         context,
         MaterialPageRoute(
           builder: (context) => ValidatorDetails(
-            model: ValidatorListModel(name: 'Loading ...', address: Global.myONEAddress),
+            model: ValidatorListModel(name: 'Loading ...', address: Global.myValONEAddress),
           ),
         ),
       );
@@ -202,33 +237,47 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void gotoMyBalanceDetails() {
-    if (Global.myONEAddress == '') {
+    if (Global.myValONEAddress == '') {
     } else {
       Navigator.push(
         context,
         MaterialPageRoute(
           builder: (context) => BalancesScreen(
-            address: Global.myONEAddress,
+            address: Global.myValONEAddress,
           ),
         ),
       );
     }
   }
 
-  void gotoEnterNewAddressScreen(String type) async {
+  void gotoEnterNewAddressScreen(String type, String addressType) async {
     final result = await Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => EnterNewAddressScreen(),
+        builder: (context) => EnterNewAddressScreen(
+          oneAddressType: addressType,
+        ),
       ),
     );
     if (result != null) {
       if (result != '') {
-        Global.myONEAddress = result;
-        Global.setUserPreferences(Global.oneAddressKey, result);
+        String oneAdd = result['address'];
+        String addType = result['addressType'];
+        if (addType == 'Validator') {
+          setState(() {
+            Global.myValONEAddress = oneAdd;
+            _myValONEAddress = oneAdd;
+          });
+          Global.setUserPreferences(Global.oneValAddressKey, oneAdd);
+        } else if (addType == 'Delegator') {
+          setState(() {
+            Global.myDelONEAddress = oneAdd;
+            _myDelONEAddress = oneAdd;
+          });
+          Global.setUserPreferences(Global.oneDelAddressKey, oneAdd);
+        }
         setState(() {
-          _myONEAddress = result;
-          OVDNotificationHandler.registerDevice(_myONEAddress);
+          OVDNotificationHandler.registerDevice(_myValONEAddress, addType);
         });
       }
     }
@@ -246,11 +295,11 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void getMyOneAddress() async {
-    String add = await Global.getMyONEAddress();
-    Global.myONEAddress = add;
-    OVDNotificationHandler.registerDevice(Global.myONEAddress);
+    String add = await Global.getMyValONEAddress();
+    Global.myValONEAddress = add;
+    OVDNotificationHandler.registerDevice(Global.myValONEAddress, 'Validator');
     setState(() {
-      _myONEAddress = add;
+      _myValONEAddress = Global.myValONEAddress;
     });
   }
 
@@ -287,10 +336,14 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  void initialize() async {
+    await Global.getInitializer();
+  }
+
   @override
   void initState() {
     super.initState();
-    Global.getInitializer();
+    initialize();
     configureFirebaseListeners();
     getMyOneAddress();
 
@@ -315,7 +368,7 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.white,
       endDrawer: Drawer(
         child: Container(
-          color: kMainColor,
+          color: Colors.white,
           child: ListView(
             children: <Widget>[
               DrawerHeader(
@@ -335,32 +388,22 @@ class _MyHomePageState extends State<MyHomePage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          _myONEAddress == ''
-                              ? 'Please scan your address'
-                              : _myONEAddress.substring(0, 15) + '...' + _myONEAddress.substring((_myONEAddress.length - 16)),
-                          style: TextStyle(color: Colors.white, fontSize: 12.0),
+                          'One Validator Dashboard',
+                          style: GoogleFonts.nunito(
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                            color: kHmyTitleTextColor,
+                          ),
                           overflow: TextOverflow.ellipsis,
                         ),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        GestureDetector(
-                          child: Icon(
-                            FontAwesomeIcons.qrcode,
-                            size: 32.0,
-                            color: Colors.black,
-                          ),
-                          onTap: () {
-                            gotoEnterNewAddressScreen('OWN');
-                          },
-                        )
                       ],
                     )
                   ],
                 ),
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(5.0)),
               ),
-              ListView.builder(
+              ListView.separated(
                 physics: NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 itemCount: _menuItems.length,
@@ -371,8 +414,38 @@ class _MyHomePageState extends State<MyHomePage> {
                       leading: item['icon'],
                       title: Text(
                         item['text'],
-                        style: kLabelTextStyle,
+                        style: GoogleFonts.nunito(
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          color: kHmyTitleTextColor,
+                        ),
                       ),
+                      trailing: index == 0 || index == 1
+                          ? GestureDetector(
+                              child: Icon(
+                                FontAwesomeIcons.qrcode,
+                                size: 20.0,
+                                color: Colors.black,
+                              ),
+                              onTap: () {
+                                gotoEnterNewAddressScreen('OWN', index == 0 ? 'Validator' : 'Delegator');
+                              },
+                            )
+                          : null,
+                      subtitle: index == 0 || index == 1
+                          ? Text(
+                              index == 0
+                                  ? Global.myValONEAddress == '' ? 'Please scan/enter your Validator address' : Global.myValONEAddress
+                                  : Global.myDelONEAddress == '' ? 'Please scan/enter your Delegator address' : Global.myDelONEAddress,
+                              style: GoogleFonts.nunito(
+                                fontStyle: FontStyle.normal,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 10,
+                                color: kHmyNormalTextColor,
+                              ),
+                            )
+                          : null,
                       onTap: () {
                         Navigator.pop(context);
                         switch (index) {
@@ -380,23 +453,38 @@ class _MyHomePageState extends State<MyHomePage> {
                             gotoMyValidatorDetails();
                             break;
                           case 1:
-                            gotoFavoriteValidator();
+                            gotoMyDelegationDetails();
                             break;
                           case 2:
-                            gotoAnalyticsScreen();
+                            gotoFavoriteValidator();
                             break;
                           case 3:
-                            gotoNetworksScreen();
+                            gotoAnalyticsScreen();
                             break;
                           case 4:
+                            gotoNetworksScreen();
+                            break;
+                          case 5:
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => InformationScreen(),
+                                builder: (context) => InformationScreen(
+                                  url: Global.forumUrl,
+                                  title: 'Discuss',
+                                ),
                               ),
                             );
                             break;
-                          case 2:
+                          case 6:
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => InformationScreen(
+                                  url: Global.docsUrl,
+                                  title: 'Documentation',
+                                ),
+                              ),
+                            );
                             break;
                           default:
                             break;
@@ -405,8 +493,14 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
-                      color: kListViewItemColor,
+                      color: Colors.white,
                     ),
+                  );
+                },
+                separatorBuilder: (context, index) {
+                  return Divider(
+                    color: Colors.black,
+                    height: 15.0,
                   );
                 },
               ),
@@ -432,10 +526,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     flex: 6,
                     child: Text(
                       'Harmony',
-                      style: TextStyle(
-                        color: kMainColor,
-                        fontSize: 50.0,
-                        fontWeight: FontWeight.w700,
+                      style: GoogleFonts.nunito(
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 45.0,
+                        color: kHmyMainColor,
                       ),
                     ),
                   ),
@@ -446,7 +541,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         _scaffoldKey.currentState.openEndDrawer();
                       },
                       elevation: 3.0,
-                      fillColor: kMainColor,
+                      fillColor: kHmyMainColor,
                       child: Icon(
                         Icons.list,
                         size: 30.0,
@@ -463,9 +558,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                   Text(
                     'Open Staking',
-                    style: TextStyle(
-                      color: kMainColor,
+                    style: GoogleFonts.nunito(
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.bold,
                       fontSize: 18.0,
+                      color: kHmyMainColor,
                     ),
                   ),
                   SizedBox(
@@ -478,7 +575,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Icon(
                       Icons.refresh,
                       size: 20,
-                      color: kMainColor,
+                      color: kHmyMainColor,
                     ),
                   ),
                 ],
@@ -500,7 +597,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
                       child: ReusableCard(
                         onPress: () {},
-                        colour: kMainColor,
+                        colour: Colors.white,
                         cardChild: ContentCard(
                           data: "${kUSNumberFormat.format(medianStake)}",
                           title: "Median Stake",
@@ -516,7 +613,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
                       child: ReusableCard(
                         onPress: () {},
-                        colour: kMainColor,
+                        colour: Colors.white,
                         cardChild: ContentCard(
                           title: "Total Stake",
                           data: "${kUSNumberFormat.format(totalStake)}",
@@ -532,7 +629,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
                       child: ReusableCard(
                         onPress: () {},
-                        colour: kMainColor,
+                        colour: Colors.white,
                         cardChild: ContentCard(title: "Current Block Height", data: "#$blockNumber"),
                       ),
                     ),
@@ -540,7 +637,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
                       child: ReusableCard(
                         onPress: () {},
-                        colour: kMainColor,
+                        colour: Colors.white,
                         cardChild: ContentCard(
                           title: "Next Epoch",
                           data: minutesToNextEpoch >= 0 ? "$minutesToNextEpoch" : "0",
@@ -565,10 +662,11 @@ class _MyHomePageState extends State<MyHomePage> {
                               constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 60.0),
                               child: Text(
                                 'Validators',
-                                style: TextStyle(
-                                  color: kMainColor,
+                                style: GoogleFonts.nunito(
+                                  fontStyle: FontStyle.normal,
+                                  fontWeight: FontWeight.bold,
                                   fontSize: 35.0,
-                                  fontWeight: FontWeight.w700,
+                                  color: kHmyMainColor,
                                 ),
                               ),
                             ),
@@ -579,7 +677,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   constraints:
                                       BoxConstraints(maxHeight: double.infinity, minHeight: 180.0, maxWidth: double.infinity, minWidth: 170.0),
                                   child: ReusableCard(
-                                    colour: kMainColor,
+                                    colour: Colors.white,
                                     cardChild: ContentCard(
                                       title: "Elected",
                                       data: "$electedValidatorCount",
@@ -594,7 +692,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   constraints:
                                       BoxConstraints(maxHeight: double.infinity, minHeight: 180.0, maxWidth: double.infinity, minWidth: 170.0),
                                   child: ReusableCard(
-                                    colour: kListViewItemColor,
+                                    colour: Colors.white,
                                     cardChild: ContentCard(
                                       title: "All",
                                       data: "$allValidatorsCount",

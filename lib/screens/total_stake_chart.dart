@@ -54,6 +54,9 @@ class _TotalStakeChartScreenState extends State<TotalStakeChartScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('TOTAL STAKE'),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
       ),
       body: Container(
         color: Colors.white,

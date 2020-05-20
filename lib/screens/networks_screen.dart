@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:validator/components/resuable_card.dart';
 import 'package:validator/models/networks.dart';
 import 'package:validator/utilities/constants.dart';
 import 'package:validator/utilities/globals.dart';
@@ -30,6 +32,9 @@ class _NetworksScreenState extends State<NetworksScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Networks'),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
       ),
       body: _networksCount == 0
           ? Container(
@@ -38,7 +43,12 @@ class _NetworksScreenState extends State<NetworksScreen> {
                 child: Text(
                   'No networks',
                   textAlign: TextAlign.center,
-                  style: kTextStyleError,
+                  style: GoogleFonts.nunito(
+                    fontStyle: FontStyle.normal,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                    color: kHmyTitleTextColor,
+                  ),
                 ),
               ),
             )
@@ -54,34 +64,34 @@ class _NetworksScreenState extends State<NetworksScreen> {
                       Networks network = activeNetworks[index];
                       return Container(
                         margin: EdgeInsets.symmetric(horizontal: 15.0, vertical: 5.0),
-                        child: ListTile(
-                          trailing: network.url == Global.selectedNetworkUrl
-                              ? Icon(
-                                  FontAwesomeIcons.check,
-                                  color: Colors.white,
-                                  size: 20.0,
-                                )
-                              : null,
-                          leading: Icon(
-                            FontAwesomeIcons.networkWired,
-                            color: Colors.orange,
-                            size: 20.0,
-                          ),
-                          title: Text(
-                            network.name,
-                            style: TextStyle(
-                              fontSize: 15.0,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
+                        child: ReusableCard(
+                          cardChild: ListTile(
+                            trailing: network.url == Global.selectedNetworkUrl
+                                ? Icon(
+                                    FontAwesomeIcons.check,
+                                    color: kHmyMainColor,
+                                    size: 20.0,
+                                  )
+                                : null,
+                            leading: Icon(
+                              FontAwesomeIcons.networkWired,
+                              color: kHmyMainColor,
+                              size: 20.0,
                             ),
+                            title: Text(
+                              network.name,
+                              style: GoogleFonts.nunito(
+                                fontStyle: FontStyle.normal,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15,
+                                color: kHmyTitleTextColor,
+                              ),
+                            ),
+                            onTap: () {
+                              setState(() {});
+                            },
                           ),
-                          onTap: () {
-                            setState(() {});
-                          },
-                        ),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          color: kMainColor,
+                          colour: Colors.white,
                         ),
                       );
                     },

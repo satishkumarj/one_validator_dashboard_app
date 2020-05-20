@@ -53,7 +53,10 @@ class _EffectiveMedianChartScreenState extends State<EffectiveMedianChartScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('TOTAL STAKE'),
+        title: Text('EFFECTIVE MEDIAN'),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
       ),
       body: Container(
         color: Colors.white,

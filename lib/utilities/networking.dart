@@ -8,7 +8,7 @@ class NetworkHelper {
 
   String url;
 
-  Map<String, String> headers = {'content-type': 'application/json'};
+  Map<String, String> headers = {'content-type': 'application/json; charset=utf-8'};
 
   Future getData(String method, dynamic params) async {
     this.url = '${Global.selectedNetworkUrl}';
@@ -18,7 +18,7 @@ class NetworkHelper {
 
     http.Response response = await http.post(this.url, headers: headers, body: jsonEncode(body));
     if (response.statusCode == 200) {
-      String data = response.body;
+      String data = Utf8Decoder().convert(response.bodyBytes);
       return jsonDecode(data);
     } else {
       print(response.body);

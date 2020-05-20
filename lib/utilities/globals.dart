@@ -7,19 +7,31 @@ class Global {
   static double numberOfSecondsForEpoch = 7.5;
   static int dataRefreshInSeconds = 60;
   static Map<String, Networks> networks = new Map<String, Networks>();
-  static String selectedNetworkUrl = "https://api.s0.os.hmny.io/";
-  static String analyticsDataUrl = "https://staking-explorer2-268108.appspot.com/networks/harmony-open-staking/staking_network_info";
+  static String selectedNetworkUrl = "https://api.s0.t.hmny.io/";
+  static String analyticsDataUrl = "https://staking-explorer2-268108.appspot.com/networks/harmony/staking_network_info";
+  static String forumUrl = "https://talk.harmony.one";
+  static String docsUrl = "https://docs.harmony.one/home/validators";
 
-  static String oneAddressKey = 'MYONEADDRESS';
-  static String favoriteListKey = 'FAVORITELIST';
+  static String oneValAddressKey = 'MYONEVALADDRESS';
+  static String oneDelAddressKey = 'MYONEVALADDRESS';
+  static String favoriteValListKey = 'FAVORITEVALIDATORLIST';
+  static String favoriteDelListKey = 'FAVORITEDELEGATORLIST';
 
-  static String myONEAddress = '';
+  static String myValONEAddress = '';
+  static String myDelONEAddress = '';
 
-  static Future<String> getMyONEAddress() async {
-    if (Global.myONEAddress == '') {
-      Global.myONEAddress = await Global.getUserPreferences(Global.oneAddressKey);
+  static Future<String> getMyValONEAddress() async {
+    if (Global.myValONEAddress == '') {
+      Global.myValONEAddress = await Global.getUserPreferences(Global.oneValAddressKey);
     }
-    return Global.myONEAddress;
+    return Global.myValONEAddress;
+  }
+
+  static Future<String> getMyDelONEAddress() async {
+    if (Global.myDelONEAddress == '') {
+      Global.myDelONEAddress = await Global.getUserPreferences(Global.oneDelAddressKey);
+    }
+    return Global.myDelONEAddress;
   }
 
   static Future<String> getUserPreferences(String key) async {
@@ -46,11 +58,13 @@ class Global {
     }
   }
 
-  static void getInitializer() async {
+  static Future<void> getInitializer() async {
     Firestore.instance.document('initializers/IFmVhDydREL0IjMUnUMa').get().then((doc) {
       numberToDivide = doc['num_to_divide'];
       numberOfSecondsForEpoch = doc['num_seconds_in_epoch'];
       dataRefreshInSeconds = doc['data_refresh_in_secs'];
+      forumUrl = doc['forum_url'];
+      docsUrl = doc['docs_url'];
     });
     final QuerySnapshot result = await Firestore.instance.collection('networks').getDocuments();
     final List<DocumentSnapshot> nets = result.documents;

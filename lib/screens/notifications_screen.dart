@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:validator/models/notification.dart';
 import 'package:validator/utilities/constants.dart';
 import 'package:validator/utilities/notification_handler.dart';
@@ -32,6 +33,9 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Notifications'),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
       ),
       body: notificationsCount == 0
           ? Container(
@@ -40,7 +44,12 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                 child: Text(
                   'No notificaitons',
                   textAlign: TextAlign.center,
-                  style: kTextStyleError,
+                  style: GoogleFonts.nunito(
+                    fontStyle: FontStyle.normal,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                    color: kHmyTitleTextColor,
+                  ),
                 ),
               ),
             )
@@ -102,7 +111,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                           ),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10.0),
-                            color: kMainColor,
+                            color: kHmyMainColor,
                           ),
                         ),
                       );

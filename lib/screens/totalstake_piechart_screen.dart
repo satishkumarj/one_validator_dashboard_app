@@ -46,6 +46,9 @@ class _TotalStakeScreenState extends State<TotalStakeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('${validator.name} \'s Total Stake'),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
       ),
       body: Container(
         color: Colors.white,

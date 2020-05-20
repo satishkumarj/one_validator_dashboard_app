@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:material_segmented_control/material_segmented_control.dart';
 import 'package:validator/components/validator_listview.dart';
 import 'package:validator/models/validator_list_model.dart';
@@ -97,11 +98,13 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
           if (blockData['result'][i]['epos-status'] == 'currently elected') {
             elected = true;
           }
+          double apr = double.parse(blockData['result'][i]['lifetime']['apr']) * 100;
           ValidatorListModel model = ValidatorListModel(
               name: blockData['result'][i]['validator']['name'],
               elected: elected,
               address: address,
               earnings: blockData['result'][i]['lifetime']['reward-accumulated'] / Global.numberToDivide,
+              expectedReturn: apr,
               totalStaked: blockData['result'][i]['total-delegation'] / Global.numberToDivide);
           allValidatorsData.add(model);
           if (model.elected) {
@@ -155,6 +158,9 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Validators'),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
       ),
       body: Container(
         padding: EdgeInsets.only(
@@ -168,12 +174,17 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
               )
             : noDataReturned
                 ? Container(
-                    padding: EdgeInsets.only(top: 30.0, right: 10.0, left: 10.0),
+                    padding: EdgeInsets.only(top: 30.0, right: 5.0, left: 5.0),
                     child: Center(
                       child: Text(
                         'No Validators found!',
                         textAlign: TextAlign.center,
-                        style: kTextStyleError,
+                        style: GoogleFonts.nunito(
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: kHmyTitleTextColor,
+                        ),
                       ),
                     ),
                   )
@@ -187,7 +198,7 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
                         children: _children,
                         selectionIndex: _currentSelection,
                         borderColor: Colors.grey,
-                        selectedColor: _currentSelection == 0 ? kMainColor : kListViewItemColor,
+                        selectedColor: _currentSelection == 0 ? kHmyMainColor : kHmyGreyCardColor,
                         unselectedColor: Colors.white,
                         borderRadius: 32.0,
                         onSegmentChosen: (index) {
@@ -219,6 +230,12 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
                           decoration: InputDecoration(
                             labelText: "Search",
                             hintText: "Search",
+                            hintStyle: GoogleFonts.nunito(
+                              fontStyle: FontStyle.normal,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                              color: kHmyNormalTextColor,
+                            ),
                             prefixIcon: Icon(Icons.search),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.all(
@@ -234,12 +251,6 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
                       Expanded(
                         child: Container(
                           padding: EdgeInsets.symmetric(horizontal: 10.0),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(20.0),
-                                topRight: Radius.circular(20.0),
-                              )),
                           child: ValidatorListView(validatorsData: filteredValidatorData),
                         ),
                       )

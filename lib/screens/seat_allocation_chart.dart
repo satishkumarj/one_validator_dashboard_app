@@ -21,7 +21,10 @@ class _SeatsAllocationChartScreenState extends State<SeatsAllocationChartScreen>
       List<ShardsHistory> shardsHist = new List<ShardsHistory>();
       for (int i = 0; i < historyData.keys.toList().length; i++) {
         String key = historyData.keys.toList()[i];
-        double percent = ((historyData[key]['total_seats_used'] / historyData[key]['total_seats']) * 100);
+        double percent = 0.0;
+        if (historyData[key]['total_seats'] > 0) {
+          percent = ((historyData[key]['total_seats_used'] / historyData[key]['total_seats']) * 100);
+        }
         shardsHist.add(new ShardsHistory(
           numberOfShards: percent.toInt(),
           epochNumber: historyData[key]['current_epoch'],
@@ -53,6 +56,9 @@ class _SeatsAllocationChartScreenState extends State<SeatsAllocationChartScreen>
     return Scaffold(
       appBar: AppBar(
         title: Text('SEATS ALLOCATION'),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
       ),
       body: Container(
         color: Colors.white,
