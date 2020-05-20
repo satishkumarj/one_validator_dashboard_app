@@ -18,6 +18,13 @@ class ValidatorsScreen extends StatefulWidget {
   _ValidatorsScreenState createState() => _ValidatorsScreenState();
 }
 
+List choices = [
+  SortOptionsPopupMenu(title: 'Sort By:', icon: Icons.home, selected: true),
+  SortOptionsPopupMenu(title: 'Expected Return', icon: Icons.home, selected: true),
+  SortOptionsPopupMenu(title: 'Total Stake', icon: Icons.bookmark, selected: false),
+  SortOptionsPopupMenu(title: 'Lifetime Rewards', icon: Icons.settings, selected: false),
+];
+
 class _ValidatorsScreenState extends State<ValidatorsScreen> {
   TextEditingController editingController = TextEditingController();
 
@@ -31,6 +38,7 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
   String filter = '';
   String searchText = '';
   bool noDataReturned = false;
+  SortOptionsPopupMenu _selectedChoices = choices[1];
 
   @override
   void initState() {
@@ -91,7 +99,6 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
             noDataReturned = false;
           });
         }
-
         for (int i = 0; i < allValCount; i++) {
           String address = blockData['result'][i]['validator']['address'];
           bool elected = false;
@@ -111,9 +118,8 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
             electedValidatorsData.add(model);
           }
         }
-        allValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
-        electedValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
         updateFilteredData();
+        sortValidators();
         setState(() {
           dataLoading = false;
         });
@@ -128,6 +134,33 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
       }
     }
     //print(blockData);
+  }
+
+  void sortValidators() {
+    if (!dataLoading) {
+      if (allValidatorsData != null) {
+        if (_selectedChoices.title == 'Expected Return') {
+          allValidatorsData.sort((a, b) => b.expectedReturn.compareTo(a.expectedReturn));
+        } else if (_selectedChoices.title == 'Total Stake') {
+          allValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
+        } else if (_selectedChoices.title == 'Lifetime Rewards') {
+          allValidatorsData.sort((a, b) => b.earnings.compareTo(a.earnings));
+        } else {
+          allValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
+        }
+      }
+      if (electedValidatorsData != null) {
+        if (_selectedChoices.title == 'Expected Return') {
+          electedValidatorsData.sort((a, b) => b.expectedReturn.compareTo(a.expectedReturn));
+        } else if (_selectedChoices.title == 'Total Stake') {
+          electedValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
+        } else if (_selectedChoices.title == 'Lifetime Rewards') {
+          electedValidatorsData.sort((a, b) => b.earnings.compareTo(a.earnings));
+        } else {
+          electedValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
+        }
+      }
+    }
   }
 
   void updateFilteredData() {
@@ -161,6 +194,39 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
         iconTheme: IconThemeData(
           color: Colors.white, //change your color here
         ),
+        actions: [
+          PopupMenuButton(
+            elevation: 5,
+            initialValue: _selectedChoices,
+            onCanceled: () {
+              print('You have not chossed anything');
+            },
+            tooltip: 'This is tooltip',
+            onSelected: (choice) {
+              setState(() {
+                if (choice.title != 'Sort By:') {
+                  _selectedChoices = choice;
+                  sortValidators();
+                  updateFilteredData();
+                }
+              });
+            },
+            itemBuilder: (BuildContext context) {
+              return choices.map((choice) {
+                return PopupMenuItem(
+                  value: choice,
+                  child: Text(choice.title),
+                  textStyle: GoogleFonts.nunito(
+                    fontStyle: FontStyle.normal,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15,
+                    color: choice == _selectedChoices ? kHmyTitleTextColor : kHmyNormalTextColor,
+                  ),
+                );
+              }).toList();
+            },
+          )
+        ],
       ),
       body: Container(
         padding: EdgeInsets.only(
@@ -259,4 +325,11 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
       ),
     );
   }
+}
+
+class SortOptionsPopupMenu {
+  SortOptionsPopupMenu({this.title, this.icon, this.selected});
+  String title;
+  IconData icon;
+  bool selected;
 }

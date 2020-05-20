@@ -69,7 +69,7 @@ class ValidatorListTile extends StatelessWidget {
                       style: GoogleFonts.nunito(
                         fontStyle: FontStyle.normal,
                         fontWeight: FontWeight.bold,
-                        fontSize: 12,
+                        fontSize: 14,
                         color: kHmyTitleTextColor,
                       ),
                       maxLines: 3,
@@ -81,35 +81,6 @@ class ValidatorListTile extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
-                height: 10,
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    flex: 1,
-                    child: SizedBox(
-                      width: 40.0,
-                    ),
-                  ),
-                  Expanded(
-                    flex: 8,
-                    child: SelectableText(
-                      model.address == null ? '' : model.address,
-                      style: GoogleFonts.nunito(
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 12,
-                        color: kHmyNormalTextColor,
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 10.0,
-                  )
-                ],
-              ),
               Row(
                 children: <Widget>[
                   Expanded(
@@ -117,6 +88,18 @@ class ValidatorListTile extends StatelessWidget {
                       cardChild: ListContentCard(
                         title: "Total Staked",
                         data: model.totalStaked == null ? '0' : kUSNumberFormat.format(model.totalStaked),
+                        elected: model.elected,
+                      ),
+                      onPress: () {
+                        openValidatorDetailsScreen();
+                      },
+                    ),
+                  ),
+                  Expanded(
+                    child: ReusableListCard(
+                      cardChild: ListContentCard(
+                        title: "Expected Return",
+                        data: model.expectedReturn == null ? '0%' : '${kUSPercentageNumberFormat.format(model.expectedReturn)}%',
                         elected: model.elected,
                       ),
                       onPress: () {

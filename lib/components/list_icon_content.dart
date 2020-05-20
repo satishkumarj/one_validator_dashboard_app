@@ -27,7 +27,7 @@ class ListContentCard extends StatelessWidget {
               style: GoogleFonts.nunito(
                 fontStyle: FontStyle.normal,
                 fontWeight: FontWeight.bold,
-                fontSize: 15,
+                fontSize: 14,
                 color: kHmyTitleTextColor,
               ),
             ),
@@ -44,7 +44,7 @@ class ListContentCard extends StatelessWidget {
               style: GoogleFonts.nunito(
                 fontStyle: FontStyle.normal,
                 fontWeight: FontWeight.bold,
-                fontSize: 12,
+                fontSize: 11,
                 color: kHmyNormalTextColor,
               ),
             ),
