@@ -1,26 +1,20 @@
-# validator
+# Harmony One Validator Information Dashboard App
 
-Harmony One Validator Information Dashboard App
+One Validator App is designed to use by the validators who run the node for Harmony ONE blockchain(https://harmony.one/), and it is the mobile app version of the web dashboard(https://staking.harmony.one/validators)
+Released Feature and functionalities include
 
-App Videos:
+* Showing the basic stats of blockchain like current staking amount, number of validators etc
+* A screen shows a validator list, where all the validators participating in the staking will be displayed
+* A detailed list of Validator information will be listed
+* Displays Median Stake, Total Stake, Current Block Height and Next Epoch
+* Displays List of Elected Validators also all the Validators
+* Displays Individual Validator Details
+* Users can add list of their favorite validators
+* Validators can scan their own ONE address to see their own validator information directly from the menu
+* A Documentation Screen which will display documentation regarding, how to become validator to harmony blockchain
 
-[Android Video](https://github.com/satishkumarj/one_validator_dashboard_app/blob/master/resources/OneValidatorAndroid.mov?raw=true)
+Application is developed using Flutter and it is available on iOS and Android platform as an app, please find the downloadable links from respective platforms
 
-[iOS Video](https://github.com/satishkumarj/one_validator_dashboard_app/blob/master/resources/OneValidatoriOS.mov?raw=true)
-
-
-## Home Screen
-![Dashboard Home](https://github.com/satishkumarj/one_validator_dashboard_app/blob/master/resources/home1.png)
-
-## Menu
-![Dashboard Home](https://raw.githubusercontent.com/satishkumarj/one_validator_dashboard_app/master/resources/menu1.png)
-
-## Validators List Screen
-![Dashboard Home](https://raw.githubusercontent.com/satishkumarj/one_validator_dashboard_app/master/resources/validators1.png)
-
-
-## Validators Details Screen
-![Dashboard Home](https://raw.githubusercontent.com/satishkumarj/one_validator_dashboard_app/master/resources/validator_details1.png)
-
-![Dashboard Home](https://raw.githubusercontent.com/satishkumarj/one_validator_dashboard_app/master/resources/delations_piechart.png)
+iOS : https://apps.apple.com/us/app/one-validator-dashboard/id1511067261
+Android : https://play.google.com/store/apps/details?id=com.prarysoft.one.validator
 
