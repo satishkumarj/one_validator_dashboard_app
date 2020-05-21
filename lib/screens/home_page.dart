@@ -425,7 +425,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ? GestureDetector(
                               child: Icon(
                                 FontAwesomeIcons.qrcode,
-                                size: 20.0,
+                                size: 25.0,
                                 color: Colors.black,
                               ),
                               onTap: () {
@@ -441,7 +441,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               style: GoogleFonts.nunito(
                                 fontStyle: FontStyle.normal,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 10,
+                                fontSize: 12,
                                 color: kHmyNormalTextColor,
                               ),
                             )
