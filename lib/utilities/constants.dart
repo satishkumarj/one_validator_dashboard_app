@@ -38,7 +38,9 @@ const kApiMethodGetAllValidatorInformation = 'hmyv2_getAllValidatorInformation';
 const kApiMethodGetValidatorInformation = 'hmyv2_getValidatorInformation';
 const kApiMethodGetDelegationsByDelegator = 'hmyv2_getDelegationsByDelegator';
 const kApiMethodBlockNumber = 'hmyv2_blockNumber';
+const kGetPriceONEBTCBinance = "https://api.binance.com/api/v3/ticker/price?symbol=ONEBTC";
+const kGetPriceBTCUSDTBinance = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT";
 
 final NumberFormat kUSNumberFormat = NumberFormat.simpleCurrency(decimalDigits: 0, locale: 'en_US', name: '');
-
+final NumberFormat kLongDecimalNumberFormat = NumberFormat.simpleCurrency(decimalDigits: 8, locale: 'en_US', name: '');
 final NumberFormat kUSPercentageNumberFormat = NumberFormat.simpleCurrency(decimalDigits: 2, locale: 'en_US', name: '');

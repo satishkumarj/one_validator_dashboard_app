@@ -6,6 +6,8 @@ import 'package:material_segmented_control/material_segmented_control.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:validator/utilities/constants.dart';
 
+import '../utilities/globals.dart';
+
 class EnterNewAddressScreen extends StatefulWidget {
   EnterNewAddressScreen({this.oneAddressType});
   final String oneAddressType;
@@ -57,8 +59,6 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
       setState(() {
         oneAddressFieldEnabled = true;
         confirmOneAddressFieldEnabled = true;
-        oneAddress = '';
-        confirmOneAddress = '';
       });
     } else {
       setState(() {
@@ -66,6 +66,12 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
         confirmOneAddressFieldEnabled = false;
       });
     }
+    setState(() {
+      oneAddress = '';
+      confirmOneAddress = '';
+      addressController.clear();
+      confirmAddressController.clear();
+    });
   }
 
   void saveButtonPress() {
@@ -119,6 +125,7 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
       appBar: AppBar(
         title: Text('Enter ONE Address'),
@@ -174,7 +181,6 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
                           fontStyle: FontStyle.normal,
                           fontWeight: FontWeight.bold,
                           fontSize: 15,
-                          color: kHmyTitleTextColor,
                         ),
                       ),
                     ],
@@ -193,7 +199,6 @@ class _EnterNewAddressScreenState extends State<EnterNewAddressScreen> {
                                   fontStyle: FontStyle.normal,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 14,
-                                  color: kHmyTitleTextColor,
                                 ),
                               ),
                             )

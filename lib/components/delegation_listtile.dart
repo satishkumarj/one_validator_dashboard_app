@@ -7,6 +7,8 @@ import 'package:validator/components/reusable_list_card.dart';
 import 'package:validator/models/delegation.dart';
 import 'package:validator/utilities/constants.dart';
 
+import '../utilities/globals.dart';
+
 class DelegationListTile extends StatelessWidget {
   DelegationListTile({@required this.model, @required this.context});
   final Delegation model;
@@ -25,7 +27,7 @@ class DelegationListTile extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.only(top: 5, bottom: 5),
         child: ReusableCard(
-          colour: Colors.white,
+          colour: Global.isDarkModeEnabled ? Colors.black : Colors.white,
           cardChild: Column(
             children: <Widget>[
               Row(
@@ -36,18 +38,16 @@ class DelegationListTile extends StatelessWidget {
                     child: Icon(
                       FontAwesomeIcons.tasks,
                       size: 15.0,
-                      color: Colors.black,
                     ),
                   ),
                   Expanded(
                     flex: 8,
                     child: Text(
-                      'Validator Address:',
+                      'Validator:',
                       style: GoogleFonts.nunito(
                         fontStyle: FontStyle.normal,
                         fontWeight: FontWeight.bold,
                         fontSize: 15,
-                        color: kHmyTitleTextColor,
                       ),
                       overflow: TextOverflow.ellipsis,
                     ),
@@ -68,11 +68,11 @@ class DelegationListTile extends StatelessWidget {
                   Expanded(
                     flex: 8,
                     child: SelectableText(
-                      model.validatorAddress == null ? '' : model.validatorAddress,
+                      model.validatorName == null ? '' : model.validatorName,
                       style: GoogleFonts.nunito(
                         fontStyle: FontStyle.normal,
                         fontWeight: FontWeight.bold,
-                        fontSize: 12,
+                        fontSize: 16,
                         color: kHmyNormalTextColor,
                       ),
                       textAlign: TextAlign.left,

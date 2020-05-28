@@ -5,6 +5,8 @@ import 'package:validator/components/icon_content.dart';
 import 'package:validator/components/resuable_card.dart';
 import 'package:validator/utilities/constants.dart';
 
+import '../utilities/globals.dart';
+
 class BalancesScreen extends StatefulWidget {
   BalancesScreen({this.address});
   final String address;
@@ -27,6 +29,7 @@ class _BalancesScreenState extends State<BalancesScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
       appBar: AppBar(
         title: Text('Balaces'),

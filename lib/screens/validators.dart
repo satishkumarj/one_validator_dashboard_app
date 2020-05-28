@@ -9,6 +9,8 @@ import 'package:validator/utilities/constants.dart';
 import 'package:validator/utilities/globals.dart';
 import 'package:validator/utilities/networking.dart';
 
+import '../utilities/constants.dart';
+
 class ValidatorsScreen extends StatefulWidget {
   ValidatorsScreen({@required this.validatorType});
 
@@ -22,7 +24,7 @@ List choices = [
   SortOptionsPopupMenu(title: 'Sort By:', icon: Icons.home, selected: true),
   SortOptionsPopupMenu(title: 'Expected Return', icon: Icons.home, selected: true),
   SortOptionsPopupMenu(title: 'Total Stake', icon: Icons.bookmark, selected: false),
-  SortOptionsPopupMenu(title: 'Lifetime Rewards', icon: Icons.settings, selected: false),
+  SortOptionsPopupMenu(title: 'Uptime', icon: Icons.settings, selected: false),
 ];
 
 class _ValidatorsScreenState extends State<ValidatorsScreen> {
@@ -63,12 +65,22 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
     });
   }
 
-  void refreshData() {
+  Future<void> refreshData() async {
     setState(() {
-      print('data started loading');
+      noDataReturned = false;
       dataLoading = true;
-      noDataReturned = true;
+      print('data started loading');
     });
+    if (allValidatorsData == null) {
+      allValidatorsData = new List<ValidatorListModel>();
+    } else {
+      allValidatorsData.clear();
+    }
+    if (electedValidatorsData == null) {
+      electedValidatorsData = new List<ValidatorListModel>();
+    } else {
+      electedValidatorsData.clear();
+    }
     getAllValidatorData();
     if (validatorType == 'Elected') {}
     refreshSegItems();
@@ -78,12 +90,6 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
     NetworkHelper networkHelper = NetworkHelper();
     int i = 0;
     int allValCount;
-    if (allValidatorsData == null) {
-      allValidatorsData = new List<ValidatorListModel>();
-    }
-    if (electedValidatorsData == null) {
-      electedValidatorsData = new List<ValidatorListModel>();
-    }
     while (true) {
       var blockData = await networkHelper.getData(kApiMethodGetAllValidatorInformation, i);
       if (blockData != null) {
@@ -106,12 +112,23 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
             elected = true;
           }
           double apr = double.parse(blockData['result'][i]['lifetime']['apr']) * 100;
+          int blocksToSign = blockData['result'][i]['lifetime']['blocks']['to-sign'];
+          int blocksSigned = blockData['result'][i]['lifetime']['blocks']['signed'];
+          double upTime = 0.0;
+          if (blocksToSign != null && blocksSigned != null) {
+            if (blocksToSign > 0) {
+              upTime = (blocksSigned / blocksToSign) * 100.0;
+            } else {
+              upTime = 0.0;
+            }
+          }
           ValidatorListModel model = ValidatorListModel(
               name: blockData['result'][i]['validator']['name'],
               elected: elected,
               address: address,
               earnings: blockData['result'][i]['lifetime']['reward-accumulated'] / Global.numberToDivide,
               expectedReturn: apr,
+              uptime: upTime,
               totalStaked: blockData['result'][i]['total-delegation'] / Global.numberToDivide);
           allValidatorsData.add(model);
           if (model.elected) {
@@ -143,8 +160,8 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
           allValidatorsData.sort((a, b) => b.expectedReturn.compareTo(a.expectedReturn));
         } else if (_selectedChoices.title == 'Total Stake') {
           allValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
-        } else if (_selectedChoices.title == 'Lifetime Rewards') {
-          allValidatorsData.sort((a, b) => b.earnings.compareTo(a.earnings));
+        } else if (_selectedChoices.title == 'Uptime') {
+          allValidatorsData.sort((a, b) => b.uptime.compareTo(a.uptime));
         } else {
           allValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
         }
@@ -154,8 +171,8 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
           electedValidatorsData.sort((a, b) => b.expectedReturn.compareTo(a.expectedReturn));
         } else if (_selectedChoices.title == 'Total Stake') {
           electedValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
-        } else if (_selectedChoices.title == 'Lifetime Rewards') {
-          electedValidatorsData.sort((a, b) => b.earnings.compareTo(a.earnings));
+        } else if (_selectedChoices.title == 'Uptime') {
+          electedValidatorsData.sort((a, b) => b.uptime.compareTo(a.uptime));
         } else {
           electedValidatorsData.sort((a, b) => b.totalStaked.compareTo(a.totalStaked));
         }
@@ -181,14 +198,19 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
             filteredValidatorData.add(model);
           }
         }
+        if (filteredValidatorData.length == 0) {
+          noDataReturned = true;
+        } else {
+          noDataReturned = false;
+        }
       }
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Validators'),
         iconTheme: IconThemeData(
@@ -201,7 +223,8 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
             onCanceled: () {
               print('You have not chossed anything');
             },
-            tooltip: 'This is tooltip',
+            tooltip: 'Sort By',
+            color: kHmyGreyCardColor,
             onSelected: (choice) {
               setState(() {
                 if (choice.title != 'Sort By:') {
@@ -220,7 +243,6 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
                     fontStyle: FontStyle.normal,
                     fontWeight: FontWeight.bold,
                     fontSize: 15,
-                    color: choice == _selectedChoices ? kHmyTitleTextColor : kHmyNormalTextColor,
                   ),
                 );
               }).toList();
@@ -233,95 +255,97 @@ class _ValidatorsScreenState extends State<ValidatorsScreen> {
           left: 10.0,
           right: 10.0,
         ),
-        child: dataLoading
-            ? SpinKitDoubleBounce(
-                color: Colors.grey,
-                size: 50.0,
-              )
-            : noDataReturned
-                ? Container(
-                    padding: EdgeInsets.only(top: 30.0, right: 5.0, left: 5.0),
-                    child: Center(
-                      child: Text(
-                        'No Validators found!',
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.nunito(
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                          color: kHmyTitleTextColor,
-                        ),
-                      ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            SizedBox(
+              height: 10.0,
+            ),
+            MaterialSegmentedControl(
+              children: _children,
+              selectionIndex: _currentSelection,
+              borderColor: Colors.grey,
+              selectedColor: _currentSelection == 0 ? kHmyMainColor : kHmyGreyCardColor,
+              unselectedColor: Colors.white,
+              borderRadius: 32.0,
+              onSegmentChosen: (index) {
+                setState(() {
+                  _currentSelection = index;
+                  if (_currentSelection == 0) {
+                    validatorType = 'Elected';
+                  } else {
+                    validatorType = 'All';
+                  }
+                  updateFilteredData();
+                });
+              },
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 15.0),
+              child: TextField(
+                onChanged: (value) {
+                  searchText = value;
+                  updateFilteredData();
+                },
+                controller: editingController,
+                decoration: InputDecoration(
+                  labelText: "Search",
+                  hintText: "Search",
+                  hintStyle: GoogleFonts.nunito(
+                    fontStyle: FontStyle.normal,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15,
+                    color: kHmyNormalTextColor,
+                  ),
+                  prefixIcon: Icon(Icons.search),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(25.0),
                     ),
-                  )
-                : Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: <Widget>[
-                      SizedBox(
-                        height: 10.0,
-                      ),
-                      MaterialSegmentedControl(
-                        children: _children,
-                        selectionIndex: _currentSelection,
-                        borderColor: Colors.grey,
-                        selectedColor: _currentSelection == 0 ? kHmyMainColor : kHmyGreyCardColor,
-                        unselectedColor: Colors.white,
-                        borderRadius: 32.0,
-                        onSegmentChosen: (index) {
-                          setState(() {
-                            _currentSelection = index;
-                            if (_currentSelection == 0) {
-                              validatorType = 'Elected';
-                            } else {
-                              validatorType = 'All';
-                            }
-                            updateFilteredData();
-                          });
-                        },
-                      ),
-                      SizedBox(
-                        height: 10.0,
-                      ),
-                      SizedBox(
-                        height: 10.0,
-                      ),
-                      Container(
-                        padding: EdgeInsets.symmetric(horizontal: 15.0),
-                        child: TextField(
-                          onChanged: (value) {
-                            searchText = value;
-                            updateFilteredData();
-                          },
-                          controller: editingController,
-                          decoration: InputDecoration(
-                            labelText: "Search",
-                            hintText: "Search",
-                            hintStyle: GoogleFonts.nunito(
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 10.0),
+                child: noDataReturned
+                    ? Container(
+                        padding: EdgeInsets.only(top: 30.0, right: 5.0, left: 5.0),
+                        child: Center(
+                          child: Text(
+                            'No Validators found!',
+                            textAlign: TextAlign.center,
+                            style: GoogleFonts.nunito(
                               fontStyle: FontStyle.normal,
                               fontWeight: FontWeight.bold,
-                              fontSize: 15,
-                              color: kHmyNormalTextColor,
-                            ),
-                            prefixIcon: Icon(Icons.search),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(25.0),
-                              ),
+                              fontSize: 20,
                             ),
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 10.0,
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: EdgeInsets.symmetric(horizontal: 10.0),
-                          child: ValidatorListView(validatorsData: filteredValidatorData),
-                        ),
                       )
-                    ],
-                  ),
+                    : dataLoading
+                        ? SpinKitDoubleBounce(
+                            color: Colors.grey,
+                            size: 50.0,
+                          )
+                        : ValidatorListView(
+                            validatorsData: filteredValidatorData,
+                            refreshData: refreshData,
+                          ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

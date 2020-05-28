@@ -8,6 +8,8 @@ import 'package:validator/models/validator_list_model.dart';
 import 'package:validator/screens/validator_details.dart';
 import 'package:validator/utilities/constants.dart';
 
+import '../utilities/globals.dart';
+
 class ValidatorListTile extends StatelessWidget {
   ValidatorListTile({@required this.model, @required this.context});
   final ValidatorListModel model;
@@ -45,7 +47,7 @@ class ValidatorListTile extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.only(top: 5, bottom: 5),
         child: ReusableCard(
-          colour: Colors.white,
+          colour: Global.isDarkModeEnabled ? Colors.black : Colors.white,
           cardChild: Column(
             children: <Widget>[
               SizedBox(
@@ -70,7 +72,6 @@ class ValidatorListTile extends StatelessWidget {
                         fontStyle: FontStyle.normal,
                         fontWeight: FontWeight.bold,
                         fontSize: 14,
-                        color: kHmyTitleTextColor,
                       ),
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
@@ -110,8 +111,8 @@ class ValidatorListTile extends StatelessWidget {
                   Expanded(
                     child: ReusableListCard(
                       cardChild: ListContentCard(
-                        title: "Lifetime Earned",
-                        data: model.earnings == null ? '0' : kUSNumberFormat.format(model.earnings),
+                        title: "Uptime (AVG)",
+                        data: model.uptime == null ? '0' : '${kUSPercentageNumberFormat.format(model.uptime)}%',
                         elected: model.elected,
                       ),
                       onPress: () {

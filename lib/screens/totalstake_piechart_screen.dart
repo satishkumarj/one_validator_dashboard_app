@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:validator/models/validator.dart';
 import 'package:validator/utilities/constants.dart';
 
+import '../utilities/globals.dart';
+
 class TotalStakeScreen extends StatefulWidget {
   TotalStakeScreen({@required this.model});
 
@@ -26,6 +28,7 @@ class _TotalStakeScreenState extends State<TotalStakeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     var data = [
       new LinearDelegation('Self', validator.selfStake),
     ];
@@ -51,7 +54,6 @@ class _TotalStakeScreenState extends State<TotalStakeScreen> {
         ),
       ),
       body: Container(
-        color: Colors.white,
         padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
         child: Column(children: <Widget>[
           Expanded(

@@ -37,7 +37,7 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
   Map<String, String> favAdds = new Map<String, String>();
   bool isFavorite;
 
-  void getValidatorDetails() async {
+  Future<void> getValidatorDetails() async {
     print('Data loading started');
     NetworkHelper networkHelper = NetworkHelper();
     var blockData = await networkHelper.getData(kApiMethodGetValidatorInformation, record.address);
@@ -86,10 +86,25 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
             shards = shards + '${blsKey['key']['shard-id']}' + ',';
             keys.add(bK);
           }
-          if (shards.length > 1) {
-            if (shards.substring(shards.length - 1) == ',') {
-              shards = shards.substring(0, shards.length - 1);
+          if (shards.length > 0) {
+            String strShards = '';
+            int shard0Count = '0'.allMatches(shards).length;
+            int shard1Count = '1'.allMatches(shards).length;
+            int shard2Count = '2'.allMatches(shards).length;
+            int shard3Count = '3'.allMatches(shards).length;
+            if (shard0Count > 0) {
+              strShards = strShards + 'Shard 0 : $shard0Count\n';
             }
+            if (shard1Count > 0) {
+              strShards = strShards + 'Shard 1 : $shard1Count\n';
+            }
+            if (shard2Count > 0) {
+              strShards = strShards + 'Shard 2 : $shard2Count\n';
+            }
+            if (shard3Count > 0) {
+              strShards = strShards + 'Shard 3 : $shard3Count\n';
+            }
+            shards = strShards;
           }
           metrics = Metrics(blsKeys: keys, shards: shards);
         }
@@ -256,6 +271,7 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(record.name),
@@ -309,211 +325,215 @@ class _ValidatorDetailsState extends State<ValidatorDetails> {
                   ),
                 )
               : Container(
-                  color: Colors.white,
-                  child: ListView(
-                    padding: const EdgeInsets.all(5),
-                    children: <Widget>[
-                      Text(
-                        'Profile',
-                        style: GoogleFonts.nunito(
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 25,
-                          color: kHmyTitleTextColor,
+                  child: RefreshIndicator(
+                    onRefresh: () async {
+                      getValidatorDetails();
+                    },
+                    child: ListView(
+                      padding: const EdgeInsets.all(5),
+                      children: <Widget>[
+                        Text(
+                          'Profile',
+                          style: GoogleFonts.nunito(
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                          ),
                         ),
-                      ),
-                      ReusableCard(
-                        cardChild: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            ListViewItem(
-                              title: 'Name',
-                              text: validator == null ? '' : validator.name,
-                              height: 80.0,
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Total Staked',
-                              text: validator == null ? '0' : '${kUSNumberFormat.format(validator.totalDelegation)}',
-                              moreDetails: true,
-                              openMoreDetails: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => TotalStakeScreen(
-                                      model: validator,
+                        ReusableCard(
+                          cardChild: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              ListViewItem(
+                                title: 'Name',
+                                text: validator == null ? '' : validator.name,
+                                height: 80.0,
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Total Staked',
+                                text: validator == null ? '0' : '${kUSNumberFormat.format(validator.totalDelegation)}',
+                                moreDetails: true,
+                                openMoreDetails: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => TotalStakeScreen(
+                                        model: validator,
+                                      ),
                                     ),
-                                  ),
-                                );
-                              },
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Delegated',
-                              text: validator == null ? '0' : '${kUSNumberFormat.format(validator.delegatedStake)}',
-                              moreDetails: true,
-                              openMoreDetails: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => DelegatorDetailsScreen(
-                                      model: validator,
+                                  );
+                                },
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Delegated',
+                                text: validator == null ? '0' : '${kUSNumberFormat.format(validator.delegatedStake)}',
+                                moreDetails: true,
+                                openMoreDetails: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => DelegatorDetailsScreen(
+                                        model: validator,
+                                        refreshData: getValidatorDetails,
+                                      ),
                                     ),
-                                  ),
-                                );
-                              },
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Self Stake',
-                              text: validator == null ? '0' : '${kUSNumberFormat.format(validator.selfStake)}',
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Max Delegation',
-                              text: validator.maxTotalDelegation == null ? '0' : '${kUSNumberFormat.format(validator.maxTotalDelegation)}',
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Elected Status',
-                              text: validator.eposStatus == null ? '' : validator.eposStatus,
-                            ),
-                          ],
+                                  );
+                                },
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Self Stake',
+                                text: validator == null ? '0' : '${kUSNumberFormat.format(validator.selfStake)}',
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Max Delegation',
+                                text: validator.maxTotalDelegation == null ? '0' : '${kUSNumberFormat.format(validator.maxTotalDelegation)}',
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Elected Status',
+                                text: validator.eposStatus == null ? '' : validator.eposStatus,
+                              ),
+                            ],
+                          ),
+                          colour: kHmyMainColor.withAlpha(20),
                         ),
-                        colour: kHmyMainColor.withAlpha(20),
-                      ),
-                      Text(
-                        'Performance',
-                        style: GoogleFonts.nunito(
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 25,
-                          color: kHmyTitleTextColor,
+                        Text(
+                          'Performance',
+                          style: GoogleFonts.nunito(
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                          ),
                         ),
-                      ),
-                      ReusableCard(
-                        cardChild: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            ListViewItem(
-                              title: 'Uptime (AVG)',
-                              text: '${kUSPercentageNumberFormat.format(validator.lifeTimeDetails.upTimePercentage)} %',
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Slots',
-                              text: validator.blsPublicKeys == null ? '0' : '${validator.blsPublicKeys.length}',
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Elected Slots',
-                              text: validator.metrics.blsKeys == null ? '0' : '${validator.metrics.blsKeys.length}',
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Expected Return',
-                              text:
-                                  validator.lifeTimeDetails.apr == null ? '' : '${kUSPercentageNumberFormat.format(validator.lifeTimeDetails.apr)} %',
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Shards',
-                              text: validator.metrics.shards == null ? '-' : validator.metrics.shards,
-                              height: 120.0,
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Lifetime Rewards',
-                              text: validator.lifeTimeDetails.rewardAccumulated == null
-                                  ? ''
-                                  : '${kUSNumberFormat.format(validator.lifeTimeDetails.rewardAccumulated)}',
-                            ),
-                          ],
+                        ReusableCard(
+                          cardChild: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              ListViewItem(
+                                title: 'Uptime (AVG)',
+                                text: '${kUSPercentageNumberFormat.format(validator.lifeTimeDetails.upTimePercentage)} %',
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Slots',
+                                text: validator.blsPublicKeys == null ? '0' : '${validator.blsPublicKeys.length}',
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Elected Slots',
+                                text: validator.metrics.blsKeys == null ? '0' : '${validator.metrics.blsKeys.length}',
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Expected Return',
+                                text: validator.lifeTimeDetails.apr == null
+                                    ? ''
+                                    : '${kUSPercentageNumberFormat.format(validator.lifeTimeDetails.apr)} %',
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Elected Shards',
+                                text: validator.metrics.shards == null ? '-' : validator.metrics.shards,
+                                height: 90.0,
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Lifetime Rewards',
+                                text: validator.lifeTimeDetails.rewardAccumulated == null
+                                    ? ''
+                                    : '${kUSNumberFormat.format(validator.lifeTimeDetails.rewardAccumulated)}',
+                              ),
+                            ],
+                          ),
+                          colour: kHmyMainColor.withAlpha(20),
                         ),
-                        colour: kHmyMainColor.withAlpha(20),
-                      ),
-                      Text(
-                        'General Info',
-                        style: GoogleFonts.nunito(
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 25,
-                          color: kHmyTitleTextColor,
+                        Text(
+                          'General Info',
+                          style: GoogleFonts.nunito(
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                          ),
                         ),
-                      ),
-                      ReusableCard(
-                        cardChild: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            ListViewItem(
-                              title: 'Description',
-                              text: validator.details == null ? '' : validator.details,
-                              height: 140.0,
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Website',
-                              text: validator.website == null ? '' : validator.website,
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Validator Address',
-                              text: validator.address == null ? '' : validator.address,
-                              selectable: true,
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Validator Since',
-                              text: validator.creationHeight == null ? '' : 'Block # ${validator.creationHeight}',
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Fee',
-                              text: validator.rate == null ? '' : '${validator.rate} %',
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            ListViewItem(
-                              title: 'Max Fee Change',
-                              text: validator.rate == null ? '' : '${validator.maxChangeRate} % (per day)',
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                          ],
+                        ReusableCard(
+                          cardChild: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              ListViewItem(
+                                title: 'Description',
+                                text: validator.details == null ? '' : validator.details,
+                                height: 140.0,
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Website',
+                                selectable: true,
+                                text: validator.website == null ? '' : validator.website,
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Validator Address',
+                                text: validator.address == null ? '' : validator.address,
+                                selectable: true,
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Validator Since',
+                                text: validator.creationHeight == null ? '' : 'Block # ${validator.creationHeight}',
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Fee',
+                                text: validator.rate == null ? '' : '${validator.rate} %',
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                              ListViewItem(
+                                title: 'Max Fee Change',
+                                text: validator.rate == null ? '' : '${validator.maxChangeRate} % (per day)',
+                              ),
+                              SizedBox(
+                                height: 1,
+                              ),
+                            ],
+                          ),
+                          colour: kHmyMainColor.withAlpha(20),
                         ),
-                        colour: kHmyMainColor.withAlpha(20),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
     );

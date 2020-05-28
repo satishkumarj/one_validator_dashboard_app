@@ -5,6 +5,8 @@ import 'package:validator/models/notification.dart';
 import 'package:validator/utilities/constants.dart';
 import 'package:validator/utilities/notification_handler.dart';
 
+import '../utilities/globals.dart';
+
 class NotificationsScreen extends StatefulWidget {
   @override
   _NotificationsScreenState createState() => _NotificationsScreenState();
@@ -30,12 +32,10 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
       appBar: AppBar(
         title: Text('Notifications'),
-        iconTheme: IconThemeData(
-          color: Colors.white, //change your color here
-        ),
       ),
       body: notificationsCount == 0
           ? Container(

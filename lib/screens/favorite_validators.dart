@@ -142,12 +142,10 @@ class _FavoriteValidatorsState extends State<FavoriteValidators> {
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
       appBar: AppBar(
         title: Text('Favorites'),
-        iconTheme: IconThemeData(
-          color: Colors.white, //change your color here
-        ),
         actions: <Widget>[
           Padding(
             padding: EdgeInsets.only(right: 20.0),
@@ -240,7 +238,7 @@ class _FavoriteValidatorsState extends State<FavoriteValidators> {
                                     background: Container(),
                                     child: Container(
                                       child: ReusableCard(
-                                        colour: Colors.white,
+                                        colour: Global.isDarkModeEnabled ? Colors.black : Colors.white,
                                         cardChild: ListTile(
                                           title: Column(
                                             children: <Widget>[
@@ -250,7 +248,6 @@ class _FavoriteValidatorsState extends State<FavoriteValidators> {
                                                   fontStyle: FontStyle.normal,
                                                   fontWeight: FontWeight.bold,
                                                   fontSize: 12,
-                                                  color: kHmyTitleTextColor,
                                                 ),
                                               ),
                                               SizedBox(
@@ -327,7 +324,7 @@ class _FavoriteValidatorsState extends State<FavoriteValidators> {
                                     child: Container(
                                       padding: EdgeInsets.symmetric(vertical: 1.0),
                                       child: ReusableCard(
-                                        colour: Colors.white,
+                                        colour: Global.isDarkModeEnabled ? Colors.black : Colors.white,
                                         cardChild: ListTile(
                                           title: Column(
                                             children: <Widget>[
@@ -337,7 +334,6 @@ class _FavoriteValidatorsState extends State<FavoriteValidators> {
                                                   fontStyle: FontStyle.normal,
                                                   fontWeight: FontWeight.bold,
                                                   fontSize: 13,
-                                                  color: kHmyTitleTextColor,
                                                 ),
                                               ),
                                             ],

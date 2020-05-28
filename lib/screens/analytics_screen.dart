@@ -104,6 +104,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
       appBar: AppBar(
         title: Text('Analytics'),
@@ -141,7 +142,6 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                           fontStyle: FontStyle.normal,
                           fontWeight: FontWeight.bold,
                           fontSize: 15,
-                          color: kHmyTitleTextColor,
                         ),
                       ),
                       onTap: () {
@@ -163,7 +163,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                         }
                       },
                     ),
-                    colour: Colors.white,
+                    colour: Global.isDarkModeEnabled ? Colors.black : Colors.white,
                   ),
                 );
               },

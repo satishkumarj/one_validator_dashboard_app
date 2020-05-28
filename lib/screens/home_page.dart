@@ -18,6 +18,8 @@ import 'package:validator/screens/favorite_validators.dart';
 import 'package:validator/screens/infor_screen.dart';
 import 'package:validator/screens/networks_screen.dart';
 import 'package:validator/screens/notifications_screen.dart';
+import 'package:validator/screens/settings_screen.dart';
+import 'package:validator/screens/socialmedia_screen.dart';
 import 'package:validator/screens/validator_details.dart';
 import 'package:validator/screens/validators.dart';
 import 'package:validator/utilities/constants.dart';
@@ -54,6 +56,8 @@ class _MyHomePageState extends State<MyHomePage> {
   int blockNumber = 0;
   int minutesToNextEpoch = 0;
   Timer timer;
+  double priceONEBTC = 0;
+  double priceBTCUSDT = 0;
 
   static final List<Map> _menuItems = [
     {
@@ -97,28 +101,50 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     },
     {
-      "text": "Discuss",
+      "text": "Social",
       "icon": Icon(
-        FontAwesomeIcons.comment,
+        FontAwesomeIcons.hashtag,
         color: kHmyMainColor,
         size: 20,
       ),
     },
-    {
+    /*{
       "text": "Documentation",
       "icon": Icon(
         FontAwesomeIcons.info,
         color: kHmyMainColor,
         size: 20,
       ),
-    }
+    },
+    {
+      "text": "Settings",
+      "icon": Icon(
+        FontAwesomeIcons.cog,
+        color: kHmyMainColor,
+        size: 20,
+      ),
+    }*/
   ];
+
+  void getONEPrice() async {
+    NetworkHelper networkHelper = NetworkHelper();
+    var priceData = await networkHelper.getDataFromUrl(kGetPriceONEBTCBinance);
+    if (priceData != null) {
+      priceONEBTC = double.parse(priceData['price']);
+    }
+    priceData = await networkHelper.getDataFromUrl(kGetPriceBTCUSDTBinance);
+    if (priceData != null) {
+      priceBTCUSDT = double.parse(priceData['price']);
+    }
+  }
 
   void refreshData() {
     getData(ApiCallType.ApiCallTypeNetworkData);
     getData(ApiCallType.ApiCallTypeAllValidators);
     getData(ApiCallType.ApiCallTypeElectedValidators);
     getData(ApiCallType.ApiCallTypeGetBlockNumber);
+    getONEPrice();
+    Global.getAllValidatorNames();
   }
 
   void getData(ApiCallType apiCallType) async {
@@ -236,6 +262,24 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  void gotoSettingsScreen() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => SettingsScreen(),
+      ),
+    );
+  }
+
+  void gotoSocialMediaScreen() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => SocialMediaScreen(),
+      ),
+    );
+  }
+
   void gotoMyBalanceDetails() {
     if (Global.myValONEAddress == '') {
     } else {
@@ -273,8 +317,8 @@ class _MyHomePageState extends State<MyHomePage> {
           setState(() {
             Global.myDelONEAddress = oneAdd;
             _myDelONEAddress = oneAdd;
+            Global.setUserPreferences(Global.oneDelAddressKey, oneAdd);
           });
-          Global.setUserPreferences(Global.oneDelAddressKey, oneAdd);
         }
         setState(() {
           OVDNotificationHandler.registerDevice(_myValONEAddress, addType);
@@ -296,10 +340,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void getMyOneAddress() async {
     String add = await Global.getMyValONEAddress();
+    String delAdd = await Global.getMyDelONEAddress();
     Global.myValONEAddress = add;
+    Global.myDelONEAddress = delAdd;
     OVDNotificationHandler.registerDevice(Global.myValONEAddress, 'Validator');
     setState(() {
       _myValONEAddress = Global.myValONEAddress;
+      _myDelONEAddress = Global.myDelONEAddress;
     });
   }
 
@@ -363,12 +410,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
       key: _scaffoldKey,
-      backgroundColor: Colors.white,
+      //backgroundColor: Colors.white,
       endDrawer: Drawer(
         child: Container(
-          color: Colors.white,
           child: ListView(
             children: <Widget>[
               DrawerHeader(
@@ -393,7 +440,6 @@ class _MyHomePageState extends State<MyHomePage> {
                             fontStyle: FontStyle.normal,
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
-                            color: kHmyTitleTextColor,
                           ),
                           overflow: TextOverflow.ellipsis,
                         ),
@@ -418,7 +464,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontStyle: FontStyle.normal,
                           fontWeight: FontWeight.bold,
                           fontSize: 15,
-                          color: kHmyTitleTextColor,
                         ),
                       ),
                       trailing: index == 0 || index == 1
@@ -465,15 +510,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             gotoNetworksScreen();
                             break;
                           case 5:
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => InformationScreen(
-                                  url: Global.forumUrl,
-                                  title: 'Discuss',
-                                ),
-                              ),
-                            );
+                            gotoSocialMediaScreen();
                             break;
                           case 6:
                             Navigator.push(
@@ -486,6 +523,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             );
                             break;
+                          case 7:
+                            gotoSettingsScreen();
+                            break;
                           default:
                             break;
                         }
@@ -493,7 +533,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
-                      color: Colors.white,
                     ),
                   );
                 },
@@ -555,6 +594,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
                     'Open Staking',
@@ -568,151 +608,166 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: 5,
                   ),
-                  GestureDetector(
-                    onTap: () {
-                      refreshData();
-                    },
-                    child: Icon(
-                      Icons.refresh,
-                      size: 20,
-                      color: kHmyMainColor,
-                    ),
-                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: <Widget>[
+                      Text(
+                        'ONE/BTC:    ${kLongDecimalNumberFormat.format(priceONEBTC)}',
+                        style: GoogleFonts.nunito(
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14.0,
+                        ),
+                      ),
+                      Text(
+                        'ONE/USD: \$${kLongDecimalNumberFormat.format(priceONEBTC * priceBTCUSDT)}',
+                        style: GoogleFonts.nunito(
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14.0,
+                        ),
+                      )
+                    ],
+                  )
                 ],
               )
             ],
           ),
         ),
         Expanded(
-          flex: 9,
-          child: ListView(
-            padding: const EdgeInsets.all(5),
-            shrinkWrap: true,
-            children: <Widget>[
-              Container(
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: <Widget>[
-                    ConstrainedBox(
-                      constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
-                      child: ReusableCard(
-                        onPress: () {},
-                        colour: Colors.white,
-                        cardChild: ContentCard(
-                          data: "${kUSNumberFormat.format(medianStake)}",
-                          title: "Median Stake",
-                          mediumAssetIcon: CircleAvatar(
-                            backgroundColor: Colors.white,
-                            radius: 15.0,
-                            backgroundImage: AssetImage('assets/onelogo.png'),
+          child: RefreshIndicator(
+            onRefresh: () async {
+              refreshData();
+            },
+            child: ListView(
+              padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+              shrinkWrap: true,
+              children: <Widget>[
+                Container(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      ConstrainedBox(
+                        constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
+                        child: ReusableCard(
+                          onPress: () {},
+                          colour: Global.isDarkModeEnabled ? Colors.black : Colors.white,
+                          cardChild: ContentCard(
+                            data: "${kUSNumberFormat.format(medianStake)}",
+                            title: "Median Stake",
+                            mediumAssetIcon: CircleAvatar(
+                              backgroundColor: Colors.white,
+                              radius: 15.0,
+                              backgroundImage: AssetImage('assets/onelogo.png'),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    ConstrainedBox(
-                      constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
-                      child: ReusableCard(
-                        onPress: () {},
-                        colour: Colors.white,
-                        cardChild: ContentCard(
-                          title: "Total Stake",
-                          data: "${kUSNumberFormat.format(totalStake)}",
-                          mediumAssetIcon: CircleAvatar(
-                            backgroundColor: Colors.white,
-                            radius: 15.0,
-                            backgroundImage: AssetImage('assets/onelogo.png'),
+                      ConstrainedBox(
+                        constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
+                        child: ReusableCard(
+                          onPress: () {},
+                          colour: Global.isDarkModeEnabled ? Colors.black : Colors.white,
+                          cardChild: ContentCard(
+                            title: "Total Stake",
+                            data: "${kUSNumberFormat.format(totalStake)}",
+                            mediumAssetIcon: CircleAvatar(
+                              backgroundColor: Colors.white,
+                              radius: 15.0,
+                              backgroundImage: AssetImage('assets/onelogo.png'),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    ConstrainedBox(
-                      constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
-                      child: ReusableCard(
-                        onPress: () {},
-                        colour: Colors.white,
-                        cardChild: ContentCard(title: "Current Block Height", data: "#$blockNumber"),
-                      ),
-                    ),
-                    ConstrainedBox(
-                      constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
-                      child: ReusableCard(
-                        onPress: () {},
-                        colour: Colors.white,
-                        cardChild: ContentCard(
-                          title: "Next Epoch",
-                          data: minutesToNextEpoch >= 0 ? "$minutesToNextEpoch" : "0",
-                          subData: 'mins',
+                      ConstrainedBox(
+                        constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
+                        child: ReusableCard(
+                          onPress: () {},
+                          colour: Global.isDarkModeEnabled ? Colors.black : Colors.white,
+                          cardChild: ContentCard(title: "Current Block Height", data: "#$blockNumber"),
                         ),
                       ),
-                    ),
-                    ConstrainedBox(
-                      constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
-                      child: Container(
-                        padding: EdgeInsets.only(
-                          top: 10.0,
-                          left: 5.0,
-                          right: 5.0,
-                          bottom: 5.0,
+                      ConstrainedBox(
+                        constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
+                        child: ReusableCard(
+                          onPress: () {},
+                          colour: Global.isDarkModeEnabled ? Colors.black : Colors.white,
+                          cardChild: ContentCard(
+                            title: "Next Epoch",
+                            data: minutesToNextEpoch >= 0 ? "$minutesToNextEpoch" : "0",
+                            subData: 'mins',
+                          ),
                         ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: <Widget>[
-                            ConstrainedBox(
-                              constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 60.0),
-                              child: Text(
-                                'Validators',
-                                style: GoogleFonts.nunito(
-                                  fontStyle: FontStyle.normal,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 35.0,
-                                  color: kHmyMainColor,
+                      ),
+                      ConstrainedBox(
+                        constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 100.0),
+                        child: Container(
+                          padding: EdgeInsets.only(
+                            top: 10.0,
+                            left: 5.0,
+                            right: 5.0,
+                            bottom: 5.0,
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: <Widget>[
+                              ConstrainedBox(
+                                constraints: BoxConstraints(maxHeight: double.infinity, minHeight: 60.0),
+                                child: Text(
+                                  'Validators',
+                                  style: GoogleFonts.nunito(
+                                    fontStyle: FontStyle.normal,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 35.0,
+                                    color: kHmyMainColor,
+                                  ),
                                 ),
                               ),
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: <Widget>[
-                                ConstrainedBox(
-                                  constraints:
-                                      BoxConstraints(maxHeight: double.infinity, minHeight: 180.0, maxWidth: double.infinity, minWidth: 170.0),
-                                  child: ReusableCard(
-                                    colour: Colors.white,
-                                    cardChild: ContentCard(
-                                      title: "Elected",
-                                      data: "$electedValidatorCount",
-                                      smallIcon: FontAwesomeIcons.userCheck,
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                children: <Widget>[
+                                  ConstrainedBox(
+                                    constraints:
+                                        BoxConstraints(maxHeight: double.infinity, minHeight: 180.0, maxWidth: double.infinity, minWidth: 170.0),
+                                    child: ReusableCard(
+                                      colour: Global.isDarkModeEnabled ? Colors.black : Colors.white,
+                                      cardChild: ContentCard(
+                                        title: "Elected",
+                                        data: "$electedValidatorCount",
+                                        smallIcon: FontAwesomeIcons.userCheck,
+                                      ),
+                                      onPress: () {
+                                        pushToValidator('Elected');
+                                      },
                                     ),
-                                    onPress: () {
-                                      pushToValidator('Elected');
-                                    },
                                   ),
-                                ),
-                                ConstrainedBox(
-                                  constraints:
-                                      BoxConstraints(maxHeight: double.infinity, minHeight: 180.0, maxWidth: double.infinity, minWidth: 170.0),
-                                  child: ReusableCard(
-                                    colour: Colors.white,
-                                    cardChild: ContentCard(
-                                      title: "All",
-                                      data: "$allValidatorsCount",
-                                      smallIcon: FontAwesomeIcons.users,
+                                  ConstrainedBox(
+                                    constraints:
+                                        BoxConstraints(maxHeight: double.infinity, minHeight: 180.0, maxWidth: double.infinity, minWidth: 170.0),
+                                    child: ReusableCard(
+                                      colour: Global.isDarkModeEnabled ? Colors.black : Colors.white,
+                                      cardChild: ContentCard(
+                                        title: "All",
+                                        data: "$allValidatorsCount",
+                                        smallIcon: FontAwesomeIcons.users,
+                                      ),
+                                      onPress: () {
+                                        pushToValidator('All');
+                                      },
                                     ),
-                                    onPress: () {
-                                      pushToValidator('All');
-                                    },
                                   ),
-                                ),
-                              ],
-                            ),
-                          ],
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                    )
-                  ],
+                      )
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ]),

@@ -35,7 +35,6 @@ class ContentCard extends StatelessWidget {
                 fontStyle: FontStyle.normal,
                 fontWeight: FontWeight.bold,
                 fontSize: 25,
-                color: kHmyTitleTextColor,
               ),
             ),
             subData != null
@@ -47,7 +46,6 @@ class ContentCard extends StatelessWidget {
                         fontStyle: FontStyle.normal,
                         fontWeight: FontWeight.bold,
                         fontSize: 10,
-                        color: kHmyNormalTextColor,
                       ),
                     ),
                   )
@@ -74,7 +72,6 @@ class ContentCard extends StatelessWidget {
                 fontStyle: FontStyle.normal,
                 fontWeight: FontWeight.bold,
                 fontSize: 15,
-                color: kHmyNormalTextColor,
               ),
             ),
           ],

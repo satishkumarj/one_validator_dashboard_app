@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
+import '../utilities/globals.dart';
+
 class InformationScreen extends StatefulWidget {
   InformationScreen({this.title, this.url});
   final String url;
@@ -33,12 +35,10 @@ class _InformationScreenState extends State<InformationScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
-        iconTheme: IconThemeData(
-          color: Colors.white, //change your color here
-        ),
       ),
       body: WebView(
         initialUrl: url,

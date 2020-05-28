@@ -28,7 +28,6 @@ class ListContentCard extends StatelessWidget {
                 fontStyle: FontStyle.normal,
                 fontWeight: FontWeight.bold,
                 fontSize: 14,
-                color: kHmyTitleTextColor,
               ),
             ),
           ],

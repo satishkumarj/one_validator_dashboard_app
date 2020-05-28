@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:validator/utilities/constants.dart';
 
+import '../utilities/globals.dart';
+
 class SeatsElectedChartScreen extends StatefulWidget {
   SeatsElectedChartScreen({@required this.data, this.totalSeats, this.electedSeats});
 
@@ -68,6 +70,7 @@ class _SeatsElectedChartScreenState extends State<SeatsElectedChartScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
       appBar: AppBar(
         title: Text('SEATS ELECTED $electedSeats / $totalSeats'),
@@ -92,7 +95,6 @@ class _SeatsElectedChartScreenState extends State<SeatsElectedChartScreen> {
               ),
             )
           : Container(
-              color: Colors.white,
               padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
               child: Column(children: <Widget>[
                 Expanded(
@@ -100,6 +102,22 @@ class _SeatsElectedChartScreenState extends State<SeatsElectedChartScreen> {
                     seriesList,
                     animate: true,
                     barGroupingType: charts.BarGroupingType.stacked,
+                    primaryMeasureAxis: new charts.NumericAxisSpec(
+                      renderSpec: charts.SmallTickRendererSpec(
+                        labelStyle: new charts.TextStyleSpec(
+                          fontSize: 12, // size in Pts.
+                          color: Global.isDarkModeEnabled ? charts.MaterialPalette.white : charts.MaterialPalette.black,
+                        ),
+                      ),
+                    ),
+                    domainAxis: new charts.OrdinalAxisSpec(
+                      renderSpec: charts.SmallTickRendererSpec(
+                        labelStyle: new charts.TextStyleSpec(
+                          fontSize: 12, // size in Pts.
+                          color: Global.isDarkModeEnabled ? charts.MaterialPalette.white : charts.MaterialPalette.black,
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               ]),

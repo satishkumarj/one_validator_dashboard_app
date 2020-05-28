@@ -29,12 +29,10 @@ class _NetworksScreenState extends State<NetworksScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
       appBar: AppBar(
         title: Text('Networks'),
-        iconTheme: IconThemeData(
-          color: Colors.white, //change your color here
-        ),
       ),
       body: _networksCount == 0
           ? Container(
@@ -84,14 +82,13 @@ class _NetworksScreenState extends State<NetworksScreen> {
                                 fontStyle: FontStyle.normal,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
-                                color: kHmyTitleTextColor,
                               ),
                             ),
                             onTap: () {
                               setState(() {});
                             },
                           ),
-                          colour: Colors.white,
+                          colour: Global.isDarkModeEnabled ? Colors.black : Colors.white,
                         ),
                       );
                     },

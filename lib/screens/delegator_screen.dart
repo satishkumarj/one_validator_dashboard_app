@@ -8,6 +8,8 @@ import 'package:validator/utilities/constants.dart';
 import 'package:validator/utilities/globals.dart';
 import 'package:validator/utilities/networking.dart';
 
+import '../utilities/globals.dart';
+
 class DelegationDetailsScreen extends StatefulWidget {
   DelegationDetailsScreen({this.oneAddress});
   final String oneAddress;
@@ -23,13 +25,15 @@ class _DelegationDetailsScreenState extends State<DelegationDetailsScreen> {
   bool hasData = false;
   bool dataLoading = true;
 
-  void refreshData() async {
+  Future<void> refreshData() async {
     dataLoading = true;
     NetworkHelper networkHelper = NetworkHelper();
     int i = 0;
     int allValCount;
     if (delegationData == null) {
       delegationData = new List<Delegation>();
+    } else {
+      delegationData.clear();
     }
     var blockData = await networkHelper.getData(kApiMethodGetDelegationsByDelegator, delegatorAddress);
     setState(() {
@@ -50,6 +54,13 @@ class _DelegationDetailsScreenState extends State<DelegationDetailsScreen> {
       for (int i = 0; i < allValCount; i++) {
         String valAddress = blockData['result'][i]['validator_address'];
         String delAddress = blockData['result'][i]['delegator_address'];
+        String valName = valAddress;
+        if (Global.validatorNames[valAddress] != null) {
+          valName = Global.validatorNames[valAddress];
+          if (valName == '') {
+            valName = valAddress;
+          }
+        }
         double amount = blockData['result'][i]['amount'] / Global.numberToDivide;
         double reward = blockData['result'][i]['reward'] / Global.numberToDivide;
         setState(() {
@@ -57,6 +68,7 @@ class _DelegationDetailsScreenState extends State<DelegationDetailsScreen> {
             delegationData.add(Delegation(
               delegateAddress: delAddress,
               validatorAddress: valAddress,
+              validatorName: valName,
               amount: amount,
               reward: reward,
             ));
@@ -81,8 +93,8 @@ class _DelegationDetailsScreenState extends State<DelegationDetailsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Delegations'),
         iconTheme: IconThemeData(
@@ -110,7 +122,6 @@ class _DelegationDetailsScreenState extends State<DelegationDetailsScreen> {
                           fontStyle: FontStyle.normal,
                           fontWeight: FontWeight.bold,
                           fontSize: 15,
-                          color: kHmyNormalTextColor,
                         ),
                       ),
                     ),
@@ -121,10 +132,24 @@ class _DelegationDetailsScreenState extends State<DelegationDetailsScreen> {
                       SizedBox(
                         height: 10.0,
                       ),
+                      SelectableText(
+                        'Delegator Address :\n${this.delegatorAddress}',
+                        style: GoogleFonts.nunito(
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
                       Expanded(
                         child: Container(
                           padding: EdgeInsets.symmetric(horizontal: 10.0),
-                          child: DelegationsListView(delegationData: delegationData),
+                          child: DelegationsListView(
+                            delegationData: delegationData,
+                            refreshData: refreshData,
+                          ),
                         ),
                       )
                     ],

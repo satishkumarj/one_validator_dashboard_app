@@ -9,11 +9,13 @@ import 'package:validator/utilities/constants.dart';
 
 import '../models/delegation.dart';
 import '../utilities/constants.dart';
+import '../utilities/globals.dart';
 
 class DelegatorDetailsScreen extends StatefulWidget {
-  DelegatorDetailsScreen({@required this.model});
+  DelegatorDetailsScreen({@required this.model, this.refreshData});
 
   final Validator model;
+  final Function refreshData;
 
   @override
   _DelegatorDetailsScreenState createState() => _DelegatorDetailsScreenState();
@@ -22,16 +24,19 @@ class DelegatorDetailsScreen extends StatefulWidget {
 class _DelegatorDetailsScreenState extends State<DelegatorDetailsScreen> {
   Validator validator;
   bool dataLoading = false;
+  List<Widget> delegatorItems = new List<Widget>();
+  Function refreshDelegations;
 
   @override
   void initState() {
     super.initState();
-    validator = widget.model;
+    refreshDelegations = widget.refreshData;
+    refreshData();
   }
 
-  @override
-  Widget build(BuildContext context) {
-    List<Widget> delegatorItems = new List<Widget>();
+  void refreshData() {
+    validator = widget.model;
+    List<Widget> delItems = new List<Widget>();
     validator.delegations.sort((a, b) => b.amount.compareTo(a.amount));
     for (int i = 0; i < validator.delegations.length; i++) {
       Delegation d = validator.delegations[i];
@@ -54,10 +59,18 @@ class _DelegatorDetailsScreenState extends State<DelegatorDetailsScreen> {
           );
         },
       );
-      delegatorItems.add(item);
+      delItems.add(item);
       SizedBox sb = SizedBox(height: 1);
-      delegatorItems.add(sb);
+      delItems.add(sb);
     }
+    setState(() {
+      delegatorItems = delItems;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
       appBar: AppBar(
         title: Text('${validator.name} \'s Delegators'),
@@ -66,27 +79,28 @@ class _DelegatorDetailsScreenState extends State<DelegatorDetailsScreen> {
         ),
       ),
       body: Container(
-        color: Colors.white,
-        child: ListView(
-          padding: const EdgeInsets.all(5),
-          children: <Widget>[
-            Text(
-              'Delegators',
-              style: GoogleFonts.nunito(
-                fontStyle: FontStyle.normal,
-                fontWeight: FontWeight.bold,
-                fontSize: 25,
-                color: kHmyTitleTextColor,
+        child: RefreshIndicator(
+          onRefresh: refreshDelegations,
+          child: ListView(
+            padding: const EdgeInsets.all(5),
+            children: <Widget>[
+              Text(
+                'Delegators',
+                style: GoogleFonts.nunito(
+                  fontStyle: FontStyle.normal,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 25,
+                ),
               ),
-            ),
-            ReusableCard(
-              cardChild: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: delegatorItems,
+              ReusableCard(
+                cardChild: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: delegatorItems,
+                ),
+                colour: kHmyMainColor.withAlpha(20),
               ),
-              colour: kHmyMainColor.withAlpha(20),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

@@ -51,6 +51,7 @@ class _TotalStakeChartScreenState extends State<TotalStakeChartScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Global.checkIfDarkModeEnabled(context);
     return Scaffold(
       appBar: AppBar(
         title: Text('TOTAL STAKE'),
@@ -59,7 +60,6 @@ class _TotalStakeChartScreenState extends State<TotalStakeChartScreen> {
         ),
       ),
       body: Container(
-        color: Colors.white,
         padding: EdgeInsets.only(left: 35.0, right: 10.0, top: 15.0, bottom: 15.0),
         child: Column(children: <Widget>[
           Expanded(
@@ -72,9 +72,23 @@ class _TotalStakeChartScreenState extends State<TotalStakeChartScreen> {
               animate: true,
               primaryMeasureAxis: new charts.NumericAxisSpec(
                 tickProviderSpec: new charts.BasicNumericTickProviderSpec(zeroBound: true, desiredTickCount: 15),
+                renderSpec: charts.SmallTickRendererSpec(
+                  labelStyle: new charts.TextStyleSpec(
+                    fontSize: 12, // size in Pts.
+                    color: Global.isDarkModeEnabled ? charts.MaterialPalette.white : charts.MaterialPalette.black,
+                  ),
+                ),
               ),
               domainAxis: new charts.NumericAxisSpec(
-                tickProviderSpec: new charts.BasicNumericTickProviderSpec(zeroBound: false, desiredTickCount: 15),
+                tickProviderSpec: new charts.BasicNumericTickProviderSpec(zeroBound: false, desiredTickCount: 12),
+                renderSpec: charts.SmallTickRendererSpec(
+                  labelRotation: -45,
+                  labelAnchor: charts.TickLabelAnchor.before,
+                  labelStyle: new charts.TextStyleSpec(
+                    fontSize: 12, // size in Pts.
+                    color: Global.isDarkModeEnabled ? charts.MaterialPalette.white : charts.MaterialPalette.black,
+                  ),
+                ),
               ),
             ),
           ),

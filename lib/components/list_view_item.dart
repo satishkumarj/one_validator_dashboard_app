@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../utilities/constants.dart';
+import '../utilities/globals.dart';
 
 class ListViewItem extends StatelessWidget {
   ListViewItem({@required this.title, @required this.text, this.moreDetails, this.openMoreDetails, this.selectable, this.height});
@@ -29,7 +30,6 @@ class ListViewItem extends StatelessWidget {
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.bold,
             fontSize: 12,
-            color: kHmyTitleTextColor,
           ),
           textAlign: TextAlign.left,
         ),
@@ -62,7 +62,7 @@ class ListViewItem extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
-        color: Colors.white,
+        color: Global.isDarkModeEnabled ? Colors.black : Colors.white,
       ),
     );
   }
