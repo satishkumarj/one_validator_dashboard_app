@@ -63,17 +63,19 @@ class _DelegationDetailsScreenState extends State<DelegationDetailsScreen> {
         }
         double amount = blockData['result'][i]['amount'] / Global.numberToDivide;
         double reward = blockData['result'][i]['reward'] / Global.numberToDivide;
-        setState(() {
-          if (delAddress != valAddress) {
-            delegationData.add(Delegation(
-              delegateAddress: delAddress,
-              validatorAddress: valAddress,
-              validatorName: valName,
-              amount: amount,
-              reward: reward,
-            ));
-          }
-        });
+        if (amount > 0) {
+          setState(() {
+            if (delAddress != valAddress) {
+              delegationData.add(Delegation(
+                delegateAddress: delAddress,
+                validatorAddress: valAddress,
+                validatorName: valName,
+                amount: amount,
+                reward: reward,
+              ));
+            }
+          });
+        }
       }
     } else {
       setState(() {

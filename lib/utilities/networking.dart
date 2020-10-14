@@ -13,9 +13,10 @@ class NetworkHelper {
   Future getData(String method, dynamic params) async {
     this.url = '${Global.selectedNetworkUrl}';
     List<dynamic> lstParams = new List();
-    lstParams.add(params);
+    if (params != null) {
+      lstParams.add(params);
+    }
     Map<String, dynamic> body = {'jsonrpc': '2.0', 'method': method, 'params': lstParams, 'id': '1'};
-
     http.Response response = await http.post(this.url, headers: headers, body: jsonEncode(body));
     if (response.statusCode == 200) {
       String data = Utf8Decoder().convert(response.bodyBytes);

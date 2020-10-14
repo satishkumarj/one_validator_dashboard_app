@@ -100,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
         size: 20,
       ),
     },
-    {
+    /*{
       "text": "Social",
       "icon": Icon(
         FontAwesomeIcons.hashtag,
@@ -108,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
         size: 20,
       ),
     },
-    /*{
+    {
       "text": "Documentation",
       "icon": Icon(
         FontAwesomeIcons.info,
@@ -481,8 +481,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       subtitle: index == 0 || index == 1
                           ? Text(
                               index == 0
-                                  ? Global.myValONEAddress == '' ? 'Please scan/enter your Validator address' : Global.myValONEAddress
-                                  : Global.myDelONEAddress == '' ? 'Please scan/enter your Delegator address' : Global.myDelONEAddress,
+                                  ? Global.myValONEAddress == ''
+                                      ? 'Please scan/enter your Validator address'
+                                      : Global.myValONEAddress
+                                  : Global.myDelONEAddress == ''
+                                      ? 'Please scan/enter your Delegator address'
+                                      : Global.myDelONEAddress,
                               style: GoogleFonts.nunito(
                                 fontStyle: FontStyle.normal,
                                 fontWeight: FontWeight.bold,
